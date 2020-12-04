@@ -1,0 +1,4 @@
+#/clone/user/user.c
+conditions (["autosave":1,])
+dbase (["default_actions":,"balance":0,"max_jingli":0,"mud_age":828,"age":14,"lastChangeSize":6042,"pighead":0,"env":(["brief":"YES[2;37;0m","showmap":1,]),"last_on":1414636094,"shen_type":0,"id":"goodla","unit":"Î»","str":23,"attitude":"peaceful","int":20,"last_from":"58.62.133.210","con":19,"board_last_read":(["newbie_b":1349683915,]),"can_speak":1,"jing":888,"dex":18,"limbs":({"Í·²¿","¾±²¿","ĞØ¿Ú","ºóĞÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ğ¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"eff_jing":888,"kar":11,"max_jing":119,"per":29,"registered":1,"qi":888,"levels":1,"max_qi":119,"nbjob":1,"max_neili":0,"eff_qi":888,"mpgx":0,"neili":0,"combat_exp":1888,"score":0,"title":"ÆÕÍ¨°ÙĞÕ","name":"ÆëÓğ","birthday":1414636094,"gender":"ÄĞĞÔ","shen":0,"potential":1420,"race":"ÈËÀà","food":315,"actions":,"water":315,"channels":({"chat","rumor","party","es",}),])
+autoload ({})

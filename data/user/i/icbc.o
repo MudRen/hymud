@@ -1,0 +1,4 @@
+#/clone/user/user.c
+conditions (["autosave":6,])
+dbase (["con":17,"last_from":"110.179.144.111","jing":117,"dex":18,"eff_jing":117,"kar":16,"max_jing":117,"per":24,"qi":117,"max_qi":117,"levels":1,"eff_qi":117,"max_neili":0,"neili":0,"title":"ÆÕÍ¨°ÙĞÕ","name":"¹¤ÉÌÒøĞĞ","gender":"Å®ĞÔ","birthday":1391426758,"potential":99,"actions":,"food":395,"water":395,"channels":({"chat","rumor","party","es",}),"shen":0,"default_actions":,"race":"ÈËÀà","can_speak":1,"unit":"Î»","limbs":({"Í·²¿","¾±²¿","ĞØ¿Ú","ºóĞÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ğ¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"env":(["brief":"YES[2;37;0m","combatd":"YES[2;37;0m","showmap":1,]),"max_jingli":0,"mud_age":54,"age":14,"lastChangeSize":5562,"pighead":0,"last_on":1391426758,"shen_type":0,"registered":1,"id":"icbc","attitude":"peaceful","str":30,"int":15,])
+autoload ({})

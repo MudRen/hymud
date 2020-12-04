@@ -1,0 +1,6 @@
+#/clone/user/user.c
+conditions (["yzhu_busy":68,"guojob2_busy":8,"menpai_busy":8,"autosave":6,"nokill":53,])
+dbase (["default_actions":,"class":"fighter","env":(["showmap":1,]),"max_jingli":0,"mud_age":11633,"age":14,"lastChangeSize":5890,"pighead":0,"shen_type":0,"last_on":1407077056,"unit":"Î»","pawn":(["0":"[1;37mÑøÑÕµ¤[2;37;0m",]),"id":"xxss","fpawn":(["0":"/clone/medicine/nostrum/yangyandan.c",]),"str":10,"attitude":"peaceful","int":14,"last_from":"116.234.15.23","con":19,"hunmi":0,"can_speak":1,"jing":119,"dex":19,"vpawn":(["0":5000,]),"limbs":({"Í·²¿","¾±²¿","ĞØ¿Ú","ºóĞÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ğ¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"eff_jing":119,"kar":28,"max_jing":119,"per":30,"cgiftok":3,"registered":1,"qi":119,"levels":1,"max_qi":119,"max_neili":0,"eff_qi":119,"neili":0,"combat_exp":18,"title":"¶ëáÒÅÉµÚÎå´úµÜ×Ó","poisoner":0,"name":"ĞÀĞÀÉñÉñ","birthday":1407077056,"gender":"Å®ĞÔ","dietimes":4,"shen":0,"potential":112,"race":"ÈËÀà","food":137,"actions":,"water":137,"family":(["master_name":"ÀîÃ÷Ï¼","title":"µÜ×Ó","enter_time":1407109855,"privs":0,"generation":5,"master_id":"li mingxia","family_name":"¶ëáÒÅÉ",]),"channels":({"chat","rumor","party","es",}),])
+skills (["trade":6,])
+learned (["trade":130,])
+autoload ({"/clone/money/coin:126","/clone/money/silver:104","/clone/money/gold:31",})

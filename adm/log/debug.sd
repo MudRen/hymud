@@ -1,0 +1,2146 @@
+Can't find "mudos", ignoring old binaries.
+Try invoking the driver using the full pathname.
+Connected to address server on localhost port 2007
+
+Loading preloaded files ...
+Initializations complete.
+
+Accepting connections on port 1863.
+get_user_data: read on fd 420
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 512
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 596
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1328
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 596
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 400
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 400
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 716
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1244
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1196
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1016
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1016
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1244
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 608
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 524
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 584
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1196
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 604
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1196
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 472
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+
+执行时段错误：*call_other() couldn't find object
+
+程式：kungfu/skill/ill-quan/qiankun.c 第 31 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#2027 ("仙魔(max)")
+呼叫来自：cmds/skill/perform.c 的 main() 第 77 行，物件： cmds/skill/perform ("0(0)")
+呼叫来自：inherit/skill/skill.c 的 perform_action() 第 97 行，物件： kungfu/skill/ill-quan ("0(0)")
+呼叫来自：kungfu/skill/ill-quan/qiankun.c 的 perform() 第 31 行，物件： kungfu/skill/ill-quan/qiankun ("0(0)")
+
+执行时段错误：*call_other() couldn't find object
+
+程式：kungfu/skill/ill-quan/qiankun.c 第 31 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#2027 ("仙魔(max)")
+呼叫来自：cmds/skill/perform.c 的 main() 第 77 行，物件： cmds/skill/perform ("0(0)")
+呼叫来自：inherit/skill/skill.c 的 perform_action() 第 97 行，物件： kungfu/skill/ill-quan ("0(0)")
+呼叫来自：kungfu/skill/ill-quan/qiankun.c 的 perform() 第 31 行，物件： kungfu/skill/ill-quan/qiankun ("0(0)")
+
+执行时段错误：*call_other() couldn't find object
+
+程式：kungfu/skill/ill-quan/qiankun.c 第 31 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#2027 ("仙魔(max)")
+呼叫来自：cmds/skill/perform.c 的 main() 第 77 行，物件： cmds/skill/perform ("0(0)")
+呼叫来自：inherit/skill/skill.c 的 perform_action() 第 97 行，物件： kungfu/skill/ill-quan ("0(0)")
+呼叫来自：kungfu/skill/ill-quan/qiankun.c 的 perform() 第 31 行，物件： kungfu/skill/ill-quan/qiankun ("0(0)")
+Broken connection during add_message.
+get_user_data: read on fd 1024
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 452
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1024
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1024
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 876
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 436
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1200
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 452
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 876
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 876
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1244
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 548
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1200
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 592
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 716
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1200
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1092
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 880
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 584
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 544
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 716
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+Broken connection during add_message.
+get_user_data: read on fd 1260
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1020
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1252
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 976
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1020
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 976
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1048
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1016
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1320
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 632
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 668
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 364
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1340
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 564
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 768
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 444
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 768
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 856
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+Broken connection during add_message.
+get_user_data: read on fd 568
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 416
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 640
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 884
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 976
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 768
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 612
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 552
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1104
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 440
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 600
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 640
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 920
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 704
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#7034 ("阿凡达(avatar)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#7034 ("阿凡达(avatar)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#7034 ("阿凡达(avatar)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#5330 ("阿卡(aka)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#5330 ("阿卡(aka)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#5330 ("阿卡(aka)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#8784 ("乞儿(qier)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#8784 ("乞儿(qier)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#8784 ("乞儿(qier)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#6183 ("酷酷(bear)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#6183 ("酷酷(bear)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#6183 ("酷酷(bear)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+Broken connection during add_message.
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#22468 ("小辫子(change)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#22468 ("小辫子(change)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#22468 ("小辫子(change)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#3283 ("波塞冬(poseidon)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#3283 ("波塞冬(poseidon)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#3283 ("波塞冬(poseidon)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#7057 ("方舟(boat)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#7057 ("方舟(boat)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#7057 ("方舟(boat)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#3263 ("哈迪斯(hades)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#3263 ("哈迪斯(hades)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#3263 ("哈迪斯(hades)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#2458 ("何金银(xianodb)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#2458 ("何金银(xianodb)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#2458 ("何金银(xianodb)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#169650 ("狂龙(dragon)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#169650 ("狂龙(dragon)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#169650 ("狂龙(dragon)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#25104 ("宙斯(zeus)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#25104 ("宙斯(zeus)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#25104 ("宙斯(zeus)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#7078 ("童颜(kid)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#7078 ("童颜(kid)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#7078 ("童颜(kid)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#6197 ("雅典娜(athena)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#6197 ("雅典娜(athena)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#6197 ("雅典娜(athena)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#3378 ("白雪(rui)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#3378 ("白雪(rui)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#3378 ("白雪(rui)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#8784 ("乞儿(qier)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#8784 ("乞儿(qier)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#8784 ("乞儿(qier)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#5346 ("阿波罗(apollo)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#5346 ("阿波罗(apollo)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#5346 ("阿波罗(apollo)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#5330 ("阿卡(aka)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#5330 ("阿卡(aka)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#5330 ("阿卡(aka)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#7034 ("阿凡达(avatar)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#7034 ("阿凡达(avatar)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#7034 ("阿凡达(avatar)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#6183 ("酷酷(bear)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#6183 ("酷酷(bear)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#6183 ("酷酷(bear)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#180867 ("赫拉(hera)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#180867 ("赫拉(hera)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#180867 ("赫拉(hera)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#7057 ("方舟(boat)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#7057 ("方舟(boat)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#7057 ("方舟(boat)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#3283 ("波塞冬(poseidon)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#3283 ("波塞冬(poseidon)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#3283 ("波塞冬(poseidon)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#22468 ("小辫子(change)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#22468 ("小辫子(change)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#22468 ("小辫子(change)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#2458 ("何金银(xianodb)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#2458 ("何金银(xianodb)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#2458 ("何金银(xianodb)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#3263 ("哈迪斯(hades)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#3263 ("哈迪斯(hades)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#3263 ("哈迪斯(hades)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#3378 ("白雪(rui)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#3378 ("白雪(rui)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#3378 ("白雪(rui)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#25104 ("宙斯(zeus)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#25104 ("宙斯(zeus)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#25104 ("宙斯(zeus)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#169650 ("狂龙(dragon)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#169650 ("狂龙(dragon)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#169650 ("狂龙(dragon)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#7078 ("童颜(kid)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#7078 ("童颜(kid)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#7078 ("童颜(kid)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#6197 ("雅典娜(athena)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#6197 ("雅典娜(athena)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#6197 ("雅典娜(athena)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#5330 ("阿卡(aka)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#5330 ("阿卡(aka)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#5330 ("阿卡(aka)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#8784 ("乞儿(qier)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#8784 ("乞儿(qier)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#8784 ("乞儿(qier)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#5346 ("阿波罗(apollo)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#5346 ("阿波罗(apollo)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#5346 ("阿波罗(apollo)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#7034 ("阿凡达(avatar)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#7034 ("阿凡达(avatar)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#7034 ("阿凡达(avatar)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#180867 ("赫拉(hera)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#180867 ("赫拉(hera)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#180867 ("赫拉(hera)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#6183 ("酷酷(bear)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#6183 ("酷酷(bear)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#6183 ("酷酷(bear)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#22468 ("小辫子(change)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#22468 ("小辫子(change)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#22468 ("小辫子(change)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#25104 ("宙斯(zeus)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#25104 ("宙斯(zeus)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#25104 ("宙斯(zeus)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#7078 ("童颜(kid)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#7078 ("童颜(kid)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#7078 ("童颜(kid)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#7057 ("方舟(boat)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#7057 ("方舟(boat)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#7057 ("方舟(boat)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#3283 ("波塞冬(poseidon)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#3283 ("波塞冬(poseidon)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#3283 ("波塞冬(poseidon)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#169650 ("狂龙(dragon)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#169650 ("狂龙(dragon)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#169650 ("狂龙(dragon)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#2458 ("何金银(xianodb)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#2458 ("何金银(xianodb)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#2458 ("何金银(xianodb)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#247436 ("五条(wutiao)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#247436 ("五条(wutiao)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#247436 ("五条(wutiao)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#3378 ("白雪(rui)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#3378 ("白雪(rui)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#3378 ("白雪(rui)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#5330 ("阿卡(aka)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#5330 ("阿卡(aka)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#5330 ("阿卡(aka)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#247436 ("五条(wutiao)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#247436 ("五条(wutiao)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#247436 ("五条(wutiao)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#258851 ("史蒂芬周(xianoda)")
+get_user_data: read on fd 1024
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 600
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1348
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1024
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 876
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1348
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1140
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1416
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1320
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1348
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1256
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1040
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 780
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1336
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 440
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1088
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 584
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 372
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 452
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1024
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1028
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1024
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1420
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1336
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1020
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 600
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1416
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1040
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 600
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 968
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1220
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 452
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1252
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 768
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1252
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 400
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 400
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 600
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 600
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1024
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1256
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1344
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1344
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 460
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 608
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1280
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 392
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+get_user_data: read on fd 1220
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 452
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1072
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 688
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 856
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1072
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 372
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1344
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 372
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 392
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 372
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 372
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 864
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1272
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1264
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 464
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1064
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 464
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 688
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1020
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 572
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1064
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 708
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1020
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 708
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1020
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 968
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1404
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 636
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 444
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 444
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 892
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 892
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1252
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1252
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 648
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 880
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 784
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1252
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1416
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1416
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 880
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 784
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 648
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 708
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 580
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 688
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 580
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 636
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 472
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 632
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1316
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 576
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 908
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 656
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 928
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 476
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1384
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 704
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 784
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1352
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1020
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+
+执行时段错误：*Illegal to move or destruct an object defining actions from a verb function which returns zero.
+
+程式：0 第 0 行
+
+执行时段错误：*environment() of destructed object.
+
+程式：feature/damage.c 第 338 行
+呼叫来自：inherit/char/char.c 的 heart_beat() 第 75 行，物件： 0
+呼叫来自：d/beijing/was/npc/asan.c 的 die() 第 149 行，物件： 0
+呼叫来自：feature/damage.c 的 die() 第 382 行，物件： 0
+呼叫来自：feature/damage.c 的 revive() 第 338 行，物件： 0
+Heart beat in d/beijing/was/npc/asan#645075 turned off.
+get_user_data: read on fd 740
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+
+执行时段错误：*environment() of destructed object.
+
+程式：feature/damage.c 第 338 行
+呼叫来自：inherit/char/char.c 的 heart_beat() 第 75 行，物件： 0
+呼叫来自：d/beijing/was/npc/aer.c 的 die() 第 147 行，物件： 0
+呼叫来自：feature/damage.c 的 die() 第 382 行，物件： 0
+呼叫来自：feature/damage.c 的 revive() 第 338 行，物件： 0
+Heart beat in d/beijing/was/npc/aer#645081 turned off.
+Broken connection during add_message.
+Broken connection during add_message.
+get_user_data: read on fd 892
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 512
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1096
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 456
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 892
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1232
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 512
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1316
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 728
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 752
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 560
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 700
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1076
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1392
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1052
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1392
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1028
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1028
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 600
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1028
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 636
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 568
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 568
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 600
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1224
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 568
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1028
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1012
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 636
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 636
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 636
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 600
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1324
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 636
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1032
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1032
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 600
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 912
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1032
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1068
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1040
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1052
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1324
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 892
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1052
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 748
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1068
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 568
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 568
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1052
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 568
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1040
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 568
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 476
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1324
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 636
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 892
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 892
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 912
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 892
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 864
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 480
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1412
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1412
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 952
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 952
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1412
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1412
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+
+执行时段错误：*Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+
+程式：kungfu/skill/pixie-jian/cimu.c 第 76 行
+呼叫来自：kungfu/skill/pixie-jian/cimu.c 的 cimu_end() 第 76 行，物件： kungfu/skill/pixie-jian/cimu ("0(0)")
+get_user_data: read on fd 540
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1068
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1012
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1012
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1412
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1068
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1068
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 636
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 444
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1068
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1068
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 864
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1344
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1024
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 764
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 556
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 588
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1124
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 580
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 444
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1008
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 736
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 752
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+Broken connection during add_message.
+get_user_data: read on fd 1068
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 764
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1076
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 472
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1120
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 736
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 444
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 580
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1388
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 604
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 380
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 760
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 396
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1256
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 760
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 916
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 760
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 860
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 380
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 632
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 700
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1124
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 748
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 432
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 536
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1284
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 732
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1228
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+
+执行时段错误：*Bad argument 1 to call_other()
+Expected: string or array or object Got: 0.
+
+程式：cmds/std/look.c 第 232 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#821503 ("风风(lingdy)")
+呼叫来自：cmds/std/look.c 的 main() 第 110 行，物件： cmds/std/look ("0(0)")
+呼叫来自：cmds/std/look.c 的 look_room_item() 第 1051 行，物件： cmds/std/look ("0(0)")
+呼叫来自：cmds/std/look.c 的 look_room() 第 536 行，物件： cmds/std/look ("0(0)")
+呼叫来自：cmds/std/look.c 的 realtime_map() 第 232 行，物件： cmds/std/look ("0(0)")
+get_user_data: read on fd 1224
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 944
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1072
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1248
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1284
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 436
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1120
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1124
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 916
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 444
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1228
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 944
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1384
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 444
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 536
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 548
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1020
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1376
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1324
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1008
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 604
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 892
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1416
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1028
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1272
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1120
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 436
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 464
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 476
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 920
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1052
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1280
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1224
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 460
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 920
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 952
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1032
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 752
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1436
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1140
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1004
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1140
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 552
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 448
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1448
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 452
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 924
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1480
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1392
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1480
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1464
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1004
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 712
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 572
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 632
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1288
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1080
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 468
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1420
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 700
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 688
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 472
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+get_user_data: read on fd 692
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 724
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 692
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 380
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 692
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 864
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1092
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1504
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 848
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1032
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1432
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 724
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 692
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 760
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1040
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 700
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1432
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1164
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1296
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 456
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1196
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1500
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 704
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 924
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 640
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 640
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 436
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 772
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1460
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 624
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 640
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#965022 ("宙斯(zeus)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#965022 ("宙斯(zeus)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#965022 ("宙斯(zeus)")
+Broken connection during add_message.
+Broken connection during add_message.
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#674466 ("乞儿(qier)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#674466 ("乞儿(qier)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#674466 ("乞儿(qier)")
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#883508 ("酷酷(bear)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#883508 ("酷酷(bear)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#883508 ("酷酷(bear)")
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#772961 ("尹天仇(xianodd)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#772961 ("尹天仇(xianodd)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#772961 ("尹天仇(xianodd)")
+Broken connection during add_message.
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#965022 ("宙斯(zeus)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#965022 ("宙斯(zeus)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#965022 ("宙斯(zeus)")
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+get_user_data: read on fd 1424
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+Broken connection during add_message.
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#772961 ("尹天仇(xianodd)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#772961 ("尹天仇(xianodd)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#772961 ("尹天仇(xianodd)")
+Broken connection during add_message.
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#883508 ("酷酷(bear)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#883508 ("酷酷(bear)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#883508 ("酷酷(bear)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#674610 ("狂龙(dragon)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#674610 ("狂龙(dragon)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#674610 ("狂龙(dragon)")
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#883508 ("酷酷(bear)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#883508 ("酷酷(bear)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#883508 ("酷酷(bear)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#675826 ("童颜(kid)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#675826 ("童颜(kid)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#675826 ("童颜(kid)")
+
+执行时段错误：*Printable strings limited to length of 8192.
+
+程式：feature/message.c 第 75 行
+呼叫来自：feature/command.c 的 command_hook() 第 67 行，物件： clone/user/user#674610 ("狂龙(dragon)")
+呼叫来自：cmds/std/go.c 的 main() 第 377 行，物件： cmds/std/go ("0(0)")
+呼叫来自：feature/move.c 的 move() 第 147 行，物件： clone/user/user#674610 ("狂龙(dragon)")
+呼叫来自：adm/single/simul_efun.c 的 tell_object() 第 77 行，物件： adm/single/simul_efun ("0(0)")
+呼叫来自：feature/message.c 的 receive_message() 第 75 行，物件： clone/user/user#674610 ("狂龙(dragon)")
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+Broken connection during add_message.
+get_user_data: read on fd 1504
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+Broken connection during add_message.
+get_user_data: read on fd 880
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1292
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 1252
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+get_user_data: read on fd 1456
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+
+Broken connection during add_message.
+get_user_data: read on fd 624
+System Error: get_user_data: read: 当文件已存在时，无法创建该文件。
+

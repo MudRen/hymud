@@ -1,0 +1,116 @@
+// gangjian.c
+
+#include <ansi.h>
+#include <weapon.h>
+
+//inherit M_WEAPON;
+//inherit F_GEMS;
+inherit DAGGER;
+
+string *du=({
+"ice_poison",
+"ill_dongshang",
+"ill_fashao",
+"ill_kesou",
+"ill_shanghan",
+"ill_zhongshu",
+"xx_poison",
+"cold_poison",
+"flower_poison",
+"rose_poison",
+"x2_poison",
+"sanpoison",
+"scorpion_poison",
+"anqi_poison",
+"nx_poison",
+"chilian_poison",
+"yufeng_poison",
+"insect_poison",
+"xscold_poison",
+});
+
+void create()
+{
+	set_name("[1;34mÇÇÒÀÎÚË¹Ö®Ø°Ê×[2;37;0m", ({ "joeywus dagger", "dagger" }));
+	set_weight(7093);
+	if (clonep())
+		set_default_object(__FILE__);
+	else {
+		set("unit", "°Ñ");
+		set("long", @LONG
+[1;34mÔÚÎ÷·½²éÀíÂüÍ³ÖÎµÄÊ±´ú£¬×î¼òÆÓµÄ½£Ò²ÄÜÖµÈıÍ·Ä¸Å£µÄ¼ÛÇ®¡£¶ø²éÀí´óµÛ×Ô¼ºµÄÄÇ°Ñ´«ÆæÊ½
+µÄÉñ±ø¡°ÇÇÒÀÎÚË¹¡±¾İËµÊÇ°ëÈË°ëÉñµÄ¡°Î¤À¼Ìú½³¡±ËùÔì£¬ÄËµ±ÊÀ½çÉñ±ø£¡
+[2;37;0mÕâÊÇÒ»°ÑÓÉ¼«Îª¼áÓ²µÄ[31mÁ÷»¨Ê¯[2;37;0mÖÆ³É£¬ÖØÊ®ËÄ½ïÒ»Á½°ËÇ®µÄ[1;34mÇÇÒÀÎÚË¹Ö®Ø°Ê×[2;37;0m¡£
+×ÛºÏÆÀ¼Û[1;36mÎŞË«ÎŞ¶Ô[2;37;0m ¿´ÆğÀ´¼«Îª·æÀû£¬¾ßÓĞ[1;36mÕ¶Ñı·üÄ§[2;37;0mµÄÍşÁ¦£¡
+ÉÏÃæ¿ÌÁË¼¸¸ö¹Å·ûºÅ£º
+[36mÄ¾[2;37;0m:[35m±ê×¼[2;37;0m [37mÌì[2;37;0m:[35m±ê×¼[2;37;0m [40mµØ[2;37;0m:[1;34m¾ÙÊÀ[2;37;0m 
+ÉÏÃæ»¹¿ÌÁËÒ»Ğ©·û×Ö£º
+·æÀû:[1;33mÃğÊÀ[2;37;0m ÌìÓî:[32m´Ö²Ú[2;37;0m °×Ê¯:[32m´Ö²Ú[2;37;0m ÖÜÌì:[31m¾«ÖÂ[2;37;0m 
+
+LONG
+);
+    set("no_get",1);
+	  set("no_put",1);
+	  set("no_pawn",1);
+	  set("no_drop",1);
+	  set("no_beg",1);
+	  set("no_steal",1);
+	  set("systemmake",1);
+		set("value", 25000);
+		set("weapon_prop/intelligence",0);
+		set("weapon_prop/strength",37);
+		set("weapon_prop/karey",0);
+		set("weapon_prop/percao",0);
+		set("weapon_prop/dexerity",0);
+		set("weapon_prop/constitution",0);
+    set("weapon_prop/dodge", 32);
+    set("weapon_prop/parry", 0);
+    set("weapon_prop/attack", 0);
+    set("weapon_prop/armor", 0);
+    set("weapon_prop/defense", 0);
+    
+    set("weapon_prop/neili", 62);
+    set("weapon_prop/qi", 0);
+    set("weapon_prop/jing", 0);
+    set("weapon_prop/jingli", 0);
+    set("weapon_prop/damage", 0);
+
+    set("wtypeA",0);
+    set("wtypeB",5);
+    set("wtypeC",0);
+    set("wtypeD",0);
+    set("wtypeE",0);
+    set("wtypeF",0);
+    set("wtypeG",0);
+    set("wtypeH",0);
+    set("wtypeI",5);
+    set("wtypeJ",8);
+    set("wtypeK",0);
+    set("wtypeL",0);
+    
+
+                set("skill", ([
+                        "name": "axe",
+                        "exp_required": 80000,
+                        "difficulty": 85,
+                        "min_skill":  1,
+                        "max_skill": 300,              
+                ]) );		
+		set("base_unit", "·¢");
+		
+
+		set("hxweapon", 1);
+		set("material", "default");
+    set("sharpness", 17);
+
+		set("wield_msg", "$N½«$nÎÕÔÚÊÖÖĞ¡£\n");
+		set("unwield_msg", "$N½«ÊÖÖĞµÄ$n·ÅÏÂ¡£\n");
+	}
+	
+	init_dagger(589);
+	setup();
+}
+
+
+
+#include "/obj/ritem/weaponzy.h";

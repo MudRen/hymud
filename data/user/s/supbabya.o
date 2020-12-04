@@ -1,0 +1,8 @@
+#/clone/user/user.c
+alias (["vv":"verify $*",])
+conditions (["autosave":13,])
+dbase (["default_actions":,"board_last_read":(["hy2news_b":1339374224,]),"balance":3220100,"nbjob":20,"pighead":0,"max_jingli":25,"shen_type":0,"mud_age":64901,"age":14,"lastChangeSize":6042,"unit":"Î»","last_on":1417073607,"LastReadNews":1,"id":"supbabya","str":30,"attitude":"peaceful","int":10,"last_from":"114.83.230.210","con":20,"hunmi":1,"jing":1004,"dex":20,"eff_jing":502,"kar":11,"max_jing":502,"per":29,"MKS":3,"jingli":0,"last_sleep":1417049850,"registered":1,"qi":1375,"can_speak":1,"levels":4,"max_qi":1385,"limbs":({"Í·²¿","¾±²¿","ĞØ¿Ú","ºóĞÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ğ¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"env":(["showmap":1,]),"max_neili":2004,"eff_qi":1385,"neili":4008,"mpgx":0,"vpawn":(["0":500,]),"combat_exp":114739,"title":"ÆÕÍ¨°ÙĞÕ","score":2,"name":"ÉòÈı¶ù","birthday":1416972927,"fpawn":(["0":"/d/welcome/npc/lbook1.c",]),"gender":"ÄĞĞÔ","disable_type":"<»èÃÔ²»ĞÑ£¡ÈËÊÂ²»Öª£¡>","shen":0,"potential":85601,"race":"ÈËÀà","food":321,"actions":,"water":321,"pawn":(["0":"[33mÈı×Ö¾­[2;37;0m",]),"channels":({"chat","rumor","party","es",}),"learned_points":74,])
+skills (["literate":80,"feixian-sword":84,"unarmed":84,"trade":5,"dodge":84,"softsword":84,"sword":84,"jingyiforce":84,"parry":84,"force":84,])
+learned (["feixian-sword":30,"trade":12,"force":3086,"sword":18,"jingyiforce":11,])
+skill_map (["force":"jingyiforce","sword":"feixian-sword",])
+autoload ({"/clone/money/silver:1887",})

@@ -1,0 +1,859 @@
+[33m©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+[44;33m¡¾º£ÑóIIÂ·¾¶½éÉÜ¡¿                                            [2;37;0m
+[33m©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤[2;37;0m
+#ALIAS 1s {give 1 silver to ma fu}
+#ALIAS gc-bj {1s;ridebj}
+#ALIAS cd-gc {e;n;n;1s;rideyz;w;w;s}
+#ALIAS dl {1s;ridedl}
+#ALIAS em {1s;rideem}
+#ALIAS em-gc {n;em;yz;w;w;s}
+#ALIAS fs {1s;ridefs}
+#ALIAS fz {1s;ridefz}
+#ALIAS gbd {enter dong;say ÌìÌÃÓĞÂ·Äã²»×ßÑ½;down}
+#ALIAS gb-gc {s;s;#8 w}
+#ALIAS gc-bt {n;e;e;yl;s;se;wu;n;nd;s;s}
+#ALIAS gc-cd {n;e;e;1s;ridecd;s;s;w}
+#ALIAS gc-em {n;e;e;em;em;s}
+#ALIAS gc-gb {#8 e;n;e;n;w;e;n;w;e;n;w;e;n}
+#ALIAS gc-gm {gc-znsj;#wa 2000;n;#3 nu;#2 wu;n;w;nw;n;#3 nu;wu;wu;nu;#2 wu;su;eu;#2 sd;s;s;su;#2 sw;s;s;move shi;s;s;s}
+#ALIAS gc-gw {n;e;e;1s;ridebj;1s;rideht;e}
+#ALIAS gc-gyz {#4 s;#4 e;se;se;se;e;s;s}
+#ALIAS gc-hy {#8 s;su;se;sw;w}
+#ALIAS gc-hsjx {#9 w;nw;#13 w;#2 n;nw;#6 n;#5 e}
+#ALIAS gc-jqg {gc-xi;w;w;n;n;n;e;e;n;n;n;w;#3 s;wu;nu;ne;nu;wd;w;enter}
+#ALIAS gc-jx {#10 e;s;s;e;e}
+#ALIAS gc-jyg {n;e;e;1s;rideyl;s;se;se;e;se;e;e}
+#ALIAS gc-jz {#6 s;sw;#7 s}
+#ALIAS gc-kl {gc-jyg;#5 w;n;w;n;w;n;w;n;w;wu;w;w;wu;su;w;nw;w;nu;eu;#3 su;#6 s;su}
+#ALIAS gc-km {n;e;e;1s;rideem;e;e;sw;#6 e}
+#ALIAS gc-ljg {n;e;e;yl;s;se;wu;n;nu;wu;wu;nu;zou tiesuo;eu;n;n}
+#ALIAS gc-lx {gc-cd;#6 s;nw;wu;nu;nu;eu;nu;nu;n;nu;u;u;open bridge;n}
+#ALIAS gc-mg {n;e;e;bj;w;w;n;w;w;#4 n;nu;#4 n}
+#ALIAS gc-mj {n;e;e;1s;rideyl;s;s;se;se;e;se;w;w;w;w;w;n;n;w;w;w;w}
+#ALIAS gc-mr {n;e;e;sz;e;#6 s;sw;e;e;se;s}
+#ALIAS gc-mz {n;e;e;hz;w;w;n;n;n;n;sw;w;sw;w;wu;n;n;knock 4;knock 2;knock 5;knock 3;n}
+#ALIAS gc-qz {n;e;e;fz;s;s;w;#7 s}
+#ALIAS gc-qzj {gc-znsj;#wa 2000;n;#3 nu;#2 wu;nu;nu;n;w;nw;n;#5 nu;se;eu;su;e;eu}
+#ALIAS gc-riyue {n;e;e;bj;w;w;n;#4 w;se;w;w;sw;w;w;w;n;wd;dujiang;#6 wu}
+#ALIAS gc-ry {n;e;e;bj;w;w;n;#4 w;se;w;w;sw;w;w;w;n;wd;dujiang;#6 wu}
+#ALIAS gc-sl {gbd;3;ne;ne;u;sw;e;sd;e;nu;nu;wu;nu;nu;nu;e;eu;nu;nu;nu;n}
+#ALIAS gc-sls {gbd;3;ne;ne;u;sw;e;sd;e;nu;nu;wu;nu;nu;nu;e}
+#ALIAS gc-sld {gc-tg;e;e;ask chuanfu about ³öº£;give chuanfu 1 gold}
+#ALIAS gc-ss {gbd;3;ne;ne;u;sw;e;sd;e;e}
+#ALIAS gc-sscy {gc-ss;n;n;n;nu;nw;nu;nu;nw;nu;nw;nu;ne;nu;nu;nu;nu}
+#ALIAS gc-thd {#10 e;s;s;#3 e;ask chuanfu about ³öº£;give chuanfu 1 gold}
+#ALIAS gc-tls {n;e;e;1s;ridedl;e;n;e;#5 n;nw;n;ne;e}
+#ALIAS gc-tg {#8 n;dujiang;#9 n;nw;nw;n;n;n;ne;#3 e;#3 ne;e;e;ne;#4 e}
+#ALIAS tg-gc {#4 w;sw;w;w;#3 sw;#3 w;sw;s;s;s;se;se;#9 s;dujiang;#8 s}
+#ALIAS gc-tm {gc-jz;#5 w;sw;#2 w;nw;w;#2 u;w;sd;e;open door;s;se}
+#ALIAS gc-ts {#10 e;ne;n;n;n}
+#ALIAS gc-tz {#8 s;w;n;sd;sw;s;sw;sw;w;nw;nu}
+#ALIAS gc-ca {n;e;e;1s;rideca;n;n;e}
+#ALIAS ca-gc {w;s;s;1s;rideyz;w;w;s}
+#ALIAS gc-wd {#6 s;sw;nw;#3 w;wu;su;s}
+#ALIAS gc-wjg {n;e;e;dl;e;n;e;#8 n;nw;nd;w}
+#ALIAS gc-xd {gc-cd;#6 s;wu;wu;nd;su;wu;wu;su;wu;su;n;su;e;enter}
+#ALIAS gc-xi {#8 s;w;#8 n}
+#ALIAS gc-xkd {n;e;e;1s;ridefs;n;n;w;s;s;s;s;w;give e pai to shi zhe;give shan pai to shi zhe}
+#ALIAS gc-xs {gc-cd;#6 s;wu;wu;nd;wu;wu;s;wu}
+#ALIAS gc-xx {n;e;e;1s;rideyl;s;se;wu;n}
+#ALIAS gc-xy {#8 s;e;e;s;w;w}
+#ALIAS gc-yj {gc-mg;nw;nw;n;nw;n;nw;#wa 2000;n;n;#7 e;#11 n}
+#ALIAS gc-ylm {n;e;e;1s;ridebj;w;w;n;w;s;w;knock floor 3;enter hole;#3 n;w;n;e;n;n}
+#ALIAS gc-yunlong {n;e;e;bj;w;w;n;w;s;w;knock floor 3;enter hole}
+#ALIAS gc-znsj {#9 w;nw;#22 w;ne;eu;se;eu}
+#ALIAS gm-gc {s;tang coffin;niu lock;e;s;s;s;e;out}
+#ALIAS gw-gc {w;1s;ridebj;1s;rideyz;w;w;s}
+#ALIAS gyz-gc {#2 n;w;nw;nw;nw;#4 w;n;n;n;n}
+#ALIAS hc {enable spells magic-earth;perform spells.portal}
+#ALIAS hs1 {sw;#2 su;#2 eu;su;#2 eu;#4 su;eu;ne;ne;push men;e}
+#ALIAS hy-gc {e;ne;nw;nd;#8 n}
+#ALIAS hsjx-gc {#5 w;#6 s;se;#2 s;#13 e;se;#9 e}
+#ALIAS ht {1s;rideht}
+#ALIAS hz {1s;ridehz}
+#ALIAS hz-gc {su;su;s;s;e;se;se;s;s;ed;sd;wu;#wa 2000;e;e;e;eu;sd;e;e;e;e;e;se;#9 e}
+#ALIAS jqg-gc {out;e;eu;sd;sw;sd;ed;#3 n;e;s;s;s;e;n;yz;w;s;s}
+#ALIAS jyg-gc {w;w;nw;w;nw;nw;n;1s;rideyz;w;w;s}
+#ALIAS jz-gc {#7 n;ne;#6 n}
+#ALIAS jx-gc {w;w;n;n;#10 w}
+#ALIAS kl-gc {nd;#6 n;#3 nd;wd;sd;e;se;e;nd;ed;e;e;ed;e;s;e;s;e;s;#6 e;jyg-gc}
+#ALIAS km-gc {#6 w;ne;w;w;1s;rideyz;w;w;s}
+#ALIAS ld {enable spells magic-light;perform spells.cure}
+#ALIAS ldfx {look northeast;look northwest;look southeast;look southwest}
+#ALIAS ljg-gc {s;s;wd;sd;sd;ed;ed;sd;s;ed;nw;n;yz;w;w;s}
+#ALIAS lx1 {dive lake}
+#ALIAS lx-cd {open bridge;s;d;d;sd;s;sd;sd;wd;sd;sd;ed;se;#6 n}
+#ALIAS lx-gc {open bridge;s;d;d;sd;s;sd;sd;wd;sd;sd;ed;se;#6 n;cd-gc}
+#ALIAS lz {1s;ridelz}
+#ALIAS mg-gc {#4 s;sd;#4 s;e;e;s;e;e;1s;rideyz;w;w;s}
+#ALIAS mj-gc {#4 e;#2 s;#5 e;nw;w;nw;nw;n;1s;rideyz;w;w;s}
+#ALIAS mr1 {out;s;w;w;nw;tan qin}
+#ALIAS mr-gc {n;nw;w;w;ne;n;n;n;n;n;n;w;yz;w;w;s}
+#ALIAS mz0 {e;n;s;w;sw;s}
+#ALIAS mz1 {look wall;#8 push wall;out}
+#ALIAS mz-gc {open gate;s;s;s;ed;e;ne;e;ne;#4 s;e;e;1s;rideyz;w;w;s}
+#ALIAS o1 {sw;nw;sw;nw;w;s;enter}
+#ALIAS o2 {out;n;e;se;ne;se;ne}
+#ALIAS qc-gc {s;s;s;e;s;s;s;e;se;s;e;e;e;se;e;sw;w;w;yz;w;w;s}
+#ALIAS qiu1 {ask qiu qianzhang about ÄÖ¹í}
+#ALIAS qyp {w;w;e;s;e;n;n;e;w;s}
+#ALIAS qyph {out;sd;w;e;n;e;s;n;e;w;w;w}
+#ALIAS qz-gc {#7 n;e;n;n;yz;w;w;s}
+#ALIAS qzj-gc {w;wd;w;nd;wd;nw;#5 sd;s;se;e;s;sd;sd;#2 ed;#3 sd;s;znsj-gc}
+#ALIAS rsg {zhai guo;eat guo}
+#ALIAS rwx {e;s;s;w;sw;s;n}
+#ALIAS ry-gc {#6 ed;dujiang;eu;s;e;e;e;ne;e;e;nw;#4 e;s;e;e;yz;w;w;s}
+#ALIAS shexue {gc-cd;#6 s;nw;wu;nu;nu;eu;nu;nu;n;w;dive lake;w;enter}
+#ALIAS shexue/ {out;e;u;e;s;sd;sd;wd;sd;sd;ed;se;#5 n;#6 e;cd-gc}
+#ALIAS sld-gc {s;s;s;w;s;s;s;enter chuan;#wait 12000;w;w;tg-gc}
+#ALIAS sl-dm {sw;se;n;s;w;e;w;e;e;s;w;n;nw;n}
+#ALIAS sl-du {e;e;s;e;s;e;n;n;e;w;s}
+#ALIAS sls-gc {w;#3 sd;ed;#2 sd;e;ss-gc}
+#ALIAS sljy {give zu 10 silver;s;s;s;e;s;n;w;n;e;s;u;out;e;s;sd;s;open gate;s}
+#ALIAS slms {say ÉÏ±¨ËÄÖØ¶÷£¬ÏÂ¼ÃÈıÍ¾¿à;#4 pull stone up;#3 push stone down;d}
+#ALIAS ss-gc {s;eu;ed;s;s;s;su;sd;s;e;e;yz;w;w;s}
+#ALIAS sz {1s;ridesz}
+#ALIAS thd {#3 push bei left;#3 push bei right}
+#ALIAS thd0 {ask chuanfu about ³öº£;give chuanfu 1 gold}
+#ALIAS thd-gc {#4 s;w;s}
+#ALIAS tls-gc {w;sw;s;se;#5 s;w;s;w;yz;w;w;s}
+#ALIAS ts-gc {s;#2 s;sw;#10 w}
+#ALIAS tz-gc {sd;se;e;ne;ne;n;ne;nu;s;e;#8 n}
+#ALIAS wdeat {sit chair;knock table;get all;#5 eat tao;#5 drink wan;drop wan;drop tao}
+#ALIAS wd-gc {n;nd;ed;#3 e;se;ne;#6 n}
+#ALIAS wjg-gc {e;su;se;#8 s;w;s;w;yz;w;w;s}
+#ALIAS wxd {give 10 gold to yu zu;#3 s;w;n;e;s;n;u}
+#ALIAS xdm {out;w;nd;s;nu;ed;nd;ed;ed;ed;n;ed;ed;su;ed;ed;#6 n;cd-gc}
+#ALIAS xi-gc {#8 s;e;#8 n}
+#ALIAS xkd1 {n;e;e;give 1 silver to ma fu;ridefs;n;n;w;s;s;s;s;e;give 5 gold to yu fu;w;w;give e pai to shi zhe;give shan pai to shi zhe}
+#ALIAS xkd2 {s;s;s;e;se;w;nw;e;s;s;#5 su;jump pubu}
+#ALIAS xkd3 {s;s;e;enter;s;e;s;w;s;push pingfeng;s;s;enter;w}
+#ALIAS xkd4 {out;w;n;n;out;#5 nd;n;n;w;se;e;nw;w;w;n;enter boat}
+#ALIAS xkd-gc {out;w;n;n;out;#5 nd;n;n;w;se;e;nw;w;w;n;enter boat}
+#ALIAS xs {gc-cd;#6 s;wu;wu;nd;wu;wu;s;wu}
+#ALIAS xs/ {ed;n;ed;ed;su;ed;ed;#6 n;cd-gc}
+#ALIAS xs-gc {ed;n;ed;ed;su;ed;ed;#6 n;cd-gc}
+#ALIAS xss-gc {ed;n;ed;ed;su;ed;ed;#6 n;cd-gc}
+#ALIAS xx-gc {s;ed;nw;n;yz;w;w;s}
+#ALIAS xy {1s;ridexy}
+#ALIAS xy-gc {e;e;e;e;n;w;#8 n}
+#ALIAS yd {1s;rideyd}
+#ALIAS yj-gc {#11 s;#7 w;s;s;#wa 2000;se;s;se;s;se;se;mg-gc}
+#ALIAS yl {1s;rideyl}
+#ALIAS ylm-gc {n;e;n;e;e;1s;rideyz;w;w;s}
+#ALIAS yunlong-gc {n;e;n;e;yz;w;w;s}
+#ALIAS yz {1s;rideyz}
+#ALIAS bj {1s;ridebj}
+#ALIAS znsj-gc {wd;nw;wd;sw;#22 e;se;#9 e}
+#ALIAS gc-xj {n;e;e;1s;rideyl;s;se;n;#3 nw;wd;wu;wd;wu;nw;nw;w;w;n;n;nw;ne;n;n}
+#ALIAS xj-gc {s;s;se;sw;s;s;e;e;se;se;ed;eu;ed;eu;se;se;se;s;nw;n;1s;rideyz;w;w;s}
+#ALIAS gc-ty {n;e;e;1s;ridebj;w;w;n;w;w;w;w;se;w;s;s;se;s;s;s;s}
+#ALIAS ty-gc {n;n;n;n;nw;n;n;e;nw;e;e;e;e;s;e;e;1s;rideyz;w;w;s}
+#ALIAS gc-xz {n;e;e;1s;rideca;1s;ridelanzhou;1s;ridexz;w}
+#ALIAS xz-gc {e;n;1s;rideyz;w;w;s}
+#ALIAS lz-xq {#10 n;#9 ne}
+#ALIAS xq-lz {#9 sw;#10 s}
+#ALIAS lz-kt {#3 s;e;s;e;s;s;#6 e;se;e;ne}
+#ALIAS kt-lz {sw;w;nw;#6 w;n;n;w;n;w;#3 n}
+#ALIAS gc-lz {#9 w;nw;#15 w;nw;#8 w;n;n;w;nw;nw;#6 n}
+#ALIAS lz-gc {#6 s;se;se;e;s;s;#8 e;se;#15 e;se;#9 e}
+#ALIAS åĞÒ£ {#8 s;#2 e;s;#2 w;say over go}
+#ALIAS åĞÒ£/ {#4 e;n;w;#8 n;say over go}
+#ALIAS ´óÀí {n;e;e;give 1 silver to ma fu;ridedl;e;n;e;n;say over go}
+#ALIAS ´óÀí/ {s;w;s;w;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ĞÇËŞ {n;e;e;give 1 silver to ma fu;rideyl;s;se;wu;n;nd;say over go}
+#ALIAS ĞÇËŞ/ {su;s;ed;nw;n;yz;w;w;s;say over go}
+#ALIAS ËÕÖİ {n;e;e;give 1 silver to ma fu;ridesz;e;s;say over go}
+#ALIAS ËÕÖİ/ {n;w;give 1 silver to ma fu;ridesz;w;w;s;say over go}
+#ALIAS Îäµ± {#8 s;w;nw;w;sw;w;se;s;w;w;wu;say over go}
+#ALIAS Îäµ±/ {ed;e;e;n;nw;e;ne;e;se;e;#8 n;say over go}
+#ALIAS ³É¶¼ {#8 s;w;nw;w;sw;w;sw;sw;w;s;w;sw;#6 w;say over go}
+#ALIAS ³É¶¼/ {#6 e;ne;e;n;e;ne;ne;e;ne;e;se;e;#8 n;say over go}
+#ALIAS È«Õæ {#9 w;nw;#22 w;#wa 2000;ne;eu;se;eu;n;#3 nu;#2 wu;nu;nu;n;w;nw;n;#wa 2000;#5 nu;se;eu;su;e;eu;say over go}
+#ALIAS È«Õæ/ {wd;w;nd;wd;nw;#5 sd;#wa 2000;s;se;e;s;sd;sd;#2 ed;#3 sd;s;wd;nw;wd;sw;#wa 2000;#22 e;se;#9 e;say over go}
+#ALIAS Ñ©É½ {#8 s;w;nw;w;sw;w;sw;sw;w;s;w;sw;#6 w;#6 s;#wait 2000;#2 wu;nd;wu;wu;s;wu;say over go}
+#ALIAS Ñ©É½/ {ed;n;ed;ed;su;#2 ed;#wait 2000;#6 n;#6 e;ne;e;n;e;ne;ne;e;ne;e;se;e;#8 n;say over go}
+#ALIAS Îä¹¦ {#9 w;nw;#20 w;say over go}
+#ALIAS Îä¹¦/ {#20 e;se;#9 e;say over go}
+#ALIAS ÈêÖİ {#8 n;dujiang;#wa 1000;#8 n;say over go}
+#ALIAS ÈêÖİ/ {#8 s;dujiang;#wa 1000;#8 s;say over go}
+#ALIAS ÉÙÁÖ {enter dong;say ÌìÌÃÓĞÂ·Äã²»×ßÑ½;d;3;ne;ne;u;sw;e;sd;e;nu;nu;wu;nu;nu;nu;e;eu;nu;nu;nu;n;say over go}
+#ALIAS ÉÙÁÖ/ {s;#3 sd;wd;w;w;#3 sd;ed;#2 sd;e;s;eu;ed;s;s;s;su;sd;s;e;e;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ÏåÑô {#8 s;w;#8 n;say over go}
+#ALIAS ÏåÑô/ {#8 s;e;#8 n;say over go}
+#ALIAS »ªÉ½ {#9 w;nw;#13 w;#2 n;nw;#6 n;#5 e;say over go}
+#ALIAS »ªÉ½/ {#5 w;#6 s;se;#2 s;#13 e;se;#9 e;say over go}
+#ALIAS ¹ÅÄ¹ {#9 w;nw;#22 w;ne;eu;se;eu;#wa 2000;n;#3 nu;#2 wu;n;w;nw;n;#3 nu;wu;wu;nu;#2 wu;su;eu;#2 sd;s;s;su;#2 sw;s;s;move shi;s;s;s;say over go}
+#ALIAS ¹ÅÄ¹/ {s;tang coffin;niu lock;e;s;s;s;e;out;say over go}
+#ALIAS ÉñÁúµº {#8 n;dujiang;#9 n;#wa 1000;nw;nw;#3 n;ne;e;e;e;#3 ne;e;e;ne;#6 e;ask chuanfu about ³öº£;give chuanfu 1 gold;#wait 12000;n;kan bush;n;n;e;n;n;n;say over go}
+#ALIAS ÉñÁúµº/ {#3 n;w;s;say over go}
+#ALIAS ÌìÁúËÂ {n;e;e;1s;ridedl;e;n;e;#5 n;nw;n;ne;e;say over go}
+#ALIAS ÌìÁúËÂ/ {w;sw;s;se;#5 s;w;s;w;yz;w;w;s;say over go}
+#ALIAS Ã÷½Ì {n;e;e;give 1 silver to ma fu;rideyl;s;se;se;e;se;w;#wa 1000;#5 w;n;w;n;w;w;w;w;say over go}
+#ALIAS Ã÷½Ì/ {#4 e;#2 s;#5 e;nw;w;nw;nw;n;1s;rideyz;w;w;s;say over go}
+#ALIAS À¥ÂØ {n;e;e;give 1 silver to ma fu;rideyl;s;se;se;e;se;w;#wa 1000;#5 w;n;w;n;w;wu;w;w;wu;su;w;nw;w;nu;eu;#3 su;#6 s;su;say over go}
+#ALIAS À¥ÂØ/ {nd;#6 n;#3 nd;wd;sd;e;se;e;nd;ed;e;e;ed;e;s;e;s;e;s;#6 e;w;w;nw;w;nw;nw;n;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ÌúÕÆ {#8 s;w;n;sd;sw;s;sw;sw;w;nw;nu;say over go}
+#ALIAS ÌúÕÆ/ {sd;se;e;ne;ne;n;ne;nu;s;e;#8 n;say over go}
+#ALIAS ¶ëáÒ {n;e;e;give 1 silver to ma fu;rideem;give 1 silver to ma fu;rideem;s;say over go}
+#ALIAS ¶ëáÒ/ {n;give 1 silver to ma fu;rideem;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ÁéğÕ¹¬ {n;e;e;give 1 silver to ma fu;rideyl;s;se;wu;n;nu;wu;wu;nu;zou tiesuo;eu;n;n;say over go}
+#ALIAS ÁéğÕ¹¬/ {s;s;wd;sd;sd;ed;ed;sd;s;ed;nw;n;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS °×ÍÓ {n;e;e;give 1 silver to ma fu;rideyl;s;se;wu;n;nd;s;s;say over go}
+#ALIAS °×ÍÓ/ {n;n;su;s;ed;nw;n;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ÌÒ»¨µº {#10 e;s;s;#3 e;ask chuanfu about ³öº£;give chuanfu 1 gold;say over go}
+#ALIAS ÌÒ»¨µº/ {#7 s;w;s;say over go}
+#ALIAS ÈÕÔÂ {n;e;e;give 1 silver to ma fu;ridebj;w;w;n;#4 w;se;w;w;sw;w;w;w;n;wd;dujiang;#6 wu;say over go}
+#ALIAS ÈÕÔÂ/ {#6 ed;dujiang;eu;s;e;e;e;ne;e;e;nw;#4 e;s;e;e;yz;w;w;s;say over go}
+#ALIAS ÔÆÁú {n;e;e;give 1 silver to ma fu;ridebj;w;w;n;w;s;w;knock floor 3;enter hole;#3 n;w;n;e;n;n;say over go}
+#ALIAS ÔÆÁú/ {n;e;n;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS ÈªÖİ {n;e;e;give 1 silver to ma fu;ridefs;n;n;#5 e;ne;ne;ne;e;e;e;say over go}
+#ALIAS ÈªÖİ/ {w;w;w;sw;sw;sw;#5 w;s;s;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS Çà³ÇÉ½ {#8 s;w;nw;w;sw;w;sw;sw;w;s;w;sw;#6 w;#6 n;w;#3 n;say over go}
+#ALIAS Çà³ÇÉ½/ {#3 s;e;#6 s;#6 e;ne;e;n;e;ne;ne;e;ne;e;se;e;#8 n;say over go}
+#ALIAS ºâÉ½ {#8 s;su;se;sw;w;say over go}
+#ALIAS ºâÉ½/ {e;ne;nw;nd;#8 n;say over go}
+#ALIAS áÔÉ½ {#8 n;dujiang;#3 n;#4 w;nw;nw;#6 n;#wa 2000;#6 n;nd;nd;#3 n;nu;nd;#3 n;wu;wd;n;say over go}
+#ALIAS áÔÉ½/ {s;eu;ed;#3 s;su;sd;#3 s;su;su;#6 s;#wa 2000;#6 s;se;se;#4 e;#3 s;dujiang;#8 s;say over go}
+#ALIAS ºãÉ½ {n;e;e;give 1 silver to ma fu;ridebj;w;w;s;s;s;se;sw;se;say over go}
+#ALIAS ºãÉ½/ {nw;ne;nw;n;n;n;e;e;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS Ì©É½ {#10 e;ne;n;n;n;say over go}
+#ALIAS Ì©É½/ {s;s;s;sw;#10 w;say over go}
+#ALIAS ¹éÔÆ×¯ {#4 s;#4 e;se;se;se;e;s;s;say over go}
+#ALIAS ¹éÔÆ×¯/ {n;n;w;nw;nw;nw;#4 w;#4 n;say over go}
+#ALIAS Íò½Ù¹È {n;e;e;give 1 silver to ma fu;ridedl;e;n;e;#8 n;nw;nd;w;say over go}
+#ALIAS Íò½Ù¹È/ {e;su;se;#8 s;w;s;w;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS Ã·×¯ {n;e;e;give 1 silver to ma fu;ridehz;w;w;n;n;n;n;sw;w;sw;w;wu;n;n;knock 4;knock 2;knock 5;knock 3;n;say over go}
+#ALIAS Ã·×¯/ {open gate;s;s;s;ed;e;ne;e;ne;#4 s;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS ´óÀí-À¥Ã÷ {#7 n;ne;ne;#6 e;say over go}
+#ALIAS ¾£Öİ {#6 w;sw;#2 w;nw;#wa 2000;#2 wu;wd;sw;#9 w;say over go}
+#ALIAS ¾£Öİ/ {#9 e;ne;eu;#2 ed;#wa 2000;se;#2 e;ne;#6 e;say over go}
+#ALIAS ÃÉ¹Å {n;e;e;bj;w;w;n;w;w;#4 n;nu;#4 n;say over go}
+#ALIAS ÃÉ¹Å/ {#4 s;sd;#4 s;e;e;s;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS »Ø×å {n;e;e;give 1 silver to ma fu;rideyl;s;se;se;e;se;e;e;n;n;#wa 2000;w;nw;sw;sw;w;sw;w;w;nu;wu;n;n;nw;w;say over go}
+#ALIAS »Ø×å/ {e;se;#2 s;ed;sd;wu;e;e;e;w;w;nw;w;nw;nw;n;1s;rideyz;w;w;s;say over go}
+#ALIAS Ñà¾© {gc-mg;nw;nw;n;nw;n;nw;#wa 2000;n;n;#7 e;#11 n;say over go}
+#ALIAS Ñà¾©/ {#11 s;#7 w;s;s;#wa 2000;se;s;se;s;se;se;mg-gc;say over go}
+#ALIAS Ñªµ¶ {#8 s;w;nw;w;sw;w;sw;sw;w;s;w;sw;#wa 2000;#6 w;#6 s;wu;wu;nd;su;wu;wu;su;wu;su;n;su;e;enter;say over go}
+#ALIAS Ñªµ¶/ {midao;w;s;say over go}
+#ALIAS ÏÀ¿Íµº {n;e;e;give 1 silver to ma fu;ridefs;n;n;w;s;s;s;s;e;give 5 gold to yu fu;w;w;give e pai to shi zhe;give shan pai to shi zhe;#wa 10000;s;s;s,;e;se;w;nw;e;s;s;s;say over go}
+#ALIAS Ä½Èİ {n;e;e;give 1 silver to ma fu;ridesz;e;#6 s;sw;e;e;se;s;say over go}
+#ALIAS Ä½Èİ/ {n;nw;w;w;ne;#6 n;w;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ÁèÏö {#8 s;w;nw;w;sw;w;sw;sw;w;s;w;sw;#6 w;#wa 2000;#6 s;nw;wu;nu;nu;eu;nu;nu;n;nu;u;u;open bridge;n;say over go}
+#ALIAS ÁèÏö/ {open bridge;s;d;d;sd;s;sd;sd;wd;sd;sd;ed;se;#6 n;e;n;n;1s;rideyz;w;w;s;say over go}
+#ALIAS ¿ª·â {#8 n;dujiang;#3 n;#4 w;nw;nw;#6 n;say over go}
+#ALIAS ¿ª·â/ {#6 s;se;se;#4 e;#3 s;dujiang;#8 s;say over go}
+#ALIAS Ì¨Íå³öº£ {n;e;e;give 1 silver to ma fu;ridefz;s;s;w;#7 s;e;enter chuan;say over go}
+#ALIAS Îå¶¾ {n;e;e;give 1 silver to ma fu;rideem;e;e;sw;#12 e;se;e;eu;eu;e;e;e;e;say over go}
+#ALIAS Îå¶¾/ {#4 w;wd;wd;w;nw;#6 w;#2 s;#2 w;1s;rideyz;w;w;s;say over go}
+#ALIAS ÁéÖİ {n;e;e;give 1 silver to ma fu;rideyd;#wa 1000;give 1 silver to ma fu;ridelz;w;w;n;say over go}
+#ALIAS ÁéÖİ/ {s;e;e;give 1 silver to ma fu;rideyd;#wa 1000;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ¾øÇé¹È {#8 s;w;#8 n;#wa 2000;e;e;#3 n;w;w;#3 n;w;#3 s;wu;nu;nw;nw;n;look zhou;tiao zhou;say over go}
+#ALIAS ¾øÇé¹È/ {s;se;se;sd;ed;#3 n;e;#3 s;e;e;#3 s;w;w;#wa 2000;#8 s;e;#3 n;say over go}
+#ALIAS Îä¹¦Õò {n;e;e;give 1 silver to ma fu;ridedl;e;n;e;#5 s;sw;sw;say over go}
+#ALIAS Îä¹¦Õò/ {ne;ne;#5 n;w;s;w;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ºÓÎ÷Õò {n;e;e;give 1 silver to ma fu;ridedl;e;n;e;#6 s;se;sw;say over go}
+#ALIAS ºÓÎ÷Õò/ {nw;nw;#6 n;w;s;w;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS À¼Öİ {#9 w;nw;#15 w;nw;#8 w;n;n;w;nw;nw;#6 n;say over go}
+#ALIAS À¼Öİ/ {#6 s;se;se;e;s;s;#8 e;se;#15 e;se;#9 e;say over go}
+#ALIAS ÂåÑô {#9 w;nw;#8 w;say over go}
+#ALIAS ÂåÑô/ {#8 e;se;#9 e;say over go}
+#ALIAS ³¤°² {#9 w;nw;#15 w;nw;#5 w;say over go}
+#ALIAS ³¤°²/ {#5 e;se;#15 e;se;#9 e;say over go}
+#ALIAS ÔÀÑô {#8 s;w;nw;w;sw;w;se;se;#5 s;#5 s;w;#10 s;se;s;s;s;s;say over go}
+#ALIAS ÔÀÑô/ {n;n;n;n;nw;#10 n;e;#5 n;#5 n;nw;nw;e;ne;e;se;e;#8 n;say over go}
+#ALIAS ¸ßÀö {n;e;e;give 1 silver to ma fu;ridebj;give 1 silver to ma fu;rideht;#3 e;ne;e;n;e;e;give 1 gold to chuan fu;#wa 12000;ne;e;se;e;e;n;eu;nu;eu;eu;nw;ed;u;n;#3 n;se;sd;s;say over go}
+#ALIAS ¸ßÀö/ {n;nu;nw;#3 s;s;d;wu;se;wd;wd;sd;wd;s;w;w;nw;w;sw;give 1 gold to chuan fu;#wa 12000;w;w;s;w;sw;#3 w;1s;ridebj;1s;rideyz;w;w;s;say over go}
+#ALIAS ½­ÄÏÅ©´å {#11 s;#5 e;s;su;say over go}
+#ALIAS ½­ÄÏÅ©´å/ {nd;n;#5 w;#11 n;say over go}
+#ALIAS ±±¾© {n;e;e;give 1 silver to ma fu;ridebj;w;w;n;say over go}
+#ALIAS ±±¾©/ {s;e;e;give 1 sivler to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ¼ÎÓø¹Ø {n;e;e;give 1 silver to ma fu;rideyl;s;se;se;e;se;e;e;say over go}
+#ALIAS ¼ÎÓø¹Ø/ {w;w;nw;w;nw;nw;n;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS º¼Öİ·ÉÀ´·å {n;e;e;give 1 silver to ma fu;ridehz;w;w;sw;sw;w;w;w;sw;w;wu;wu;wu;w;wu;wu;#6 nd;sw;s;say over go}
+#ALIAS º¼Öİ·ÉÀ´·å/ {n;ne;#6 su;ed;ed;e;ed;ed;ed;e;ne;e;e;e;ne;ne;e;e;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ³¤³Ç {n;e;e;give 1 silver to ma fu;ridebj;w;w;n;w;w;#4 n;#3 e;#4 n;say over go}
+#ALIAS ³¤³Ç/ {#3 s;sd;#4 s;e;e;s;e;e;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ÎŞÁ¿É½ {n;e;e;give 1 silver to ma fu;ridedl;e;n;e;#5 n;nw;n;nw;n;ne;su;#2 eu;#2 nu;wu;nu;say over go}
+#ALIAS ÎŞÁ¿É½/ {sd;ed;#2 sd;#2 wd;nd;sw;s;se;s;se;#5 s;w;s;w;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS Ñô×ÚÕò {n;e;e;give 1 silver to ma fu;ridedl;e;n;e;n;n;n;n;e;eu;e;ed;se;e;ed;e;e;eu;e;se;e;e;se;eu;ed;say over go}
+#ALIAS Ñô×ÚÕò/ {wu;wd;nw;w;w;nw;w;wd;w;w;wu;w;nw;wu;w;wd;w;s;s;s;s;w;s;w;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS Î÷²Ø {n;e;e;1s;rideca;1s;ridelanzhou;1s;ridexz;w;n;say over go}
+#ALIAS Î÷²Ø/ {s;e;n;1s;rideyz;w;w;s;say over go}
+#ALIAS ÕòĞÛ {n;e;e;give 1 silver to ma fu;ridedl;e;n;e;s;s;#3 w;nw;ne;n;wu;wd;wd;n;say over go}
+#ALIAS ÕòĞÛ/ {s;eu;eu;ed;s;sw;se;#3 e;n;n;w;s;w;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ÌÆÃÅ {#6 w;sw;#2 w;nw;#2 wu;wd;sw;#9 w;#5 w;sw;#2 w;nw;w;#2 u;w;sd;e;open door;s;se;e;yell boat;enter;say over go}
+#ALIAS ÌÆÃÅ/ {yell boat;enter;#wa 40000;out;w;nw;n;w;nu;e;d;d;e;se;e;e;ne;#5 e;#9 e;ne;eu;ed;ed;se;e;e;ne;#6 e;say over go}
+#ALIAS »ÆÉ½ {#8 s;su;se;ne;wu;wu;wd;wu;n;wu;say over go}
+#ALIAS »ÆÉ½/ {ed;s;ed;eu;ed;ed;sw;nw;nd;#8 n;say over go}
+#ALIAS Ñãµ´ {n;e;e;give 1 silver to ma fu;ridehz;w;w;sw;sw;w;w;w;#8 n;wu;say over go}
+#ALIAS Ñãµ´/ {ed;#8 s;e;e;e;ne;ne;e;e;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ÎŞÎı {n;e;e;give 1 silver to ma fu;ridesz;e;#4 n;#7 w;say over go}
+#ALIAS ÎŞÎı/ {#7 e;#4 s;w;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ½­Áê {#8 s;w;nw;w;sw;w;se;se;#5 s;say over go}
+#ALIAS ½­Áê/ {#5 n;nw;nw;e;ne;e;se;e;#8 n;say over go}
+#ALIAS ÄÏÉÙÁÖ {n;e;e;give 1 silver to ma fu;ridefz;s;s;w;#5 s;w;w;nu;#4 n;say over go}
+#ALIAS ÄÏÉÙÁÖ/ {#4 s;sd;e;e;#5 n;e;n;n;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ½£Ä§ {#8 s;w;#8 n;#wa 2000;e;e;n;n;n;w;w;n;n;n;w;s;s;s;#4 wu;say over go}
+#ALIAS ½£Ä§/ {#4 ed;n;n;n;e;s;s;s;e;e;s;s;s;w;w;#wa 2000;#8 s;e;#8 n;say over go}
+#ALIAS ½ğÁê {#8 s;w;nw;w;sw;w;se;se;#4 n;say over go}
+#ALIAS ½ğÁê/ {#4 s;nw;nw;e;ne;e;se;e;#8 n;say over go}
+#ALIAS ÎäÒÄ {#10 e;se;#2 s;e;su;s;sd;nw;w;s;e;say over go}
+#ALIAS ÎäÒÄ/ {w;n;e;e;nu;n;nd;w;n;n;nw;#10 w;say over go}
+#ALIAS ÑÓÆ½ {n;e;e;give 1 silver to ma fu;ridefz;s;s;#6 w;wu;#6 nw;n;wd;wu;say over go}
+#ALIAS ÑÓÆ½/ {ed;eu;s;#6 se;ed;#6 e;n;n;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ÎÂ¼Ò±¤ {#10 e;s;s;e;s;s;e;ne;nu;n;climb tree;n;say over go}
+#ALIAS ÎÂ¼Ò±¤/ {s;open gate;s;s;sd;sw;w;n;n;w;n;n;#10 w;say over go}
+#ALIAS ÖĞÖİ {#8 w;s;dujiang;#wa 2000;#10 s;say over go}
+#ALIAS ÖĞÖİ/ {#10 n;dujiang;#wa 2000;n;#8 e;say over go}
+#ALIAS ÄÏ²ı {#8 e;#4 s;#2 se;w;sw;w;s;s;dujiang;#wa 2000;sw;#2 s;#2 sw;#3 s;say over go}
+#ALIAS ÄÏ²ı/ {#3 n;#2 ne;#2 n;ne;dujiang;#wa 2000;n;n;e;ne;e;#2 nw;#4 n;#8 w;say over go}
+#ALIAS ³¤É³ {#8 s;su;se;sw;w;w;w;w;n;n;n;nw;#5 n;say over go}
+#ALIAS ³¤É³/ {#5 s;se;s;s;s;e;e;e;e;ne;nw;nd;#8 n;say over go}
+#ALIAS ÃÔ¹¬ {#8 s;w;#5 n;e;buy tuzhu;#wa 2000;w;n;n;n;e;e;n;n;n;w;w;n;n;n;w;s;s;s;wu;wu;wu;e;e;e;say over go}
+#ALIAS ÃÔ¹¬/ {w;w;w;ed;ed;ed;n;n;n;e;s;s;s;e;e;s;s;s;w;w;#8 s;e;#8 n;say over go}
+#ALIAS °²¸§Ê¹ÑÃÃÅ {#8 s;w;#10 n;say over go}
+#ALIAS °²¸§Ê¹ÑÃÃÅ/ {#10 s;e;#8 n;say over go}
+#ALIAS °Ë½Ç½Ö {n;e;e;1s;rideca;1s;ridelanzhou;1s;ridexz;w;say over go}
+#ALIAS °Ë½Ç½Ö/ {e;n;1s;rideyz;w;w;s;say over go}
+#ALIAS °ÍÁê¹ã³¡ {#8 s;w;n;n;n;e;e;#4 se;#5 s;#7 s;sw;#3 s;say over go}
+#ALIAS °ÍÁê¹ã³¡/ {#3 n;ne;#7 n;#5 n;#4 nw;w;w;#3 s;e;#8 n;say over go}
+#ALIAS °ÍÑÕ¿¦À­É½ {gc-jyg;#wa 2000;#5 w;n;w;n;w;n;w;n;w;wu;w;w;wu;su;say over go}
+#ALIAS °ÍÑÕ¿¦À­É½/ {se;e;nd;ed;e;e;ed;e;s;e;s;e;s;#6 e;#wa 2000;jyg-gc;say over go}
+#ALIAS °×»¢ÍâÃÅ {gc-xi;#5 w;say over go}
+#ALIAS °×»¢ÍâÃÅ/ {#5 e;xi-gc;say over go}
+#ALIAS °×ÂíÌ¶ {gc-znsj;#wa 2500;n;#3 nu;#2 wu;n;w;nw;n;#3 nu;wu;wu;sd;say over go}
+#ALIAS °×ÂíÌ¶/ {nu;#2 ed;#3 sd;s;se;e;s;#2 sd;#2 ed;#3 sd;s;#wa 2500;znsj-gc;say over go}
+#ALIAS °ãÈôÌ¨ {n;#2 e;1s;ridedl;e;n;e;#5 n;nw;n;ne;e;s;s;s;e;s;s;w;s;s;s;s;s;say over go}
+#ALIAS °ãÈôÌ¨/ {n;n;n;n;n;w;n;n;e;n;n;n;n;w;sw;s;se;#5 s;w;s;w;1s;rideyz;w;w;s;say over go}
+#ALIAS ±£ÊçËş {n;#2 e;hz;#2 w;#4 n;w;#2 nu;say over go}
+#ALIAS ±£ÊçËş/ {#2 sd;e;#4 s;#2 e;yz;#2 w;s;say over go}
+#ALIAS ±§×ÓÑÒ {gc-znsj;#wa 2500;n;#3 nu;#2 wu;n;say over go}
+#ALIAS ±§×ÓÑÒ/ {s;#2 sd;#2 ed;#3 sd;s;#wa 2500;znsj-gc;say over go}
+#ALIAS ±±µÛÃí {n;e;e;fs;#2 n;#3 w;n;say over go}
+#ALIAS ±±µÛÃí/ {s;#3 e;s;s;yz;#2 w;s;say over go}
+#ALIAS ±ÌÍ©Ô°²è¹İ {#9 w;nw;#16 w;sw;#wa 2000;sw;#8 ne;#10 n;s;w;say over go}
+#ALIAS ±ÌÍ©Ô°²è¹İ/ {e;s;s;#15 e;eu;ed;n;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS ±Ì¼¦èÊ {n;e;e;1s;ridekm;e;e;#2 n;e;say over go}
+#ALIAS ±Ì¼¦èÊ/ {w;s;s;w;w;yz;#2 w;s;say over go}
+#ALIAS ²×ÀËÍ¤ {#10 e;s;s;nw;#3 w;nw;say over go}
+#ALIAS ²×ÀËÍ¤/ {se;#3 e;se;n;n;#10 w;say over go}
+#ALIAS ²İİ®µØ {gbd;4;#9 w;nw;w;w;#3 nw;n;w;sw;say over go}
+#ALIAS ²İİ®µØ/ {ne;e;s;#3 se;e;e;se;#7 e;w;nw;nw;n;1s;rideyz;w;w;s;say over go}
+#ALIAS ²İÌÃËÂ {gc-znsj;#wa 2500;n;#3 nu;#2 wu;nu;nu;n;w;nw;n;#3 nu;wu;nd;say over go}
+#ALIAS ²İÌÃËÂ/ {su;ed;#3 sd;s;se;e;s;sd;sd;#2 ed;#3 sd;s;#wa 2000;znsj-gc;say over go}
+#ALIAS ²èÍ¤ {#10 e;s;s;s;e;e;say over go}
+#ALIAS ²èÍ¤/ {w;w;n;n;n;#10 w;say over go}
+#ALIAS ³¤°²³ÇÎ÷ÃÅ {gc-ca;#2 w;say over go}
+#ALIAS ³¤°²³ÇÎ÷ÃÅ/ {#2 e;ca-gc;say over go}
+#ALIAS ³¤°²ÀÖ·» {gc-ca;e;n;say over go}
+#ALIAS ³¤°²ÀÖ·»/ {s;w;ca-gc;say over go}
+#ALIAS ³¯Ìì¹¬ {gc-wd;#wa 2000;n;#2 e;#2 su;sd;#3 su;#2 su;say over go}
+#ALIAS ³¯Ìì¹¬/ {#2 nd;#3 nd;nu;#2 nd;#2 w;s;#wa 2000;wd-gc;say over go}
+#ALIAS ³¤É³¹ã³¡ {#8 s;su;se;sw;w;w;w;w;n;n;n;nw;#5 n;say over go}
+#ALIAS ³¤É³¹ã³¡/ {#5 s;se;s;s;s;e;e;e;e;ne;nw;nd;#8 n;say over go}
+#ALIAS ´ò¹È³¡ {#9 w;nw;#13 w;#wa 2000;#2 n;nw;#6 n;say over go}
+#ALIAS ´ò¹È³¡/ {#6 s;se;#2 s;#wa 2000;#13 e;se;#9 e;say over go}
+#ALIAS ´ó¶ÉºÓ±ß {n;e;e;dl;e;n;e;#5 n;nw;n;nw;n;n;n;nu;nd;say over go}
+#ALIAS ´ó¶ÉºÓ±ß/ {su;sd;s;s;s;se;s;se;#5 s;w;s;w;yz;w;w;s;say over go}
+#ALIAS ´óÑ©É½±±Â´ {gc-cd;#6 s;wu;wu;nd;wu;wu;say over go}
+#ALIAS ´óÑ©É½±±Â´/ {ed;ed;su;ed;ed;#6 n;cd-gc;say over go}
+#ALIAS ´óÑ©É½É½¹È {gc-cd;#6 s;wu;wu;nd;su;wu;wu;su;wu;su;say over go}
+#ALIAS ´óÑ©É½É½¹È/ {n;su;e;enter;midao;w;s;say over go}
+#ALIAS ´ó×ÖÁë {n;e;e;bj;w;w;s;s;s;se;sw;se;se;u;wu;eu;s;s;su;su;e;say over go}
+#ALIAS ´ó×ÖÁë/ {w;nd;nd;n;n;wd;ed;d;nw;ne;nw;nw;ne;nw;#3 n;e;e;yz;w;w;s;say over go}
+#ALIAS á·×Ú·» {#10 e;ne;#5 n;say over go}
+#ALIAS á·×Ú·»/ {#5 s;sw;#10 w;say over go}
+#ALIAS ¶¨Ïå¹ã³¡ {n;#2 e;1s;ridebj;w;w;n;#4 w;se;w;s;nw;nu;nd;#3 n;#wa 2000;n;n;nw;w;w;nw;nw;nw;#10 n;say over go}
+#ALIAS ¶¨Ïå¹ã³¡/ {#10 s;#3 se;e;e;se;s;sw;s;s;#wa 2000;s;s;s;su;sd;se;n;e;nw;e;e;e;e;s;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS ¶ëáÒÇŞ¹¬ {n;e;e;em;em;s;wu;wu;wu;wu;su;su;su;sw;su;se;wu;su;su;s;enter;w;jump chuang;s;s;se;say over go}
+#ALIAS ¶ëáÒÇŞ¹¬/ {s;nw;n;n;jump chuang;e;out;n;#2 nd;ed;nw;nd;ne;#3 nd;#4 ed;n;give 1 silver to ma fu;rideem;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ·ØÄ¹ÄÚ²¿ {gc-jz;w;w;n;n;nd;nu;ed;e;push bei;say over go}
+#ALIAS ·ØÄ¹ÄÚ²¿/ {s;sd;s;out;#3 n;e;jz-gc;say over go}
+#ALIAS ·çÀ×ÌÃ {n;#2 e;bj;#2 w;n;#4 w;se;w;w;sw;w;n;su;s;s;s;say over go}
+#ALIAS ·çÀ×ÌÃ/ {n;n;n;nd;e;s;e;s;e;ne;#2 e;nw;#4 e;s;#2 e;yz;#2 w;s;say over go}
+#ALIAS ·ğÉ½ÄÏÃÅ {n;e;e;1s;ridefs;n;n;w;s;say over go}
+#ALIAS ·ğÉ½ÄÏÃÅ/ {n;e;s;s;1s;rideyz;w;w;s;say over go}
+#ALIAS ·ğÉ½Õò½Ö {n;#2 e;fz;#2 s;w;#7 s;#3 w;#3 sw;#4 w;say over go}
+#ALIAS ·ğÉ½Õò½Ö/ {#4 e;#3 ne;#3 e;#7 n;e;#2 n;yz;#2 w;s;say over go}
+#ALIAS ¸£ÍşïÚ¾Ö {n;e;e;1s;ridefz;s;s;w;w;w;n;say over go}
+#ALIAS ¸£ÍşïÚ¾Ö/ {s;e;e;e;n;n;1s;rideyz;w;w;s;say over go}
+#ALIAS ¸£ÑÏËÂ {gc-hy;#9 n;nu;nw;nu;nd;nw;nu;nu;w;sd;sd;su;say over go}
+#ALIAS ¸£ÑÏËÂ/ {nd;nu;nu;e;sd;sd;se;su;sd;se;sd;#9 s;hy-gc;say over go}
+#ALIAS ¸ğÂ³³Ç {n;e;e;1s;ridedl;e;n;e;#4 n;w;w;wu;wd;wd;n;n;say over go}
+#ALIAS ¸ğÂ³³Ç/ {s;s;eu;eu;ed;e;e;#4 s;w;s;w;1s;rideyz;w;w;s;say over go}
+#ALIAS ¹ÅÀË {n;e;e;yd;e;e;n;say over go}
+#ALIAS ¹ÅÀË/ {s;w;w;yz;w;w;s;say over go}
+#ALIAS ¹Û¾°Â¥ {#9 w;nw;#10 w;#9 w;#4 s;se;s;say over go}
+#ALIAS ¹Û¾°Â¥/ {n;nw;#4 n;#10 e;#9 e;se;#9 e;say over go}
+#ALIAS ¹óÑôÊ®×Ö½ÖÍ· {#8 s;su;se;sw;w;w;w;s;dujiang;#wa 2000;s;s;s;s;say over go}
+#ALIAS ¹óÑôÊ®×Ö½ÖÍ·/ {#4 n;dujiang;#wa 2000;n;e;e;e;ne;nw;nd;#8 n;say over go}
+#ALIAS ¹éÀ´¿ÍÕ» {n;e;e;hz;w;w;n;n;n;n;se;s;se;se;e;e;e;e;ne;n;say over go}
+#ALIAS ¹éÀ´¿ÍÕ»/ {s;sw;w;w;w;w;nw;nw;n;nw;s;s;s;s;e;e;yz;w;w;s;say over go}
+#ALIAS ¹şÈø¿ËÕÊÅñ {n;e;e;1s;rideyl;s;se;s;se;#10 s;e;say over go}
+#ALIAS ¹şÈø¿ËÕÊÅñ/ {#12 e;w;nw;nw;n;1s;rideyz;w;w;s;say over go}
+#ALIAS º®É½ËÂ {#10 e;s;s;nw;#3 w;nw;sw;#5 w;nw;say over go}
+#ALIAS º®É½ËÂ/ {se;#5 e;ne;se;#3 e;se;n;n;#10 w;say over go}
+#ALIAS º®Ë®Ì¶ {gc-znsj;#wa 2500;n;#3 nu;#2 wu;n;w;nw;n;#3 nu;wu;wu;nu;#2 wu;su;eu;#2 sd;s;s;su;#2 sw;s;e;se;say over go}
+#ALIAS º®Ë®Ì¶/ {nw;w;s;move shi;#4 s;tang coffin;niu lock;e;s;s;s;e;out;say over go}
+#ALIAS ºÏ·Ê¹ã³¡ {n;e;e;1s;ridebj;w;w;s;s;s;se;se;e;#7 s;say over go}
+#ALIAS ºÏ·Ê¹ã³¡/ {#7 n;w;nw;nw;n;n;n;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS ºâÑôÎ÷½Ö {gc-hy;w;say over go}
+#ALIAS ºâÑôÎ÷½Ö/ {e;hy-gc;say over go}
+#ALIAS ºúÇìÓàÌÃ {n;e;e;1s;ridehz;w;w;sw;e;say over go}
+#ALIAS ºúÇìÓàÌÃ/ {w;ne;e;e;yz;w;w;s;say over go}
+#ALIAS »ª²ØâÖ {n;e;e;give 1 silver to ma fu;rideem;give 1 silver to ma fu;rideem;s;wu;wu;wu;wu;su;su;su;sw;su;se;wu;su;su;s;say over go}
+#ALIAS »ª²ØâÖ/ {n;#2 nd;ed;nw;nd;ne;#3 nd;#4 ed;n;give 1 silver to ma fu;rideem;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS »ªÑÏ¶¥ {n;e;e;em;em;s;say over go}
+#ALIAS »ªÑÏ¶¥/ {n;em;yz;#2 w;s;say over go}
+#ALIAS ä½»¨Ïª {gc-cd;n;n;sw;sw;n;say over go}
+#ALIAS ä½»¨Ïª/ {s;ne;ne;s;s;cd-gc;say over go}
+#ALIAS »Ê¹¬ÕıÃÅ {n;e;e;1s;ridebj;w;w;#3 n;say over go}
+#ALIAS »Ê¹¬ÕıÃÅ/ {#3 s;#2 e;yz;#2 w;s;say over go}
+#ALIAS »ÆºÓ°ïÕ¯ÃÅ {#4 n;#3 w;#2 n;e;ne;n;w;say over go}
+#ALIAS »ÆºÓ°ïÕ¯ÃÅ/ {e;s;sw;w;#2 s;#3 e;#4 s;say over go}
+#ALIAS »ÆÉ½É½ÃÅ {#8 s;su;se;ne;say over go}
+#ALIAS »ÆÉ½É½ÃÅ/ {sw;nw;nd;#8 n;say over go}
+#ALIAS »ÆÍÁ¸ßÔ­ {n;e;e;yd;e;e;e;e;ne;say over go}
+#ALIAS »ÆÍÁ¸ßÔ­/ {sw;w;w;w;w;yz;w;w;s;say over go}
+#ALIAS »Ø×å²¿Âä {gc-jyg;w;w;w;ed;#2 nu;wu;#2 n;nw;w;say over go}
+#ALIAS »Ø×å²¿Âä/ {e;se;#2 s;ed;sd;wu;e;e;e;jyg-gc;say over go}
+#ALIAS ¼ÃÄÏÑÃÃÅ {#10 e;ne;#5 n;#5 sw;w;su;sd;s;s;say over go}
+#ALIAS ¼ÃÄÏÑÃÃÅ/ {n;n;nu;nd;e;#5 ne;#5 s;sw;#10 w;say over go}
+#ALIAS ¼ÎÓ¦ÃÅ {gc-hy;#5 n;say over go}
+#ALIAS ¼ÎÓ¦ÃÅ/ {#5 s;hy-gc;say over go}
+#ALIAS ¼ÎÓø¹Ø {gc-jyg;say over go}
+#ALIAS ¼ÎÓø¹Ø/ {jyg-gc;say over go}
+#ALIAS ½£´¨Õò {n;e;e;dl;e;n;e;#5 n;nw;n;nw;n;say over go}
+#ALIAS ½£´¨Õò/ {s;se;s;se;#5 s;w;s;w;yz;w;w;s;say over go}
+#ALIAS ½­ÅÏ {n;e;e;hz;w;w;n;n;n;n;se;s;se;se;e;e;e;s;s;s;se;e;say over go}
+#ALIAS ½­ÅÏ/ {w;nw;n;n;n;w;w;w;nw;nw;n;nw;s;s;s;s;e;e;yz;w;w;s;say over go}
+#ALIAS ½ğÅ£Îä¹İ {gc-cd;s;s;ne;say over go}
+#ALIAS ½ğÅ£Îä¹İ/ {sw;n;n;cd-gc;say over go}
+#ALIAS ½õ³Çæä {n;e;e;1s;ridecd;s;say over go}
+#ALIAS ½õ³Çæä/ {n;1s;rideyz;w;w;s;say over go}
+#ALIAS ½üÈÕ¹ÅÂ¥ {gc-jz;n;e;e;1s;ridekm;e;e;n;n;say over go}
+#ALIAS ½üÈÕ¹ÅÂ¥/ {s;s;w;w;1s;rideyz;w;w;s;say over go}
+#ALIAS ¾»´ÈËÂ {n;e;e;hz;w;w;sw;sw;w;s;say over go}
+#ALIAS ¾»´ÈËÂ/ {n;e;ne;ne;e;e;yz;w;w;s;say over go}
+#ALIAS ¾Å½­¹ã³¡ {#8 s;w;n;n;n;e;e;#4 se;#5 s;say over go}
+#ALIAS ¾Å½­¹ã³¡/ {#5 n;#4 nw;w;w;#3 s;e;#8 n;say over go}
+#ALIAS ¾ÅÁú±Ú {n;e;e;bj;w;w;n;w;ne;n;n;ne;n;say over go}
+#ALIAS ¾ÅÁú±Ú/ {s;sw;#2 s;sw;e;s;#2 e;yz;#2 w;s;say over go}
+#ALIAS ÁéÖİÄÏÃÅ/ {n;e;e;1s;rideyd;1s;rideyz;w;w;s;say over go}
+#ALIAS ÁèÏöµî {gc-cd;#6 s;nw;wu;nu;nu;eu;nu;nu;n;nu;u;u;open bridge;#6 n;enter;say over go}
+#ALIAS ÁèÏöµî/ {out;#6 s;open bridge;s;d;d;sd;s;sd;sd;wd;sd;sd;ed;se;#6 n;cd-gc;say over go}
+#ALIAS ÁèÏöÄÚÃÅ {gc-cd;#6 s;nw;wu;nu;nu;eu;nu;nu;n;nu;u;u;open bridge;n;say over go}
+#ALIAS ÁèÏöÄÚÃÅ/ {open bridge;s;d;d;sd;s;sd;sd;wd;sd;sd;ed;se;#6 n;cd-gc;say over go}
+#ALIAS ÁèÔÆÌİ {n;e;e;give 1 silver to ma fu;rideem;e;e;su;su;w;sw;w;#7 wu;#wa 2000;nw;nw;nu;wu;sw;wu;sw;u;#4 wu;su;say over go}
+#ALIAS ÁèÔÆÌİ/ {nd;#4 ed;d;ne;ed;ne;ed;sd;se;se;ed;#wa 2000;ed;ed;ed;ed;e;e;ed;ed;e;ne;e;nd;w;w;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS Áõ¸®´óÔº {gc-hy;w;n;knock gate;push gate;enter;say over go}
+#ALIAS Áõ¸®´óÔº/ {open gate;out;s;e;hy-gc;say over go}
+#ALIAS ÁùºÍËş {n;e;e;1s;ridehz;w;w;#3 sw;#2 wu;#2 wd;w;s;wu;enter;say over go}
+#ALIAS ÁùºÍËş/ {out;ed;n;e;#2 eu;#2 ed;#3 ne;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS Â³ÍûÕò {n;#2 e;dl;e;n;e;#6 s;e;say over go}
+#ALIAS Â³ÍûÕò/ {w;#6 n;w;s;w;yz;#2 w;s;say over go}
+#ALIAS ÂÀ×æâÖ {#9 w;nw;#8 w;#4 n;nu;ne;say over go}
+#ALIAS ÂÀ×æâÖ/ {sw;sd;#3 s;#8 e;se;#9 e;say over go}
+#ALIAS ÂíÒØ³ÇÖĞĞÄ {n;#2 e;1s;ridebj;w;w;n;#4 w;se;w;s;nw;nu;nd;#3 n;say over go}
+#ALIAS ÂíÒØ³ÇÖĞĞÄ/ {#3 s;su;sd;se;n;e;nw;#4 e;s;e;e;yz;#2 w;s;say over go}
+#ALIAS ÃÉ¹Å²İÔ­ {gc-mg;nw;nw;n;nw;n;nw;say over go}
+#ALIAS ÃÉ¹Å²İÔ­/ {se;s;se;s;se;se;mg-gc;say over go}
+#ALIAS Ä¹ÃÅ {gc-znsj;#wa 2000;n;#3 nu;#2 wu;n;w;nw;n;#3 nu;wu;wu;nu;#2 wu;su;eu;#2 sd;s;s;su;#2 sw;#2 s;say over go}
+#ALIAS Ä¹ÃÅ/ {move shi;#4 s;tang coffin;niu lock;e;s;s;s;e;out;say over go}
+#ALIAS ÄÏ³Ç {n;e;e;bj;ht;e;s;say over go}
+#ALIAS ÄÏ³Ç/ {n;w;bj;yz;w;w;s;say over go}
+#ALIAS ÄÏ²ı¹ã³¡ {#8 s;su;se;sw;w;w;w;w;n;n;n;nw;#5 n;n;#9 w;#4 n;say over go}
+#ALIAS ÄÏ²ı¹ã³¡/ {#4 s;#9 e;s;#5 s;se;s;s;s;e;e;e;e;ne;nw;nd;#8 n;say over go}
+#ALIAS ëøÍõ¸ó {#8 s;su;se;sw;w;w;w;w;n;n;n;nw;#5 n;n;#9 w;#4 n;w;n;say over go}
+#ALIAS ëøÍõ¸ó/ {s;e;#4 s;#9 e;s;#5 s;se;s;s;s;e;e;e;e;ne;nw;nd;#8 n;say over go}
+#ALIAS ÄÏä±Õò {#6 s;se;s;say over go}
+#ALIAS ÄÏä±Õò/ {n;nw;#6 n;say over go}
+#ALIAS ÄÏÑô³Ç {#8 n;dujiang;#3 n;say over go}
+#ALIAS ÄÏÑô³Ç/ {#3 s;dujiang;#8 s;say over go}
+#ALIAS ÄÏÚ¯µÂ»¯±® {n;#2 e;dl;e;n;e;#7 n;say over go}
+#ALIAS ÄÏÚ¯µÂ»¯±®/ {#7 s;w;s;w;yz;#2 w;s;say over go}
+#ALIAS Å¯¸ó {gc-jyg;#wa 2000;#5 w;n;w;n;w;n;w;n;w;wu;w;w;wu;su;w;nw;w;#3 w;n;n;say over go}
+#ALIAS Å¯¸ó/ {s;s;#3 e;e;se;e;nd;ed;e;e;ed;e;s;e;s;e;s;#6 e;#wa 2000;jyg-gc;say over go}
+#ALIAS çÎç¿·åÉ½½Å {n;e;e;give 1 silver to ma fu;rideyl;s;se;wu;n;nu;say over go}
+#ALIAS çÎç¿·åÉ½½Å/ {sd;s;ed;nw;n;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS Æ½¶¨Öİ {n;e;e;bj;w;w;n;#4 w;se;w;say over go}
+#ALIAS Æ½¶¨Öİ/ {e;nw;e;e;e;e;s;e;e;yz;w;w;s;say over go}
+#ALIAS ÆÕ¹âËÂ {gc-znsj;n;e;say over go}
+#ALIAS ÆÕ¹âËÂ/ {w;s;znsj-gc;say over go}
+#ALIAS Çà²Ø¸ßÔ­ {gc-cd;#4 e;e;e;ne;w;w;say over go}
+#ALIAS Çà²Ø¸ßÔ­/ {e;e;sw;w;w;w;w;w;w;cd-gc;say over go}
+#ALIAS Çà³Ç {#4 n;#3 w;#2 n;e;ne;#3 n;#2 w;say over go}
+#ALIAS Çà³Ç/ {#2 e;#3 s;sw;w;#2 s;#3 e;#4 s;say over go}
+#ALIAS ÇàÁúÌÃ´óÌü {n;e;e;bj;w;w;n;#4 w;se;w;w;sw;#2 w;su;#3 s;say over go}
+#ALIAS ÇàÁúÌÃ´óÌü/ {#3 n;nd;#2 e;ne;#2 e;nw;#4 e;s;e;e;yz;w;w;s;say over go}
+#ALIAS ÇàÁúÍâÃÅ {gc-xi;#5 e;say over go}
+#ALIAS ÇàÁúÍâÃÅ/ {#5 w;xi-gc;say over go}
+#ALIAS È«Õæ½Ì´óÃÅ {gc-znsj;#wa 2500;n;#3 nu;#2 wu;nu;nu;n;w;nw;n;#5 nu;se;eu;su;e;eu;say over go}
+#ALIAS È«Õæ½Ì´óÃÅ/ {w;wd;w;nd;wd;nw;#5 sd;s;se;e;s;sd;sd;#2 ed;#3 sd;s;#wa 2500;znsj-gc;say over go}
+#ALIAS ÈªÖİÄÏÃÅ {gc-qz;#7 s;say over go}
+#ALIAS ÈªÖİÄÏÃÅ/ {#7 n;qz-gc;say over go}
+#ALIAS ÈºÏÉ¹Û {gc-hsjx;#wa 2000;se;#2 su;#2 eu;su;#2 eu;#4 su;eu;n;n;say over go}
+#ALIAS ÈºÏÉ¹Û/ {s;s;wd;#4 nd;#2 wd;nd;#2 wd;#2 nd;nw;#wa 2000;hsjx-gc;say over go}
+#ALIAS ÈÕÔÂÆº {gc-ry;say over go}
+#ALIAS ÈÕÔÂÆº/ {ry-gc;say over go}
+#ALIAS ÈêÖİ³Ç {#8 n;dujiang;#8 n;say over go}
+#ALIAS ÈêÖİ³Ç/ {#8 s;dujiang;#8 s;say over go}
+#ALIAS É¯ÂÜÆº {gc-hsjx;se;say over go}
+#ALIAS É¯ÂÜÆº/ {nw;hsjx-gc;say over go}
+#ALIAS É½º£¹Ø {n;e;e;1s;ridebj;1s;rideht;e;#6 s;#2 sw;s;#3 sw;say over go}
+#ALIAS É½º£¹Ø/ {#3 ne;n;#2 ne;#6 n;w;1s;ridebj;1s;rideyz;w;w;s;say over go}
+#ALIAS É½ÔôÎÑ {gbd;4;#9 w;nw;ne;nu;nu;ne;n;n;say over go}
+#ALIAS É½ÔôÎÑ/ {s;s;sw;sd;sd;sw;se;#7 e;w;nw;nw;n;1s;rideyz;w;w;s;say over go}
+#ALIAS ÉÙÁÖ¹ã³¡ {gc-sls;eu;nu;nu;nu;n;say over go}
+#ALIAS ÉÙÁÖ¹ã³¡/ {s;#3 sd;wd;w;sls-gc;say over go}
+#ALIAS Éß¹ÇËş {n;e;e;1s;ridedl;e;n;e;n;n;w;say over go}
+#ALIAS Éß¹ÇËş/ {e;s;s;w;s;w;1s;rideyz;w;w;s;say over go}
+#ALIAS ÉıÏÉ·» {#10 e;ne;#5 n;#4 nu;#2 n;nu;nu;#wa 2000;n;n;nu;nu;wu;nu;n;n;wu;wu;n;n;nw;#6 nu;say over go}
+#ALIAS ÉıÏÉ·»/ {#6 sd;se;ed;ed;s;s;sd;sd;ed;sd;s;sd;sd;s;s;#wa 2000;sd;sd;s;s;#4 sd;#5 s;sw;#10 w;say over go}
+#ALIAS Ê¥¹ÃÌÃ {n;#2 e;bj;#2 w;n;#4 w;se;w;w;sw;w;n;e;#2 s;#2 w;#3 s;w;say over go}
+#ALIAS Ê¥¹ÃÌÃ/ {e;#3 n;#2 e;s;e;ne;e;e;nw;#4 e;s;e;#2 e;yz;#2 w;s;say over go}
+#ALIAS Ê¥ºş {n;e;e;1s;rideyl;s;se;se;sw;w;w;#2 n;say over go}
+#ALIAS Ê¥ºş/ {s;s;e;e;ne;nw;nw;n;1s;rideyz;w;w;s;say over go}
+#ALIAS Ê®¶şÅÌ {n;e;e;a;1s;rideem;1s;rideem;s;d;ne;say over go}
+#ALIAS Ê®¶şÅÌ/ {sw;u;n;1s;rideem;1s;rideyz;w;w;s;say over go}
+#ALIAS Ê®×Ö½ÖÍ· {gc-ca;say over go}
+#ALIAS Ê®×Ö½ÖÍ·/ {ca-gc;say over go}
+#ALIAS Ë¿³ñÖ®Â· {n;e;e;yl;s;se;se;e;se;say over go}
+#ALIAS Ë¿³ñÖ®Â·/ {nw;w;nw;nw;n;yz;w;w;s;say over go}
+#ALIAS ËÉ·ç¹Û {gc-cd;#6 n;w;#3 n;nw;#3 wu;nu;nu;eu;nu;eu;nu;say over go}
+#ALIAS ËÉ·ç¹Û/ {sd;wd;sd;wd;sd;sd;ed;ed;ed;se;s;s;s;e;#6 s;cd-gc;say over go}
+#ALIAS áÔÔÀËÂËş {gc-ss;#3 n;nu;nw;nu;nu;nw;nu;w;say over go}
+#ALIAS áÔÔÀËÂËş/ {e;sd;se;sd;sd;se;sd;#3 s;ss-gc;say over go}
+#ALIAS ³Â¼ÒÆÌ×Ó {n;e;e;1s;ridehz;w;w;sw;sw;w;w;w;n;n;n;n;e;say over go}
+#ALIAS ³Â¼ÒÆÌ×Ó/ {w;#4 s;#3 e;ne;ne;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS ËéÒ¶¹ã³¡ {n;#2 e;1s;ridebj;w;w;n;#4 w;se;w;s;nw;nu;nd;#3 n;#wa 2000;n;n;nw;se;s;sw;#5 n;say over go}
+#ALIAS ËéÒ¶¹ã³¡/ {#10 s;su;sd;se;n;e;nw;#4 e;s;e;e;yz;#2 w;s;say over go}
+#ALIAS Ì«°×¾ÆÂ¥ {n;e;e;1s;ridebj;1s;rideht;#wa 2000;e;s;s;s;e;#4 ne;n;n;n;e;say over go}
+#ALIAS Ì«°×¾ÆÂ¥/ {w;s;s;s;#8 s;#4 sw;w;n;n;n;w;#wa 2000;1s;ridebj;1s;rideyz;w;w;s;say over go}
+#ALIAS Ì«ºÍµî {#wa 5000;mj;mj1;job;say over go}
+#ALIAS Ì«ºÍµî/ {#4 s;#2 e;#4 s;#2 e;yz;#2 w;s;say over go}
+#ALIAS Ì«ºÍ½Ö¿Ú {n;e;e;dl;e;n;e;#2 n;say over go}
+#ALIAS Ì«ºÍ½Ö¿Ú/ {#2 s;w;s;w;yz;w;w;s;say over go}
+#ALIAS Ì«ºş {gc-gyz;say over go}
+#ALIAS Ì«ºş/ {gyz-gc;say over go}
+#ALIAS ÌÁ¹Á¿Ú {gc-tg;e;e;say over go}
+#ALIAS ÌÁ¹Á¿Ú/ {w;w;tg-gc;say over go}
+#ALIAS ÌÒ»¨É½×¯ÕıÌü {gc-thd;say over go}
+#ALIAS ÌÒ»¨É½×¯ÕıÌü/ {#3 s;w;s;say over go}
+#ALIAS Ìì°²ÃÅ {n;e;e;1s;ridebj;w;w;n;say over go}
+#ALIAS Ìì°²ÃÅ/ {s;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS ÌìÉ½½ÅÏÂ {n;e;e;1s;rideyl;s;se;say over go}
+#ALIAS ÌìÉ½½ÅÏÂ/ {nw;n;1s;rideyz;w;w;s;say over go}
+#ALIAS ÌìÊ¦¶´ {gc-cd;#6 n;w;n;n;n;nw;#3 wu;say over go}
+#ALIAS ÌìÊ¦¶´/ {#3 ed;se;s;s;s;e;#6 s;cd-gc;say over go}
+#ALIAS ÌìÎ¢ÌÃ {gc-mj;#2 wu;#4 nu;enter;#4 nu;say over go}
+#ALIAS ÌìÎ¢ÌÃ/ {#4 sd;out;#4 sd;#2 ed;#wa 3000;mj-gc;say over go}
+#ALIAS ÌìĞÄÑÒ {#10 e;#3 s;e;su;s;sd;w;w;n;w;nw;say over go}
+#ALIAS ÌìĞÄÑÒ/ {se;e;s;e;e;nu;n;nd;w;#3 n;#10 w;say over go}
+#ALIAS ÌúÄ¾Õæ²¿Âä {gc-mg;nw;nw;n;nw;n;nw;#3 n;#2 ne;n;say over go}
+#ALIAS ÌúÄ¾Õæ²¿Âä/ {s;#2 sw;#3 s;se;s;se;s;se;se;mg-gc;say over go}
+#ALIAS ÌúÄ¾ÕæÓªÕÊ {gc-mg;nw;nw;n;nw;n;nw;#3 n;#2 ne;#5 n;say over go}
+#ALIAS ÌúÄ¾ÕæÓªÕÊ/ {#5 s;#2 sw;#3 s;se;s;se;s;se;se;mg-gc;say over go}
+#ALIAS ÌıÓêĞù {n;e;e;1s;ridesz;e;#4 s;e;say over go}
+#ALIAS ÌıÓêĞù/ {w;#4 n;w;1s;rideyz;w;w;s;say over go}
+#ALIAS ÍÁÒ¤¹İ {n;e;e;bj;ht;e;e;s;say over go}
+#ALIAS ÍÁÒ¤¹İ/ {n;w;w;bj;yz;w;w;s;say over go}
+#ALIAS Íò¾°É½×¯ {n;e;e;1s;ridesz;e;n;n;n;sw;s;w;say over go}
+#ALIAS Íò¾°É½×¯/ {e;n;ne;s;s;s;w;1s;rideyz;w;w;s;say over go}
+#ALIAS Íõ¸®¾®´ó½Ö {n;e;e;bj;w;w;n;e;e;n;say over go}
+#ALIAS Íõ¸®¾®´ó½Ö/ {s;w;w;s;e;e;yz;w;w;s;say over go}
+#ALIAS Íõ¸®Â· {n;e;e;1s;ridedl;e;n;e;#3 n;e;say over go}
+#ALIAS Íõ¸®Â·/ {w;#3 s;w;s;w;1s;rideyz;w;w;s;say over go}
+#ALIAS ÍüÓÇ¹È {gc-cd;#6 s;wu;wu;nd;su;wu;wu;su;wu;su;n;#wa 3000;say over go}
+#ALIAS ÍüÓÇ¹È/ {su;e;enter;midao;w;s;say over go}
+#ALIAS ÎÚÀ­²´±±³ÇÃÅ {n;e;e;1s;rideyl;s;se;n;#3 nw;wd;wu;wd;wu;nw;nw;w;w;n;n;nw;ne;n;n;say over go}
+#ALIAS ÎÚÀ­²´±±³ÇÃÅ/ {s;s;se;sw;s;s;e;e;se;se;ed;eu;ed;eu;se;se;se;s;nw;n;1s;rideyz;w;w;s;say over go}
+#ALIAS Îå·ğËÂ {n;e;e;yd;#2 e;n;ne;n;nw;n;#4 ne;se;n;say over go}
+#ALIAS Îå·ğËÂ/ {s;nw;#4 sw;s;se;s;sw;s;#2 w;yz;#2 w;s;say over go}
+#ALIAS ÎåÀÏ·å {gc-wd;n;#2 e;#2 su;sd;#3 su;say over go}
+#ALIAS ÎåÀÏ·å/ {#3 nd;nu;#2 nd;#2 w;s;wd-gc;say over go}
+#ALIAS Îä²ıÂëÍ· {#8 s;w;nw;w;sw;w;se;se;#10 s;w;#5 s;e;s;say over go}
+#ALIAS Îä²ıÂëÍ·/ {n;w;#5 n;e;#10 n;nw;nw;e;ne;e;se;e;#8 n;say over go}
+#ALIAS Îäµ±ĞşÔÀÃÅ {#wa 5000;mj;#wa 3000;mj1;job;say over go}
+#ALIAS Îäµ±ĞşÔÀÃÅ/ {e;ed;ed;e;e;n;nw;e;ne;e;se;e;#7 n;say over go}
+#ALIAS Ï²¸£ÌÃ {#8 n;dujiang;#7 n;w;u;say over go}
+#ALIAS Ï²¸£ÌÃ/ {d;e;#7 s;dujiang;#8 s;say over go}
+#ALIAS Ï²Öİ³Ç {n;e;e;1s;ridedl;e;n;e;#5 s;say over go}
+#ALIAS Ï²Öİ³Ç/ {#5 n;w;s;w;1s;rideyz;w;w;s;say over go}
+#ALIAS ÏÀÒåÌü {#10 e;ne;#5 n;#4 nu;#2 n;nu;nu;#wa 2000;n;n;nu;nu;wu;nu;n;n;wu;wu;n;n;nw;#9 nu;say over go}
+#ALIAS ÏÀÒåÌü/ {w;d;#9 sd;se;ed;ed;s;s;sd;sd;ed;sd;s;sd;sd;s;s;#wa 2000;sd;sd;s;s;#4 sd;#5 s;sw;#10 w;say over go}
+#ALIAS ÏòÑôÏïÀÏÕ¬ {n;e;e;fz;s;s;w;s;s;w;w;n;say over go}
+#ALIAS ÏòÑôÏïÀÏÕ¬/ {s;e;e;n;n;e;n;n;yz;w;w;s;say over go}
+#ALIAS Ïô¼ÒÇÅ {n;e;e;1s;rideyd;e;e;n;w;say over go}
+#ALIAS Ïô¼ÒÇÅ/ {e;s;w;w;1s;rideyz;w;w;s;say over go}
+#ALIAS ÏôÈ»¾Ó {n;e;e;1s;ridebj;1s;rideht;#3 e;ne;#5 n;ne;ne;e;e;e;say over go}
+#ALIAS ÏôÈ»¾Ó/ {#3 w;sw;sw;#5 s;sw;#3 w;bj;yz;w;w;s;say over go}
+#ALIAS äìÏæ¹İ {#wa 5000;mj;mj1;job;say over go}
+#ALIAS äìÏæ¹İ/ {s;s;w;w;#3 s;ljg-gc;say over go}
+#ALIAS Ğ¡ÏªÁ÷ {gc-jyg;w;w;w;ed;#2 nu;say over go}
+#ALIAS Ğ¡ÏªÁ÷/ {sd;wu;e;e;e;jyg-gc;say over go}
+#ALIAS ĞÇËŞº£ {n;e;e;1s;rideyl;s;se;wu;n;nd;say overGO;say over go}
+#ALIAS ĞÇËŞº£/ {su;s;ed;nw;n;1s;rideyz;w;w;s;say over go}
+#ALIAS ĞÇĞÇÏ¿ {gc-jyg;w;w;w;ed;e;e;ne;e;say over go}
+#ALIAS ĞÇĞÇÏ¿/ {w;sw;#2 w;wu;e;e;e;jyg-gc;say over go}
+#ALIAS ĞÇÔÆºşÅÏ {n;e;e;dl;e;n;e;n;n;n;n;e;eu;e;ed;se;e;ed;e;e;eu;e;se;e;e;se;eu;ed;sw;su;sd;e;s;say over go}
+#ALIAS ĞÇÔÆºşÅÏ/ {n;w;nu;nd;ne;wu;wd;nw;w;w;nw;w;wd;w;w;wu;nw;wu;w;wd;w;s;s;s;s;w;s;w;1s;rideyz;w;w;s;say over go}
+#ALIAS ĞìÖİ¶«ÃÅ {n;e;e;1s;ridebj;w;w;s;s;s;se;se;e;#7 s;#5 e;se;e;e;ne;se;e;say over go}
+#ALIAS ĞìÖİ¶«ÃÅ/ {w;nw;sw;w;w;nw;#5 w;#7 n;w;nw;nw;n;n;n;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS ĞşÃî¹Û {n;e;e;1s;ridesz;e;s;sw;w;s;say over go}
+#ALIAS ĞşÃî¹Û/ {n;e;ne;n;w;1s;rideyz;w;w;s;say over go}
+#ALIAS ĞşÌ³Ãí {#9 w;nw;#13 w;#wa 2000;#2 n;nw;#6 n;nw;nw;ne;say over go}
+#ALIAS ĞşÌ³Ãí/ {sw;se;se;#6 s;se;#2 s;#wa 2000;#13 e;se;#9 e;say over go}
+#ALIAS ĞşÎäÃÅÍâÃÅ {gc-xi;e;e;#3 n;w;w;#4 n;e;say over go}
+#ALIAS ĞşÎäÃÅÍâÃÅ/ {w;#4 s;e;e;#3 s;w;w;xi-gc;say over go}
+#ALIAS ĞşÎäÍâÃÅ {gc-xi;e;e;#3 n;w;w;#3 n;say over go}
+#ALIAS ĞşÎäÍâÃÅ/ {#3 s;e;e;#3 s;w;w;xi-gc;say over go}
+#ALIAS Ğü¿ÕËÂ {n;e;e;bj;w;w;s;s;s;se;sw;#2 se;u;wu;eu;#2 s;enter;say over go}
+#ALIAS Ğü¿ÕËÂ/ {out;#2 n;wd;ed;d;#2 nw;ne;nw;#3 n;e;e;yz;w;w;s;say over go}
+#ALIAS Ñ©É½¼ÀÌ³ {#wa 5000;mj;#wa 3000;mj1;job;say over go}
+#ALIAS Ñ©É½ËÂÉ½ÃÅ {gc-cd;#6 s;wu;wu;nd;wu;wu;s;wu;say over go}
+#ALIAS Ñ©É½ËÂÉ½ÃÅ/ {ed;n;ed;ed;su;ed;ed;#6 n;cd-gc;say over go}
+#ALIAS ÑÌÓêÂ¥ {#10 e;s;s;e;e;se;out;u;se;s;say over go}
+#ALIAS ÑÌÓêÂ¥/ {n;out;u;w;w;n;nw;#10 w;say over go}
+#ALIAS Ê¢¾©³ÇÃÅ {n;e;e;1s;ridebj;1s;rideht;#wa 2000;e;s;s;s;e;#4 ne;n;n;say over go}
+#ALIAS Ê¢¾©³ÇÃÅ/ {s;s;#8 s;#4 sw;w;n;n;n;w;3wa 2000;1s;ridebj;1s;rideyz;w;w;s;say over go}
+#ALIAS ÑÓ¸£ÃÅ {n;e;e;1s;rideyp;s;wd;wu;s;s;say over go}
+#ALIAS ÑÓ¸£ÃÅ/ {n;n;ed;eu;n;1s;rideyz;w;w;s;say over go}
+#ALIAS ÑïÖİÎä¹İ {#5 w;s;say over go}
+#ALIAS ÑïÖİÎä¹İ/ {n;#5 e;say over go}
+#ALIAS ÒÁÀç {n;e;e;1s;rideyl;s;say over go}
+#ALIAS ÒÁÀç/ {n;1s;rideyz;w;w;s;say over go}
+#ALIAS äôÀ½ÌÃ {n;e;e;1s;ridebj;w;w;n;w;ne;e;e;e;n;n;nu;nd;say over go}
+#ALIAS äôÀ½ÌÃ/ {su;sd;s;s;w;w;w;sw;e;s;e;e;yz;#2 w;s;say over go}
+#ALIAS Ó¢ĞÛ»á¹İ {n;e;e;fs;n;n;w;w;s;say over go}
+#ALIAS Ó¢ĞÛ»á¹İ/ {n;e;e;s;s;yz;w;w;s;say over go}
+#ALIAS Ó­±öÂ¥ {#8 n;dujiang;#7 n;w;say over go}
+#ALIAS Ó­±öÂ¥/ {e;#7 s;dujiang;#8 s;say over go}
+#ALIAS Ó­·ç¾Æµê {gc-jyg;eu;sd;e;e;e;#2 s;say over go}
+#ALIAS Ó­·ç¾Æµê/ {#2 n;#3 w;nu;wd;jyg-gc;say over go}
+#ALIAS ÓÀ°²ËÂ {n;e;e;1s;ridebj;w;w;n;w;ne;e;e;e;n;n;say over go}
+#ALIAS ÓÀ°²ËÂ/ {s;s;w;w;w;sw;e;s;e;e;yz;#2 w;s;say over go}
+#ALIAS ÓÀ¶¨ÃÅ {n;e;e;bj;w;w;s;s;say over go}
+#ALIAS ÓÀ¶¨ÃÅ/ {n;n;e;e;yz;w;w;s;say over go}
+#ALIAS Ó¿ÈªËÂ {n;e;e;1s;ridefz;s;s;e;e;e;eu;n;say over go}
+#ALIAS Ó¿ÈªËÂ/ {s;wd;#3 w;#2 n;1s;rideyz;w;w;s;say over go}
+#ALIAS ÓĞËù²»ÎªĞù {gc-hsjx;#wa 2000;se;#2 su;#2 eu;su;#2 eu;#4 su;say over go}
+#ALIAS ÓĞËù²»ÎªĞù/ {s;s;s;wd;#4 nd;#2 wd;nd;#2 wd;#2 nd;nw;#wa 2000;hsjx-gc;say over go}
+#ALIAS Óæ¼Ò {n;e;e;1s;ridedl;e;n;e;#6 s;se;sw;w;say over go}
+#ALIAS Óæ¼Ò/ {e;nw;nw;#6 n;w;s;w;1s;rideyz;w;w;s;say over go}
+#ALIAS Óê»¨Ì¨ {#8 s;w;nw;w;sw;w;se;se;#7 n;say over go}
+#ALIAS Óê»¨Ì¨/ {#7 s;nw;nw;e;ne;e;se;e;#8 n;say over go}
+#ALIAS Óñ»Ê¶¥ {#10 e;ne;#5 n;#4 nu;#2 n;nu;nu;#wa 2000;n;n;nu;nu;wu;nu;n;n;wu;wu;n;n;nw;#9 nu;say over go}
+#ALIAS Óñ»Ê¶¥/ {#9 sd;se;ed;ed;s;s;sd;sd;ed;sd;s;sd;sd;s;s;#wa 2000;sd;sd;s;s;#4 sd;#5 s;sw;#10 w;say over go}
+#ALIAS ÓñĞé¹Û {gc-cd;#6 n;w;n;e;s;s;w;enter;say over go}
+#ALIAS ÓñĞé¹Û/ {out;e;n;n;w;s;e;#6 s;cd-gc;say over go}
+#ALIAS ÓöÕæ¹¬ {gc-znsj;#wa 2500;n;#3 nu;#2 wu;nu;nu;n;w;nw;n;#5 nu;#wa 1000;se;eu;su;e;#3 nu;n;say over go}
+#ALIAS ÓöÕæ¹¬/ {s;#3 sd;wd;w;nd;wd;nw;#5 sd;s;#wa 1500;se;e;s;sd;sd;#2 ed;#3 sd;s;#wa 2500;znsj-gc;say over go}
+#ALIAS ÔÀÑôÎ÷ÃÅ {#8 s;su;se;sw;w;w;w;w;n;n;n;nw;n;n;w;w;say over go}
+#ALIAS ÔÀÑôÎ÷ÃÅ/ {e;e;s;s;se;s;s;s;e;e;e;e;ne;nw;nd;#8 n;say over go}
+#ALIAS ÔÃÀ´¿ÍÕ» {#8 n;dujiang;n;n;n;e;say over go}
+#ALIAS ÔÃÀ´¿ÍÕ»/ {w;s;s;s;dujiang;#8 s;say over go}
+#ALIAS ÕÔÍõ¸® {gc-yj;say over go}
+#ALIAS ÕÔÍõ¸®/ {yj-gc;say over go}
+#ALIAS ÖÕÄÏÉ½½Å {gc-znsj;say over go}
+#ALIAS ÖÕÄÏÉ½½Å/ {znsj-gc;say over go}
+#ALIAS ÖÕÄÏÉ½Ö÷·å {gc-znsj;#wa 2500;n;#3 nu;#2 wu;n;w;nw;n;#3 nu;#2 wu;nu;wu;wu;su;eu;say over go}
+#ALIAS ÖÕÄÏÉ½Ö÷·å/ {wd;nd;ed;ed;sd;ed;ed;sd;sd;sd;s;se;e;s;sd;sd;ed;ed;sd;sd;sd;s;#wa 2500;znsj-gc;say over go}
+#ALIAS ÖìÈ¸ÃÅÍâÃÅ {gc-xi;#5 s;s;e;say over go}
+#ALIAS ÖìÈ¸ÃÅÍâÃÅ/ {w;#6 n;xi-gc;say over go}
+#ALIAS ÖìÈ¸ÍâÃÅ {gc-xi;#5 s;say over go}
+#ALIAS ÖìÈ¸ÍâÃÅ/ {#5 n;xi-gc;say over go}
+#ALIAS Öî¸ğÁÁµî {gc-cd;s;s;s;w;nw;nu;nu;say over go}
+#ALIAS Öî¸ğÁÁµî/ {sd;sd;se;e;#3 n;cd-gc;say over go}
+#ALIAS ÖñÁÖĞ¡Éá {#9 w;nw;#7 w;n;e;ne;n;n;say over go}
+#ALIAS ÖñÁÖĞ¡Éá/ {s;s;sw;w;s;#7 e;se;#9 e;say over go}
+#ALIAS ×£ÈÚµî {gc-hy;#9 n;nu;nw;nu;nd;nw;nu;nu;nw;ne;ne;nu;nu;say over go}
+#ALIAS ×£ÈÚµî/ {sd;sd;sw;sw;se;sd;sd;se;su;sd;se;sd;#9 s;hy-gc;say over go}
+#ALIAS ×Ï½ğâÖ {#10 e;s;s;nw;#3 w;nw;n;n;w;say over go}
+#ALIAS ×Ï½ğâÖ/ {e;s;s;se;#3 e;se;n;n;#10 w;say over go}
+#ALIAS ×Ï½ğ³Ç {gc-wd;#wa 2000;n;#2 e;#2 su;sd;#3 su;#2 su;s;s;#3 su;s;say over go}
+#ALIAS ×Ï½ğ³Ç/ {n;#3 nd;n;n;#2 nd;#3 nd;nu;#2 nd;#2 w;s;#wa 2000;wd-gc;say over go}
+#ALIAS ×ÏÏö¹¬´óÃÅ {gc-wd;n;nd;say over go}
+#ALIAS ×ÏÏö¹¬´óÃÅ/ {su;s;wd-gc;say over go}
+#ALIAS ×ÏÏö¹¬ÃÅ {gc-wd;n;nd;s;say over go}
+#ALIAS ×ÏÏö¹¬ÃÅ/ {n;su;s;wd-gc;say over go}
+#ALIAS gc-ÇåÒô¸ó {n;e;e;give 1 silver to ma fu;rideem;give 1 silver to ma fu;rideem;s;d;ne;ed;ne;ed;sd;se;say over go}
+#ALIAS ÇåÒô¸ó-gc {nw;nu;wu;sw;wu;sw;up;n;give 1 silver to ma fu;rideem;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ÇåÒô¸ó-»ª²ØâÖ {nw;nu;wu;sw;wu;sw;up;wu;wu;wu;wu;su;su;su;sw;su;se;wu;su;su;s;enter;say over go}
+#ALIAS »ª²ØâÖ-ÇåÒô¸ó {out;n;nd;nd;ed;nw;nd;ne;#4 nd;#4 ed;d;ne;ed;ne;ed;sd;se;say over go}
+#ALIAS dl-1d {#4 s;nu;#3 eu;zhuo pubu;give wawa to diancang yuyin;#3 eu;u;w;w;help nong fu;w;w;answer ÷Î÷È÷Í÷Ë£¬ËÄĞ¡¹í¸÷×Ô¶Ç³¦;w;n;e;e;e;say over go}
+#ALIAS gc-xjs {n;e;e;give 1 silver to ma fu;ridefz;s;s;w;w;w;w;s;s;s;s;se;#3 su;s;ask zhuge about Öî¸ğĞĞ¾üÉ¢;say over go}
+#ALIAS °ÙÄ¾Ô° {e;s;s;w;sw;s;n}
+#ALIAS °ØÊ÷ÁÖ {e;se;s;w;s;e;e;nw;ne;n}
+#ALIAS ÁÖº£ {sw;nw;e;sw;se;se;ne;n;sw;w;s;n;sw;e}
+#ALIAS ½£Ä§Ä¹ {use huoshi;ca qingtai;l tai;l bi;l mu;guibai mu;move stone;zuan shifeng}
+#ALIAS ÈÈ´øÓêÁÖ {e;e;s;s;sw;east;east;south}
+#ALIAS Ê¥É®Ëş {w;ne;n;nw;sw;w;ne;w;s;nw;sw;n}
+#ALIAS ¾°µÂÕò {#9 w;nw;#16 w;sw;#wa 2000;sw;#8 ne;#10 n;s;w;say over go}
+#ALIAS ¾°µÂÕò/ {e;n;#10 s;#8 sw;ne;#wa 2000;ne;#16 e;se;#9 e;say over go}
+#ALIAS Ê¢¾© {gc-mg;nw;nw;n;nw;n;nw;#wa 1000;n;n;#7 e;say over go}
+#ALIAS Ê¢¾©/ {#7 w;s;s;#wa 1000;se;s;se;s;se;se;mg-gc;say over go}
+#ALIAS ÄşÔ¶ {gc-mg;nw;nw;n;nw;n;nw;#wa 2000;n;n;#7 e;#11 s;#wa 2000;sw;sw;s;sd;ed;s;s;s;s;s;say over go}
+#ALIAS ÄşÔ¶/ {#5 n;wu;nu;n;ne;ne;ne;ne;#wa 2000;#11 n;#7 w;s;s;#wa 2000;se;s;se;s;se;se;mg-gc;say over go}
+#ALIAS ç²ÔÆÕò {gc-mg;nw;nw;n;nw;n;nw;#wa 2000;n;n;#7 e;#11 s;#wa 2000;sw;sw;s;sd;ed;s;s;s;s;s;#wa 2000;s;s;s;s;se;su;sd;se;s;s;e;e;s;s;say over go}
+#ALIAS ç²ÔÆÕò/ {n;n;w;w;n;n;nw;nu;nd;nw;ne;n;n;n;#wa 2000;#5 n;wu;nu;n;ne;ne;ne;ne;#wa 2000;#11 n;#7 w;s;s;#wa 2000;se;s;se;s;se;se;mg-gc;say over go}
+#ALIAS Ñ©Í¤Õò {gc-mg;nw;nw;n;nw;n;nw;#wa 2000;n;n;#7 e;#11 s;#wa 2000;sw;sw;s;sd;ed;s;s;s;s;s;#wa 2000;s;s;s;s;n;n;n;n;say over go}
+#ALIAS Ñ©Í¤Õò/ {s;s;s;s;ne;n;n;n;#wa 2000;#5 n;wu;nu;n;ne;ne;ne;ne;#wa 2000;#11 n;#7 w;s;s;#wa 2000;se;s;se;s;se;se;mg-gc;say over go}
+#ALIAS ÁÖÖ¥ {gc-cd;#6 s;wu;wu;#2 n;ne;nw;say over go}
+#ALIAS ÁÖÖ¥/ {se;sw;s;s;ed;ed;#6 n;cd-gc;say over go}
+#ALIAS °ËÒ»Õò {gc-cd;#6 s;wu;wu;#2 n;ne;nw;#wa 2000;w;wd;wd;nd;wd;w;w;w;sw;sw;wd;w;w;nw;nw;say over go}
+#ALIAS °ËÒ»Õò/ {se;se;e;e;eu;ne;ne;e;e;e;eu;su;eu;eu;e;#wa 2000;se;sw;s;s;ed;ed;#6 n;cd-gc;say over go}
+#ALIAS ÑãÃÅ¹Ø {gc-gw;#6 s;sw;sw;#wa 2000;s;sw;sw;sw;s;#14 s;say over go}
+#ALIAS ÑãÃÅ¹Ø/ {#14 n;n;ne;ne;ne;n;#wa 2000;ne;ne;#6 n;gw-gc;say over go}
+#ALIAS ÔÀºîÕò {gc-ss;e;s;e;s;#4 e;say over go}
+#ALIAS ÔÀºîÕò/ {#4 w;n;w;n;w;ss-gc;say over go}
+#ALIAS ´óÍ¬ {gc-ty;s;s;s;se;#5 s;say over go}
+#ALIAS ´óÍ¬/ {#5 n;nw;n;n;n;ty-gc;say over go}
+#ALIAS ÌìË® {n;e;e;yd;e;e;n;ne;n;nw;n;n;n;n;ne;#5 n;say over go}
+#ALIAS ÌìË®/ {#5 s;sw;#4 s;se;s;sw;s;w;w;yz;w;w;s;say over go}
+#ALIAS ÅÅÔÆÕ¯ {#10 e;se;#2 s;e;su;s;sd;nw;w;s;e;#wa 2000;s;w;nw;sw;sw;n;n;n;ne;#5 nu;say over go}
+#ALIAS ÅÅÔÆÕ¯/ {#5 sd;sw;s;s;s;ne;ne;se;e;n;#wa 2000;w;n;e;e;nu;n;nd;w;n;n;nw;#10 w;say over go}
+#ALIAS ºÚ·çÕ¯ {#8 s;su;se;ne;wu;wu;wd;wu;n;wu;#wa 2000;wu;sw;w;wd;n;w;kill bai;#wa 3000;kill bai;#wa 3000;w;sw;w;w;eu;eu;eu;eu;#3 n;ne;nu;nu;yell ºÚ·çÉñÍş;#wa 7000;n;n;say over go}
+#ALIAS ºÚ·çÕ¯/ {s;s;#2 sd;sw;#3 s;wd;wd;wd;wd;e;e;ne;e;e;s;eu;e;ne;ed;#wa 2000;ed;s;ed;eu;ed;ed;sw;nw;nd;#8 n;say over go}
+#ALIAS Ò°ÑòÕ¯ {#sh ´ÓÌ¨Íå³ö·¢;n;nu;n;ne;nw;nw;ne;ne;eu;ne;n;n;e;n;say over go}
+#ALIAS Ò°ÑòÕ¯/ {s;w;s;s;sw;wd;sw;sw;se;se;sw;s;sd;s;say over go}
+#ALIAS ²×Öİ {n;e;e;bj;w;w;n;w;w;w;w;se;e;se;e;ne;e;e;say over go}
+#ALIAS ²×Öİ/ {w;w;sw;w;nw;w;nw;e;e;e;e;s;e;e;yz;w;w;s;say over go}
+#ALIAS º£ÄÏµº {gc-qz;e;s;s;ask yu weng about ³öº£;enter;say over go}
+#ALIAS º£ÄÏµº/ {ask yu weng about ³öº£;enter;say over go}
+#ALIAS »ªÍ¤ {gc-jx;w;n;say over go}
+#ALIAS »ªÍ¤/ {s;e;jx-gc;say over go}
+#ALIAS ¾¸º£ {gc-jx;w;n;#5 e;#5 s;say over go}
+#ALIAS ¾¸º£/ {#5 n;#5 w;s;e;jx-gc;say over go}
+#ALIAS ±ù»ğµº1 {n;e;e;give 1 silver to ma fu;ridehz;w;w;sw;sw;w;w;w;sw;s;s;ed;ed;enter zhou;ask yin about ±ù»ğµº;decide;say over go}
+#ALIAS ±ù»ğµº2 {e;se;enter chuan;say over go}
+#ALIAS ±ù»ğµº3 {enter zhou;ask yin about ±ù»ğµº;decide;say over go}
+#ALIAS Â¹Âí¼¯ {gc-km;#3 s;sw;say over go}
+#ALIAS Â¹Âí¼¯/ {ne;#3 n;km-gc;say over go}
+#ALIAS °²ÄÏ {gc-km;#3 s;sw;#7 s;e;e;s;#wa 2000;se;s;e;e;s;s;sw;east;east;south;#wa 1000;#9 s;say over go}
+#ALIAS °²ÄÏ/ {#9 n;#wa 1000;n;s;nw;#wa 2000;n;w;w;#7 n;ne;#3 n;km-gc;say over go}
+#ALIAS Í­É½´å {#8 w;s;dujiang;#wa 2000;#5 ne;#4 e;say over go}
+#ALIAS Í­É½´å/ {#4 w;#5 sw;dujiang;#wa 2000;n;#8 e;say over go}
+#ALIAS ºî¼¯Õò {#8 n;dujiang;#wa 1000;#7 n;#8 e;say over go}
+#ALIAS ºî¼¯Õò/ {#8 w;#7 s;dujiang;#wa 1000;#8 s;say over go}
+#ALIAS ¸ß²ı³Ç {n;e;e;1s;rideyl;s;se;ne;e;#6 e;say over go}
+#ALIAS ¸ß²ı³Ç/ {#7 w;sw;nw;n;1s;rideyz;w;w;s;say over go}
+#ALIAS áÇá¼É½ {#9 w;nw;#15 w;nw;#8 w;n;n;w;nw;nw;#3 n;#wa 2000;e;s;e;s;s;#6 e;se;e;ne;say over go}
+#ALIAS áÇá¼É½/ {sw;w;nw;#6 w;n;n;w;n;w;#wa 2000;#3 s;se;se;e;s;s;#8 e;se;#15 e;se;#9 e;say over go}
+#ALIAS ĞËÇì¸® {#9 w;nw;#15 w;nw;#8 w;n;n;w;nw;nw;#6 n;#wa 2000;#10 n;#wa 2000;#9 ne;say over go}
+#ALIAS ĞËÇì¸®/ {#9 sw;#wa 2000;#10 s;#wa 2000;#6 s;se;se;e;s;s;#8 e;se;#15 e;se;#9 e;say over go}
+#ALIAS Ææ»±ÆÂ {e;s;s;w;sw;s;e}
+#ALIAS ¹ØÖĞ {#8 n;nw;n;nw;n;say over go}
+#ALIAS ¹ØÖĞ/ {s;se;s;se;#8 s;say over go}
+#ALIAS Î÷ÄÏ {gc-cd;#11 w;say over go}
+#ALIAS Î÷ÄÏ/ {#11 e;cd-gc;say over go}
+#ALIAS Á¹Öİ {n;e;e;yd;e;e;n;ne;n;nw;n;#4 ne;w;#8 se;#4 e;say over go}
+#ALIAS Á¹Öİ/ {#4 w;#8 nw;e;#4 sw;s;se;s;sw;s;w;w;yz;w;w;s;say over go}
+#ALIAS ±ß³Ç {n;e;e;1s;rideca;1s;ridelanzhou;1s;ridexz;w;n;e;e;n;nu;n;e;ne;ne;ne;nd;e;n;n;w;w;w;nw;say over go}
+#ALIAS ±ß³Ç/ {se;e;e;e;s;s;w;su;sw;sw;sw;w;s;sd;s;w;w;s;e;n;1s;rideyz;w;w;s;say over go}
+#ALIAS ÓñÁú·å {n;e;e;1s;rideca;1s;ridelanzhou;1s;ridexz;w;n;e;e;n;nu;n;e;ne;ne;ne;nd;e;n;n;e;se;e;e;say over go}
+#ALIAS ÓñÁú·å/ {w;w;nw;w;s;s;w;su;sw;sw;sw;w;s;sd;s;w;w;s;e;n;1s;rideyz;w;w;s;say over go}
+#ALIAS ¶ñÈË¹È {n;e;e;1s;rideca;1s;ridelanzhou;1s;ridexz;w;n;e;e;n;nu;n;e;ne;ne;ne;nd;e;n;n;e;se;e;e;#wa 2000;nu;nu;su;nu;look stone;northdown;nd;nd;e;e;e;e;say over go}
+#ALIAS ¶ñÈË¹È/ {w;w;w;w;su;su;su;sd;nd;sd;sd;#wa 2000;w;w;nw;w;s;s;w;su;sw;sw;sw;w;s;sd;s;w;w;s;e;n;1s;rideyz;w;w;s;say over go}
+#ALIAS òùòğµº {gc-jx;w;n;e;e;e;e;e;s;w;say over go}
+#ALIAS òùòğµº/ {e;n;w;w;w;w;w;s;e;jx-gc;say over go}
+#ALIAS ĞË¹úìøËÂ {#10 e;ne;#5 n;#5 sw;w;n;n;n;eu;eu;nu;say over go}
+#ALIAS ĞË¹úìøËÂ/ {sd;wd;wd;s;s;s;e;#5 ne;#5 s;sw;#10 w;say over go}
+#ALIAS Ì«Æ½Õò {n;e;e;1s;rideca;1s;ridelanzhou;1s;ridexz;w;n;e;e;n;nu;n;e;ne;ne;ne;nd;e;n;n;e;se;e;e;se;e;e;#3 sw;#3 s;say over go}
+#ALIAS Ì«Æ½Õò/ {#3 n;#3 ne;w;w;nw;w;w;nw;w;s;s;w;su;sw;sw;sw;w;s;sd;s;w;w;s;e;n;1s;rideyz;w;w;s;say over go}
+#ALIAS Â¥À¼ {n;e;e;give 1 silver to ma fu;rideyl;s;se;se;e;se;e;e;nw;n;ne;say over go}
+#ALIAS ôä´ä³Ø {wu;sw;w;wd;n;w;kill bai;#wa 3000;kill bai;#wa 3000;w;sw;w;w;say over go}
+#ALIAS ôä´ä³Ø/ {e;e;ne;e;e;s;eu;e;ne;ed;say over go}
+#ALIAS »ª²ØâÖ {n;e;e;em;em;s;wu;wu;wu;wu;su;su;su;sw;su;se;wu;su;su;s;enter;say over go}
+#ALIAS »ª²ØâÖ/ {out;n;#2 nd;ed;nw;nd;ne;#3 nd;#4 ed;n;give 1 silver to ma fu;rideem;give 1 silver to ma fu;rideyz;w;w;s;say over go}
+#ALIAS ¹óÑô {#8 s;su;se;sw;w;w;w;s;dujiang;#wa 2000;s;s;s;s;say over go}
+#ALIAS ¹óÑô/ {#4 n;dujiang;#wa 2000;n;e;e;e;ne;nw;nd;#8 n;say over go}
+#ALIAS °ÍÁê {#8 s;w;n;n;n;e;e;#4 se;#5 s;#7 s;sw;#3 s;say over go}
+#ALIAS °ÍÁê/ {#3 n;ne;#7 n;#5 n;#4 nw;w;w;#3 s;e;#8 n;say over go}
+#ALIAS ¶¨Ïå {n;#2 e;1s;ridebj;w;w;n;#4 w;se;w;s;nw;nu;nd;#3 n;#wa 2000;n;n;nw;w;w;nw;nw;nw;#10 n;say over go}
+#ALIAS ¶¨Ïå/ {#10 s;#3 se;e;e;se;s;sw;s;s;#wa 2000;s;s;s;su;sd;se;n;e;nw;e;e;e;e;s;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS ºÏ·Ê {n;e;e;1s;ridebj;w;w;s;s;s;se;se;e;#7 s;say over go}
+#ALIAS ºÏ·Ê/ {#7 n;w;nw;nw;n;n;n;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS ĞìÖİ {n;e;e;1s;ridebj;w;w;s;s;s;se;se;e;#7 s;#5 e;se;e;e;ne;se;e;say over go}
+#ALIAS ĞìÖİ/ {w;nw;sw;w;w;nw;#5 w;#7 n;w;nw;nw;n;n;n;e;e;1s;rideyz;w;w;s;say over go}
+#ALIAS ¼ÃÄÏ {#10 e;ne;#5 n;#5 sw;w;su;sd;s;s;say over go}
+#ALIAS ¼ÃÄÏ/ {n;n;nu;nd;e;#5 ne;#5 s;sw;#10 w;say over go}
+#ALIAS ËéÒ¶ {n;#2 e;1s;ridebj;w;w;n;#4 w;se;w;s;nw;nu;nd;#3 n;#wa 2000;n;n;nw;se;s;sw;#5 n;say over go}
+#ALIAS ËéÒ¶/ {#10 s;su;sd;se;n;e;nw;#4 e;s;e;e;yz;#2 w;s;say over go}
+#ALIAS ¾Å½­ {#8 s;w;n;n;n;e;e;#4 se;#5 s;say over go}
+#ALIAS ¾Å½­/ {#5 n;#4 nw;w;w;#3 s;e;#8 n;say over go}
+#ALIAS ³ÁÏã³Ç {#10 e;ne;n;n;se;su;sw;say over go}
+#ALIAS ³ÁÏã³Ç/ {ne;nd;nw;s;s;sw;#10 w;say over go}
+#ALIAS ÌìÍâÌì {w;w;w;sw;e;d;say over go}
+#ALIAS ÌìÍâÌì/ {climb madai;w;ne;e;e;e;say over go}
+#ALIAS ÓÄÁéÉ½×¯ {gc-wd;turn handle;say over go}
+#ALIAS ÓÄÁéÉ½×¯/ {u;gc-wd;say over go}
+#ALIAS ¶ö»¢¸Ú {#7 s;se;su;su;say over go}
+#ALIAS ¶ö»¢¸Ú/ {nd;nd;nw;#7 n;say over go}
+#ALIAS ´äÖñ×¯ {gc-xz;n;e;n;n;n;n;pushaside grass;#4 w;n;say over go}
+#ALIAS ´äÖñ×¯/ {s;e;e;e;e;s;s;s;s;w;s;xz-gc;say over go}
+#ALIAS ÂíÒØ {n;#2 e;1s;ridebj;w;w;n;#4 w;se;w;s;nw;nu;nd;#3 n;say over go}
+#ALIAS ÂíÒØ/ {#3 s;su;sd;se;n;e;nw;#4 e;s;e;e;yz;#2 w;s;say over go}
+
+
+
+1.Îäµ±npc:¹ÈĞéµÀ³¤,ËÎÔ¶ÇÅ ,ÒóÀæÍ¤,ÓáÁ«ÖÛ ,ÕÅËÉÏª,ÕÅÈı·á,ÊØÔ°µÀ³¤,ÄªÉù¹È ,Óáá·ÑÒ,ÇåĞéµÀ³¤,ÖÆÏãµÀ³¤,ÕÅ´äÉ½ ,Ğ¡à¶ÂŞ,ÍÁ·Ë,ÍÁ·ËÍ·
+2.Çà³Çnpc: ¼ªÈËÍ¨, ÉêÈË¿¡,ÂŞÈË½Ü,ºéÈËĞÛ ,Óà²×º£,ºîÈËÓ¢ 
+3.ÈªÖİnpc:ÓÎÑ¶,ÒóÀë,³£½ğÅô,Áõ¹úĞù
+4.¼ÎĞËnpc: ÀîÄª³î  
+5.¸£Öİnpc: Ê·ïÚÍ· ,ÁÖÕğÄÏ,½ğµ¶ Íõ·òÈË(Wang furen),Ö£ïÚÍ·,´ŞïÚÍ·,¼ÖÈË´ï ,ÓàÈËÑå ,·½ÈËÖÇ ,ÓÚÈËºÀ ,É³Ìì½­ ,²·³Á
+6. ¶ğÃÄ----£¨ÒÔÇåÒô¸óÎªÆğµã£©
+gc-ÇåÒô¸ó    n;e;e;give 1 silver to ma fu;rideem;give 1 silver to ma fu;rideem;s;d;ne;ed;ne;ed;sd;se
+ÇåÒô¸ó-gc    nw;nu;wu;sw;wu;sw;up;n;give 1 silver to ma fu;rideem;give 1 silver to ma fu;rideyz;w;w;s;
+ÇåÒô¸ó--»ª²ØâÖ  nw;nu;wu;sw;wu;sw;up;wu;wu;wu;wu;su;su;su;sw;su;se;wu;su;su;s;enter
+»ª²ØâÖ--ÇåÒô¸ó  out;n;nd;nd;ed;nw;nd;ne;#4 nd;#4 ed;d;ne;ed;ne;ed;sd;se
+ 
+¾²Ğş      ÎÔÔÆâÖ              ´Ó»ª²ØâÖ out;s;nd »Øsu;n;enter
+¾²ÏĞ      ÇåÒô¸ó               ¾ÍÊÇµÚÒ»¸öaliasµÄÖÕµã 
+¾²åÈ      ´Ó»ª²ØâÖ             out;nd;nd »Øsu;su;enter
+·½±ÌÁÕ    ÓñÅ®·å               ´ÓÇåÒô¸ó se;ed;ed;ed;su »Ønd;wu;wu;wu;nw
+¾²»Û      Ç§·ğâÖ               ´ÓÇåÒô¸ó sw;s;s;enter »Øout;n;n;ne
+¾²Ğé      »ª²ØâÖ¹ã³¡           ´Ó»ª²ØâÖ s »Øn
+ËÕÃÎÇå    Á«»¨Ê¯               ´ÓÇåÒô¸ó nw;nu;wu;sw;wu;sw;u;wu »Øed;d;ne;ed;ne;ed;sd;se
+ÕÔÁéÖé    Á«»¨Ê¯               ´ÓÇåÒô¸ó nw;nu;wu;sw;wu;sw;u;wu »Øed;d;ne;ed;ne;ed;sd;se 
+ÀîÃ÷Ï¼    »ªÑÏ¶¥               ´ÓÇåÒô¸ó nw;nu;wu;sw;wu;sw;u »Ød;ne;ed;ne;ed;sd;se
+¾²ÕÕ      ÁéÎÄ¸ó               ´ÓÇåÒô¸ó se;ed;s;enter»Ø out;n;wu;nw
+¾²Õæ      ¸£ÊÙâÖ               ´ÓÇåÒô¸ó se;ed;s »Øn;wu;nw
+¾²¿Õ      ÍòÄêâÖ               ´ÓÇåÒô¸ó nw;nu;enter »Øout;sd;se
+¾²·ç      ´¢Îï¼ä               ´Ó»ª²ØâÖ s;su;e;s »Øn;w;nd;n
+¾²µÀ      ²Ø¾­¸ó               ´Ó»ª²ØâÖ s;su;e;s;u »Ød;n;w;nd;n
+¾²ĞÄ      »ª²ØâÖ               µÚ¶ş¸öaliasµÄÖÕµã
+±´½õÒÇ    ´ÓÇåÒô¸ó            nw;nu;wu;sw;wu;sw;u;#4 wu;#3 su;sw;su;se;wu;su;sw;su
+               »Ø                       nd;ne;nd;ed;nw;nd;ne;#3 nd;#4 ed;d;ne;ed;ne;ed;sd;se
+ 
+
+7.ÉÙÁÖnpc:Ğş¿à,ĞşÄÑ,³Î¹Û,³ÎĞÄ,³ÎÖª,³ÎÒâ,³ÎÃ÷,³ÎË¼,³Î¾»,³ÎÊ¶,³Î¼á,³ÎÖ¾,³ÎĞĞ,³ÎĞÅ,³Î¼Å,³ÎÁé,³ÎÃğ,³ÎÓû,³ÎºÍ,³ÎÉĞ,»ÛºÏ,»ÛÉ«,»ÛĞé,»Û¹â,»Û½à,»ÛÈç,»Û¿Õ,Çå·¨, ÇåÎŞ±ÈÇğ, ÇåÎª±ÈÇğ,
+
+8.Ã÷½Ìnpc:ÒóÒ°Íõ,ĞÁÈ»,Ëµ²»µÃ,ÖÜµß,ÅíÓ¨Óñ,ÍØ°Ï,ÒóÎŞ¸£,ÒóÎŞÂ»,ÀîÌìÔ«,ÒóÎŞÊÙ,ÕÅÖĞ,ÀäÇ«,Ğ»Ñ·,ÑîåĞ,ÕÅÎŞ¼É,·¶Ò£,ÒóÌìÕı,Î¤Ò»Ğ¦,ºúÇàÅ£,×¯ï£
+
+9.»ªÉ½npc:ÀÍµÂÅµ,ÔÀÁéÉº,ÔÀ²»Èº,Â½´óÓĞ,ÔÀ·òÈË,Ê©´÷×Ó,°«ÀÏÕß,¸ßÀÏÕß,Áîºü³å, ·çÇåÑï,
+
+10.ºâÉ½npc:Â³Á¬ÈÙ,Äª´ó,
+
+11.áÔÉ½npc:ÀÖºñ,¶¡Ãã,ÖÓÕò,µË°ËÄê,¸ß¿ËĞÂ,·Ñ±ò,Â½°Ø,ÌÀÓ¢ğÀ,Íò´óÆ½,×óÀäìø,Ê·µÇ´ï, µÒĞŞ,
+
+
+12.ºãÉ½npc:¶¨¾²Ê¦Ì«,ÒÇÎÄ,ÒÇÖÊ,ÒÇºÍ,ÒÇÇå,¶¨ÒİÊ¦Ì«,ÇØ¾î,Ö£İà,¶¨ÏĞÊ¦Ì«,
+
+
+13.Ì©É½npc:µ¥Õı,ÌìÒÒµÀÈË,ÌìËÉµÀÈË,Ìì°ØµÀÈË,³Ù°Ù³Ç,½¨³ıµÀÈË,½­°ÙÊ¤,Óñçá×Ó,ÓñÒô×Ó,Óñíà×Ó,ÌìÃÅµÀÈË,
+,  
+14.ÌìÁúËÂnpc: ±¾Òò,±¾²Î,¿İÈÙ´óÊ¦,±¾³¾,±¾Ïà,±¾¹Û,
+15.ÁéğÕnpc:¾ÅÒíµÀÈË,ÓàÆÅÆÅ,Ã·½£,À¼½£,ĞéÖñ,ÌìÉ½Í¯ÀÑ
+16.À¥ÂØnpc: ½¯ÌÎ, ¸ßÔò³É,Î÷»ª×Ó,°àÊçæµ,ºÎÌ«³å,ºÎ×ãµÀ,
+17.ÌÒ»¨µºnpc:·ëÄ¬·ç,»ÆÒ©Ê¦,ÇúÁé·ç,Ã·³¬·ç, »ÆÈØ, ³ÌÓ¢,ÖÜ²®Í¨,
+18.¹éÔÆ×¯npc:º«±¦¾Ô,º«Ğ¡Ó¨,ÄÏÏ£ÈÊ,ÕÅ°¢Éú,¿ÂÕò¶ñ,È«½ğ·¢,Öì´Ï, Â½³Ë·ç,
+19.ÉñÁúµºnpc:ĞíÑ©Í¤,Â½¸ßĞù,ÎŞ¸ùµÀ³¤,ºé°²Í¨, ËÕÜõ, ÔÆËØÃ·,ÕÅµ­ÔÂ,Òó½õ, ·½âù,ãå½£ÆÁ,
+20.°×ÍÕÉ½npc:Å·Ñô·æ,»¨»¨¹«×Ó,Ğ¡É½Ôô,É½Ôô,É½ÔôÍ·,
+21.ĞÇËŞÅÉnpc:ÕªĞÇ×Ó,Ê¨ºğ×Ó,°¢×Ï,³ö³¾×Ó,²É»¨×Ó,¶¡´ºÇï
+22.´óÀí³Çnpc:ÎŞÁ¿½£µÜ×Ó,ÉñÅ©°ïµÜ×Ó,ÆÆàÁ,ÆÆÒÉ,
+23.±±¾©npc:°×¹êÊÙ, ÕÂÀÏÈı,×¯·òÈË,Ë«¶ù,ÎèÉßÈË,
+24.ÈÕÔÂ½Ìnpc:Íõ³Ï,»Æ²®Á÷,·¶ËÉ,ÕÔº×,ÕÅ³ËÔÆ,ÕÅ³Ë·ç, ¼Ö²¼,É£ÈıÄï, ÉÏ¹ÙÔÆ, ÈÎÓ¯Ó¯,
+25.ÑïÖİnpc:Ğ¡»ì»ì,¶ÎÓş,ÍĞ²§É®,¿Õ¿Õ¶ù,Ã©Ê®°Ë, Ê·ËÉ, º£¹«¹«,Ğ¡¹ğ×Ó,·â¹­Ó°,
+[33m©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤[2;37;0m

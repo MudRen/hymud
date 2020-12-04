@@ -1,0 +1,5 @@
+#/clone/user/user.c
+conditions (["autosave":12,"0":8,0:10,])
+dbase (["age":27,"lastChangeSize":16734,"registered":1,"race":"ÈËÀà","last_sleep":1333975207,"id":"open","actions":,"shen":0,"startroom":"/d/welcome/welcome","disable_type":"<Ë¯ÃÎÖĞ>","max_jingli":0,"default_actions":,"title":"ÆÕÍ¨°ÙĞÕ","jing":1741,"levels":1,"last_on":1331563679,"eff_jing":1741,"max_neili":0,"max_jing":1741,"str":21,"qi":1040,"env":(["no_tell":"all OK[2;37;0m",]),"int":26,"max_qi":1040,"pighead":0,"birthday":1331563679,"con":19,"eff_qi":1040,"shen_type":0,"potential":100,"last_from":"123.128.19.185","dex":14,"neili":0,"food":310,"kar":23,"water":310,"per":16,"channels":({"chat","rumor","party","es","sys",}),"name":"ºÃ°É","gender":"ÄĞĞÔ","unit":"Î»","attitude":"peaceful","can_speak":1,"limbs":({"Í·²¿","¾±²¿","ĞØ¿Ú","ºóĞÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ğ¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"mud_age":1170512,])
+skills (["zijinbagua-dao":380,])
+autoload ({})

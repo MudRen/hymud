@@ -1,0 +1,8 @@
+#/clone/user/user.c
+alias (["k":"kill $*",])
+conditions (["autosave":13,])
+dbase (["default_actions":,"balance":50900,"pighead":0,"shen_type":0,"max_jingli":30,"mud_age":6365,"age":14,"unit":"Î»","lastChangeSize":6298,"last_on":1425355660,"id":"dell","pawn":(["0":"[33mÈý×Ö¾­[2;37;0m",]),"str":20,"attitude":"peaceful","int":25,"con":15,"last_from":"123.190.53.5","nbjob":20,"dex":20,"jing":126,"kar":25,"eff_jing":127,"per":15,"max_jing":415,"MKS":5,"jingli":0,"registered":1,"can_speak":1,"startroom":"/d/city/wumiao","qi":615,"last_sleep":1425355450,"limbs":({"Í·²¿","¾±²¿","ÐØ¿Ú","ºóÐÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ð¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"max_qi":615,"levels":4,"eff_qi":615,"max_neili":500,"env":(["showmap":1,]),"neili":500,"mpgx":0,"combat_exp":85225,"title":"ÆÕÍ¨°ÙÐÕ","score":3,"disable_type":"<Ë¯ÃÎÖÐ>","name":"´÷¶û","birthday":1425352614,"vpawn":(["0":500,]),"gender":"ÄÐÐÔ","fpawn":(["0":"/d/welcome/npc/lbook1.c",]),"potential":62628,"shen":0,"food":300,"race":"ÈËÀà","actions":,"water":300,"channels":({"chat","rumor","party","es",}),"learned_points":40,])
+skills (["literate":80,"feixian-sword":95,"unarmed":95,"trade":6,"dodge":95,"softsword":95,"sword":95,"jingyiforce":95,"parry":95,"force":95,])
+learned (["feixian-sword":168,"trade":37,"force":71,"sword":110,"jingyiforce":40,])
+skill_map (["force":"jingyiforce","sword":"feixian-sword",])
+autoload ({"/clone/money/silver:10",})

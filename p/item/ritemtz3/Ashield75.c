@@ -1,0 +1,108 @@
+#include <ansi.h> 
+#include <armor.h>
+
+inherit SHIELD;
+
+string *du=({
+"ice_poison",
+"ill_dongshang",
+"ill_fashao",
+"ill_kesou",
+"ill_shanghan",
+"ill_zhongshu",
+"xx_poison",
+"cold_poison",
+"flower_poison",
+"rose_poison",
+"x2_poison",
+"sanpoison",
+"scorpion_poison",
+"anqi_poison",
+"nx_poison",
+"chilian_poison",
+"yufeng_poison",
+"insect_poison",
+"xscold_poison",
+});
+
+string *order = ({""HIY"", ""HIG"", ""RED"", ""MAG"", ""YEL"", ""HIC"", ""HIW"", ""HIR"",""HIB"", ""CYN"",""WHT"",""HIM"",""BLU""});  
+void create()
+{
+	      set_name("[37m«‡”Ò÷Æ∂‹[2;37;0m°Ô", ({ "qingyu shield", "shield" }));
+        set_weight(1000);
+        if( clonep() )
+                set_default_object(__FILE__);
+        else {
+                set("unit", "√Ê");
+		set("long", @LONG
+[37m«‡”Ò÷Æ∂‹[2;37;0m’‚ «“ª√Ê”… Æ∑÷º·”≤µƒæ´∏÷º”…œ[1;33m‹—¬È[2;37;0m÷∆≥…£¨÷ÿ“ªΩÔ∂˛¡Ω“ª«Æµƒ[37m«‡”Ò÷Æ∂‹[2;37;0m°£
+◊€∫œ∆¿º€[37mæ¯ ¿ŒﬁÀ´[2;37;0m ø¥∆¿¥ Æ∑÷º·πÃ£¨æﬂ”–[32mÀÆ◊º“‘…œ[2;37;0mµƒ∑¿ª§¡¶£°
+…œ√ÊøÃ¡Àº∏∏ˆπ≈∑˚∫≈£∫
+[32mÀÆ[2;37;0m:[1;33mÃÏ •[2;37;0m [1;35m∑Á[2;37;0m:[33m∫‹∏ﬂ[2;37;0m 
+[40mµÿ[2;37;0m:[1;34mæŸ ¿[2;37;0m 
+…œ√ÊªπøÃ¡À“ª–©∑˚◊÷£∫
+º·”≤:[1;31mŒﬁÀ´[2;37;0m «…÷∆:[35m±Í◊º[2;37;0m 
+∞◊ Ø:[36m≤ª¥Ì[2;37;0m Õ˛¡¶:[33m∫‹∏ﬂ[2;37;0m 
+
+LONG
+);
+    set("no_get",1);
+	  set("no_put",1);
+	  set("no_pawn",1);
+	  set("no_drop",1);
+	  set("no_beg",1);
+	  set("no_steal",1);
+	  set("systemmake",1);
+		set("value", 16000);
+		set("armor_prop/intelligence",0);
+		set("armor_prop/strength",0);
+		set("armor_prop/karey",0);
+		set("armor_prop/percao",0);
+		set("armor_prop/dexerity",0);
+		set("armor_prop/constitution",0);
+    set("armor_prop/dodge", 19);
+    set("armor_prop/parry", 0);
+    set("armor_prop/attack", 0);
+
+
+    set("armor_prop/armor", 254);
+    set("armor_prop/defense", 0);
+    
+    set("armor_prop/neili", 0);
+    set("armor_prop/qi", 0);
+    set("armor_prop/jing", 0);
+    set("armor_prop/jingli", 0);
+    set("armor_prop/damage", 48);
+
+    set("wtypeA",0);
+    set("wtypeB",0);
+    set("wtypeC",10);
+    set("wtypeD",0);
+    set("wtypeE",0);
+    set("wtypeF",4);
+    set("wtypeG",0);
+    set("wtypeH",0);
+    set("wtypeI",0);
+    set("wtypeJ",8);
+    set("wtypeK",0);
+    set("wtypeL",0);
+    
+    
+                set("skill", ([
+                        "name": "throwing",
+                        "exp_required": 80000,
+                        "difficulty": 85,
+                        "min_skill":  1,
+                        "max_skill": 320,              
+                ]) );		
+
+
+		set("material", "default");
+    set("sharpness", 12);
+        }
+        setup();
+}
+
+
+
+#include "/obj/ritem/armorzy.h";

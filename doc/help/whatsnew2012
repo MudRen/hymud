@@ -1,0 +1,1039 @@
+[33m©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+[44;33m¡¾ÐÂµÄÐÞ¸Ä¡¿                                                [2;37;0m
+[33m©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤[2;37;0m
+2012ÄêÒ»ÔÂÒ»ÈÕ
+ËùÓÐ¸üÐÂ¹éµµ´¦Àí
+ help whatsnew2011
+ help whatsnew2010
+ help whatsnew2009
+ help whatsnew2008
+ help whatsnew2007
+ 
+2012ÄêÒ»ÔÂËÄÈÕ  
+1. ´òÔìÊôÐÔ×÷ÓÃµ÷Õû
+Ä¾ ÎäÆ÷ÉÏ Ä¾ÊôÐÔ»Ö¸´              ·À¾ßÉÏ Ïû³ýÃ¦ÂÒ           ÒÂÎïÀà(cloth) ¶ÜÅÆÀà(shield) ÉÏÊ±¾«Ð¡ÓÚÒ»°ëÊ±£¬»Ö¸´¾«
+»ð ÎäÆ÷ÉÏ Ñ×ÊôÐÔ¹¥»÷              ·À¾ßÉÏ ¼õÉÙÉ±ÉË           ÒÂÎïÀà(cloth) ¶ÜÅÆÀà(shield) ÉÏÊ±ÆøÐ¡ÓÚÒ»°ëÊ±£¬»Ö¸´Æø
+·ç ÎäÆ÷ÉÏ ¼õÉÙ¶Ô·½¹¥·À ²¢É±ÉËÃ¦ÂÒ ·À¾ßÉÏ ¼õÉÙËðÉË Ôö¼ÓÄÚÁ¦  ÒÂÎïÀà(cloth) ¶ÜÅÆÀà(shield) ÉÏÊ±ÄÚÁ¦Ð¡ÓÚÒ»°ëÊ±£¬»Ö¸´ÄÚÁ¦
+2. ·À¾ßÉÏÒÂÎïÀà(cloth) ¶ÜÅÆÀà(shield) ÌØÐ§³öÏÖ»úÂÊ£¬·À»¤Á¦±È½Ï¸ß¡£ÔÚÆø¾«Ð¡ÓÚÒ»°ëÊ±£¬ÌØÐ§³öÏÖ»úÂÊ·­±¶¡£
+
+2012ÄêÒ»ÔÂÁùÈÕ  
+1.Ñãµ´ÅÉ¿ª°ïÁ¢ÅÉ (help yandang)
+  (Ñãµ´ÅÉÓÐÁË×Ô¼ºµÄ´óµÜ×Ó ºÍÈÎÎñÀô)
+  Ñãµ´ÅÉÓµÓÐÖÚ¶àµÄ½­ºþ¹«¹²Îä¹¦ÎªÌØµã
+2.»áÔ±±³°üÐÂ¼Óµ½ºú¼Ò(mp17) ÌúÕÆ(mp18) ÂäÑã(mp19) ·ÉÌì(mp20)  Îå¶¾½Ì(mp21)µÄÂí³µ  
+ 
+ 2012ÄêÒ»ÔÂ°ËÈÕ  
+1.Ñãµ´ÅÉÎä¹¦ÍêÉÆ (help yandang)
+ÃÅÅÉÌØµã£¬¶Ì±øÆ÷(dagger) Îä¹¦¿ÉÒÔ·â×¡µÐÈËµÄÄÚ¹¦(exert)£¬Íâ¹¦(perform)µÄ¾øÕÐ
+ 
+ 2012ÄêÒ»ÔÂÊ®Ò»ÈÕ  
+1.¹Ç»Ò¼¶»áÔ±£¬ÐÂ¼ÓtitleÃüÁî help title ¿ÉÒÔÉè¶¨×Ô¼ºµÄ³ÆºÅ
+
+ 2012ÄêÒ»ÔÂÊ®ÎåÈÕ  
+1.È¡¾­½âÃØ£¬Ö÷Ïß¾çÇé½âÃØ£¬ÆðÊ¼½âÃØÔö¼ÓÐèÒª1MÒÔÉÏµÄ¾­Ñé
+2.Î´×ªÉú£¬ÄêÁä15ÒÔÏÂµÄÍæ¼Ò ²»³äÐí»»È¡ÃÅÅÉ¹±Ï×
+3.È¡ÏûÐÂÊÖÀñÎïÌ¨
+4.Ï£ÍûÍæ¼Ò·¢ÏÖ¶ñÐÔBUG¼°Ê±È¡±¨£¬ÔÙ·¢Éú´ËÀàÊÂ¼þ£¬±¾Õ¾×öÈ«²¿Çåµµ¹ØÕ¾´¦Àí¡£
+
+ 2012ÄêÒ»ÔÂÊ®ÁùÈÕ
+Ñãµ´ÅÉÎä¹¦ÍêÉÆ (help yandang)  
+ÐÂÔöÇé½£(love-sword)
+Ê¹ÓÃ·¶Î§: "sword","parry"
+Ñ§Ï°ÒªÇó£ºÄÚÁ¦´óÓÚ500 »ù±¾ÄÚ¹¦´óÓÚ300 ½£·¨´óÓÚ80 
+          »ù±¾½£·¨,ÄÏº£Ðþ¹¦,×ÓÎç´òÑ¨·¨²»Ð¡ÓÚÇé½£ 
+          ÄÏº£Ðþ¹¦,×ÓÎç´òÑ¨·¨´óÓÚ300
+×Ô¶¯ÌØÊâ¹¥»÷£ºÓÐ
+¾ø¼¼(È«²¿×Ô¶¯¹¥»÷)
+1. two        ÄÇÒ»½£µÄ¾ªÑÞ
+2. lovekill   ÄÇÒ»½£µÄÀËÂþ
+3. lockman    ÄÇÒ»½£µÄÆàÈ»
+4. four_kill  ÄÇÒ»½£µÄ·çÇé
+5. power_slashÄÇÒ»½£µÄ²ÓÀÃ
+6. seven      ÄÇÒ»½£µÄäìÈ÷
+7. dream      ÄÇÒ»½£µÄ°§³î
+8. heartkill  ÄÇÒ»½£µÄ¼ÅÄ¯
+9. fast       ÄÇÒ»½£µÄ²Ð¿á
+10.disenforce ÄÇÒ»½£µÄ¾øÍû
+
+ÕÐ¼¯Íæ¼Ò½øÐÐÖ÷Ïß¾çÇé½âÃØ ²¢Ð´¹¥ÂÔ
+×îÏÈÍê³ÉÃ¿Ò»±¾Êé¹¥ÂÔµÄ½±Àø ¶þÑ¡Ò»
+¶þÑ¡Ò» 1. ÍòÄêÉñÌú+ÁúÁÛÓñ »ò 2. Áú¼ë²ÏË¿+ÂÌÓñËè
+ÒªÇó: ¾¡Á¿ÏêÏ¸Ò»µã£¬×îºÃÓÐµãÎÄ±ÊÈóÉ«¡£
+
+ 2012ÄêÒ»ÔÂÊ®°ËÈÕ
+1.¾­¼ÃÎ£»úÏÂ ´óÀíÁìÙºÂ»µÄÊýÁ¿ÓÐÉÏÏÞ£¬²¢¼õÉÙ¡£
+2.Ò»Ð©µÀ¾ßµÄ¼ÛÖµ¼õÉÙ¡£
+3.ÊÌÅ®£¬ÊÌÍ¯¼ÓÇ¿,ÆøÑª£¬¾«ÎªÍæ¼ÒµÄÈý±¶
+4.ÊÌÅ®£¬ÊÌÍ¯¼ÓÇ¿ ¼Ó´ó×øÂí³µ·¶Î§£¬ÔÚ»§Íâ£¬ËæÊ±¿ÉÒÔ×øÂí³µ
+5.ÊÌÅ®£¬ÊÌÍ¯¼ÓÇ¿ ºÏ»÷heji <id> ÃüÖÐ¸ü¸ß£¬²¢¿ÉÒÔ»Ö¸´ÆøÑª
+
+ 2012ÄêÒ»ÔÂÊ®¾ÅÈÕ
+1.Ñãµ´ÅÉÎä¹¦ÍêÉÆ (help yandang)  
+ÐÂÔö ÄÚ°ËØÔ (nei-bagua)  
+     °ËØÔ²½ (bagua-bu) 
+     Íâ°ËØÔ (wai-bagua)
+2.ÃÔ¹¬Ì½ÏÕ16²ãºó£¬Ö»ÒªÑ§»áÏàÓ¦²ã´ÎÃÔ¹¬µÄÌØÊâ¼¼ÄÜ£¬¿ÉÒÔÖ±½Ó
+ÔÚÃÔ¹¬Èë¿ÚÒÆ¶¯¹ýÈ¥(yidong)
+  Èý×ªÃÔ¹¬ÌØÊâ¼¼ÄÜÍþÁ¦ Ôö¼ÓÁË²Î¿¼»ù´¡·¨Êõ(spells)µÄÉ±ÉË¡£
+
+ 2012ÄêÒ»ÔÂ¶þÊ®ÈÕ
+1.ÎäÆ÷Ïà¿ËÉ±ÉËÁ¦ ´Ó2±¶ ¸ÄÎª3±¶¡£
+2.Îäµ±ÅÉÎ¢µ÷ 
+  1.Ì«¼«½£ perform zhenwu ÕæÎä³ýÐ° ¼ÓÇ¿ Ôö¼ÓÁËÒ»¸öÌØÊâ¹¥»÷£¬¼°ÃüÖÐÉ±ÉË ¼õÉÙÁËÄÚÁ¦ºÄËð
+  2.Ì«¼«½£ perform lian   Á¬×Ö¾ö   ¼ÓÇ¿ ÃüÖÐ¼ÓÇ¿ ¼õÉÙÁËÄÚÁ¦Ê¹ÓÃ¼°ÓÃÕÐÊ±¼ä.
+  3.ÒÐÌìÍÀÁú¹¦ 299¼¶ÒÔºó²»ÄÜÁ·µÄÏÞÖÆÈ¡Ïû.
+  4.Ì«¼«È­ ËùÓÐµÄ¾ø¼¼£¬Ôö³¤ÁË20%×óÓÒµÄÍþÁ¦£¬¼õÉÙÁËÓÃÕÐÊ±¼ä¡£
+3.¹ÅÄ¹ÅÉÎä¹¦  Î¢µ÷
+  1.÷öÈ»Ïû»êÕÆ µ¥ÕÐ,¼°ËùÓÐ¾ø¼¼£¬ÍþÁ¦¼ÓÇ¿£¬ËùÐèÄÚÁ¦ ÓÃÕÐÊ±¼ä¼õÉÙ.
+  2.ÓñÅ®½£ µ¥ÕÐ¼°ËùÓÐ¾ø¼¼£¬ÍþÁ¦¼ÓÇ¿£¬ËùÐèÄÚÁ¦ ÓÃÕÐÊ±¼ä¼õÉÙ.
+  3.ÐþÌú½£·¨ ËùÓÐ¾ø¼¼£¬ÍþÁ¦¼ÓÇ¿£¬ËùÐèÄÚÁ¦ ÓÃÕÐÊ±¼ä¼õÉÙ.
+4.»ªÉ½ÅÉÎä¹¦  Î¢µ÷
+  1.¶À¹Â¾Å½£ µ¥ÕÐ,¼°ËùÓÐ¾ø¼¼£¬ÍþÁ¦¼ÓÇ¿£¬ËùÐèÄÚÁ¦ ÓÃÕÐÊ±¼ä¼õÉÙ.  
+
+ 2012ÄêÒ»ÔÂ¶þÊ®¶þÈÕ
+ 1.ÐÂ´º´óÀñ°ü½«ÓÚÒ»ÔÂ¶þÊ®Ò» ¿ªÊ¼·¢·Å
+  ÑïÖÝÖÐÑë¹ã³¡ ask noname about ÀñÎï 
+  µÃµ½Àñ°üºó opengift dalibao
+  ·¢·Å½ØÖ¹Ê±¼ä Äê³õÈý
+ 2012ÄêÒ»ÔÂ¶þÊ®ËÄÈÕ
+ 1.Ò»Ð©Ñ§Ï°£¬ÑÐ¾¿µÄÖ¸Áî£¬ÐÞ¸ÄÁËËã·¨·ÀÖ¹Òç³ö¡£  
+
+2012Äê¶þÔÂÁùÈÕ
+ 1.ÐÂ´º´óÀñ°ü·¢·Å½áÊø£¬´ó¼Ò±ðÍüÁËÉêÇëÏÂ´ÎÀñ°ü
+  ÑïÖÝÖÐÑë¹ã³¡ 
+  ask noname about ÉêÇëÀñÎï
+  ask noname about yaogift
+
+2012Äê¶þÔÂÊ®ÈÕ  
+ 1.ÇåÀíÁËÁÙÊ±ÐÔ Óë ³¤ÆÚ²»ÉÏÏßµÄWIZ.
+ 
+2012Äê¶þÔÂ¶þÊ®ÈÕ   
+ 1.´ÌÌ½ÈÎÎñµÄµØµã×öÁËÇåÀí£¬È¥³ýÁËÄÑÈ¥ ²»ºÃÕÒµÄµØ·½¡£
+ 
+2012Äê¶þÔÂ¶þÊ®ÆßÈÕ    
+ 1.ËùÓÐÖ÷ÏßÈÎÎñ½âÃØ£¬Íæ¼Ò¹¦ÂÔÍê³É(help questlist)
+ 
+2012ÄêÈýÔÂÆßÈÕ     
+ 1.Õ½¶·ÏµÍ³ÐÞ¸Ä£¬Ã¦ÂÒÊ±£¬Èç¹û±»¶Ô·½»÷ÖÐ£¬Ã¦ÂÒÊ±¼ä¼õ°ë¡£
+ 2.Èý×ªÈ¡ÏûËÍ¾ÅÒõ,ÓëÉñÕÕ¾­
+ 3.È¡ÏûÊ®¶þÌì,Óë ²»°ÜÉñ¹¦
+ 4.ËÄ×ªËÍ ¾ÅÒõ,ÉñÕÕ¾­, ×óÓÒ»¥²©
+ 5.ËÀÍöËðÊ§¼õÉÙÒ»°ë¡£´Ó¾­ÑéµÄ1/200 ¸ÄÎª¾­ÑéµÄ1/500
+ 6.Å·Ò±×Ó´¦²»ÔÙÎªÍæ¼ÒÖýÔìÎäÆ÷×°±¸ Çëµ½ËÕÖÝÕÒ¸É½«·ò¸¾
+ 7.±±¾©ÕÅÌìÊ¦´¦£¬²»ÔÙÎªÍæ¼Ò¿ª¹âÖýÔìÎäÆ÷×°±¸ Çëµ½ËÕÖÝÕÒ¸É½«·ò¸¾
+ 8.¹¥»÷ÖÐ£¬Ôö¼ÓÏÈÌìÊôÐÔ³¬¹ý¶Ô·½Ê± ¿ÉÄÜÉËº¦¼Ó±¶¡£ÏÈÌìÊôÐÔ³¬¹ý¶Ô·½Ê± ·À»¤¼Ó±¶
+   (per,dex,con »áÓÐÉËº¦¼õ°ë str,kar,int »áÓÐ¹¥»÷¼Ó±¶Ð§¹û)
+   Íæ¼Ò´óÓÚÊ®ËÄËêÊ±,»á¸ù¾ÝÍæ¼ÒµÄ¸ù¹Ç£¬¸£Ôµ ÈÝÃ² ²úÉúÆø¾«ÉÏÏÞµÄ¼Ó³É¡£
+ 9.»ñµÃµÄ±¦Ê¯Ô­Ê¯£¬¾­¹ý¼ø¶¨(jianding)£¬»ñµÃÏàÓ¦µÈ¼¶µÄ²¹ÌìÊ¯ÓÃÓÚÉý¼¶´òÔìÎäÆ÷¡£
+10.¿ªÊ¼Öð²½ÐÞ¸ÄÏµÍ³ºËÐÄ£¬µ÷Õûµ½º£ÑóËÄ-ÎäÁÖÖÁ×ð
+
+2012ÄêÈýÔÂÊ®ÈÕ
+ 1.ËùÓÐ¹«¹²ÈÎÎñ ºÍÃÅÅÉÈÎÎñµ÷Õû ÎªÍ³Ò»Ëã·¨ ËÙ¶ÈÎªÏÖÓÐµÄ1/3¡£
+    (help aboutquest)
+ 2.É¾³ýÇ±ÄÜ×ª»»¾­ÑéµÄ¹¦ÄÜ¡£
+ 
+2012ÄêÈýÔÂÊ®¶þÈÕ 
+ 1.¹Ç»Ò»áÔ±£¬×ö¹«¹²ÈÎÎñ ÃÅÅÉÈÎÎñÊ±,½±Àø·­±¶.
+   ¹Ç»Ò»áÔ±£¬ÔÚÎå×ªÊ±¿ÉÒÔËæ»ú»ñµÃÒõÑôÊ®¶þÌì»ò²»°ÜÉñ¹¦
+   
+2012ÄêÈýÔÂÊ®ÁùÈÕ    
+ 1.ÐÂ°æ×é¶ÓÈÎÎñ¿ª·Åhelp teamjob
+ 
+ 2012Äê3ÔÂ18ÈÕ 
+1.º£ÑóIV-ÎäÁÖÖÁ×ð¿ª·Å¡£
+  ½ðÓ¹14±¾Ð¡Ëµ£¬Ö÷Ïß¾ç½â½âÃØÍêÈ«¿ª·¢Íê³É
+  Íæ¼Ò¿ÉÒÔÌåÑé Ð¡ËµÖÐµÄÖØÒªÇé½Ú
+  (help questlist)
+  ÏÞÖÆ¹Ò»úÈÎÎñ£¬ÊÖ¶¯ÈÎÎñËÙ¶ÈÔÚ¹Ò»úÈÎÎñµÄ5-6±¶ÒÔÉÏ¡£
+  Íæ¼Ò³É³¤·½Ê½¶àÑù»¯£¬ËùÓÐ¹Ò»úÈÎÎñÈ«²¿ÏÞÖÆ£¬
+  (help teamjob)
+  TASKÈÎÎñ£¬×ÊÔ´ÓÐÏÞÀàÈÎÎñ£¬½âÃØÈÎÎñ£¬²»×öÏÞÖÆ ¹ÄÀøÍæ¼Ò»¥¶¯
+  (help tasks)
+  ³¬´óµØÍ¼£¬³¬¶àÄÚÈÝ£¬³¬¶àÃÅÅÉ¡£¶àÖÖ´îÅäÑ¡Ôñ
+  (help maps) (help menpai) (help aboutquest)
+  Ê®ÎåÄêÀÏÕ¾£¬Æ·ÅÉ£¬ÌìÌìÓÐ¿ª·¢Õß¹ÜÀíÔ±ÔÚÏß¡£
+  ±£³ÖÄÚÈÝ²»¶Ï¸üÐÂ¡£
+  (help whatsnew)
+
+2.º£ÑóIV »áÔ±×Ê¸ñ±£Áô·½°¸
+ÐÂÕ¾¿ªÊ¼2012Äê3ÔÂ10ºÅÆð 
+2012Äê 3ÔÂ19ÈÕ-3ÔÂ29ÈÕ.°×Ìì9:00-11:00 ÏÂÎç1:00-4:00 
+ÉêÇëÌõ¼þ:¾­Ñé³¬¹ý30Íò
+ÏòÔÚÏßÏò¹ÜÀíÔ±±¨ÉÏÄãÔ­À´µÄ»áÔ±ºÅºËÊµºó£¬°ÑÔ­À´µÄ»áÔ±
+×Ê¸ñºÍµÈ¼¶£¬Ö±½Ó¸øÄãÔÚÐÂÕ¾£¬×¢²áµÄÐÂID¡£
+»áÔ±×Ê¸ñÊ±¼ä£¬°´ÄãÔ­À´»áÔ±µÈ¼¶µÄ×î´óÊ±¼ä¸ø¡£
+
+3.hpÃüÁî scoreÃüÁî ¸ü»»ÎªÐÂ°æ
+  ÀÏÃüÁî¸ÄÎªhp2,score2
+  
+2012Äê3ÔÂ19ÈÕ  
+1.ÐÂÔöset showmap 1²ÎÊýÉè¶¨
+  Éè¶¨ºó£¬ÒÆ¶¯Ê±»áÏÔÊ¾Ð¡µØÍ¼
+
+2012Äê3ÔÂ22ÈÕ  
+1.ÐÂÔöwho -m ²ÎÊý,ÏÔÊ¾ËùÓÐ»áÔ±ÐÅÏ¢¡£
+2.help aboutquest µÄÃÅÅÉ¼òµ¥ÈÎÎñËÙ¶ÈÔö¼Ó
+3.ÐÂÊÖ±³°üÔö¼Ó³õÖÐ¼¶ÈÎÎñµÄÖ±½Ó×ø´ó³µÈ¥µÄ¹¦ÄÜ¡£
+
+2012Äê3ÔÂ24ÈÕ  
+1.ËùÓÐËæ»úÊÂ¼þ£¬·¢µÄÀñÎïÈ«²¿¼ÓÇ¿¼ÛÖµºÍÐ§¹û
+2.ÌúÕÆÊØÉ½ÈÎÎñ ÎÞ½±ÀøÎÊÌâÐÞÕý
+3.ÉñÁúºÜ¶àµÜ×ÓÃ»ÈëÃÅÅÉµÄÎÊÌâÐÞÕý
+
+2012Äê3ÔÂ25ÈÕ  
+1.åÐÒ£Á·ÇÙÈÎÎñ ½±ÀøÌáÊ¾²»ÕýÈ·ÎÊÌâÐÞÕý¡£
+
+2012Äê3ÔÂ26ÈÕ  
+1.ÁéðÕÉ½£¬²¿·ÖÊ¦¸µÎä¹¦µ÷Õû
+2.ÐÂÊÖ½øÈëÓÎÏ·£¬ÐÂÔö¼ÓÁËÐÂÊÖÑµÁ·´å(¹Å´å)
+
+2012Äê3ÔÂ27ÈÕ  
+1.help nbjob ¶Ô´¿ÐÂÊÖ¿ª·¢ÁËÐÂÊÖ½Ì³ÌÏµÁÐÈÎÎñ¡£
+
+2012Äê3ÔÂ28ÈÕ  
+1.ÎÀ¹úÕ½Õùhelp weiguo È¡ÏûÍæ¼ÒexpÏÞÖÆ
+
+2012Äê3ÔÂ29ÈÕ  
+1.ÃÅÅÉ´óµÜ×ÓµÄÁîÅÆ£¬ÃËÖ÷µÄÈ¨ÕÈ ÏÂÏßºó²»µô.
+2.ÃÅÅÉ´óµÜ×ÓµÄÁîÅÆËùÓÐÊôÐÔ¼Ó5µã£¬ÃËÖ÷µÄÈ¨ÕÈËùÓÐÊôÐÔ¼Ó15µã
+3.ÃÅÅÉ´óµÜ×ÓµÄÁîÅÆ£¬ÃËÖ÷µÄÈ¨ÕÈ ×°±¸ºó,»áÔö¼Ó¹¥·ÀÖµ
+4.ÃÅÅÉ´óµÜ×ÓµÄÁîÅÆ£¬¿ÉÒÔ¶Ô±¾ÃÅµÄÍæ¼Òhuifu (»Ö¸´) ËùÓÐÆøÑª£¬ÄÚÁ¦
+5.ÃËÖ÷µÄÈ¨ÕÈ ¿ÉÒÔ¶ÔÍæ¼Òhuifu (»Ö¸´) ËùÓÐÆøÑª£¬ÄÚÁ¦
+  (Ïà¹ØÃüÁîtopp)
+  
+2012Äê3ÔÂ30ÈÕ    
+1.help event     ×ÔÈ»¾°¹Û ¹Û¾°µÄ½±ÀøÌá¸ß.
+2.help wlzb      ½­ºþºÆ½ÙÊ±³öÏÖµÄµÐÈË,ÄÑ¶È¼õÉÙ£¬½±Àø¼Ó¶à¡£
+3.help newbie_all ·¢²¼ÁËÈ«ÐÂµÄÃÅÅÉÖ¸ÄÏ°ïÖú¡£
+
+2012Äê3ÔÂ31ÈÕ    
+1.Îäµ±£¬ÈÕÔÂ ÊØ»¤ÈÎÎñ ¿ÉÒÔÓÃvolunteerÈ¡ÏûÈÎÎñ
+2.ÃÅÅÉ¼¯ÌåÈÎÎñ help teamjob ÄÑ¶È¼õÉÙ 
+  Ã»ÓÐ×ªÉúºÍ¾­ÑéÐ¡ÓÚ6MµÄÍæ¼Ò µÐÈËÎä¹¦¼õÉÙ1/3 ²¢¸æÖªÑ°±¦ÈÎÎñµÄ¾ßÌåµÐÈËÎ»ÖÃ¡£
+3.ÐÂÔöÉñÊéÈÎÎñ£¬·Ö²¼µÄ¸÷ÖÖµÐÈË£¬É±ËÀ¿ÉÒÔ»ñµÃ±È½Ï¶àµÄ½±Àø¡£  
+
+2012Äê4ÔÂ4ÈÕ    
+1.ÐÞÕýÃÅÅÉÈÎÎñ£¬ÎÞÃÅÅÉ¹±Ï×µÄÎÊÌâ
+2.ÐÂÔöÍæ¼Ò»¥¶¯ÈÎÎñ help hdjobs
+3.¹ØÍâ£¬ËÉ»¨½­´óÇÅÍê¹¤¡£
+4.¿ª·ÅNK³É³¤·½Ê½
+  1.Íæ¼ÒÓë¾­ÑéºÍ×Ô¼º²î²»¶àµÄNPC(Ä¾ÈË³ýÍâ)Õ½¶·£¬»á»ñµÃÒ»¶¨µÄ¾­ÑéºÍÇ±ÄÜ»¹ÓÐËùÓÃÎä¹¦µÄ³É³¤¡£
+  2.Íæ¼Ò³É¹¦¶ã±Ü£¬»ò·ÀÊØ×Ô¼º²î²»¶àµÄNPCµÐÈËµÄ¹¥»÷£¬»á»ñµÃÒ»¶¨µÄÇá¹¦»òÕÐ¼ÜµÄ³É³¤
+  
+2012Äê4ÔÂ8ÈÕ      
+1.ÎäÁÖ³µÂíÆ±¼ÓÇ¿ 
+  ¿ÉÒÔÔÚÑïÖÝµÄ×íÏÉÂ¥£¬ºÍÔÓ»õÆÌ ¿ÉÒÔÂòµ½
+  ¿ªÍ¨µÄÇøÓò´ó´ó¼Ó¶à¡£
+2.ÐÞÕýÁËÒ»Ð©Ï¸½ÚÎÊÌâ
+  »¥¶¯job ´òhdjob ÏÔÊ¾ÓÐÈÎÎñµÄÍæ¼ÒID
+  ¹ØÍâ¿ÉÒÔÖ±½Óµ½´ïËÉ»¨½­ ½­Ãæ  
+  
+2012Äê4ÔÂ9ÈÕ        
+1.ÐÂÔöÄÚ¹¦  exert heal ¿ÉÒÔÍ¬Ê±»Ö¸´¾«ÓëÆø¡£
+
+2012Äê4ÔÂ10ÈÕ        
+1.½­ºþ»¥¶¯ÈÎÎñ¿ª·Å²âÊÔ help taskjobs
+
+2012Äê4ÔÂ11ÈÕ        
+1.ÐÞÕýÁËbig5Íæ¼Ò²»ÄÜÊ¹ÓÃemote chatµÄÎÊÌâ¡£
+2.ÐÂÔöµÈ¼¶ÏµÍ³ Íæ¼Òscore¿´ÊÇ¿ÉÒÔ¿´µ½×Ô¼ºµÄµÈ¼¶,ºÍÏÂ´ÎÉý¼¶ÐèÒªµÄ¾­Ñé,Ã¿Ò»´ÎÉý¼¶£¬»áÔö¼ÓºÜ¶àÊôÐÔ¡£
+3.¹ù¾¸±£»¤ÈÎÎñ ÈÎÎñÁ¬ÐøÍê³ÉµÃµ½µÄ¸½¼Ó½±Àø.Éè¶¨ÉÏÏÞ¡£²¢ÐÞÕý²Î¿¼¾«ÆøµÄÎÊÌâ
+4.»ÆÈØ³ý¶ñÈÎÎñ ÈÎÎñÁ¬ÐøÍê³ÉµÃµ½µÄ¸½¼Ó½±Àø.Éè¶¨ÉÏÏÞ¡£²¢ÐÞÕý²Î¿¼¾«ÆøµÄÎÊÌâ
+
+2012Äê4ÔÂ12ÈÕ        
+1.»¥¶¯ÈÎÎñ¼ÓÇ¿
+  1.hdjob²é¿´»¥¶¯ÈÎÎñÊ±£¬½ÓÁËÈÎÎñ£¬»¹¿ÉÒÔ²é¿´±ðµÄÈÎÎñ
+  2.ÐÂÔöµÚ5 ÖÖÈÎÎñ »¥¶¯ °ÑÒ»¸öÀñÎïËÍ¸øÁíÒ»¸öÍæ¼Ò£¬»¥¶¯µÄË«·½¶¼ÓÐ½±Àø (give)
+    (Èç¹û¶Ô·½ÏÂÏßÁË£¬¿ÉÒÔ°ÑÀñÎïÂôÁË»»Ç®)
+    (Èç¹û¶Ô·½ÔÚÏß£¬¿ÉÒÔÓÃhdjobÃüÁî²é¿´¶Ô·½µÄËùÔÚ)
+  3.»áÔ±Ã¿ÌìÁì½±ÀøÊýÖµ¼ÓÇ¿Ò»±¶ Îª»ù´¡30000+ (»áÔ±µÈ¼¶*20000)
+  
+2012Äê4ÔÂ13ÈÕ          
+1.ÐÞÕýÒ»Ð©jobµÄµØµã³ö´íÎÊÌâ¡£
+
+2012Äê4ÔÂ16ÈÕ          
+1.ÄÚ¹¦exert heal ÓÉÓÚÓëÌØÊâÄÚ¹¦³åÍ»£¬¸ÄÎªexert cureheal.(ÐÂÔö¿ÉÒÔ»Ö¸´jingÉÏÏÞ)
+2.ËùÓÐµÄÃÅÅÉÁîÅÉÀà£¬¿ÉÒÔ»Ö¸´jingÉÏÏÞ¡£
+3.task ÉñÊé1ÈÎÎñ£¬µ¥±¾½±Àø¼Ó¶à.³öÀ´µÄµÐÈËÉ±ºó½±Àø¼Ó¶à¡£  
+4.help zhuangsheng ×ªÉú»úÖÆµ÷Õû 
+ ×Ô¶¯×ªÉú: 
+          Íæ¼ÒÎ´×ªÉú ¾­Ñé´ïµ½20M ×Ô¶¯Ò»×ª.
+          Íæ¼ÒÒÑÒ»×ª ¾­Ñé´ïµ½50M ×Ô¶¯¶þ×ª.
+          Íæ¼ÒÒÑ¶þ×ª ¾­Ñé´ïµ½60M ×Ô¶¯Èý×ª.
+          Íæ¼ÒÒÑÈý×ª ¾­Ñé´ïµ½100M ×Ô¶¯ËÄ×ª
+          Íæ¼ÒÒÑËÄ×ª ¾­Ñé´ïµ½200M ×Ô¶¯Îå×ª
+
+2012Äê4ÔÂ17ÈÕ                    
+1.ËùÓÐÎ´×ªÉíµÄÍæ¼Ò£¬×öÒ»°ãÈÎÎñ£¬ËÙ¶È¼Ó±¶. (¹Ç»Ò»áÔ±ÔÙ¼Ó±¶)
+2.Ò»°ãÃÅÅÉÈÎÎñÖÐÉ±ÈËµÄÈÎÎñ£¬Èç¹ûÓÐ½±Àø£¬¹Ç»Ò»áÔ±½±Àø¼Ó±¶
+3.ÐÞÕýÁËÈÕÔÂÊØÎÀÈÎÎñ exp½±ÀøÖµÃ»ÓÐÖØÐÂÉè¶¨µÄÎÊÌâ¡£
+4.Íæ¼Ò»¥¶¯ÈÎÎñ½±ÀøÔö¼Ó(help hdjobs) ²¢ÇÒÍæ¼ÒÃ¿´ÎµÇÂ½Á¬Ðø×ö£¬°´Á¬ÐøÊýÁ¿ÓÐ¸½¼Ó½±Àø
+  (Íæ¼Ò»¥¶¯ÈÎÎñÍê³ÉÊ±£¬ÓÐ1/5¿ÉÄÜÔö¼ÓÃÅÅÉ¹±Ï×)
+5.½­ºþ»¥¶¯ÈÎÎñ½±ÀøÔö¼Ó(help taskjobs) ²¢ÇÒÍæ¼ÒÃ¿´ÎµÇÂ½Á¬Ðø×ö£¬°´Á¬ÐøÊýÁ¿ÓÐ¸½¼Ó½±Àø
+  (½­ºþ»¥¶¯ÈÎÎñÍê³ÉÊ±£¬ÓÐ1/9¿ÉÄÜÔö¼ÓÃÅÅÉ¹±Ï×)
+6.ÉñÊéÏµÍ³ help tasks (µ¥±¾£¬¶à±¾µÄ½±ÀøÈ«²¿Ôö¼Ó)  
+
+2012Äê4ÔÂ18ÈÕ                    
+1.Ò»Ð©ÈËÉÙµÄÃÅÅÉ ÐÂÊÕÁËÒ»Ð©µÜ×Ó¡£¿ÉÒÔ¹©´ó¼Ò¶ÔÁ·¡£
+2.help wlmm Ìá¹©×îÐÂµÄËùÓÐÈËÎï£¬ºÍÎïÆ·µÄ×ÊÁÏ(help hynpc,help hynpc2,help hyobj)
+3.ÎåÔÀ½£ÅÉÃËÖ÷ ½øÈëº£Ñó¸÷ÅÉÖªÃûÈËÊ¿ÁÐ±í(topp) »ñµÃµÄÎåÔÀ½£ÅÉÁîÆì ÏÂÏß²»µô¡£
+
+2012Äê4ÔÂ19ÈÕ                    
+1.Íæ¼Ò»¥¶¯ÈÎÎñ½±ÀøÔö¼Ó(help hdjobs) ½­ºþ»¥¶¯ÈÎÎñ½±ÀøÔö¼Ó(help taskjobs)
+2.ÍêÉÆÁËÒ»Ð©µØÍ¼ ±ÈÈçËµ help map_kd help help map_ydp
+3.ÉñÊéÏµÍ³ help tasks (µ¥±¾£¬¶à±¾µÄ½±ÀøÈ«²¿Ôö¼Ó)  
+4.ÒÑ¾­»ñµÃ  ÕýÅÉÃËÖ÷  Ð°ÅÉÃËÖ÷ÐÅÎïµÄÍæ¼Ò£¬¿ÉÒÔÖ±½Óask noname about mengzhu ¿ÉÒÔÈ¥ÄÃ»ØÐÅÎï
+
+2012Äê4ÔÂ23ÈÕ                    
+1.18Ëêºó£¬¸ù¾ÝÏÈÌìÊôÐÔÕÇqi,jing Ð§¹û¼ÓÇ¿¡£
+2.³åÑ¨ Ôö³¤Æø¾«ÉÏÏÞÐ§¹û·­±¶£¬Õ½¶·ÖÐ»Ö¸´Æø£¬¾«Ð§¹û·­±¶(help chongx)
+3.Íæ¼Ò»¥¶¯ÈÎÎñ½±ÀøÔö¼Ó(help hdjobs) ½­ºþ»¥¶¯ÈÎÎñ½±ÀøÔö¼Ó(help taskjobs)
+4.ÉñÊéÏµÍ³ help tasks (µ¥±¾£¬¶à±¾µÄ½±ÀøÈ«²¿Ôö¼Ó)  
+5.Î´×ªÉúÇ°µÄÍæ¼Ò»ò¹Ç»Ò»áÔ±£¬´ò×ø(dazuo)ËÙ¶È¼Ó3±¶  Ñ§Ï°(learn) Á·Ï°(lian) ËÙ¶È¼Ó±¶
+6.ÉñÒ½Ò¶¼ÃÊÀ ¿ªÊ¼Ãâ·ÑÎªËùÓÐÎ´×ªÉú»ò¹Ç»Ò»áÔ± ÁÆÉË(heal) ¿ÉÒÔ°ïÍæ¼ÒÁÆÉË»ò½â¶¾¡£
+  ask ye yishi about heal
+  ÒøÕëµÄÍþÁ¦Ò²µÃµ½ÁË¼ÓÇ¿¡£
+7.ÔöÇ¿ÁËÐÂÊÖ±³°üÐÝÏ¢xiuxi ÐÞÐÐxiuxing   µÄ»Ö¸´qi,jing Ð§¹û
+
+2012Äê4ÔÂ24ÈÕ
+  ÈýÃÅ¼Ó»Ö¸´×´Ì¬µÄÎä¹¦£¬¼õÉÙbusy,ºÍÊ¹ÓÃ¼ä¸ôÊ±¼ä£¬²¢¿ÉÒÔ¶Ô×Ô¼ºÊ¹ÓÃ¡£
+  ¶ëáÒÅÉ ¡¾ÁÙ¼ÃÊ®¶þ×¯¡¿(linji-zhuang) ÄÚ¹¦ ÃîÉË¾ö miaojue  ¿ÉÒÔ¸øÍæ¼ÒÌæ¼Ó»Ö¸´qiµÄ×´Ì¬¡£
+  °×ÔÆâÖ ¡¾±ÌÌÎÐÄ·¨¡¿(bitao-shengong) ÄÚ¹¦ ÃîÏÉ¾ö miaoxian ¿ÉÒÔ¸øÍæ¼ÒÌæ¼Ó»Ö¸´jingµÄ×´Ì¬¡£
+  ºãÉ½ÅÉ ¡¾°×ÔÆÐÄ·¨¡¿(baiyun-xinfa)   ÄÚ¹¦ ÃîÓû¾ö miaoyu   ¿ÉÒÔ¸øÍæ¼ÒÌæ¼Ó»Ö¸´neiliµÄ×´Ì¬¡£
+
+2012Äê4ÔÂ25ÈÕ  
+  ÃÅÅÉ×é¶ÓÈÎÎñ help teamjob Ôö¼ÓÁ¬Ðø¶È   °´Á¬ÐøÊýÁ¿ÓÐ¸½¼Ó½±Àø
+  ÃÅÅÉ×é¶ÓÈÎÎñ help teamjob Î´×ªÉíµÄÍæ¼Ò ¹Ç»Ò»áÔ±£¬½±ÀøÔö¼Ó
+
+2012Äê4ÔÂ26ÈÕ    
+  1.ÐÞÕýÁË½âÉñÕÕ¾­ Ñ©É½É½¶´Çé½ÚµÄÒ»¸öBUG
+  2.ÐÞÕýÁËteamjob ÃÅÅÉ¹±Ï×½±ÀøµÄBUG
+  
+2012Äê4ÔÂ27ÈÕ      
+  1.ÐÞÕýÁËask Ò²»áÓÐÁ¬Ðø¶ÈµÄÎÊÌâ. (Ö»ÓÐÍê³ÉÈÎÎñÊ±ÓÐÁ¬Ðø¶È½±Àø)
+  2.ÌìµØ»á(ÔÆÁúÃÅ)£¬ÐÂ½¨ÁËÍ¨Ïò¸÷µØµÄ°µµÀ¡£ÓÐÌìµØ»áÐÅÎï(Tiandi ling)µÄ¿ÉÒÔÖ±½Ó»Øµ½×Ü¶æ(home)
+  3.ÐÞÕýÁË»¤ËÍÈÎÎñÉ±µÐÈË Ò²»áÓÐÁ¬Ðø¶ÈµÄÎÊÌâ. (Ö»ÓÐÍê³ÉÈÎÎñÊ±ÓÐÁ¬Ðø¶È½±Àø)
+  
+2012Äê4ÔÂ28ÈÕ
+  1.Íæ¼Ò»¥¶¯ÈÎÎñÐÂÔö ½­ºþ»¥¶¯ÈÎÎñ£¬(help hdjobs)        
+  2.Íæ¼Ò»¥¶¯ÈÎÎñÐÂÔö ½­ºþÌôÕ½ÈÎÎñ£¬(help hdjobs)        
+  3.Íæ¼Ò»¥¶¯ÈÎÎñÐÂÔö Íæ¼Ò»áÃæÈÎÎñ£¬(help hdjobs)        
+
+2012Äê4ÔÂ29ÈÕ  
+  1.Íæ¼Ò»¥¶¯ÈÎÎñÐÂÔö ÐüÉÍÕ½BOSSÈÎÎñ£¬(help hdjobs)        
+  2.practice|lian <¼¼ÄÜÖÖÀà> <´ÎÊý> ´ÎÊý¸ÄÎª×î´ó300
+  3.Íæ¼Ò»¥¶¯ÈÎÎñ½±ÀøÔö¼Ó(help hdjobs) Á¬ÐøÊýÁ¿µÄ¸½¼Ó½±Àø»ù´¡ÖµÔö¼Ó
+  4.½­ºþ»¥¶¯ÈÎÎñ½±ÀøÔö¼Ó(help taskjobs) Á¬ÐøÊýÁ¿µÄ¸½¼Ó½±Àø»ù´¡ÖµÔö¼Ó
+  5.ÉñÊéÏµÍ³ help tasks (µ¥±¾£¬¶à±¾µÄ½±ÀøÈ«²¿Ôö¼Ó)  
+  6.ÀÍ¶¯½ÚÀñ°ü¿ªÊ¼·¢·Å   ÑïÖÝÖÐÑë¹ã³¡ ask noname about ÀñÎï »ò ask noname about gift
+    µÃµ½Àñ°üºó opengift dalibao   ·¢·ÅÊ±¼ä3Ìì µ½5ÔÂ2ºÅÎªÖ¹
+  7.ÐÂÊÖ±³°ü£¬Ê¹ÓÃÏÞÖÆ´Ó22Ëê¸ÄÎª26Ëê¡£
+  
+2012Äê4ÔÂ30ÈÕ    
+  1.ÐÂÊÖËÀÍö±£»¤¸ÄÎª3M
+  2.½­ºþ»¥¶¯ÈÎÎñ ±»ÌôÕ½Õß£¬²»ËÀÍö¡£
+  (ÌôÕ½Õß»áËÀ,´ó¼ÒÉ÷ÖØÌôÕ½£¬×îºÃË«·½¶¼ÔÚÏßÊ±ÌôÕ½)
+  3.ÉñÊéÏµÍ³ help tasks (Î´×ªÉúÇ°»ò¹Ç»Ò»áÔ±£¬½±Àø¼Ó±¶)
+  4.ÃÅÅÉ×é¶ÓÈÎÎñ help teamjob  (Î´×ªÉúÇ°»ò¹Ç»Ò»áÔ±£¬½±ÀøÔö¼Ó)
+  
+2012Äê5ÔÂ1ÈÕ      
+  1.ÉÙÁÖÅÉÎä¹¦¸üÐÂ
+    wuying-jian ranmu-daofa,weituo-chu,riyue-bian,longzhua-gong
+    (Æ½ÕÐÉ±ÉËÁ¦£¬Ëæ×ÅµÈ¼¶Ìá¸ß£¬¶øÌá¸ß)
+    wuying-jian perform wuying ÔÚµÈ¼¶300,400,500 Ê±»áÓÐ¶îÍâµÄ³É³¤
+    longzhua-gong perform sanhua ÔÚµÈ¼¶200,300,500 Ê±»áÓÐ¶îÍâµÄ³É³¤
+  2.Îäµ±ÅÉÎä¹¦¸üÐÂ  
+    taiji-jian taiji-quan
+    (·´»÷¼°Æ½ÕÐÉ±ÉËÁ¦£¬Ëæ×ÅµÈ¼¶Ìá¸ß£¬¶øÌá¸ß)
+    taiji-jian perform lian ÔÚµÈ¼¶200,300,600 Ê±»áÓÐ¶îÍâµÄ³É³¤
+    taiji-quan perform zhan ÔÚµÈ¼¶200,300,600 Ê±»áÓÐ¶îÍâµÄ³É³¤
+    taiji-quan perform tu Ê¹ÓÃËùÐèµÄÄÚÁ¦£¬¾«Á¦¼õÉÙ¡£
+
+2012Äê5ÔÂ2ÈÕ          
+   1.ÁèÏö³ÇÎä¹¦¸üÐÂ
+   mingyu-gong,snowwhip,xueshan-sword,jinwu-blade 
+    (Æ½ÕÐÉ±ÉËÁ¦£¬Ëæ×ÅµÈ¼¶Ìá¸ß£¬¶øÌá¸ß)
+    bingxue-xinfa Ôö¼Óº®¶¾¹¥»÷×÷ÓÃ¡£
+   xueshan-sword perform fengxue ÔÚµÈ¼¶300,600 Ê±»áÓÐ¶îÍâµÄ³É³¤
+   xueshan-swrod perform xuehua ¼õÉÙÄÚÁ¦ÒªÇó¼°Ê¹ÓÃÊ±¼ä
+   xueshan-sword perform wanmei ÔÚµÈ¼¶300,600 Ê±»áÓÐ¶îÍâµÄ³É³¤
+   2.¶ëáÒÎä¹¦¸üÐÂ
+   huifeng-jian,yitian-jian,yinlong-whip
+   (Æ½ÕÐÉ±ÉËÁ¦£¬Ëæ×ÅµÈ¼¶Ìá¸ß£¬¶øÌá¸ß)
+   huifeng-jian µÄperform ¼õÉÙÄÚÁ¦ÒªÇó¼°Ê¹ÓÃÊ±¼ä
+   yitian-jian perform fumo  ÔÚµÈ¼¶300,600 Ê±»áÓÐ¶îÍâµÄ³É³¤
+   yitian-jian perform yitianÔÚµÈ¼¶300,600 Ê±»áÓÐ¶îÍâµÄ³É³¤
+   ¶ëáÒÅÉ (linji-zhuang) ÄÚ¹¦ ÃîÉË¾ö miaojue  ¿ÉÒÔ¸øÍæ¼ÒÌæ¼Ó»Ö¸´qiµÄ×´Ì¬£¬¿ÉÒÔ¶Ô×Ô¼ºÊ¹ÓÃ¡£
+   3.»áÔ±±³°ü£¬ÐÂÊÖ±³°üµÄµÄÐÝÏ¢¹¦ÄÜ¼ÓÇ¿ (xiuxi)
+    (¿ÉÒÔ»Ö¸´ÉÏÏÞ,¼õÉÙ»Ö¸´ËùÐèµÄÊ±¼ä)
+    
+2012Äê5ÔÂ3ÈÕ              
+   1.»ªÉ½ÅÉÎä¹¦¸üÐÂ
+   lonely-sword  (Æ½ÕÐÉ±ÉËÁ¦£¬Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Æ½ÕÐÊ¹ÓÃÄÚÁ¦¼õÉÙ)
+   lonely-sword ¿ÉÒÔÑ§Ï°µÄµÈ¼¶´Ó120¼¶Ìá¸ßÎª320¼¶
+   lonely-sword perform pozhao ¼ÓÇ¿ ÔÚµÈ¼¶200,300 Ê±»áÓÐ¶îÍâµÄ³É³¤
+   lonely-sword perform poanqi,pobian,podao,pojian,poqi,poqiang,posuo,pozhang Ê¹ÓÃÊ±²»ÐèÒªÄÚÁ¦ËðºÄ
+   huashan-sword ¸÷Ïîperform ¼õÉÙÄÚÁ¦µÄËðºÄ¡£
+   2.Îå¶¾½ÌÎä¹¦¸üÐÂ
+   wudu-shengong Ôö¼Ó¶¾¹¥»÷×÷ÓÃ¡£
+   wudu-shengong perform heal Ôö¼Ó½â³£¼û¶¾£¬¼°Îå¶¾½Ì×¨ÓÐ¶¾×÷ÓÃ
+   wudu-goufa,shedu-qiqiao£¬ruanhong-zhusuo  (Æ½ÕÐÉ±ÉËÁ¦£¬Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Æ½ÕÐÊ¹ÓÃÄÚÁ¦¼õÉÙ)
+   duji ÃÅÅÉÊ¦¸µÔö¼Óµ½600¼¶¡£
+   wudu-goufa,shedu-qiqiao£¬ruanhong-zhusuo Ò»Ð©¾ø¼¼(perform )Ê¹ÓÃµÄÄÚÁ¦¼õÉÙ¡£
+   
+2012Äê5ÔÂ4ÈÕ
+ 1.ÎåÒ»´óÀñ°ü·¢·Å½áÊø£¬´ó¼Ò±ðÍüÁËÉêÇëÏÂ´ÎÀñ°ü
+  ÑïÖÝÖÐÑë¹ã³¡ 
+  ask noname about ÉêÇëÀñÎï
+  »òask noname about yaogift
+ 2.ËÀÍöËðÊ§Îä¹¦,Ö»ÓÐÔÚÎä¹¦µÈ¼¶³¬¹ý100¼¶ÒÔÉÏÊ±ËðÊ§1¼¶£¬
+   ·ÅÆúÎä¹¦Ê±£¬²»ÔÙÐèÒªÖØÐÂenable ËùÓÐÎä¹¦
+   
+2012Äê5ÔÂ7ÈÕ   
+  1.ÁéðÕ åÐÒ£ Îä¹¦¸üÐÂ
+   liuyang-zhang,liuyue-jian,tianyu-qijian,zhemei-shou,youming-guuizhao,lingboweibu,ruyi-dao
+   (Æ½ÕÐÎüÈ¡ÄÚÁ¦¼°É±ÉËÁ¦£¬Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß)
+   beiming-shengong,bahuang-gong  Ôö¼ÓÌØÊâ¹¥»÷ ¿ÉÒÔÎüÈ¡ÄÚÁ¦
+   lingboweibu Ôö¼ÓÌØÊâÕÐ¼Ü¼°ÌØÊâ¹¥»÷
+   zhemei-shou perform zhemei 300,500,600 Ê±»áÓÐ¶îÍâµÄ³É³¤
+   ÌØÊâÕÐ¼Ü¿ÉÒÔÎüÈ¡ÄÚÁ¦
+   ÌØÊâ¹¥»÷¿ÉÒÔÊ¹µÐÈËÃ¦ÂÒ
+   lingboweibu ÐÂÔöperform break ÌØÊâ¹¥»÷¡£
+   ÉúËÀ·ûss_poisoin(¼ÓÇ¿)
+
+2012Äê5ÔÂ8ÈÕ      
+  1.ÌÒ»¨µºÎä¹¦¸üÐÂ
+    luoying-zhang,tanzhi-shentong,xuanfeng-leg,yuxiao-jian,lanhua-shou
+     (Æ½ÕÐ¿ÉÄÜÉËµÐ£¬²¢Ê¹µÐÈËÃ¦ÂÒ£¬Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß)
+    tanzhi-shentong perform zhuan ÔÚµÈ¼¶300,600 Ê±»áÓÐ¶îÍâµÄ³É³¤
+  2.ÌÆÃÅ¸üÐÂ
+    zhuihun-biao,liuxing-biao,pili-biao,zimu-zhen
+    (Æ½ÕÐ¿ÉÄÜÉËµÐ£¬²¢Ê¹µÐÈËÖÐ¶¾£¬Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß)
+    zimu-zhen perform qizigangbiao ÔÚµÈ¼¶350,600 Ê±»áÓÐ¶îÍâµÄ³É³¤
+    ÌØÉ«×¨ÓÐ¶¾ ÌÆÃÅ´ßÃüÉ¢ ¼ÓÇ¿
+    
+2012Äê5ÔÂ9ÈÕ      
+   1.È«Õæ¸üÐÂ
+    kongming-quan,quanzhen-jian,xiantian-qigong
+    (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶ºó£¬¿ÉÄÜÊ¹ÓÃÆßÐÇÒÆÎ» Ê¹µÐÈËÃ¦ÂÒ)
+    kongming-quan perform ruo ÔÚµÈ¼¶300,500,600 Ê±»áÓÐ¶îÍâµÄ³É³¤
+    quanzhen-jian perform jianzhen ÕÙ»½»ï°éºó£¬¿ÉÒÔÓÃperform qixinglianzhen.
+   2.ÉñÁú¸üÐÂ
+    diwangquan,dulong-shenzhua,qingshe-sword,shedao-qigong,shenlong-bashi,xuanming-zhang
+    (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶ºó£¬¿ÉÄÜÊ¹µÐÈËÖÐ¶¾²¢Ã¦ÂÒ)
+    shenlong-bashi Ïà¹ØÎä¹¦¾ø¼¼£¬ÄÚÁ¦ÐèÒª¼õÉÙ
+    shedao-qigongÆ½ÕÐ¼ÓÇ¿ ²¢ÐÂÔöperform shewu ¿ÉÒÔÕÙ»½ ËÄ½ÅÉñÁú °ïÖú¡£
+    
+2012Äê5ÔÂ10ÈÕ          
+   1.Ã÷½Ì¸üÐÂ
+     jiuyang-shengong,qiankun-danuoyi,shenghuo-ling,liehuo-jian,lieyan-dao,qishang-quan
+     (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶ºó£¬¿ÉÄÜÊ¹µÐÈËÃ¦ÂÒ²¢»Ö¸´´óÁ¿ÄÚÁ¦)
+     qiankun-danuoyi (·´»÷×÷ÓÃ¼ÓÇ¿ ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß)
+     liehuo-jian ,lieyan-dao µÄ¾ø¼¼¼ÓÇ¿
+     lieyan-dao perform shenghuo 300,400¼¶»áÓÐ¶îÍâ³É³¤
+   2.°×ÍÕÅÉ¸üÐÂ
+     hamagongÓëhamashengong ºÏ²¢Îªhamagong Ô­À´hamashengong perform hama ºÏ²¢Îª hamagong perform hamagong
+     hamagong,lingshe-zhangfa,qixian-wuxingjian,xiyu-tiezheng
+     (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶ºó£¬¿ÉÄÜÊ¹µÐÈËÃ¦ÂÒ²¢ÖÐ¶¾)
+     hamagong >=100¼¶ÒÔºó¿ÉÒÔjifa³ÉÍâ¹¦ unarmed,parry,strike ËùÊô¾øÕÐ¼õÉÙÄÚÁ¦ËðºÄ ºÍ¼ÓÇ¿ÍþÁ¦
+     lingshe-zhangfa,shentuo-zhang,shexing-diaoshou ¾øÕÐ¼õÉÙÄÚÁ¦ËðºÄ ºÍ¼ÓÇ¿ÍþÁ¦
+     ÌØÉ«×¨ÓÐ¶¾:ÆßÐÞÉß¶¾
+     
+2012Äê5ÔÂ11ÈÕ            
+   1.·ÉÌìÓù½£Á÷¸üÐÂ
+     ittouryu,feitian-yujianliu shiren-jianfa,shiren-quanfa
+       (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶ºó£¬¿ÉÄÜÊ¹µÐÈË´óÉ±ÉË)
+     shiren-jianfa,shiren-quanfa µÄÆ½ÕÐÍþÁ¦¼ÓÇ¿£¬×Ô¶¯·´»÷µÄÉ±ÉËÁ¦¼ÓÇ¿¡£
+   2.ÐÇËÞÅÉ¸üÐÂ
+     bingpo-blade,chanhun-suo,chousui-zhang,huagong-dafa,tianshan-zhang,xuantian-strike  
+     (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶ºó£¬¿ÉÄÜÊ¹µÐÈËÃ¦ÂÒ£¬²¢ÎüÈ¡ÄÚÁ¦)
+     chousui-zhang xuantian-strike  Ïà¹Ø¾ø¼¼(perform) ºÄËð¼õÉÙ£¬ÍþÁ¦¼ÓÇ¿¡£
+   3.´óÀí¸üÐÂ
+     yiyang-zhi,six-finger 
+     (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶ºó£¬¿ÉÄÜµÐÈËÃ¦ÂÒ²¢ÊÜÒ»ÑôÖ¸ÄÚÉË£¬»Ö¸´×Ô¼º)
+     yiyang-zhi,six-finger Ïà¹Ø¾ø¼¼(perform) ºÄËð¼õÉÙ£¬ÍþÁ¦¼ÓÇ¿¡£
+     yiyang-zhi perform heal ¿ÉÒÔ¶Ô×Ô¼ºÊ¹ÓÃ¡£
+     duanjia-sword Ïà¹Ø¾ø¼¼(perform) ºÄËð¼õÉÙ£¬ÍþÁ¦¼ÓÇ¿¡£
+   4.ÌìµØ»á¸üÐÂ
+     yunlong-jian wushen-jian
+     (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶ºó£¬¿ÉÄÜµÐÈËÃ¦ÂÒ²¢ÊÜÄýÑªÉñ×¥ÄÚÉË)
+     ÐÂÔöÎä¹¦ åÐÒ£ÎåÉñ½£ wushen-jian(°üÀ¨3ÃÅ³É³¤ÐÎ¾øÕÐ)
+     qi    Ææ½£¾÷  200¼¶ 300¼¶ºó»áÓÐ³É³¤
+     shen ÎåÉñ³¯ÔªÊÆ  200¼¶ 300¼¶ºó»áÓÐ³É³¤
+     slj ÉñÁú½£¾ö 200¼¶ 350¼¶ºó»áÓÐ³É³¤
+     
+2012Äê5ÔÂ14ÈÕ            
+   1.ÃÜ×Ú¸üÐÂ
+mingwang-jian xiangmo-chu xue-dao longxiang riyue-lun huoyan-dao
+ (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶ºó£¬¿ÉÄÜ½µÑý·üÄ§Öä Ê¹µÐÈË¼õÉÙ¹¥·À£¬²¢ÊÜÉËÃ¦ÂÒ)    
+mingwang-jian xiangmo-chu xue-dao longxiang riyue-lun huoyan-daoÏà¹Ø¾ø¼¼(perform) ºÄËð¼õÉÙ£¬ÍþÁ¦¼ÓÇ¿¡£
+   2.¹ÅÄ¹¸üÐÂ
+anranxiaohun-zhang,xuantie-sword.yinsuo-jinling,yunv-jian
+(ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶ºó£¬¿ÉÄÜÊ¹µÐÈËÖÐÓñ·æÕë¶¾£¬²¢Ã¦ÂÒ)    
+anranxiaohun-zhang,xuantie-sword Ïà¹Ø¾ø¼¼(perform) ºÄËð¼õÉÙ£¬ÍþÁ¦¼ÓÇ¿¡£
+anranxiaohun-zhang perform xiaohun 300,400,500¼¶ºó »áÓÐÔöÇ¿¹¥»÷
+yunv-xinfa Ôö¼ÓÎä¹¦200¼¶ºó£¬»áÓÐ×Ô¶¯¹¥»÷²¢¿ÉÄÜÊ¹µÐÈËÖÐÓñ·æÕë¶¾£¬²¢Ã¦ÂÒ
+
+2012Äê5ÔÂ15ÈÕ            
+  1.·ÉÌìÓù½£Á÷ ÐÂ¼ÓÖ±Í¨ÈªÖÝµÄ¿ì´¬
+  2.´¦Àí²¢ÐÞ¸ÄÁËÒ»Ð©»¤ËÍÈÎÎñ£¬²»ÄÜ´ïµ½µÄµØµã¡£
+  3.Ø¤°ï¸üÐÂ
+  xianglong-zhang,yuejia-qiang,suohou-gong,chansi-shou,dagou-bang
+  (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß)    
+  xianglong-zhang,dagou-bang  Ïà¹Ø¾ø¼¼(perform) ºÄËð¼õÉÙ£¬ÍþÁ¦¼ÓÇ¿¡£
+  xianglong-zhang perform kanglongwuhui 200,300,400,500 ¼¶Ê±£¬»áÓÐÌØÊâ±ä»¯
+  4.»áÔ±·¢Õ¹»î¶¯ 
+    1.»áÔ±±Ò³åÖµ£¬Âú10ËÍ1£¬Âú100ËÍ15
+    2.Íæ¼Ò·¢Õ¹ÈÎÎñ
+      ·¢Õ¹Ò»¸öÐÂÍæ¼ÒÀ´Íæ£¬ÐÂÍæ¼ÒÁ¬ÐøÍæÓÎÏ·³¬¹ý1ÖÜ£¬½±Àø»áÔ±±Ò30.
+      ·¢Õ¹10¸öÐÂÍæ¼ÒÀ´Íæ£¬ÐÂÍæ¼ÒÁ¬ÐøÍæÓÎÏ·³¬¹ý1ÖÜ, ½±Àø»áÔ±±Ò500
+    3.Íæ¼ÒÒ»×ªËÍ³õ¼¶»áÔ±×Ê¸ñ31Ìì,ÒÔºóÍæ¼ÒÃ¿´Î×ªÉú£¬ËÍº£Ñó±Ò30¡£
+     (ÒÔÇ°×ªµÄ²»²¹)
+
+2012Äê5ÔÂ16ÈÕ           
+  1.ÌúÕÆ¼ÓÇ¿
+   duanyun-fu,tiexue-hammer,tiezhang-zhangfa,tongbi-zhang,xuanyuan-axe
+   (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶Ê±£¬¿ÉÄÜÊ¹µÐÈËÃ¦µÐ²¢»Ö¸´×Ô¼º)    
+   tiezhang-zhangfa Ïà¹Ø¾ø¼¼(perform) ºÄËð¼õÉÙ£¬ÍþÁ¦¼ÓÇ¿¡£
+   tiezhang-zhangfa perform tianlei 300¼¶ÒÔÉÏ »áÓÐÌØÊâ±ä»¯
+   tiezhang-zhangfa perform tiezhangxianglong 200,300,400 ¼¶ÒÔÉÏ »áÓÐÌØÊâ±ä»¯
+   tiezhang-zhangfa ÌØÊâÄÚÉË ÌúÕÆ´¿Ñô¾¢ ÌúÕÆÒõº®¾¢
+  2.ÈÕÔÂ¼ÓÇ¿ 
+    kuihua-dafa
+   (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶Ê±£¬¿ÉÄÜÎüÈ¡µÐÈËÄÚÁ¦£¬²¢»Ö¸´×Ô¼º)    
+    kuihua-dafa Ïà¹Ø¾ø¼¼(perform) ºÄËð¼õÉÙ£¬ÍþÁ¦¼ÓÇ¿¡£
+    kuihua-dafa perform pi   300,400,500,600¼¶ÒÔÉÏ »áÓÐÌØÊâ±ä»¯
+    kuihua-dafa perform gui  200,300¼¶ÒÔÉÏ »áÓÐÌØÊâ±ä»¯
+    kuihua-dafa perform po   300¼¶ÒÔÉÏ »áÓÐÌØÊâ±ä»¯
+    kuihua-dafa perform tonggui  ¿ÉÒÔ·Ç¾ø¾³Ê±³öÕÐ¡£(ÐÂÕÐ) Ô­ÓÐµÄÔÚ¾ø¾³¿ÉÒÔ³öÕÐ¡£
+    
+2012Äê5ÔÂ17ÈÕ  
+  1.À¥ÂØÅÉ¸üÐÂ
+    liangyi-jian,music,qidao ¼ÓÇ¿ 
+    (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦200¼¶Ê±£¬¿ÉÄÜÃ¦µÐÉ±ÉËµÐÈË£¬±»´òÖÐÊ±¿ÉÄÜ»Ö¸´×Ô¼º)    
+    liangyi-jian,music,qidao Ïà¹Ø¾ø¼¼(perform) ºÄËð¼õÉÙ£¬ÍþÁ¦¼ÓÇ¿¡£
+    ÌØÉ«¾«ÉñÉËº¦ Àë±ð
+  2.Ä½ÈÝÅÉ¼ÓÇ¿
+    douzhuang-xingyi,six-sword,canhe-zhi   
+    (ÍþÁ¦Ëæ×ÅµÈ¼¶Ìá¸ß¶øÌá¸ß Ïà¹ØÎä¹¦300¼¶Ê±£¬¿ÉÄÜ·´»÷µÐÈË£¬¼õÉÙµÐÈËÉËº¦)     
+    douzhuang-xingyiµÄÌØÊâÐ§¹û£¬ÍþÁ¦¼ÓÇ¿£¬Ð§¹û¼Ó¶à¡£
+    murong-jianfa Ïà¹Ø¾ø¼¼(perform) ºÄËð¼õÉÙ£¬ÍþÁ¦¼ÓÇ¿¡£
+  3.¾ÅÒõÏµÁÐÎä¹¦ÔöÇ¿
+    ½â¿ª¾ÅÏÞÉÏ   Íæ¼ÒÆøÑª¼Ó0.5±¶
+    ½â¿ª¾ÅÏÞÏÂ   Íæ¼Ò¾«Æø¼Ó0.5±¶
+    ½â¿ª¾ÅÒõËÙ³É Íæ¼Ò¾«Á¦¼Ó0.5±¶
+    ¾ÅÒõÏµÁÐÎä¹¦£¬¾øÕÐ¼ÓÇ¿
+
+2012Äê5ÔÂ18ÈÕ      
+  1.¾ÅÒõÎä¹¦ ¾ÅÒõÕæ¹¦ ¾øÕÐ¼ÓÇ¿ ËùÓÐÁÆÉË£¬¾«ÆøÍ¬Ê±ÁÆ¡£
+    ¾ÅÒõÉñ×¦ ¾ÅÒõÉñÕÆ ´ó·üÄ§È­·¨  ¿ÉÒÔ»¥±¸
+    ¾ÅÒõÉñ×¦ ¾ÅÒõÉñÕÆ ´ó·üÄ§È­·¨ ÐþÒõ½£·¨ ¾ÅÒõÒøÁú±Þ
+    (Ïà¹Ø¾øÕÐperform ¼ÓÇ¿ ºÄËð¼õÉÙ)
+    
+2012Äê5ÔÂ22ÈÕ          
+  1.ÐÞÕýÁË ½­ºþËæ»úÈÎÎñ ÖÐº¼ÖÝÀÏºÍÉÐµÄµØµã´íÎó
+  2.ÐÞÕýÁË »¥¶¯ÈÎÎñÖÐ»áÃæÈÎÎñµÄÎÊÌâ£¬Èç¹ûask newsºó£¬¾Í±ØÐëÍê³ÉÈÎÎñ²ÅÄÜ½áÊøÕâ¸öÈÎÎñ¡£
+  3.ÐÂ°æhelp newbie_all Íê³É£¬È«²¿°´ÐÂµ÷ÕûµÄÃÅÅÉÎä¹¦ËµÃ÷¡£
+  4.¶þ×ª ÊÌÕßÏµÍ³´¦ÀíÁËÒ»Ð©ÎÊÌâ£¬²¢¼ÓÇ¿(ÐÂÒªµÄÊÌÕß£¬Îä¹¦µ÷Õû)¡£
+  5.Ç±ÄÜ×ª»»¾­Ñé(transfer) ¿ª·Å ±ÈÀýÎª 10µãÇ±ÄÜ×ª1µã¾­Ñé
+
+2012Äê5ÔÂ23ÈÕ            
+  1.ÐÞÕýÁËÈÕÔÂÃÅÅÉÈÎÎñ²»Òª±¾ÃÅÄÚ¹¦µÄÎÊÌâ
+  2.ÐÞÕýÁËfengyun-shou pfm foguang Õ½¶·ÖÐ¼Ó¾­ÑéµÄÎÊÌâ¡£
+  
+2012Äê5ÔÂ25ÈÕ              
+  1.°ÙÄñ½£·¨ ·âÈÕ»ìÌì´¸ °Áº®Áù¾÷ ÎåÔÀÉñÇ¹ ²ÐÐÄ½£·¨
+   ¾ÅÌì»ÆÈª½£·¨ µ¶½£¹éÕæ ´óÑÅ½£·¨ ±Ì²¨Éñ½£ ¸¿ÁúÕ¶öÞµ¶ ·ç²¨Ê®¶þ²æ
+   ÓñèµÔÂ»ªÃ÷½£·¨ ÖðÔÂ±Þ·¨ ÍõÇ¹·¨ ìÓºÕµ¶ ËØÄÞ½£·¨ ÆßÉËÄ§È­ ¿ÕÁé½£
+   ×ÓÎç´òÑ¨·¨
+   Ïà¹Ø¾ø¼¼(perform) ºÄËð¼õÉÙ¡£
+  2.ÈÎºÎµÈ¼¶»áÔ±£¬Ïò±±³óÒª»áÔ±µÄÃ¿Ìì½±ÀøÊ±(ask beichou about membergift)ºó¡£
+    ±¾´ÎµÇÂ½£¬µ½ÍË³öÇ°£¬ËùÓÐÈÎÎñËÙ¶È·­±¶¡£
+
+2012Äê5ÔÂ26ÈÕ    
+  1.ÅÐÊ¦È¡Ïû5Íò¾­ÑéµÄÏÞÖÆ
+  2.ÕûÀíÁËÒ»Ð©»îÔ¾Íæ¼Ò×öÎªÍæ¼ÒNPC ÔÚÕ½¶·ÈÎÎñÖÐ³öÏÖ
+  3.ÎäÃí3Â¥£¬½¨³ÉÒ»¸öÐ¡Í¼Êé¹Ý¡£look shu È»ºóyuedu ÊéÃû (ÐÐÊý)   
+
+2012Äê5ÔÂ29ÈÕ  
+  1.ÕûÀí²¢Ôö¼ÓÁË»áÔ±ÉÌµêµÄÉÌÆ·
+  help membergoods
+    »áÔ±ÉÌµê¹ºÂòÌØÊâ°ó¶¨×°±¸£¬¿ÉÒÔ¸øÄÏÏÍ8000Á½»Æ½ðÀ´Ö¸¶¨ÒªÊ²Ã´Àà±ðµÄ×°±¸
+
+2012Äê5ÔÂ30ÈÕ      
+  1.¼ÓÈëÁËÐÂµÄÍæ¼Ò±£»¤£¬Ã¿´Î½øÈëÓÎÏ·£¬Íæ¼ÒÁÙËÀÇ°ÓÐÒ»´Î»Ö¸´È«²¿Æø¾«µÄ»ú»á(ÏûºÄÒ»µãÄÚÁ¦ÉÏÏÞ)
+  2.ÖØÆôºó£¬Æô¶¯²»³öÀ´µÄÎÊÌâ£¬ºÃÏñÐÞºÃÁË¡£
+  
+2012Äê5ÔÂ31ÈÕ        
+  1.µ±»úÎÊÌâ¼ÌÐø´¦ÀíÖÐ¡£
+  2.Íæ¼Ò±£»¤Ö»ÔÚÕ½¶·ÖÐÆðÐ§£¬½âÃÜÖÐËÀÍöÎÞÐ§¡£
+  
+2012Äê6ÔÂ1ÈÕ          
+  1.ÐÂÔöÖ¸Áî recall ÐÂÊÖ(exp<3M ºÍ»áÔ±¿ÉÒÔÊ¹ÓÃ) Ö±½Ó»Øµ½ÄãµÄ¼ÇÂ¼µã
+  2.ÔÀ²»ÈºÉíÉÏ¶à´øÁËÒ»±¾ÕýÆøÒ÷£¬ºÎºìÒ©ÉíÉÏ¶à´øÁËÒ»±¾¾ÅÒõÉñË®¾­
+  3.ÐÂÊÖÈÎÎñÔöÇ¿(help nbjob)
+
+2012Äê6ÔÂ2ÈÕ            
+  1.ÕûÀí²¢Ôö¼ÓÁË»áÔ±ÉÌµêµÄÉÌÆ·
+  help membergoods
+  2.ÐÞÕýÁËÒ»Ð©ÈÕÖ¾ÖÐµÄbug
+
+2012Äê6ÔÂ4ÈÕ              
+  1.taskjob¼ÓÇ¿ Íê³ÉµÚÒ»¸öÈÎÎñ£¬ÏµÍ³»áÌáÊ¾ÄãÏÂÃæµÄÈÎÎñ
+    Ò»ÏµÁÐÈÎÎñÈ«²¿Íê³É£¬³öÏÖbossÕ½¡£
+  2.taskjobÐÞ¸Ä Èç¹û¶à´Î½ÓÁËÈÎÎñ²»×ö£¬ÎÞ·¨ÔÙ½ÓÐÂµÄÈÎÎñ
+
+2012Äê6ÔÂ5ÈÕ                
+  1.hdjobÐÞ¸Ä Èç¹û¶à´Î½ÓÁËÈÎÎñ²»×ö£¬ÎÞ·¨ÔÙ½ÓÐÂµÄÈÎÎñ
+  2.¶þ×ªÊÌÕßµ÷Õû (¿ÉÒÔsha É±Ö¸¶¨NPC) (order ¿ÉÒÔÃüÁîËû´ò×ø) (30% neili²»µ½£¬²Å»á×Ô¶¯´ò×ø)
+
+2012Äê6ÔÂ7ÈÕ       
+  1.Íæ¼Ò´òÔìÎäÆ÷ ÉÏÏÞÊýÁ¿´Ó3¼þ¸ÄÎª5¼þ 
+  2.Íæ¼Ò´òÔì·À¾ß ÉÏÏÞÊýÁ¿´Ó9¼þ¸ÄÎª10¼þ 
+  3.¹Ç»Ò»áÔ±Ã¿ÌìÁìµÄ½±ÀøÔö¼Ó.
+  4.ÐÂÊÖ±³°ü¼ÓÇ¿(Íæ¼Ò¿ÉÒÔÊäÈëmygift ÏµÍ³ÍÆ¼öÄãµÄµ±Ç°ÈÎÎñ)
+    ÐÂÊÖ±³°ü¼ÓÇ¿(xiuxi,ci,he ËùÓÃµÄbusyÊ±¼ä¼õÉÙ)
+    ÐÂÊÖ±³°ü¼ÓÇ¿(¿ÉÒÔÔÚÊÒÄÚchen ³µ)
+  5.ÐÂÊÖ±³°ü Ê¹ÓÃÄêÏÞ¸ÄÎª28ÒÔÏÂ£¬¾­Ñé3.5MÒÔÏÂ  
+    
+2012Äê6ÔÂ8ÈÕ           
+  1.ÐÞÕý£¬´ó»Ö¸´×ÔÖÆÎäÆ÷ ÆÆ»µÈÎÎñ×´Ì¬µÄÎÊÌâ
+  2.ÃÔ¹¬Ì½ÏÕ É±µÐÈËµÃµ½½±ÀøµÄ ÒªÇóµÄÍæ¼Ò¾­Ñé·¶Î§À©´ó(help migong)
+  3.ÐÂÔö ÐÂÊÖÊÔÁ¶-ÌôÕ½¶´¿ß ÈÎÎñ (help boss)
+  4.ÐÂÊÖ±³°ü ÊäÈëmygift ÏµÍ³»áÍÆ¼öÄãµÄµ±Ç°ÈÎÎñ
+  
+2012Äê6ÔÂ11ÈÕ  
+  1.ÆôÓÃÐÂµÄÐÂÎÅ·¢²¼ÏµÍ³ Ïà¹Ø:help news 
+
+2012Äê6ÔÂ15ÈÕ    
+  1.mapÖ¸ÁîÔÚÃ»ÓÐµØÍ¼µÄÇé¿öÏÂ£¬»á²úÉú¼´Ê±µØÍ¼
+
+2012Äê6ÔÂ18ÈÕ      
+  1.ÃÔ¹¬Ì½ÏÕµÚ16-22²ã£¬É±ËÀboss »áµÃµ½´óÁ¿¾­ÑéÇ±ÄÜ£¬²¢Ôö¼ÓÒ»µãÏÈÌìÊôÐÔ.
+  2.ÐÂÔöcgift ÃüÁî (Íæ¼Ò¿ÉÒÔÓÃÕâ¸öÃüÁî£¬µ÷Õû×Ô¼ºµÄÏÈÌìÊôÐÔ3´Î)
+  3.¿ªÊ¼ÍêÉÆÇøÓòµØÍ¼
+¡¼map_ty¡½  Ì«Ô­µØÍ¼ ¡¼map_sy¡½  ËéÒ¶µØÍ¼ ¡¼map_hf¡½  ºÏ·ÊµØÍ¼ ¡¼map_jj¡½  ¾Å½­µØÍ¼
+¡¼map_dx¡½  ¶¨ÏåµØÍ¼ ¡¼map_cas¡½ ³¤É³µØÍ¼ ¡¼map_jz¡½  ¾£ÖÝµØÍ¼ ¡¼map_bl¡½  °ÍÁêµØÍ¼  
+¡¼map_gz¡½  ¹óÖÝµØÍ¼ ¡¼map_xi¡½  ÏåÑôµØÍ¼ ¡¼map_km¡½  À¥Ã÷µØÍ¼ ¡¼map_nj¡½  ½ðÁêµØÍ¼  
+¡¼map_xuz¡½ ÐìÖÝµØÍ¼ ¡¼map_my¡½  ÂíÒØµØÍ¼ ¡¼map_nc¡½  ÄÏ²ýµØÍ¼ ¡¼map_ts¡½  ÌìË®µØÍ¼ 
+
+2012Äê6ÔÂ25ÈÕ   
+  1.÷öÈ»Ïû»êÕÆ ÁùÂöÉñ½£ Æ½ÕÐ¼ÓÇ¿
+  2.¸üÐÂ´ó²¿·ÖµØÍ¼ help maps Ôö¼ÓÈËÎï£¬ÎïÆ·,Â·¾¶ÐÅÏ¢   
+
+2012Äê7ÔÂ2ÈÕ     
+  1.»áÔ±±³°ü£¬Ôö¼Ó¿ÉÒÔ³Ë³µµÄ·¶Î§£¬²¢È¡Ïû±ØÐë»§Íâ³Ë³µµÄÏÞÖÆ
+
+2012Äê7ÔÂ9ÈÕ       
+  1.É±ÈË×¯ À©´ó (ÐÂÔö3¸öÃÔ¹¬ 3¸öboss) help boss
+  
+2012Äê7ÔÂ10ÈÕ         
+  1.ºìÔÆ±¤ ºìÁú±Ú ÍæÅ¼É½×¯ Ô­Ê¼É­ÁÖ À©´ó (ÐÂÔö3¸öÃÔ¹¬ 3¸öboss) help boss
+  
+2012Äê7ÔÂ12ÈÕ           
+º£µ×ÃÔ¹¬ ÌìÖ®¾¡Í· ²ÔÖ®·çÔÆ ÍüÓÇÖ®Ô° »ðÁúÖ®¿ß 
+ÃÔÎíÉ­ÁÖ °Ù»¨Ö®¹È »ØÒôÉ½¹È ¾ÅÌìÀ×ÔÆ ÎÞµ×ÈÜ¶´ ÍòÉßÄ§¶´
+ À©´ó (ÐÂÔö3¸öÃÔ¹¬ 3¸öboss) help boss
+ 
+2012Äê7ÔÂ14ÈÕ           
+  1.Íæ¼ÒµÄ¸ù¹ÇÊôÐÔ×÷ÓÃÔöÇ¿£¬»á¸ù¾ÝÏÈÌì¸ù¹Ç+(ÏÈÌì¸ù¹Ç*»ù±¾ÄÚ¹¦/10) Ôö¼ÓÆø¾«ÉÏÏÞ
+    (ÎÞÄêÁäÏÞÖÆ)
+
+2012Äê7ÔÂ17ÈÕ      
+  1.×ªÉúÏµÍ³µ÷Õû
+    1.¹¥»÷¼ÓÇ¿ Ã¿´Î×ªÉú£¬¹¥»÷¼ÓÇ¿
+      1×ª Ôö¼Ó1.3±¶ 2×ªÔö¼Ó1.5±¶ 3×ªÔö¼Ó2±¶ 4×ªÔö¼Ó2.5±¶ 5×ªÔö¼Ó3±¶
+    2.·ÀÓù¼ÓÇ¿ Ã¿´Î×ªÉú£¬·ÀÓù¼ÓÇ¿
+      1×ª É±ÉË¼õÉÙ20%  2×ª É±ÉË¼õÉÙ30% 3×ª É±ÉË¼õÉÙ40% 4×ª É±ÉË¼õÉÙ50% 5×ª É±ÉË¼õÉÙ70%
+    3.ÆøÑª¼ÓÇ¿ Ã¿´Î×ªÉú  ÆøÑª£¬¾«Á¦¼Ó¶à
+      1×ª Ôö¼Ó1000 2×ªÔö¼Ó1000 3×ªÔö¼Ó1000 4×ªÔö¼Ó1000 5×ªÔö¼Ó1000²¢×ÜÊý¼Ó±¶
+    4.ÌØÊâ¾ø¼¼ ·µÌì¹éÔ­·¨ exert guiyuan
+      1×ª Ò»´Î»Ö¸´50% ×´Ì¬Ê±¼ä2 Ò»´ÎÕ½¶·Ê¹ÓÃ3´Î
+      2×ª Ò»´Î»Ö¸´50% ×´Ì¬Ê±¼ä2 Ò»´ÎÕ½¶·Ê¹ÓÃ6´Î
+      3×ª Ò»´Î»Ö¸´66% ×´Ì¬Ê±¼ä1 Ò»´ÎÕ½¶·Ê¹ÓÃ9´Î
+      4×ª Ò»´Î»Ö¸´75% ×´Ì¬Ê±¼ä1 Ò»´ÎÕ½¶·Ê¹ÓÃ12´Î
+      5×ª Ò»´Î»Ö¸´100% ×´Ì¬Ê±¼ä1 Ò»´ÎÕ½¶·Ê¹ÓÃ18´Î
+   2.recallÃüÁîÐÞ¸Ä£¬recall ÈÎÒâ²ÎÊý£¬·µ»ØÑïÖÝ¹ã³¡ recall ÎÞ²ÎÊý£¬·µ»Ø´æµµÖ®´¦¡£
+    
+2012Äê7ÔÂ19ÈÕ          
+   1.learn (xue)Ñ§Ï° research (yanjiu)ÑÐ¾¿ study(du) ¶ÁÊé ´ÎÊýÉÏÏÞ¸ÄÎª600´Î¡£
+
+2012Äê7ÔÂ25ÈÕ         
+   1.¿ÕÊÖÏµ¼ÓÇ¿,Èç¹û¿ÕÊÖÉËº¦Á¦ ³¬¹ý900 ²»±»Ïà¿Ë,³¬¹ý600 Ïà¿Ë¼õÉÙÎª2±¶ ³¬¹ý300 Ïà¿Ë¼õÉÙÎª1.5±¶¡£
+   (½¨ÒéÊ¹ÓÃÊÖÌ×¼ÓÇ¿)
+   2.¶À¹Â¾Å½£ µ÷Õû ÆÆÕÐÏµÁÐ¾øÕÐ ÃüÖÐµ÷Õû¼õÉÙ ²¢Ö»ÓÐ´òÖÐÁË²ÅÓÐºó¼ÌÁ¬ÕÐ¡£      
+   3.¿ÕÊÖÎä¹¦ ¼ÓÁ¦ ·´ÕðÉ±ÉË£¬ÉèÖÃÉÏÏÞ£¬×î¶à²»³¬¹ýÍæ¼Òµ±Ç°ÆøÑªµÄÒ»°ë¡£
+   4.¿ÕÊÖÎä¹¦ ¼ÓÁ¦ Èç¹û×°±¸ÁËÊÖÌ×£¬·´ÕðµÄÉ±ÉËÁ¦¼õÎª Ô­À´µÄ1/10¡£
+2012Äê7ÔÂ27ÈÕ         
+   1.ÏåÑôÊØ³ÇÈÎÎñ£¬½±Àø¼Ó¶à
+   
+2012Äê8ÔÂ2ÈÕ            
+   1.Ã»ÓÐ×ªÉúµÄÍæ¼Ò£¬Ñ§Ï° ²»ÐèÒªËðºÄ¾«
+   2.Ã»ÓÐ×ªÉúµÄÍæ¼Ò£¬Ã¿´Î´ò×ø ¶¼»á Ôö³¤ÄÚÁ¦ÉÏÏÞ
+
+2012Äê8ÔÂ3ÈÕ               
+   1.exert cureheal   ¸ù¾Ý ¸ù¹ÇºÍÈÝÃ² Ôö¼Ó»Ö¸´ ÆøÓë¾«µÄÊýÁ¿
+   2.exert recover    ¸ù¾Ý ¸ù¹Ç Ôö¼Ó»Ö¸´ÆøµÄÊýÁ¿
+   3.exert regenerate ¸ù¾Ý ÈÝÃ² Ôö¼Ó»Ö¸´¾«µÄÊýÁ¿
+   4.¼³È¡Ñ«ÕÂ Ñ§Ï°Ñ«ÕÂ »áÈÃÁ·Îä¹¦Ê±£¬ËÙ¶È¼Ó±¶£¬Èç¹ûÍ¬Ê±ÓÐÁ½¸öÑ«ÕÂ ËÙ¶È¼Ó2±¶¡£
+   
+2012Äê8ÔÂ18ÈÕ
+   1.¿ÕÊÖÏµ¼ÓÇ¿ÒªÇó¼õÉÙ,Èç¹û¿ÕÊÖÉËº¦Á¦ ³¬¹ý600 ²»±»Ïà¿Ë,³¬¹ý400 Ïà¿Ë¼õÉÙÎª2±¶ ³¬¹ý200 Ïà¿Ë¼õÉÙÎª1.5±¶¡£
+   2.¿ÕÊÖÈç¹û×°±¸ÊÖÌ×£¬²»±»ÄÚÁ¦·´Õð¡£
+   
+2012Äê8ÔÂ20ÈÕ 
+   1.ÐÞÕýÁËÌ©É½ÅÉÅÍÊ¯Éñ¹¦ taijitu  Ì«¼¶Í¼  ´ò¾«Ôì³ÉNPC´òÍæ¼ÒÒ»»÷ËÀµÄÎÊÌâ¡£
+   2.´¦ÀíÒ»Ð©ÃÅÅÉµÄÎä¹¦£¬NPC´òÍæ¼ÒÒ»»÷ËÀµÄÎÊÌâ¡£
+
+2012Äê8ÔÂ23ÈÕ 
+   1.ÎäÆ÷ÊôÐÔÏà¿ËÐ§¹û£¬É±ÉËÓÉ3±¶£¬¸ÄÎª2±¶
+   2.¿ÕÊÖÏµ É±ÉËËã·¨µ÷Õû¡£Ôö¼ÓÆ½ÕÐÉ±ÉË¸½¼Ó¡£   
+
+2012Äê8ÔÂ24ÈÕ
+   1.¹Ù¸®ÔÚÒ»Ð©Ö÷ÒªµÄ½­ºÓÉÏ£¬ÉèÖÃÁËÌúË÷·½±ã´ó¼ÒÐÐ×ß¡£   
+2012Äê8ÔÂ25ÈÕ
+   1.¿ÕÊÖÎä¹¦ É±ÉË£¬²Î¿¼ËùÓÃÕÐÊ½µÄÉ±ÉË£¬ºÍÍæ¼Ò×°±¸µÄÊÖÌ×µÄÉ±ÉËºÍ±ÛÁ¦¡£
+2012Äê8ÔÂ27ÈÕ   
+   1.½­ºþÓÎÏÀ(help spskill) ²»ÔÚ¸÷´ó³ÇÊÐÖÐ³öÏÖ¡£
+   2.½­ºþÓÎÏÀ(help spskill) µÄÎä¹¦£¬ÉÔÎ¢¼ÓÇ¿
+2012Äê9ÔÂ2ÈÕ   
+   1.Íæ¼Ò·¢´ô³¬¹ý6·ÖÖÓ ÏµÍ³ÌáÊ¾:ÄãÊÇ²»ÊÇ¸Ã¸ÉµãÊ²Ã´ÁË? 
+
+2012Äê9ÔÂ3ÈÕ
+   1.×ªÉúÇ° ¾­ÑéÐ¡ÓÚ6MµÄÍæ¼Ò ¸öÈËÃÅÅÉÈÎÎñÖÐµÄ×ÛºÏÈÎÎñËÙ¶È¼Ó6±¶
+    (ÐÂÍæ¼Ò¿ÉÒÔÊìÏ¤µØÍ¼£¬¼°ÈËÎï·Ö²¼)
+    Ïà¹Ø:help geren     
+   2.ÐÂÊÖ±³°ü£¬Ê¹ÓÃÏÞÖÆ·Å¿íµ½ 6.5M 
+   3.ÐÞÕýÁË¶·×ªÐÇÒÆÈÎÎñÖÐÉ±ÈËÎÞÐ§µÄÎÊÌâ¡£
+   4.×ªÉúºóÍæ¼Ò£¬Æø£¬¾«Ôö¼Ó
+    1×ªÔö¼Ó1000 2×ª¼Ó2000£¬3×ª¼Ó3000²¢°´per,con Öµ¼Ó³É£¬4×ª¼Ó4000 5×ª¼Ó5000 ²¢×ÜÊý¼Ó±¶
+   5.ÎäÑ§ÐÞÑøµÈÒ»Ð©·ÇÕ½¶·¼¼ÄÜÀàÎä¹¦ Ôö¼ÓÆøµÄÐ§¹û¸ÄÎªÎä¹¦µÈ¼¶ * 5
+
+2012Äê9ÔÂ4ÈÕ   
+   1.´¦ÀíÁËÑ©É½ÅÉ£¬ÄÏÉÙÁÖ£¬º£ÄÏÅÉ,°×ÍÕÅÉ Ò»Ð©Îä¹¦NPCÊ¹ÓÃ£¬Ö±½ÓÉ±ËÀ¸ßµÈ¼¶Íæ¼ÒµÄÎÊÌâ¡£
+
+2012Äê9ÔÂ17ÈÕ    
+   1.ËÄ´óÊôÐÔµ÷Õû
+     strëöÁ¦ Õ½¶·ÖÐ 18Ëê³ÉÄêºó ¸½¼Ó ÏÈÌìëöÁ¦Öµ*ÄãµÄÄêÁä(×î´ó30)µÄ¸½¼ÓÉ±ÉËÖµ
+     dexÉí·¨ Õ½¶·ÖÐ 18Ëê³ÉÄêºó ¸½¼Ó ÏÈÌìÉí·¨Öµ*ÄãµÄÄêÁä(×î´ó30)µÄ¸½¼Ó·ÀÊØÖµ
+     con¸ù¹Ç Ôö¼Ó ÏÈÌì¸ù¹Ç* ÄÚ¹¦µÈ¼¶/5 ×î´óÆøÑªºÍ¾«Éñ
+     intÎòÐÔ Õ½¶·ÖÐÈç¹û±ÈµÐÈË¸ß ¿ÉÄÜ²úÉú Ë«±¶ÃüÖÐ»òË«±¶ÕÐ¼ÜµÄ×÷ÓÃ
+             ÄÚ¹¦ÖÐ ÎòÐÔ»á²úÉú ÏÈÌìÎòÐÔÖµ*ÄãµÄÄêÁä(×î´ó30) ¸½¼Ó»Ø¸´
+             (exert recover ,exert regenerate,exert cureheal)
+2012Äê9ÔÂ20ÈÕ                 
+    1.strëöÁ¦ Õ½¶·ÖÐ 18Ëê³ÉÄêºó ¸½¼Ó ÏÈÌìëöÁ¦Öµ*ÄãµÄÄêÁä(×î´ó30)µÄ¸½¼ÓÉ±ÉËÖµ Ö»¶ÔÍæ¼ÒÆð×÷ÓÃ
+    2.intÎòÐÔ Õ½¶·ÖÐÈç¹û±ÈµÐÈË¸ß ¿ÉÄÜ²úÉú Ë«±¶ÃüÖÐ»òË«±¶ÕÐ¼ÜµÄ×÷ÓÃ Ö»¶ÔÍæ¼ÒÆð×÷ÓÃ
+    3.ÃÅÅÉÈÎÎñ(ÈÎÎñÀôquestÈÎÎñ) ËÍÐÅ£¬´ÌÌ½,Ñ°Îï¸øÄ³ÈË ÈýÀàÈÎÎñ£¬Íê³ÉÈÎÎñÊ±£¬»á·¢ÏÖ¿ÉÒÉÈËÎï
+      É±Ö®£¬»áÓÐ¾­Ñé£¬Ç±ÄÜ£¬Éñ£¬ÒøÁ½µÄ½±Àø¡£
+2012Äê9ÔÂ24ÈÕ                    
+   1.ÐÂÈËÈÎÎñµÚ¶þ½×¶Î¿ª·Å help nbjob
+2012Äê9ÔÂ30ÈÕ  
+   1.¹úÇì½ÚÖÐÇï½ÚÀñ°ü¿ªÊ¼·¢·Å   ÑïÖÝÖÐÑë¹ã³¡ ask noname about ÀñÎï »ò ask noname about gift
+     µÃµ½Àñ°üºó opengift dalibao   ·¢·ÅÊ±¼ä3Ìì µ½10ÔÂ3ºÅÎªÖ¹   
+
+2012Äê10ÔÂ1ÈÕ
+   1.ÐÞ¸ÄquestÖ¸Áî£¬¿ÉÒÔ²é¿´Äãµ±Ç°µÄÈÎÎñ
+   2.¹Ù¸®ÈÎÎñ½±Àø¼Ó¶à help guanfu
+   3.»Ö¸´ÏåÑô»¤ËÍÈÎÎñ help wangjob
+   4.É¾³ýÁËÒ»Ð©ÒÑ¾­²»ÓÃµÄÐÂÊÖÈÎÎñ (ÐÂÊÖÈÎÎñÒÑ¾­°üÀ¨ÁË)
+   5.ÏåÑôÊØ³ÇÈÎÎñ½±Àø¼Ó¶à help guojob
+
+2012Äê10ÔÂ4ÈÕ
+   1.¹úÇìÀñ°üÍ£Ö¹·¢·Å
+   2.ÌØÊâ×°±¸(bweaponÖÐ)ÅÅÎ»Ç°15µÄÎäÆ÷£¬ÉÏÏß×Ô¶¯ÒÆ¶¯µ½Íæ¼ÒÉíÉÏ¡£
+   (Èç¹û²»ÐèÒª×Ô¶¯ÒÆ¶¯£¬¿ÉÒÔÍ¨¹ýset bweapon 1 À´È¡Ïû×Ô¶¯¹¦ÄÜ)
+
+2012Äê10ÔÂ9ÈÕ  
+   1.Ê¦¸µÌØÊâÈÎÎñ¿ª·Å help geren
+     (½±Àø³¬¸øÁ¦¶î) 
+     
+2012Äê10ÔÂ20ÈÕ      
+   1.¿ª·ÅÐÂÊÖÃÔ¹¬Ì½ÏÕÏµÍ³ help migong
+   2.Ô­²é¿´ÃÔ¹¬ÐÅÏ¢Ö¸Áî¸ÄÎªmginfo
+   
+2012Äê10ÔÂ21ÈÕ  
+   1.ÍêÉÆÁËÐÂÊÖÃÔ¹¬Ì½ÏÕÏµÍ³µÄ°ïÖúhelp migong
+   
+2012Äê10ÔÂ28ÈÕ
+   1.ÈÎÎñÖÐµÄµÐÈË£¬²»ÔÙËæ»úÏò²»ÄÜÕ½¶·µÄµØ·½ÌÓÀë
+   2.ÑïÖÝÎÞÀåÍ·´å£¬×öÎªÍæ¼ÒÁÄÌì³¡Ëù£¬ÄêÁä´ïµ½18¾Í²»»áÔÙÔö³¤ÁË¡£
+    
+2012Äê11ÔÂ2ÈÕ    
+   1.µ÷ÕûÔöÇ¿ÁË¿ÕÊÖÎä¹¦µÄÃüÖÐ¼°ÍþÁ¦  
+   
+2012Äê11ÔÂ4ÈÕ       
+   1.¿ªÊ¼ÖÐ¼¶¼°¿ÕÊÖÀàÎä¹¦µ÷ÕûÇ¿»¯¼Æ»®
+     ÉÙÁÖ
+     °ãÈôÕÆ (banruo-zhang)   ¾øÕÐ perform san
+     ´ó½ð¸ÕÈ­ (jingang-quan) ¾øÕÐ perform qixing
+     Ò»Ö¸ìø (yizhi-chan)     ¾øÕÐ perform dian
+     ´ïÄ¦½£ (damo-jian)      ¾øÕÐ perform sanjue
+     È¼Ä¾µ¶·¨ (ranmu-daofa)  ¾øÕÐ perform huo
+     ÈÕÔÂ±Þ·¨ (riyue-bian)   ¾øÕÐ perform chan,perform chanrao,perform riyue 
+     ÍêÉÆ²¢¼ÓÇ¿
+   2.»ÆÈØÈÎÎñ³öÏÖµÄµÐÈË£¬Ôö¼Ó±êÊ¶ID
+   3.È«Õæµ÷Õû
+     È«Õæ½£·¨(quanzhen-jian) perform sanqing ,perform qixing,perform qixinggongyueÔöÇ¿
+     ÏÈÌìÆø¹¦(xiantian-qigong) perform dang,perform fen,perform hun,perform jian,perform shen ÔöÇ¿
+     ¿ÕÃ÷È­(kongming-quan)  perform kong,perform luanwu,perform ming,perform quan ÔöÇ¿
+   4.ÈÕÔÂÉñ½Ìµ÷Õû
+     ¿û»¨´ó·¨Ç¿»¯(kuihua-dafa) perform gui,perform pi,perform po,perform yinrou ÔöÇ¿
+     ±ÙÐ°½£·¨Ç¿»¯(pixie-jian)  perform sanlianci ÔöÇ¿
+     ¿û»¨ÐÄ·¨(kuihua-xinfa) exert kuihuawudi ÔöÇ¿
+   5.Ã÷½Ì¼ÓÇ¿
+     ¾ÅÑôÉñ¹¦(jiuyang-shengong) perform hun,perform jiu,perform pi,perform po,perfrom ri,exert shieldÔöÇ¿
+     ÆßÉËÈ­(qishang-quan) perform youyouhunduan,perform hunpofeiyang ÔöÇ¿
+     Ê¥»ðÁî·¨(shenghuo-ling) perform can,perform tougu,perform yanggang ÔöÇ¿
+
+2012Äê11ÔÂ6ÈÕ      
+   1.ÌÆÃÅ¼ÓÇ¿
+    ¶¾É°ÕÆ (dusha-zhang) perform hantian,perform tianxie  ¼ÓÇ¿                  
+    À¶É°ÊÖ (lansha-shou) perform luanpo,perform xiangyi,perform canglong ¼ÓÇ¿                 
+    ×ÓÄ¸Õë·¨ (zimu-zhen) perform dusha,perform qizigangbiao,perform poqizhen,perform dinhun,perform tanghua ¼ÓÇ¿                    
+   2.Îå¶¾½Ì¼ÓÇ¿
+    ¶¾É°ÕÆ (dusha-zhang) perform hantian,perform tianxie  ¼ÓÇ¿                  
+    À¶É°ÊÖ (lansha-shou) perform luanpo,perform xiangyi,perform canglong ¼ÓÇ¿ 
+    Ç§ÖëÍò¶¾ÊÖ (qianzhu-wandushou) perform qzwd ¼ÓÇ¿       
+    ÈíºìÖëË÷ (ruanhong-zhusuo) perform suo,perform bohu,perform teng,perform pan ¼ÓÇ¿
+    Îå¶¾¹³·¨ (wudu-goufa) perform suo,perform luanpifeng ¼ÓÇ¿                   
+
+2012Äê11ÔÂ7ÈÕ      
+   1.ÐÇËÞÅÉ¼ÓÇ¿
+     ±ùÆÇº®µ¶ (bingpo-blade)   perform kou,perform manakill            ¼ÓÇ¿     
+     ²ø»êË÷ (chanhun-suo)      perform duo,perform huixuan,perform suo ¼ÓÇ¿
+     ÌìÉ½ÕÈ·¨ (tianshan-zhang) perform hushen,perform tianshan ¼ÓÇ¿
+   2.ÉñÁú½Ì¼ÓÇ¿  
+     ÉßµºÆæ¹¦ (shedao-qigong)     perform fei,perform wanshe      ¼ÓÇ¿      
+     ÉñÁú°ËÊ½ (shenlong-bashi)    perform meinu,perform shewu,perform yingxiong    ¼ÓÇ¿        
+     ÉñÁúµÛÍõÈ­ (diwangquan)      perform sxbb           ¼ÓÇ¿
+     ¶¾ÁúÉñ×¦¹¦ (dulong-shenzhua) perform ju             ¼ÓÇ¿
+     ÇàÉß½£·¨ (qingshe-sword)     perform psxf,perform qscd,perform slj    ¼ÓÇ¿        
+
+2012Äê11ÔÂ8ÈÕ
+1.ÁéðÕ¹¬ åÐÒ£ÅÉ¼ÓÇ¿
+ÌìÓðÆæ½£ (tianyu-qijian)  perform huan,perform ju,perform kuangwu,perform piaomiao,perform san,perform shandian ¼ÓÇ¿
+ÓÄÚ¤¹í×¦(youming-guizhao) perform guizhao ¼ÓÇ¿
+ÈçÒâµ¶ (ruyi-dao)         perform ruyi,perform shishiruyi,perform xiaoyao ¼ÓÇ¿
+Á÷ÔÂ½£Îè(liuyue-jian)     perform sheng ¼ÓÇ¿
+ÌìÉ½ÁùÑôÕÆ (liuyang-zhang)perform jiutian ,perform lianzhong ¼ÓÇ¿               
+ÌìÉ½ÕÛÃ·ÊÖ (zhemei-shou)  perform duo,perform tanmei ¼ÓÇ¿               
+2.Îäµ±ÅÉ¼ÓÇ¿
+ÈýÒõ¾ø»§ÊÖ (juehu-shou)   perform juehu           
+ÒÐÌìÍÀÁú¹¦ (yitian-tulong)perform tulong             
+ÒÐÌìÍÀÁúÕÆ (yitian-zhang) perform zheng
+Ì«¼«È­ (taiji-quan)       perform yingyang                
+Ì«¼¶½£ (taiji-jian)       perform lian,perform sanhuan,perform sui
+3.ÁèÏö³Ç¼ÓÇ¿
+º®ÌìÉñÊÖ (doom-hand)      perform hantian               
+º®É½ÕÆ·¨ (hanshan-strike) perform siji,perform zhengjian               
+Ã÷Óñ¹¦ (mingyu-gong)      perform gua,perform moqi                
+Ñ©É½½£·¨ (xueshan-sword)  perform fengxue,perform wanmei,perorm xuehua,perform xuemei 
+4.¶ëáÒÅÉ¼ÓÇ¿
+»Ø·ç·÷Áø½£ (huifeng-jian)       perform sanqing ,perform liaoyuan ¼ÓÇ¿        
+¶ëáÒ´ßÐÄÕÆ (huixin-strike)      perform gu,perform cuixin         ¼ÓÇ¿
+¶ëáÒÒøÁú±Þ (yinlong-whip)       perform duoming,perform zhu       ¼ÓÇ¿     
+ÒÐÌì½£·¨ (yitian-jian)          perform yitian                    ¼ÓÇ¿
+
+2012Äê11ÔÂ9ÈÕ
+1.»ªÉ½ÅÉ¼ÓÇ¿
+»ªÉ½½£·¨ (huashan-sword)   perform jianzhang,perform jm,perform wudui      ¼ÓÇ¿        
+¿ñ·ç¿ì½£ (kuangfeng-jian)  perform kuangfeng,perform kuanglong,perform sao ¼ÓÇ¿              
+2.ÌÒ»¨µº¼ÓÇ¿
+À¼»¨·÷Ñ¨ÊÖ (lanhua-shou)    perform fuxue             
+ÂäÓ¢Éñ½£ÕÆ (luoying-zhang)  perform shenjian             
+µ¯Ö¸ÉñÍ¨ (tanzhi-shentong)  perform lingxi             
+Ðý·çÉ¨Ò¶ÍÈ (xuanfeng-leg)   perform kuangfeng,perform wuying             
+³ÕÐÄÇé³¤½£ (chixin-jian)    perform muyu,perform trhy             
+Óñóï½£·¨   (yuxiao-jian)    perform feiying,perform qimen,perform taohuajian,perform tianwai,perform xuanjian 
+3.Îäµ±ÅÉ¼ÓÇ¿
+Ì«¼¶½£ (taiji-jian)       perform lian,perform sanhuan,perform sui
+4.Ä½ÈÝÅÉ¼ÓÇ¿
+²ÎºÏÖ¸ (canhe-zhi)       perform lian
+¶·×ªÐÇÒÆÕÆ (xingyi-zhang)perform riyue,perform xingdian                
+Ä½ÈÝ½£·¨ (murong-jianfa) perform kuangjian,perform qixing,perform xingyi                
+ÁùÒõ×·»ê½£ (six-sword)   perform lhj,perform nbajian,perform tx,perform wbajian
+
+2012Äê11ÔÂ10ÈÕ
+1.´óÀí¶Î¼Ò¼ÓÇ¿
+¶Î¼Ò½£ (duanjia-sword)    perform ailao,perform jingtian,perform xswy             
+ÁùÂöÉñ½£ (six-finger)     perform liumaijingshen,perform qi,perform zongheng             
+¶ÎÊÏÒ»ÑôÖ¸ (yiyang-zhi)   perform dragon,perform jian,perform jianzhi,perform qian,perform sandie             
+2.¹ÅÄ¹ÅÉ¼ÓÇ¿
+ÒøË÷½ðÁå (yinsuo-jinling)          perform dian,perform feng      
+ÓñÅ®½£·¨ (yunv-jian)               perform he
+÷öÈ»Ïû»êÕÆ (anranxiaohun-zhang)    perform jingtao
+3.°×ÍÕÉ½×¯¼ÓÇ¿
+¸òó¡¹¦ (hamagong)             perform hamagong
+ÁéÉßÕÈ·¨ (lingshe-zhangfa)    perform hama,perform qianshe,perform saoluoye,perform shewu
+ÆßÏÒÎÞÐÎ½£ (qixian-wuxingjian)perform shan,perform yin,perform zhu
+ÉñÍÕÑ©É½ÕÆ (shentuo-zhang)    perform nzqk
+4.·ÉÌìÓù½£Á÷¼ÓÇ¿    
+Â½°ÂÔ²Ã÷Á÷È­Êõ (enmeiryu)         perform chuyao,perform linfengguilong,perform mukuha,perform shimon      
+Éñ¹È»îÐÄÁ÷ (huoxinliu-jianfa)     perform chaodao     
+Ò»µ¶Á÷½£Êõ (ittouryu)             perform daoshen,perform gobankiri,perform hyakki,perform shiwanshenmo       
+·ÉÌìÓù½£Á÷ (feitian-yujianliu)    perform jiu,perform longlianda,perform longshan,perform suodi,perform tianxiang
+
+2012Äê11ÔÂ11ÈÕ
+1.Ñ©É½ÅÉ¼ÓÇ¿
+²»¶¯Ã÷Íõ½£ (mingwang-jian) perform ruo,perform xiang
+Ñªµ¶µ¶·¨ (xue-dao)         perform chi perform kuangdao perform xueyu
+ÈÕÔÂÂÖ·¨(riyue-lun)        perform folun,perform lian,perform wulundafa,perform wushuai
+ÁúÏó°ãÈô¹¦ (longxiang)     perform die,perform zhen              
+»ðÑæµ¶ (huoyan-dao)        perform fen              
+2.ºì»¨»á¼ÓÇ¿
+×·»ê¶áÃü½£ (zhuihun-jian)  perform zhuihun
+°ÙÄñ½£·¨ (bainiao-jian)    perform jiujian,perform qijian
+±¼À×ÊÖ (benlei-shou)       perform yunkai
+3.Ì©É½ÅÉ¼ÓÇ¿
+Ì©É½½£·¨ (taishan-sword)  perform 18pan,perform pan,perform weizun
+Óù½£Êõ (yujianshu)        perform txyx
+4.áÔÉ½ÅÉ¼ÓÇ¿
+ÎåÔÀÉñÇ¹ (wuyue-spear)    perform buhui,perform fengchan,perform qianghun
+áÔÉ½½£·¨ (songshan-sword) perform feiwu,perform suiyuan
+5.ºâÉ½ÅÉ¼ÓÇ¿
+ºâÉ½½£·¨(hengshan-sword)   perform luoyan,perform wuyun,perform yunwu
+¾ÅÌì»ÆÈª½£·¨(jiutian-sword)perform xiaofeng,perform wuyun,perform xiangsi
+6.ºãÉ½ÅÉ¼ÓÇ¿
+ºãÉ½½£·¨(henshan-jian)  perform shenfeng,perform liuyun
+²ÐÐÄ½£·¨(canxin-jian)   perform riluo,perform shenfeng,perform wanjian
+ÈáË¿ÀÖ±Þ (rousi-whip)   perform wyly
+
+2012Äê11ÔÂ12ÈÕ
+1.Çà³Ç¼ÓÇ¿
+·âÈÕ»ìÌì´¸(frht-hammer)  perform riluo,perform rimu
+ËÉ·ç½£·¨(songfeng-jian)  perform chan,perform dieying
+´ÝÐÄÕÆ   (cuixin-strike) perform cuixin       
+ÎÞÓ°ÍÈ    (wuying-leg)   perform fanti     
+2.ÔÆÁúÅÉ¼ÓÇ¿
+ÔÆÁú½£ (yunlong-jian)     perform duoming,perform jueming,perform xian,perform xunlei                
+åÐÒ£ÎåÉñ½£(wushen-jian)   perform duoming,perform jueming,perform qi,perform shen,perform slj
+ºïÈ­ (houquan)            perform pofuchenzhou,perform zhen                 
+°Ù»¨´íÈ­ (baihua-cuoquan) perform yi               
+°ËÕó°ËØÔÕÆ (bazhen-zhang) perform bafang,perform jueming    
+
+2012Äê11ÔÂ13ÈÕ
+1.¹ØÍâºú¼Ò¼ÓÇ¿
+°ÙÊ¤µ¶·¨ (baisheng-daofa)   perform heng
+ºú¼Òµ¶·¨ (hujia-daofa)      perform cang,perform lian
+ºú¼ÒÈ­·¨ (hujia-quan)       perform kuai
+Ìì³¥ÕÆ·¨ (tianchang-strike) perform huang
+×ÏÀ×µ¶·¨ (zileidao)         perform huanying,perform tulong
+µ¶½£¹éÕæ (daojian-guizhen)  perform feng,perform hujia,perform wolf,perform xue
+2.áÇá¼ÅÉ¼ÓÇ¿
+¿ÕÁé½£ (kongling-jian)  perform lian,perform sanhuan,perform sui
+ÆßÉËÄ§È­ (qishang-cuff) perform hunpofeiyang,perform youyouhunduan
+ÈýÇå½£·¨ (sanqing-jian) perform huan,perform jianmang,perform sanlianji,perform wanxiang
+´óºéÈ­ (dahong-quan)    perform yuhuan
+
+2012Äê11ÔÂ14ÈÕ
+1.ÌúÕÆ°ï¼ÓÇ¿
+Á÷Ã¥ÉñÈ­ (liumang-quan)      perform guguoshenyou,perform luori,perform pofuchenzhou            
+ÌúÕÆÕÆ·¨ (tiezhang-zhangfa)  perform dao,perform mieshen,perform tianlei,perform tiezhangxianglong            
+Í¨±ÛÁùºÏÕÆ (tongbi-zhang)    perform juesha            
+ÐùÔ¯¸«·¨ (xuanyuan-axe)      perform jiuqipoxiao,perform kaitianpidi,perform sanbanfu            
+¶ÏÔÆ¸«   (duanyun-fu)        perform cuo,perform duan,perform hongtianza
+2.Ø¤°ï¼ÓÇ¿
+²øË¿ÇÜÄÃÊÖ (chansi-shou)     perform qin,perform qinna
+Ëøºí¹¦ (suohou-gong)         perform suo
+´ò¹·°ô·¨ (dagou-bang)        perform bangzhang,perform luanda,perform duo,perform chan            
+½µÁúÊ®°ËÕÆ (xianglong-zhang) perform mielong,perform kanglongwuhui,perform hui            
+ÔÀ¼ÒÇ¹·¨ (yuejia-qiang)      perform zhtx,perform gong,perform qldj     
+
+2012Äê11ÔÂ15ÈÕ
+1.¾ÅÒõÕæ¾­ÏµÁÐ¸ß¼¶Îä¹¦¼ÓÇ¿
+¾ÅÒõÕæ¹¦   jiuyin-zhengong   perform zongjue
+¾ÅÒõÉñ×¦   jiuyin-shenzhua   perform sanjue
+¾ÅÒõÉñÕÆ   jiuyin-shenzhang  perform cuixin
+¾ÅÒõÒøÁú±Þ yinlong-bian      perform chanrao,perform feilong
+´ó·üÄ§È­·¨ dafumo-quan       perform fumo,perform posha,perform qiankun
+ÐþÒõ½£·¨   xuanyin-jian      perform zhan,perforn xuanyin
+2.Íæ¼Ò´òÔì×°±¸£¬ Ð§¹ûÔöÇ¿Îª (»Ö¸´ºÍÉ±ÉË¼¼ÄÜÍþÁ¦Ôö¼ÓÈý±¶) £¬ÌØÊâ¿É°ó¶¨×°±¸Ð§¹ûÔöÇ¿Îª (»Ö¸´ºÍÉ±ÉË¼¼ÄÜÍþÁ¦Ôö¼Ó¶þ±¶)
+3.Èý×ªÍæ¼Ò£¬¿ÉÒÔÔÚÎÞÃû¾ÓÊ¿´¦£¬µÃµ½ÉñÕÕ¾­£¬ask noname about Èý×ª¼¼ÄÜ (¹Ç»Ò»áÔ±×¨Ïí)
+
+2012Äê11ÔÂ16ÈÕ
+1.À¥ÂØÅÉ¼ÓÇ¿
+´©ÔÆÍÈ (chuanyun-tui)   perform shuangjue                 
+À¥ÂØÕÆ (kunlun-zhang)   perform diezhang,perform yixing                 
+Á½ÒÇ½£·¨ (liangyi-jian) perform feixue,perform jianqin,perform juedi,perform qinjian,perform ren                 
+ÇÙµÀ (music)            perform gong,perform lv                 
+ÆåµÀ (qidao)            perform xb    
+2.ÄÏÉÙÁÖ¼ÓÇ¿
+ÁùµÀÁÒ»ð±Þ (hellfire-whip) perform lunhui,perform three,perform zhdp            
+ÂÖ»Ø·ðÕÈ (lunhui-zhang)    perform chaodu,perform diyu,perform pudu,perform sandu,perform xin              
+ÊÍ¶ò·ð¹÷ (buddha-club)     perform baifo,perform pili,perform wu
+3.°×ÔÆâÖ¼ÓÇ¿
+·ç»ØÑ©Îè½£·¨ (snowsword)  perform hanyue,perform tian
+Óñ±ÚÔÂ»ªÃ÷½£·¨ (yubi-jian)perform feixian,perform kuangwu,perform rouqing,perform shi,perform tianwaifeixian,perform wan
+×··çÉñÈ­ (zhuifeng-quan)  perform hantian perform luori,perform qzwd,
+ÖðÔÂ±Þ·¨ (zhuyue-whip)    perform huabian,perform jueqing,perform yinhua
+
+2012Äê11ÔÂ20ÈÕ
+Ã·×¯¼ÓÇ¿
+´óÑÅ½£·¨ (daya-sword)     perform daya,perform qijian,perform sha
+Ê¯¹Ä´òÑ¨±Ê·¨ (shigu-bifa) perform dian
+ÎåÔÏÆßÏÒ½£ (wuyun-jian)   perform jue,perform meng,perform shan,perform yin,perform zhu
+
+¾¸º£ÅÉ¼ÓÇ¿  
+±Ì²¨Éñ½£ (bibo-sword)      perform botao,perform lei,perform xunlei
+ÁúÐÎ²«»÷ (dragonfight)     perform jiuxian,perform leidong,perform luanwu,perform sheshen
+·ç²¨Ê®¶þ²æ (fengbo-cha)    perform bibo,perform fengbo,perform yinhua
+¸¿ÁúÕ¶öÞµ¶ (longjiao-blade)perform jiu,perform longlianda,perform shiwanshenmo,perform suodi
+       
+ÏÀ¿Íµº¼ÓÇ¿
+Ì«Ðþ¹¦(taixuan-gong)    perform hun,perform jing,perform po,perform xuan
+ìÓºÕµ¶(huanhe-dao)      perform baoxue,perform shiwanshenmo,perform tiandirenmo,perform xueyu
+ËØÄÞ½£·¨(sumi-jian)     perform feiwu,perform jiushi ,perform shenfeng
+°ÔÍõÇ¹·¨(bawang-qiang)  perform bugong,perform chuanxin,perform jinghun
+
+Ñãµ´ÅÉ¼ÓÇ¿    
+ÄÏº£Ðþ¹¦ (bluesea-force)  perform nan,perform xuan
+×ÓÎç´òÑ¨·¨ (ziwu-daxuefa) perform dian,perform ding,perform jing,perform kuangcao   
+°ËØÔ²½ (bagua-bu)  perform zhen
+ÐÂÔöÖÐ¼¶ÌØÊâÂäÑã½£·¨ (perform feixian,perform lian,perform shisan)
+
+2012Äê11ÔÂ24ÈÕ
+1.»ªÉ½ÅÉ	¶À¹Â¾Å½£(lonely-sword) perform wanjian,perform jiushi,perform po ÐèÒª¼¤·¢±¾ÃÅÄÚ¹¦²ÅÄÜÊ¹ÓÃ2012Äê11ÔÂ24ÈÕ
+
+2012Äê11ÔÂ26ÈÕ
+1.»ªÉ½ÅÉ	¶À¹Â¾Å½£(lonely-sword) perform wanjian ²»ÔÙÓÐÃ¦ÂÒµÐÈËµÄÐ§¹û
+
+2012Äê12ÔÂ3ÈÕ
+1.ÌØÊâ×°±¸°ó¶¨Ö¸Áî¼ÓÇ¿
+ÐÂÔö
+ÕûÀíÅÅÐò : bangding -a
+É¾³ý°ó¶¨ : bangding -d Î»ÖÃ		
+2.200¸ö¼òµ¥ÃÔ¹¬(help boss)ÖÐµÄBOSSÄÑ¶È¼õÉÙ
+
+2012Äê12ÔÂ4ÈÕ
+1.½­ºþËæ»úÈÎÎñ taskjob
+  »¥¶¯ÈÎÎñhdjob
+  Ôö¼ÓÈÎÎñ¼ä¸ôÊ±¼ä,Èç¹ûÈÎÎñ²»Íê³É£¬»áÓÐ¼ä¸ôÊ±¼ä¡£
+2.½­ºþËæ»úÈÎÎñ taskjob   »¥¶¯ÈÎÎñhdjob
+  ³öÏÖµÄÅúÁ¿µÐÈË£¬»áËæ»ú×ß¶¯¡£
+  
+
+  
+2012Äê12ÔÂ6ÈÕ    
+1.½­ºþËæ»úÈÎÎñ taskjob
+  »¥¶¯ÈÎÎñhdjob ×ªÉúºóµÄÍæ¼Ò£¬½ÓÈÎÎñÎÞ½±Àø£¬Íê³ÉÈÎÎñ²ÅÓÐ½±Àø
+  
+2012Äê12ÔÂ7ÈÕ      
+1.teachÃüÁî£¬Èç¹û±»½âÊÍ·½£¬ÓÐÑ§Ï°Ñ«ÕÂ£¬ÉæÈ¡Ñ«ÕÂ »áÓÐÐ§¹û
+2012Äê12ÔÂ5ÈÕ  
+1.½­ºþËæ»úÈÎÎñ taskjob
+  »¥¶¯ÈÎÎñhdjob
+  ÈÎÎñÊý¾Ý½øÐÐÁËÀ©´ó
+  Èç¹û²»Íê³É»¤ËÍÀàÈÎÎñ£¬»áÓÐ2Ð¡Ê±µÄ²»³äÐíÈÎÎñÊ±¼ä
+2012Äê12ÔÂ8ÈÕ      
+1.¶ÔÌ©É½£¬ºâÉ½£¬ºãÉ½£¬ÐÇËÞµÄÒ»Ð©¸ß¼¶Îä¹¦µÄ¾øÕÐ£¬ÍþÁ¦½øÐÐÁËÔöÇ¿
+
+2012Äê12ÔÂ11ÈÕ  
+1.½­ºþËæ»úÈÎÎñ taskjob
+  »¥¶¯ÈÎÎñhdjob
+  Èç¹û²»Íê³É»¤ËÍÀàÈÎÎñ£¬²»³äÐíÈÎÎñÊ±¼ä¸ÄÎª10·ÖÖÓ¡£
+  
+2012Äê12ÔÂ31ÈÕ
+ 1.Ôªµ©´óÀñ°ü  ¿ªÊ¼·¢·Å
+  ÑïÖÝÖÐÑë¹ã³¡ ask noname about ÀñÎï (ask noname about gift)
+  µÃµ½Àñ°üºó opengift dalibao
+  ·¢·Å½ØÖ¹Ê±¼ä Ò»ÔÂÈýºÅ¡£     

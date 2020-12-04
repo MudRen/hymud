@@ -1,0 +1,7 @@
+#/clone/user/user.c
+alias (["k":"kill $*","fx":"perform feixian",])
+dbase (["hunmi":0,"water":386,"learned_points":20439,"eff_jingli":900,"channels":({"chat","rumor","party","es",}),"registered":1,"balance":6500,"nbjob":20,"fpawn":(["0":"/d/welcome/npc/lbook1.c",]),"mud_age":3569,"age":14,"lastChangeSize":6920,"vpawn":(["0":500,]),"last_on":1466927233,"dietimes":1,"id":"wsbgz","actions":,"str":30,"pawn":(["0":"[33mÈý×Ö¾­[2;37;0m",]),"can_speak":1,"int":19,"jing":1121,"default_actions":,"unit":"Î»","limbs":({"Í·²¿","¾±²¿","ÐØ¿Ú","ºóÐÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ð¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"last_from":"118.212.143.19","con":21,"eff_jing":1121,"env":(["showmap":1,]),"dex":10,"max_jing":1021,"jingli":900,"kar":23,"per":17,"qi":1800,"MKS":9,"max_qi":1700,"startroom":"/d/city/kedian","last_sleep":1466927657,"eff_qi":1800,"max_jingli":900,"neili":739,"levels":4,"pighead":0,"combat_exp":85554,"shen_type":0,"max_neili":739,"mpgx":0,"name":"¶¡Ã®","gender":"ÄÐÐÔ","title":"ÆÕÍ¨°ÙÐÕ","score":8,"birthday":1466927233,"attitude":"peaceful","potential":62904,"shen":0,"food":386,"race":"ÈËÀà",])
+skills (["softsword":100,"parry":100,"dodge":100,"trade":9,"force":100,"sword":100,"jingyiforce":100,"feixian-sword":100,"literate":150,"unarmed":100,])
+learned (["parry":5,"dodge":16,"trade":8,"force":10,"sword":111,"jingyiforce":26,"literate":6964,"feixian-sword":39,])
+skill_map (["parry":"feixian-sword","force":"jingyiforce","sword":"feixian-sword",])
+autoload ({"/clone/money/coin:390",})

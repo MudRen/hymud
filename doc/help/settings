@@ -1,0 +1,55 @@
+[33m©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+[44;33m¡¾»·¾³±äÁ¿ÉèÖÃ¡¿                                            [2;37;0m
+[33m©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤[2;37;0m
+
+Äú¿ÉÓÃ set Ö¸ÁîÀ´Éè¶¨Ò»Ð©ÓÐÓÃµÄ»·¾³±äÁ¿£¬ÕâÐ©±äÁ¿Ò²»áËæÖøÄúµÄÈËÎï±»´¢
+´æÏÂÀ´£¬Èç¹ûÓÐ²»ÐèÒªµÄ»·¾³±äÁ¿£¬Ò²¿ÉÒÔÓÃ unset É¾³ý¡£ÏêÏ¸µÄÊ¹ÓÃ·½·¨Çë
+¿´ help set ¼° help unset¡£
+
+ÒÔÏÂÊÇ¡°º£ÑóII¡±Ä¿Ç°ÈÏÊ¶µÄ»·¾³±äÁ¿£º
+
+±äÁ¿            ÊýÖµ            ÓÃÍ¾
+
+brief           <ÈÎÒâ·ÇÁãÖµ>    Éè¶¨ÒÆ¶¯Ê±Ö»¿´ËùÔÚµØµÄ¼ò¶ÌµÄÃû³Æ£¬Èç¹û
+                                Äú¾õµÃÍøÂçËÙ¶ÈÌ«Âý£¬»òÕßÊÇ¶ÔÇøÓòÒÑ¾­Ê®
+                                ·ÖÊìÏ¤£¬Äú¿ÉÒÔ¿¼ÂÇ²ÉÓÃ briefÄ£Ê½ÒÔ¼õÇá
+                                ÍøÂç¸ºµ£¡£
+
+combatd         <ÈÎÒâ·ÇÁãÖµ>    Éè¶¨´ò¶·Ê±Ö»¿´µ½ÊÜÉËÐÅÏ¢¶øºöÂÔÈ¥´ò¶·ÕÐ
+                                ÊýÃèÊö£¬¼õÇáÍøÂç¸ºµ£¡£
+combatdother    <ÈÎÒâ·ÇÁãÖµ>    Éè¶¨±ðÈË´ò¶·Ê±Ö»¿´µ½ÊÜÉËÐÅÏ¢¶øºöÂÔÈ¥´ò
+                                ¶·ÕÐÊýÃèÊö£¬¼õÇáÍøÂç¸ºµ£¡£
+
+no_accept       <ÈÎÒâ·ÇÁãÖµ>    Éè¶¨ÄúÏÖÔÚ²»½ÓÊÜ±ðÈË give µÄÀñÎï¡£
+
+no_teach        <ÈÎÒâ·ÇÁãÖµ>    Éè¶¨ÄúÏÖÔÚ²»½ÌÄúµÄÍ½µÜ¼¼ÄÜ£¬ÓÉì¶½ÌÍ½Òª
+                                ÊÇÒª·Ñ¾«Éñ£¬µ±Í½µÜ²»¹ÔÊ±¡­¡£
+
+no_tell         <Ö¸¶¨ÈËµÄid>    Éè¶¨ÄúÏÖÔÚ²»½ÓÊÜÖ¸¶¨ÈËµÄ tell »ò reply µÄÐÅÏ¢¡£
+
+no_tell         all             Éè¶¨ÄúÏÖÔÚ²»½ÓÊÜÈÎºÎÈËµÄ tell »ò reply µÄÐÅÏ¢¡£
+
+kill_msg        <ÎÄ±¾>         Éè¶¨ÄúkillÊ±ËµµÄ»°(help killmsg.txtÊÇ²Î¿¼ÎÄ¼þ)
+
+agree_heal       all          Éè¶¨ÄúÏÖÔÚ²»½ÓÊÜÈÎºÎÈËµÄÓÃÒøÕëÒ±ÉË
+
+friendtalk       all          Éè¶¨ÄúÏÖÔÚ²»½ÓÊÜÈÎºÎÈËºÃÓÑÆµµÀ
+
+showmap         <ÈÎÒâ·ÇÁãÖµ>    Éè¶¨ÒÆ¶¯Ê±ÏÔÊ¾Ð¡µØÍ¼
+
+
+public          <ÈÎÒâ·ÇÁãÖµ>    Éè¶¨¹«²¼ÄúµÄµç×ÓÐÅÏäµØÖ·
+
+wimpy           <°Ù·Ö±È>        µ±ÄúµÄ¡°¾«¡±»ò¡°Æø¡±µÍì¶Õâ¸ö°Ù·Ö±ÈÊ±¾Í
+                                »á×Ô¶¯ÕÒ»ú»áÌÓÃü¡£
+no_minmsg        <ÈÎÒâ·ÇÁãÖµ>   Éè¶¨ÄúÏÖÔÚ²»ÏëÏÔÊ¾ÆäËûÍæ¼Ò»ò NPCÀë¿ªÄã
+                                ËùÔÚ·¿¼äµÄÐÅÏ¢ÌáÊ¾¡£
+
+no_moutmsg       <ÈÎÒâ·ÇÁãÖµ>   Éè¶¨ÄúÏÖÔÚ²»ÏëÏÔÊ¾ÆäËûÍæ¼Ò»ò NPC½øÈëÄã
+                                ËùÔÚ·¿¼äµÄÐÅÏ¢ÌáÊ¾¡£
+
+combat_show     <ÈÎÒâ·ÇÁãÖµ>   Éè¶¨ÄãÔÚÕ½¶·µÄÊ±ºò£¬ÏÔÊ¾¾ßÌåÉËº¦Êý¾ÝÖµ¡£
+ 
+bweapon         <ÈÎÒâ·ÇÁãÖµ>   Éè¶¨ÄãÊÇ·ñ½øÈëÓÎÏ·Ê±£¬×Ô¶¯ÔØÈëÌØÊâ×°±¸
+
+[33m©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤[2;37;0m

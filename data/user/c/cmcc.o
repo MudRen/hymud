@@ -1,0 +1,8 @@
+#/clone/user/user.c
+alias (["g":"give 1 silver to ma fu",])
+conditions (["autosave":13,])
+dbase (["water":270,"default_actions":,"fpawn":(["0":"/d/welcome/npc/lbook1.c",]),"channels":({"chat","rumor","party","es",}),"registered":1,"balance":100,"last_sleep":1455301867,"nbjob":20,"max_jingli":32,"vpawn":(["0":500,]),"pighead":0,"mud_age":21640,"shen_type":0,"age":14,"env":(["brief":3,"no_minmsg":3,"wimpy":0,"no_moutmsg":3,"showmap":1,]),"lastChangeSize":6920,"pawn":(["0":"[33mÈý×Ö¾­[2;37;0m",]),"last_on":1446788866,"unit":"Î»","id":"cmcc","attitude":"peaceful","liwuopen":(["1":1,"2":1,]),"hunmi":0,"str":17,"jing":490,"int":30,"eff_jing":491,"last_from":"152.178.204.221.adsl-pool.sx.cn","con":19,"can_speak":1,"learned_points":26,"max_jing":655,"dex":14,"limbs":({"Í·²¿","¾±²¿","ÐØ¿Ú","ºóÐÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ð¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"kar":26,"jingli":0,"qi":1028,"per":14,"MKS":2,"max_qi":1275,"startroom":"/d/welcome/welcome","eff_qi":1029,"neili":1400,"levels":8,"combat_exp":572071,"max_neili":1400,"mpgx":0,"name":"ÒÆ¶¯Í¨","gender":"ÄÐÐÔ","dietimes":9,"title":"ÆÕÍ¨°ÙÐÕ","score":1881,"actions":,"birthday":1446788866,"disable_type":"<Ë¯ÃÎÖÐ>","potential":452194,"shen":0,"food":270,"race":"ÈËÀà",])
+skills (["softsword":100,"dodge":120,"trade":6,"force":120,"jingyiforce":100,"parry":120,"sword":100,"feixian-sword":100,"literate":120,"unarmed":120,])
+learned (["trade":38,"force":57,"sword":24,"jingyiforce":29,"feixian-sword":123,])
+skill_map (["force":"jingyiforce","sword":"feixian-sword",])
+autoload ({"/clone/money/silver:56","/clone/money/coin:103",})
