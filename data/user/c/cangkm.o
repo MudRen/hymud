@@ -1,4 +1,0 @@
-#/clone/user/user.c
-conditions (["autosave":3,])
-dbase (["default_actions":,"pighead":0,"vpawn":(["0":3200,]),"shen_type":0,"max_jingli":0,"mud_age":3430,"age":14,"lastChangeSize":5717,"unit":"Î»","last_on":1393583430,"env":(["showmap":1,]),"id":"cangkm","str":30,"attitude":"peaceful","int":17,"con":15,"last_from":"27.208.105.18","dex":18,"jing":115,"kar":23,"eff_jing":115,"per":17,"max_jing":115,"can_speak":1,"limbs":({"Í·²¿","¾±²¿","ĞØ¿Ú","ºóĞÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ğ¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"registered":1,"qi":115,"pawn":(["0":"[33mÑÇÂé[2;37;0m",]),"levels":1,"max_qi":115,"max_neili":0,"eff_qi":115,"neili":0,"title":"ÆÕÍ¨°ÙĞÕ","name":"²Ö¿â","fpawn":(["0":"/p/newweapon/weaponobj/buliao2.c",]),"birthday":1393583430,"gender":"ÄĞĞÔ","potential":100,"shen":0,"food":400,"race":"ÈËÀà","actions":,"water":400,"channels":({"chat","rumor","party","es",}),])
-autoload ({"/clone/money/silver:68",})

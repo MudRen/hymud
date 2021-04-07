@@ -1,6 +1,0 @@
-#/clone/user/user.c
-conditions (["autosave":3,])
-dbase (["water":243,"default_actions":,"channels":({"chat","rumor","party","es",}),"registered":1,"balance":0,"max_jingli":0,"pighead":0,"shen_type":0,"mud_age":163080,"age":15,"unit":"Î»","lastChangeSize":6920,"last_on":1387895048,"id":"hye","marks":(["insleeping":1,]),"attitude":"peaceful","hunmi":0,"str":21,"jing":140,"int":19,"last_from":"223.199.123.159","con":21,"eff_jing":140,"last_sleep":1453221253,"dex":19,"max_jing":140,"kar":12,"can_speak":1,"per":28,"qi":142,"limbs":({"Í·²¿","¾±²¿","ĞØ¿Ú","ºóĞÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ğ¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"max_qi":142,"startroom":"/d/pingan/wumiao","eff_qi":142,"neili":0,"levels":4,"combat_exp":100000,"old_title":"ÆÕÍ¨°ÙĞÕ","max_neili":0,"mpgx":0,"env":(["brief":"YES[2;37;0m","showmap":1,]),"name":"½ª¿µ","dietimes":2,"title":"ÆÕÍ¨°ÙĞÕ","gender":"ÄĞĞÔ","score":0,"disable_type":"<Ë¯ÃÎÖĞ>","birthday":1386054248,"actions":,"potential":79755,"shen":0,"food":243,"race":"ÈËÀà",])
-skills (["trade":13,])
-learned (["trade":42,])
-autoload ({"/clone/money/coin:16","/clone/money/silver:38707",})

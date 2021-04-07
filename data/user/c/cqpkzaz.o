@@ -1,6 +1,0 @@
-#/clone/user/user.c
-conditions (["0":8,0:10,"autosave":7,])
-dbase (["con":18,"can_speak":1,"last_from":"14.105.82.253","dex":16,"limbs":({"Í·²¿","¾±²¿","ĞØ¿Ú","ºóĞÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ğ¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"kar":15,"jing":143,"per":25,"score":0,"eff_jing":143,"max_jing":143,"startroom":"/d/welcome/welcome","jingli":0,"actions":,"levels":1,"qi":136,"max_neili":0,"max_jingli":0,"max_qi":136,"mpgx":0,"eff_qi":136,"default_actions":,"title":"ÆÕÍ¨°ÙĞÕ","neili":0,"combat_exp":9979,"birthday":1390821186,"potential":7135,"name":"ÏëÈë·Ç·Ç","food":310,"gender":"ÄĞĞÔ","water":310,"channels":({"chat","rumor","party","es","sys",}),"shen":0,"hunmi":0,"race":"ÈËÀà","nbjob":5,"balance":0,"pighead":0,"unit":"Î»","attitude":"peaceful","mud_age":107043,"shen_type":0,"age":15,"lastChangeSize":5717,"last_on":1391502944,"env":(["showmap":1,"invisibility":"YES[2;37;0m","combatd":0,]),"registered":1,"dietimes":9,"str":21,"last_sleep":1391196782,"id":"cqpkzaz","int":25,])
-skills (["dodge":1,"literate":10,"feixian-sword":5,])
-learned (["dodge":1,])
-autoload ({})

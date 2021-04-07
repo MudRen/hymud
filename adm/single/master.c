@@ -168,7 +168,17 @@ void log_error(string file, string message)
     if (name) home = user_path(name);
     else home = LOG_DIR;
 
-    if(this_player(1)) efun::write("±‡“Î ±∂Œ¥ÌŒÛ£∫" + message+"\n");
+    if (strsrch(message, "Warning") < 0)
+    {
+        if (this_player(1))
+        {
+            if (wizardp(this_player(1)))
+                efun::write("±‡“Î ±∂Œ¥ÌŒÛ£∫" + message + "\n");
+            else
+                efun::write(get_config(__DEFAULT_ERROR_MESSAGE__) + "\n");
+        }
+        efun::write_file(home + "log_error", message);
+    }
 
     efun::write_file(home + "log", message);
 }

@@ -1,6 +1,0 @@
-#/adm/daemons/intermud2_d.c
-dbase (["channel_id":"i2d ¾«Áé",])
-mudlist ([])
-save_path "/data/network/"
-udp_socket 1
-refresh_limit 1338277685

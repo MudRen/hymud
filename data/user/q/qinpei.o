@@ -1,8 +1,0 @@
-#/clone/user/user.c
-alias (["k":"kill $*",])
-conditions (["autosave":3,])
-dbase (["hunmi":0,"balance":800,"class":"eunach","fpawn":(["0":"/d/welcome/npc/lbook1.c",]),"pawn":(["0":"[33mÈı×Ö¾­[2;37;0m",]),"mud_age":48373,"age":14,"lastChangeSize":6298,"last_on":1429266206,"vpawn":(["0":500,]),"dietimes":2,"id":"qinpei","str":20,"actions":,"int":20,"learned_points":42165,"con":20,"last_from":"111.180.203.251","dex":20,"jing":504,"can_speak":1,"default_actions":,"kar":17,"eff_jing":504,"limbs":({"Í·²¿","¾±²¿","ĞØ¿Ú","ºóĞÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ğ¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"MKS":27,"per":23,"max_jing":504,"unit":"Î»","env":(["showmap":1,]),"jingli":0,"startroom":"/d/welcome/welcome","registered":1,"qi":700,"max_qi":700,"levels":4,"eff_qi":700,"max_neili":400,"max_jingli":9,"neili":400,"mpgx":0,"pighead":0,"combat_exp":86923,"title":"ÈÕÔÂÉñ½ÌµÚÈı´úµÜ×Ó","score":2,"shen_type":0,"name":"Ã«Ö÷Ï¯","birthday":1429156060,"gender":"ÎŞĞÔ","potential":63403,"shen":-100200,"last_sleep":1429198198,"food":300,"race":"ÈËÀà","tell_time":1429342200,"nbjob":20,"water":300,"family":(["enter_time":1429252963,"title":"µÜ×Ó","privs":0,"master_id":"huang boliu","family_name":"ÈÕÔÂÉñ½Ì","generation":3,"master_name":"»Æ²®Á÷",]),"attitude":"peaceful","channels":({"chat","rumor","party","es",}),])
-skills (["feixian-sword":75,"literate":182,"unarmed":75,"softsword":75,"dodge":75,"trade":5,"tmdafa":96,"jingyiforce":75,"sword":75,"parry":75,"force":96,])
-learned (["literate":23573,"feixian-sword":2591,"unarmed":22,"dodge":3,"trade":5,"tmdafa":55,"sword":739,"jingyiforce":2749,"force":4651,])
-skill_map ([])
-autoload ({"/clone/money/silver:28","/clone/money/coin:40",})

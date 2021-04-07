@@ -1,7 +1,0 @@
-#/clone/user/user.c
-alias (["jwjg":"{pushaside grass;enter;pull ring;enter;n;out;knock ¶Î}",])
-conditions (["autosave":2,])
-dbase (["max_jing":134,"max_neili":0,"fpawn":([]),"mpgx":0,"score":0,"qi":124,"title":"¹ÃËÕÄ½ÈİµÚËÄ´úµÜ×Ó","max_qi":124,"can_speak":1,"eff_qi":124,"dietimes":1,"birthday":1387509970,"limbs":({"Í·²¿","¾±²¿","ĞØ¿Ú","ºóĞÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ğ¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"neili":0,"pighead":0,"potential":875,"combat_exp":1539,"shen_type":0,"food":113,"water":113,"shen":35,"name":"ÍõÓïæÌ","channels":({"chat","rumor","party","es",}),"race":"ÈËÀà","gender":"Å®ĞÔ","family":(["enter_time":1387510115,"privs":0,"master_id":"gongye gan","title":"µÜ×Ó","generation":4,"master_name":"¹«Ò±Ç¬","family_name":"¹ÃËÕÄ½Èİ",]),"actions":,"class":0,"balance":0,"default_actions":,"max_jingli":0,"unit":"Î»","mud_age":131466,"age":15,"env":(["showmap":1,"brief":"YES[2;37;0m",]),"lastChangeSize":3965,"registered":1,"last_on":1389945221,"vpawn":([]),"str":30,"hunmi":0,"int":22,"con":12,"last_from":"77.25.185.183.adsl-pool.sx.cn","id":"wyy","dex":16,"attitude":"peaceful","kar":17,"per":23,"tell_time":1389147994,"startroom":"/d/mr/yunjinlou","jing":134,"pawn":([]),"eff_jing":134,"levels":1,])
-skills (["trade":7,])
-learned (["trade":42,])
-autoload ({"/clone/money/silver:56","/clone/money/gold:17",})

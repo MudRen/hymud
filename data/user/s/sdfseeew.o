@@ -1,7 +1,0 @@
-#/clone/user/user.c
-conditions (["autosave":12,])
-dbase (["con":26,"last_from":"14.104.255.20","dex":20,"learned_points":2009,"kar":16,"jing":126,"last_sleep":1389363406,"per":24,"eff_jing":126,"max_jing":126,"levels":1,"qi":126,"MKS":1,"max_neili":11,"max_qi":126,"mpgx":0,"eff_qi":126,"disable_type":"<Ë¯ÃÎÖĞ>","title":"[1;31mÃ÷½ÌÊ¹Õß[2;37;0m","neili":11,"combat_exp":15104,"birthday":1389363257,"env":(["showmap":1,]),"attitude":"peaceful","name":"Ã÷½ÌµÄ","potential":10698,"gender":"ÄĞĞÔ","food":154,"water":154,"channels":({"chat","rumor","party","es",}),"can_speak":1,"shen":18200,"limbs":({"Í·²¿","¾±²¿","ĞØ¿Ú","ºóĞÄ","×ó¼ç","ÓÒ¼ç","×ó±Û","ÓÒ±Û","×óÊÖ","ÓÒÊÖ","Ñü¼ä","Ğ¡¸¹","×óÍÈ","ÓÒÍÈ","×ó½Å","ÓÒ½Å",}),"race":"ÈËÀà","party":(["rank":"Ìì×ÖÃÅ½ÌÖÚ","tasks":0,"enter_time":1389364136,"level":1,"party_name":"[1;32mÃ÷½Ì[2;37;0m",]),"class":"fighter","family":(["title":"µÜ×Ó","master_id":"zhang wuji","enter_time":1389364151,"master_name":"ÕÅÎŞ¼É","family_name":"Ã÷½Ì","privs":0,"generation":35,]),"nbjob":8,"pighead":0,"balance":0,"shen_type":0,"unit":"Î»","mud_age":1034,"age":14,"lastChangeSize":1664,"last_on":1389363257,"actions":,"registered":1,"str":10,"default_actions":,"id":"sdfseeew","max_jingli":0,"int":24,"score":0,])
-skills (["feixian-sword":14,"sword":15,"literate":25,"force":51,"jingyiforce":51,])
-learned (["feixian-sword":50,"sword":160,"literate":290,"force":2705,"jingyiforce":2010,])
-skill_map (["sword":"feixian-sword","force":"jingyiforce",])
-autoload ({"/clone/money/silver:3",})

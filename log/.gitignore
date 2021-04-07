@@ -1,2 +1,6 @@
-*_stats
-*log
+*
+!.gitignore
+!cmds/
+!edit/
+!mud/
+!static/

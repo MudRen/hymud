@@ -1,4 +1,0 @@
-#/clone/npc/pet.c
-dbase (["default_actions":0,"long":"Ò»Ö»Ð¡Ð¡Ð¡Ð¡³èÎï¡£","age":1,"pighead":0,"petdie":5,"shen_type":0,"verbs":({"bite","claw",}),"unit":"Ö»","id":"pet bai","str":60,"int":60,"owner":"archon","con":60,"double_attack":1,"no_drop":1,"dex":60,"jing":8195,"limbs":({"Í·²¿","ÉíÌå","Ç°ÐÄ","áá±³","Î²°Í",}),"kar":60,"eff_jing":8195,"per":65,"max_jing":8195,"qi":32780,"max_qi":32780,"max_neili":24585,"eff_qi":32780,"ownmake":1,"chat_msg_combat":({0,0,0,0,0,0,}),"neili":24585,"szj":(["over200":1,"passed":1,]),"combat_exp":29819025,"title":"Ð¡¹·","deathstamp":1,"name":"[1;37mÐ¡°×[2;37;0m","possessed":,"gender":"ÐÛÐÔ","shen":0,"food":700,"race":"Ò°ÊÞ","actions":,"obedience":2,"water":700,"chat_chance_combat":90,"tol":65,])
-skills (["unarmed":184,"dodge":181,"parry":181,"puyaogedou":542,])
-skill_map (["unarmed":"puyaogedou","parry":"puyaogedou",])
