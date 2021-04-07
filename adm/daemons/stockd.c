@@ -15,10 +15,10 @@
 
 mapping stocks;
 int last_update_time;
-static int get_stock_flag = 0;
-static string addresurl;
-static mapping connection;
-static string *stock_array =
+nosave int get_stock_flag = 0;
+nosave string addresurl;
+nosave mapping connection;
+nosave string *stock_array =
 ({
         "sz000999",
         "sz000850",
@@ -149,7 +149,7 @@ void parse_data(string data)
 
                 temp = data[pos_s..];
                 temp = replace_string(temp, "\r", "");
-#ifdef DEBUG               
+#ifdef DEBUG
                 CHANNEL_D->channel_broadcast("debug", sprintf("%s\n", temp));
 #endif
 
@@ -163,7 +163,7 @@ void parse_data(string data)
 
                         if( to_float(stock_data[3]) < to_float(stock_data[2]) ) status = "down";
                         else status = "up";
-                        
+
                         if( to_float(stock_data[3]) > to_float(stock_data[2]) && (to_float(stock_data[3])-to_float(stock_data[2])) * 100 / to_float(stock_data[2]) >= 9.9 ) status = "t3r2";
                         else if( to_float(stock_data[3]) < to_float(stock_data[2]) && (to_float(stock_data[3])-to_float(stock_data[2])) * 100 / to_float(stock_data[2]) <= -9.9 ) status = "t3g2";
 
@@ -228,7 +228,7 @@ void get_stock_data()
         if( err != EESUCCESS )
                 CHANNEL_D->channel_broadcast("debug", "无法连线股票网页。");
 
-#ifdef DEBUG               
+#ifdef DEBUG
         CHANNEL_D->channel_broadcast("debug", "与新浪股票服务器建立连接成功！");
 #endif
         return;
@@ -339,4 +339,3 @@ string query_name()
 {
         return "股票系统(STOCK_D)";
 }
-

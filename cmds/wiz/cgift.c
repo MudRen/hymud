@@ -3,7 +3,7 @@ inherit F_CLEAN_UP;
 
 int help();
 
-static mapping gift_desc = ([
+nosave mapping gift_desc = ([
 "kar":"¸£Ôµ",
 "per":"ÈİÃ²",
 "str":"ëöÁ¦",
@@ -12,7 +12,7 @@ static mapping gift_desc = ([
 "int":"ÎòĞÔ"
 ]);
 
-static string *gift = keys(gift_desc);
+nosave string *gift = keys(gift_desc);
 
 string check(object me)
 {

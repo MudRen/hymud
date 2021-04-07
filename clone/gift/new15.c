@@ -2,9 +2,9 @@
 
 #include <ansi.h>
 
-static string char_id;
-static string char_name;
-static string family_name;
+nosave string char_id;
+nosave string char_name;
+nosave string family_name;
 
 int give_gift();
 object select_character();
@@ -49,7 +49,7 @@ mixed query_story_message(int step)
 
 int give_gift()
 {
-         
+
         int i;
         object env,ob;
         object *players;
@@ -65,8 +65,8 @@ int give_gift()
                         if (ob->is_fighting()) continue;
                         if (!environment(ob)) continue;
                         if (ob->query_temp("netdead")) continue;
-                        //if (ob->query("story/jiuyang")) continue;                        
-                                
+                        //if (ob->query("story/jiuyang")) continue;
+
                 }
 if(!ob) return 1;
         if (ob->query_skill("xuantian-zhi", 1) < 380)
@@ -83,6 +83,3 @@ tell_object(ob, HIC "你从成昆那里学习到了幻阴指法之玄天无情指。\n" NOR);
       }
         return 1;
 }
-
-
-

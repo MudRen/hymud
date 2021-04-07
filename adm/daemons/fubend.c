@@ -17,10 +17,10 @@ inherit F_DBASE;
 
 int state = 1;
 string *valid_fbname = ({});
-static mapping all = ([]);
-static mapping fuben_list = ([]);
-static mapping fuben_data = ([]);
-static mapping fuben_all  = ([]);
+nosave mapping all = ([]);
+nosave mapping fuben_list = ([]);
+nosave mapping fuben_data = ([]);
+nosave mapping fuben_all  = ([]);
 protected void load_all_fuben();
 protected void load_fuben_list(string fbname);
 protected void load_fuben_data(string fbname);

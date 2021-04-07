@@ -19,7 +19,7 @@
 #define AD                   (1<<10)       //广告
 #define FAMILY               (1<<11)       //门派
 #define WAR                  (1<<12)       //战场
-#define TCH                  (1<<13)       //报告 
+#define TCH                  (1<<13)       //报告
 #define PARTY                (1<<14)       //帮派
 #define STOCK                (1<<15)       //股票
 #define AUC                  (1<<16)       //拍卖
@@ -49,11 +49,11 @@ class channel_class
 
 mapping channels;
 mapping users;
-static int water_number;
+nosave int water_number;
 mapping query_chann() { return channels; }
 
-static string msg_log;
-static int log_from;
+nosave string msg_log;
+nosave int log_from;
 
 string *info =
 ({
@@ -146,7 +146,7 @@ string *info =
                 "time"          : 1,
                 "msgcolor"      : NOR HIW,
         ]),
-    }),    
+    }),
     ({
         NEWS,
         "news",
@@ -265,7 +265,7 @@ string *info =
 	        "nameraw"       : 1,
 	]),
     }),
-    ({ 
+    ({
 	GROUP,
 	"gt",
 	PLAYER,
@@ -277,7 +277,7 @@ string *info =
                 "newtitle"      : (: (stringp($1) ? $1 : query_temp("battle/team_name", $1)) || "无队伍":),
 	]),
     }),
-     ({ 
+     ({
         SPORT,
 	"sport",
 	PLAYER,
@@ -290,12 +290,12 @@ string *info =
     }),
 });
 
-static mapping replace_word = ([
+nosave mapping replace_word = ([
         "干你娘":       "******",
         "妈逼":         "******",
-        "妈的逼":       "******", 
+        "妈的逼":       "******",
         "妈个逼":       "******",
-        "妈的个逼":     "******",   
+        "妈的个逼":     "******",
         "逼养的":       "******",
         "傻逼":         "******",
 ]);
@@ -318,48 +318,48 @@ varargs int do_channel(object me, string channel, string msg, mixed raw)
         class channel_class ch;
         string channel_title, idname, send_msg, time, my_id, my_idname, color, subchannel;
         string lfn;
-        mixed lt; 
+        mixed lt;
 
         if( !channel || channel == "" || !me ) return 0;
 
         if( query("chblk_on", me) )
                 return notify_fail("你的聊天频道给关闭了！唯一的办法就是请求在线玩家投票开通。\n");
-                                        
+
         if( me->is_chatter() )
                 return notify_fail("聊天魂魄目前不能使用各种频道。\n");
-        
+
         if( userp(me) && me->ban_say(1) ) return 0;
-        
+
         // 检查是否为表情指令
         if( channel[<1] == '*' ) { emote = 1; channel = channel[0..<2]; }
 
-        if( sscanf(channel, "gwiz-%s", subchannel) ) channel = "gwiz"; 
+        if( sscanf(channel, "gwiz-%s", subchannel) ) channel = "gwiz";
 
         if( !classp(ch = channels[channel]) ) return 0;
 
         // player broadcasting need consume jing
         if( userp(me) && !wizardp(me) && channel == "rumor" &&
             !objectp(present("rumor generator", me)) )
-                if( query("jing", me)>50 ) 
-                        me->add("jing",-random(36)); 
+                if( query("jing", me)>50 )
+                        me->add("jing",-random(36));
                 else
                         return notify_fail("你已经没力气散播谣言了！\n");
-        
+
         if( query("doing", me) == "scheme"){
                 if( query("jing", me)<100 )
                         return notify_fail("你现在的精神不济，等一会儿吧。\n");
                 addn("jing", -50, me);
         }
-                
+
         if( channel == "family" && interactive(me) && !wizardp(me) && !query("family", me) )
                 return notify_fail(pnoun(2, me)+"并未加入任何门派。\n");
-                
+
         if( channel == "party" && interactive(me) && !wizardp(me) && !query("bunch", me) )
                 return notify_fail(pnoun(2, me)+"并未加入任何帮派。\n");
 
         if( channel == "tch" && interactive(me) && !wizardp(me) && !query("viremploy", me) )
                 return notify_fail(pnoun(2, me)+"不是新手导师，无法使用该频道。\n");
-                
+
         my_id = me->query_id(1); // 不带颜色
         name_raw = ch->extra["nameraw"];
         my_idname = me->query_idname(name_raw); // 是否假装了别人
@@ -397,7 +397,7 @@ varargs int do_channel(object me, string channel, string msg, mixed raw)
 
         // 整理出正在使用本频道的频道使用者
         fit_users = keys(filter(users, (: $(ch->number) & $2 :)));
-        fit_users -= ({ 0 }); 
+        fit_users -= ({ 0 });
 
         // 检查本频道的使用之过滤条件
         if( ch->extra["filter"] )
@@ -495,7 +495,7 @@ varargs int do_channel(object me, string channel, string msg, mixed raw)
                 if( channel == "gwiz" )
                         ch->extra["intermud"]->send_gwiz_msg(subchannel, capitalize(me->query_id(1)), me->query_name(), intermud_msg, emote);
                 else
-                if((!internal_flag && subchannel!="") || ( internal_flag && member_array(subchannel,keys(channels))==-1 )) 
+                if((!internal_flag && subchannel!="") || ( internal_flag && member_array(subchannel,keys(channels))==-1 ))
                         ch->extra["intermud"]->send_gchannel_msg(subchannel, capitalize(me->query_id(1)), me->query_name(), intermud_msg, emote);
                 else         subchannel="站内";
         }
@@ -514,7 +514,7 @@ varargs int do_channel(object me, string channel, string msg, mixed raw)
         // replace string
         foreach(string a , string b in replace_word)
         send_msg=replace_string(send_msg,a,b);
-        
+
         // replace ansi for %^RED%^
 	//send_msg = replace_usa_ansi(send_msg);
 
@@ -569,17 +569,17 @@ varargs int do_channel(object me, string channel, string msg, mixed raw)
                 }
 
                 fit_users -= level_fit_users;
-                         
+
                 // 权限足够之使用者
                 //tell(level_fit_users, level_send_msg, CHNMSG);
                 tell(level_fit_users, level_send_msg, "channel:"+channel); // 支持tomud
-                
+
                 level_fit_users->add_msg_log(channel, level_send_msg);
                 SPECIAL_NPC->receive_report(me, channel);
         }
 
         //tell(fit_users, send_msg, CHNMSG);
-        tell(fit_users, send_msg, "channel:"+channel); // 支持tomud        
+        tell(fit_users, send_msg, "channel:"+channel); // 支持tomud
 
         if( userp(me) && random(100) < 20 )
         {
@@ -589,13 +589,13 @@ varargs int do_channel(object me, string channel, string msg, mixed raw)
 
         fit_users->add_msg_log(channel, send_msg);
 
-        if( arrayp(ch->extra["listener"]) ) 
+        if( arrayp(ch->extra["listener"]) )
         {
                 ch->extra["listener"] -= ({ 0 });
                 if( sizeof(ch->extra["listener"]) )
                         ch->extra["listener"]->relay_channel(me, channel, msg);
         }
-        
+
         switch(channel)
         {
         case "msg":
@@ -607,7 +607,7 @@ varargs int do_channel(object me, string channel, string msg, mixed raw)
         case "war":
         case "gwiz":
         case "sos":
-        case "wiz":                
+        case "wiz":
                 if( !stringp(msg_log) ) msg_log = "";
 
                 t = time();
@@ -636,12 +636,12 @@ void register_relay_channel(string channel)
         object ob;
         ob = previous_object();
         ch = new(class channel_class);
-        
+
         if( undefinedp(channels[channel]) || !ob )
                 return;
         if( !classp(ch = channels[channel]) )
                 return;
-                
+
         if( arrayp(ch->extra["listener"]) ) {
                 if( member_array(ob, ch->extra["listener"]) >= 0 )
                         return;
@@ -708,7 +708,7 @@ nomask varargs mixed query_using_channel(object user, int flag)
 {
         int channel = users[user];
         string using_channel = "";
-        string *using_ch = ({}); 
+        string *using_ch = ({});
 
         if( channel )
                 foreach( string name, class channel_class ch in channels )
@@ -717,7 +717,7 @@ nomask varargs mixed query_using_channel(object user, int flag)
                         if( flag ) using_ch += ({ name });
                         else using_channel += " "+name;
                 }
-        
+
         if( flag ) return using_ch;
         return using_channel == "" ? "无" : using_channel;
 }
@@ -753,10 +753,10 @@ void create()
         class channel_class ch;
 
         if( clonep() ) destruct(this_object());
-        
+
         seteuid(getuid());
         set("channel_id", "频道精灵");
-        
+
         channels = allocate_mapping(0);
         users = allocate_mapping(0);
         water_number = 10000;

@@ -9,7 +9,7 @@ object connect()
 {
         object login_ob;
         mixed err;
-   
+
         err = catch(login_ob = new(LOGIN_OB));
 
         if (err) {
@@ -37,7 +37,7 @@ mixed compile_object(string file)
 // This is called when there is a driver segmentation fault or a bus error,
 // etc.  As it's static it can't be called by anything but the driver (and
 // master).
-static void crash(string error, object command_giver, object current_object)
+protected void crash(string error, object command_giver, object current_object)
 {
         efun::shout("系统核心发出一声惨叫：哇—哩—咧—\n");
         efun::shout("系统核心告诉你：要当机了，自己保重吧！\n");
@@ -46,7 +46,7 @@ static void crash(string error, object command_giver, object current_object)
         write_file("/log/static/LASTCRASH", MUD_NAME + "上次当机是在：" + ctime(time()) +
                 "，原因：" + error + "\n", 1);
         if (command_giver)
-        { 
+        {
           log_file("static/CRASHES",sprintf( "this_player: %O\n", command_giver));
                         write_file("/log/static/LASTCRASH",
                         sprintf( "this_player: %O %s\n",
@@ -65,7 +65,7 @@ static void crash(string error, object command_giver, object current_object)
 // Arguements:      file: a string that shows what file to read in.
 // Return:          Array of nonblank lines that don't begin with '#'
 // Note:            must be declared static (else a security hole)
-static string *update_file(string file)
+protected string *update_file(string file)
 {
         string *list;
         string str;
@@ -109,7 +109,7 @@ void preload(string file)
                 write(" -> Error " + err + " when loading " + file + "\n");
         else
                 write(".... Done.\n");
-                
+
 }
 
 // Write an error message into a log file. The error occured in the object
@@ -117,7 +117,7 @@ void preload(string file)
 void log_error(string file, string message)
 {
         string name, home;
-   
+
         if( find_object(SIMUL_EFUN_OB) )
                 name = file_owner(file);
 
@@ -125,7 +125,7 @@ void log_error(string file, string message)
         else home = LOG_DIR;
 
         if(this_player(1)) efun::write("编译时段错误：" + message+"\n");
-        
+
         efun::write_file(home + "log", message);
 }
 
@@ -135,7 +135,7 @@ void log_error(string file, string message)
 int save_ed_setup(object who, int code)
 {
         string file;
-  
+
     if (!intp(code))
         return 0;
     file = user_path(getuid(who)) + ".edrc";
@@ -149,7 +149,7 @@ int retrieve_ed_setup(object who)
 {
    string file;
    int code;
-  
+
     file = user_path(getuid(who)) + ".edrc";
     if (file_size(file) <= 0) {
         return 0;
@@ -321,7 +321,7 @@ int valid_save_binary( string filename )
 }
 
 // valid_write: write privileges; called with the file name, the object
-//   initiating the call, and the function by which they called it. 
+//   initiating the call, and the function by which they called it.
 int valid_write( string file, mixed user, string func )
 {
         object ob;
@@ -359,5 +359,3 @@ int valid_bind(object binder, object old_owner, object new_owner)
         if( clonep(new_owner) ) return 1;
         return 0;
 }
-
-

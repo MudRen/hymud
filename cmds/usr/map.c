@@ -9,10 +9,10 @@ inherit F_CLEAN_UP;
 
 #include "ansi.h"
 #include "/doc/help.h"
-static int X,Y;
-static mixed m;
-static string *rfile;
-static mapping *data;
+nosave int X,Y;
+nosave mixed m;
+nosave string *rfile;
+nosave mapping *data;
 int draw_room(int,int,object);
 int main2(object me);
 void set_room(int,int,object);
@@ -103,7 +103,7 @@ string *dir2;
 										if( file = room3->query("outdoors"))
 										{
 											jj = 1;
-											break; 
+											break;
 										}
 										else
 											if( mapp(exit3 = room3->query("exits")))
@@ -117,7 +117,7 @@ string *dir2;
 														if( file = room4->query("outdoors"))
 														{
 															kk = 1;
-															break; 
+															break;
 														}
 													}
 												}
@@ -144,7 +144,7 @@ if( file_size("/doc/map/" + file)<=0 )
 dir2=explode(base_name(environment(me)),"/");
 file=dir2[1];
 }
-		if( file_size("/doc/map/" + file)>0 ) 
+		if( file_size("/doc/map/" + file)>0 )
 		{
 			if(stringp(map = read_file("/doc/map/" + file)))
 			{
@@ -163,7 +163,7 @@ file=dir2[1];
 	}
 	else
 	{
-		if( file_size("/doc/map/" + arg)>0 ) 
+		if( file_size("/doc/map/" + arg)>0 )
 		{
 			if(stringp(map = read_file("/doc/map/" + arg)))
 			{
@@ -254,7 +254,7 @@ string getwhere(object ob)
         object item,room;
 
         string output,outputt,dis,alt,dir,local,tlocal,ck,playout;
-        
+
         int i;
 
         int x,y,z,x0,y0,z0;
@@ -271,652 +271,652 @@ output="未知区域";
 
 dir2=explode(base_name(ob),"/");
 
-if (dir2[1]=="baituo")  
+if (dir2[1]=="baituo")
 
 output="白驼山";
 
-else if (dir2[1]=="binghuodao")  
+else if (dir2[1]=="binghuodao")
 
 	output="冰火岛";
 
-else if (dir2[1]=="city")  
+else if (dir2[1]=="city")
 
 	output="扬州";
 
-else if (dir2[1]=="city2" || dir2[1]=="beijing"  || dir2[1]=="huanggon"  || dir2[1]=="huanggong" || dir2[1]=="beihai")  
+else if (dir2[1]=="city2" || dir2[1]=="beijing"  || dir2[1]=="huanggon"  || dir2[1]=="huanggong" || dir2[1]=="beihai")
 
 	output="北京城";
 
-else if (dir2[1]=="city4" || dir2[1]=="changan")   
+else if (dir2[1]=="city4" || dir2[1]=="changan")
 
 	output="长安城";
 
-else if (dir2[1]=="dali")  
+else if (dir2[1]=="dali")
 
 	output="大理";
 
-else if (dir2[1]=="emei")  
+else if (dir2[1]=="emei")
 
 	output="娥眉山";
 
-else if (dir2[1]=="foshan")  
+else if (dir2[1]=="foshan")
 
 	output="佛山";
 
-else if (dir2[1]=="gaibang")  
+else if (dir2[1]=="gaibang")
 
 	output="丐帮";
 
-else if (dir2[1]=="gaochang")  
+else if (dir2[1]=="gaochang")
 
 	output="高昌迷宫";
 
-else if (dir2[1]=="guanwai")  
+else if (dir2[1]=="guanwai")
 
 	output="关外";
 
-else if (dir2[1]=="guiyun")  
+else if (dir2[1]=="guiyun")
 
 	output="归云庄";
 
-else if (dir2[1]=="gumu")  
+else if (dir2[1]=="gumu")
 
 	output="古墓派";
 
-else if (dir2[1]=="hangzhou")  
+else if (dir2[1]=="hangzhou")
 
 	output="杭州";
 
-else if (dir2[1]=="heimuya")  
+else if (dir2[1]=="heimuya")
 
 	output="黑木崖";
 
-else if (dir2[1]=="hengshan")  
+else if (dir2[1]=="hengshan")
 
 	output="恒山";
 
-else if (dir2[1]=="henshan")  
+else if (dir2[1]=="henshan")
 
 	output="衡山";
 
-else if (dir2[1]=="huanghe")  
+else if (dir2[1]=="huanghe")
 
 	output="黄河九曲";
 
-else if (dir2[1]=="huashan")  
+else if (dir2[1]=="huashan")
 
 	output="华山";
 
-else if (dir2[1]=="jinshe")  
+else if (dir2[1]=="jinshe")
 
 	output="金蛇山洞";
 
-else if (dir2[1]=="lingjiu")  
+else if (dir2[1]=="lingjiu")
 
 	output="灵鹫宫";
 
-else if (dir2[1]=="lingzhou")  
+else if (dir2[1]=="lingzhou")
 
 	output="灵州";
 
-else if (dir2[1]=="meizhuang")  
+else if (dir2[1]=="meizhuang")
 
 	output="梅庄";
 
-else if (dir2[1]=="mingjiao")  
+else if (dir2[1]=="mingjiao")
 
 	output="明教";
 
-else if (dir2[1]=="qingcheng")  
+else if (dir2[1]=="qingcheng")
 
 	output="青城山";
 
-else if (dir2[1]=="quanzhen")  
+else if (dir2[1]=="quanzhen")
 
 	output="全真派";
 
-else if (dir2[1]=="quanzhou")  
+else if (dir2[1]=="quanzhou")
 
 	output="泉州";
 
-else if (dir2[1]=="shaolin")  
+else if (dir2[1]=="shaolin")
 
 	output="少林寺";
 
-else if (dir2[1]=="shenlong")  
+else if (dir2[1]=="shenlong")
 
 	output="神龙岛";
 
-else if (dir2[1]=="songshan")  
+else if (dir2[1]=="songshan")
 
 	output="嵩山";
 
-else if (dir2[1]=="suzhou")  
+else if (dir2[1]=="suzhou")
 
 	output="苏州";
 
-else if (dir2[1]=="taishan")  
+else if (dir2[1]=="taishan")
 
 	output="泰山";
 
-else if (dir2[1]=="taohua")  
+else if (dir2[1]=="taohua")
 
 	output="桃花岛";
 
-else if (dir2[1]=="tianlongsi")  
+else if (dir2[1]=="tianlongsi")
 
 	output="天龙寺";
 
-else if (dir2[1]=="wanjiegu")  
+else if (dir2[1]=="wanjiegu")
 
 	output="万劫谷";
 
-else if (dir2[1]=="wudang")  
+else if (dir2[1]=="wudang")
 
 	output="武当山";
 
-else if (dir2[1]=="xiakedao")  
+else if (dir2[1]=="xiakedao")
 
 	output="侠客岛";
 
-else if (dir2[1]=="xiangyang")  
+else if (dir2[1]=="xiangyang")
 
 	output="襄阳城";
 
-else if (dir2[1]=="xiaoyao")  
+else if (dir2[1]=="xiaoyao")
 
 	output="逍遥林";
 
-else if (dir2[1]=="xingxiu")  
+else if (dir2[1]=="xingxiu")
 
 	output="星宿海";
 
-else if (dir2[1]=="xueshan")  
+else if (dir2[1]=="xueshan")
 
 	output="雪山寺";
 
-else if (dir2[1]=="xuedao")  
+else if (dir2[1]=="xuedao")
 
 	output="大雪山";
 
-else if (dir2[1]=="mr")  
+else if (dir2[1]=="mr")
 
 	output="慕容世家";
 
-else if (dir2[1]=="kunlun")  
+else if (dir2[1]=="kunlun")
 
 	output="昆仑山";
 
-else if (dir2[1]=="tiezhang")  
+else if (dir2[1]=="tiezhang")
 
 	output="铁掌门";
 
-else if (dir2[1]=="huizhu")  
+else if (dir2[1]=="huizhu")
 
 	output="回族部落";
 
-else if (dir2[1]=="yinju")  
+else if (dir2[1]=="yinju")
 
 	output="一灯大师居";
 
-else if (dir2[1]=="menggu")  
+else if (dir2[1]=="menggu")
 
 	output="蒙古草原";
 
-else if (dir2[1]=="qianjin")  
+else if (dir2[1]=="qianjin")
 
 	output="北京千金楼";
 
-else if (dir2[1]=="lingshedao")  
+else if (dir2[1]=="lingshedao")
 
 	output="灵蛇岛";
 
-else if (dir2[1]=="ruzhou")  
+else if (dir2[1]=="ruzhou")
 
 	output="汝州城";
 
-else if (dir2[1]=="kunming")  
+else if (dir2[1]=="kunming")
 
 	output="昆明";
 
-else if (dir2[1]=="jingzhou")  
+else if (dir2[1]=="jingzhou")
 
 	output="荆州";
 
-else if (dir2[1]=="yanjing")  
+else if (dir2[1]=="yanjing")
 
 	output="燕京";
 
-else if (dir2[1]=="lanzhou" || dir2[1]=="lanzhouchen")  
+else if (dir2[1]=="lanzhou" || dir2[1]=="lanzhouchen")
 
 	output="兰州";
 
-else if (dir2[1]=="jyguan")  
+else if (dir2[1]=="jyguan")
 
 	output="北嘉峪关";
 
-else if (dir2[1]=="changcheng")  
+else if (dir2[1]=="changcheng")
 
 	output="北长城";
 
-else if (dir2[1]=="fairyland")  
+else if (dir2[1]=="fairyland")
 
 	output="红梅山庄";
 
-else if (dir2[1]=="sdxl")  
+else if (dir2[1]=="sdxl")
 
 	output="剑魔独孤求败墓";
 
-else if (dir2[1]=="jqg")  
+else if (dir2[1]=="jqg")
 
 	output="绝情谷";
 
-else if (dir2[1]=="nio")  
+else if (dir2[1]=="nio")
 
 	output="牛家村";
 
-else if (dir2[1]=="feihu")  
+else if (dir2[1]=="feihu")
 
 	output="闯王宝藏";
 
-else if (dir2[1]=="wuguan")  
+else if (dir2[1]=="wuguan")
 
 	output="襄阳武馆";
 
-else if (dir2[1]=="village")  
+else if (dir2[1]=="village")
 
 	output="华山村";
 
-else if (dir2[1]=="taohuacun")  
+else if (dir2[1]=="taohuacun")
 
 	output="桃花村";
 
-else if (dir2[1]=="pingan")  
+else if (dir2[1]=="pingan")
 
 	output="平安城";
 
-else if (dir2[1]=="lingxiao")  
+else if (dir2[1]=="lingxiao")
 
 	output="凌霄城";
 
-else if (dir2[1]=="wudujiao")  
+else if (dir2[1]=="wudujiao")
 
 	output="五毒教";
 
-else if (dir2[1]=="hj")  
+else if (dir2[1]=="hj")
 
 	output="天山附近草原";
-else if (dir2[1]=="dali/yuxu")  
+else if (dir2[1]=="dali/yuxu")
 
 	output="大理玉虚观";
-else if (dir2[1]=="dali/wuliang")  
+else if (dir2[1]=="dali/wuliang")
 
 	output="大理无量山";
-else if (dir2[1]=="huanghe/yyd")  
+else if (dir2[1]=="huanghe/yyd")
 
 	output="黄河萧府";
-else if (dir2[1]=="kaifeng")  
+else if (dir2[1]=="kaifeng")
 
 	output="开封城";
-else if (dir2[1]=="feitian")  
+else if (dir2[1]=="feitian")
 
 	output="飞天御剑流";
-else if (dir2[1]=="japan")  
+else if (dir2[1]=="japan")
 
 	output="日本神户";
-else if (dir2[1]=="tangmen")  
+else if (dir2[1]=="tangmen")
 
 	output="唐门";
-else if (dir2[1]=="luoyang")  
+else if (dir2[1]=="luoyang")
 
 	output="洛阳城";
 
-else if (dir2[1]=="chengdu" || dir2[1]=="city3")  
+else if (dir2[1]=="chengdu" || dir2[1]=="city3")
 
 	output="成都";
 
-else if (dir2[1]=="baihuagu")  
+else if (dir2[1]=="baihuagu")
 
 	output="百花谷";
 
-else if (dir2[1]=="heizhao")  
+else if (dir2[1]=="heizhao")
 
 	output="黑沼";
 
-else if (dir2[1]=="jiaxing")  
+else if (dir2[1]=="jiaxing")
 
 	output="嘉兴";
 
-else if (dir2[1]=="shiliang")  
+else if (dir2[1]=="shiliang")
 
 	output="温家庄";
 
-else if (dir2[1]=="wuyi")  
+else if (dir2[1]=="wuyi")
 
 	output="武夷山区";
 
-else if (dir2[1]=="yanping")  
+else if (dir2[1]=="yanping")
 
 	output="延平城";
-	
 
-if (dir2[1]=="jiangling")  
+
+if (dir2[1]=="jiangling")
 {
 	output="江陵城";
 }
 
-if (dir2[1]=="yueyang")  
+if (dir2[1]=="yueyang")
 {
-	output="岳阳城";	
+	output="岳阳城";
 }
 
-if (dir2[1]=="qilian")  
+if (dir2[1]=="qilian")
 {
-	output="祁连山";	
+	output="祁连山";
 }
 
-if (dir2[1]=="shouxihu")  
+if (dir2[1]=="shouxihu")
 {
-	output="瘦西湖";	
+	output="瘦西湖";
 }
 
-if (dir2[1]=="wuxi")  
+if (dir2[1]=="wuxi")
 {
-	output="无锡城";	
+	output="无锡城";
 }
 
-if (dir2[1]=="yixing")  
+if (dir2[1]=="yixing")
 {
-	output="宜兴城";	
+	output="宜兴城";
 }
-if (dir2[1]=="taiwan")  
+if (dir2[1]=="taiwan")
 {
-	output="台湾地区";	
+	output="台湾地区";
 }
-if (dir2[1]=="nanyang")  
+if (dir2[1]=="nanyang")
 {
-	output="南阳地区";	
+	output="南阳地区";
 }
-if (dir2[1]=="nanshaolin")  
+if (dir2[1]=="nanshaolin")
 {
-	output="南少林地区";	
-}
-
-if (dir2[1]=="cangzhou")  
-{
-	output="沧州地区";	
+	output="南少林地区";
 }
 
-if (dir2[1]=="tanggu")  
+if (dir2[1]=="cangzhou")
 {
-	output="塘沽城地区";	
+	output="沧州地区";
 }
 
-if (dir2[1]=="yunhe")  
+if (dir2[1]=="tanggu")
 {
-	output="京杭大运河";	
+	output="塘沽城地区";
 }
 
-if (dir2[1]=="hainan")  
+if (dir2[1]=="yunhe")
 {
-	output="海南岛";	
+	output="京杭大运河";
 }
 
-if (dir2[1]=="jindezheng")  
+if (dir2[1]=="hainan")
 {
-	output="景德镇";	
+	output="海南岛";
 }
 
-if (dir2[1]=="yandang")  
+if (dir2[1]=="jindezheng")
 {
-	output="雁荡山";	
+	output="景德镇";
 }
 
-if (dir2[1]=="jinling")  
+if (dir2[1]=="yandang")
 {
-	output="金陵城";	
+	output="雁荡山";
 }
 
-if (dir2[1]=="sandboy")  
+if (dir2[1]=="jinling")
 {
-	output="江南农村";	
+	output="金陵城";
 }
 
-if (dir2[1]=="huangshan")  
+if (dir2[1]=="sandboy")
 {
-	output="黄山";	
+	output="江南农村";
 }
 
-if (dir2[1]=="yubifeng")  
+if (dir2[1]=="huangshan")
 {
-	output="玉笔峰";	
+	output="黄山";
 }
 
-if (dir2[1]=="quanzhouchen")  
+if (dir2[1]=="yubifeng")
 {
-	output="泉州城内";	
+	output="玉笔峰";
 }
 
-if (dir2[1]=="qingzh")  
+if (dir2[1]=="quanzhouchen")
 {
-	output="青藏高原";	
+	output="泉州城内";
 }
 
-if (dir2[1]=="changbaishan" || dir2[1]=="gaoli")  
+if (dir2[1]=="qingzh")
 {
-	output="高丽 长白山";	
+	output="青藏高原";
 }
 
-if (dir2[1]=="annan")  
+if (dir2[1]=="changbaishan" || dir2[1]=="gaoli")
 {
-	output="安南";	
+	output="高丽 长白山";
 }
 
-if (dir2[1]=="taiyuan")  
+if (dir2[1]=="annan")
 {
-	output="太原";	
+	output="安南";
 }
 
-if (dir2[1]=="hefei")  
+if (dir2[1]=="taiyuan")
 {
-	output="合肥";	
+	output="太原";
 }
 
-if (dir2[1]=="jiujiang")  
+if (dir2[1]=="hefei")
 {
-	output="九江";	
+	output="合肥";
 }
 
-if (dir2[1]=="baling")  
+if (dir2[1]=="jiujiang")
 {
-	output="巴陵";	
+	output="九江";
 }
 
-if (dir2[1]=="xinjiang")  
+if (dir2[1]=="baling")
 {
-	output="新疆";	
-}
-if (dir2[1]=="dingxiang")  
-{
-	output="定襄";	
-}
-if (dir2[1]=="suiye")  
-{
-	output="碎叶";	
+	output="巴陵";
 }
 
-
-if (dir2[1]=="mayi")  
+if (dir2[1]=="xinjiang")
 {
-	output="马邑边疆";	
+	output="新疆";
 }
-if (dir2[1]=="xuzhou")  
+if (dir2[1]=="dingxiang")
 {
-	output="徐州城";	
+	output="定襄";
 }
-if (dir2[1]=="jinan")  
+if (dir2[1]=="suiye")
 {
-	output="济南城";	
-}
-if (dir2[1]=="guizhou")  
-{
-	output="贵阳城";	
-}
-
-if (dir2[1]=="nanchang")  
-{
-	output="南昌城";	
+	output="碎叶";
 }
 
 
-if (dir2[1]=="changsha")  
+if (dir2[1]=="mayi")
 {
-	output="长沙城";	
+	output="马邑边疆";
+}
+if (dir2[1]=="xuzhou")
+{
+	output="徐州城";
+}
+if (dir2[1]=="jinan")
+{
+	output="济南城";
+}
+if (dir2[1]=="guizhou")
+{
+	output="贵阳城";
+}
+
+if (dir2[1]=="nanchang")
+{
+	output="南昌城";
 }
 
 
-if (dir2[1]=="zhongzhou")  
+if (dir2[1]=="changsha")
 {
-	output="中州城";	
-}
-
-if (dir2[1]=="xizang" || dir2[1]=="zangbei")  
-{
-	output="西藏或藏北";	
-}
-
-if (dir2[1]=="cloud" )  
-{
-	output="东北绮云镇";	
-}
-
-if (dir2[1]=="xueting" )  
-{
-	output="东北雪亭镇";	
-}
-
-if (dir2[1]=="ny" )  
-{
-	output="东北宁远城";	
-}
-
-if (dir2[1]=="fengtian" )  
-{
-	output="东北盛京城";	
-}
-
-if (dir2[1]=="yanmen" )  
-{
-	output="雁门关";	
-}
-
-if (dir2[1]=="linzhi" )  
-{
-	output="西藏林芝地区";	
-}
-
-if (dir2[1]=="datong" )  
-{
-	output="大同府";	
-}
-
-if (dir2[1]=="tianshui" )  
-{
-	output="天水镇";	
-}
-
-if (dir2[1]=="heifeng" )  
-{
-	output="黑风寨";	
-}
-
-if (dir2[1]=="paiyun" )  
-{
-	output="排云寨";	
+	output="长沙城";
 }
 
 
-if (dir2[1]=="yeyangzai" )  
+if (dir2[1]=="zhongzhou")
 {
-	output="野羊寨";	
+	output="中州城";
+}
+
+if (dir2[1]=="xizang" || dir2[1]=="zangbei")
+{
+	output="西藏或藏北";
+}
+
+if (dir2[1]=="cloud" )
+{
+	output="东北绮云镇";
+}
+
+if (dir2[1]=="xueting" )
+{
+	output="东北雪亭镇";
+}
+
+if (dir2[1]=="ny" )
+{
+	output="东北宁远城";
+}
+
+if (dir2[1]=="fengtian" )
+{
+	output="东北盛京城";
+}
+
+if (dir2[1]=="yanmen" )
+{
+	output="雁门关";
+}
+
+if (dir2[1]=="linzhi" )
+{
+	output="西藏林芝地区";
+}
+
+if (dir2[1]=="datong" )
+{
+	output="大同府";
+}
+
+if (dir2[1]=="tianshui" )
+{
+	output="天水镇";
+}
+
+if (dir2[1]=="heifeng" )
+{
+	output="黑风寨";
+}
+
+if (dir2[1]=="paiyun" )
+{
+	output="排云寨";
 }
 
 
-if (dir2[1]=="jinghai" )  
+if (dir2[1]=="yeyangzai" )
 {
-	output="靖海派";	
-}
-
-if (dir2[1]=="zuojiacun" )  
-{
-	output="华亭镇";	
+	output="野羊寨";
 }
 
 
-if (dir2[1]=="houjizhen" )  
+if (dir2[1]=="jinghai" )
 {
-	output="侯集镇";	
+	output="靖海派";
 }
 
-if (dir2[1]=="huayin" )  
+if (dir2[1]=="zuojiacun" )
 {
-	output="铜山村";	
-}
-
-if (dir2[1]=="lumaji" )  
-{
-	output="鹿马集";	
+	output="华亭镇";
 }
 
 
-if (dir2[1]=="xiyu/gaochang" || dir2[1]=="xiyu/hami" || dir2[1]=="xiyu")  
+if (dir2[1]=="houjizhen" )
 {
-	output="西域边疆";	
+	output="侯集镇";
 }
 
-if (dir2[1]=="xibei/desert" || dir2[1]=="xibei/kongdong" || dir2[1]=="xibei/liangzhou" || dir2[1]=="xibei/xingqing" || dir2[1]=="xibei")  
+if (dir2[1]=="huayin" )
 {
-	output="西北边疆";	
+	output="铜山村";
 }
 
-if (dir2[1]=="zhongyuan/chuzhou" || dir2[1]=="zhongyuan" )  
+if (dir2[1]=="lumaji" )
 {
-	output="中原关中";	
+	output="鹿马集";
 }
 
-if (dir2[1]=="xinan/after_qingcheng" || dir2[1]=="xinan/cunzi" || dir2[1]=="xinan")  
+
+if (dir2[1]=="xiyu/gaochang" || dir2[1]=="xiyu/hami" || dir2[1]=="xiyu")
 {
-	output="西南四川";	
+	output="西域边疆";
 }
 
-if (dir2[1]=="loulan" )  
+if (dir2[1]=="xibei/desert" || dir2[1]=="xibei/kongdong" || dir2[1]=="xibei/liangzhou" || dir2[1]=="xibei/xingqing" || dir2[1]=="xibei")
 {
-	output="楼兰";	
+	output="西北边疆";
 }
 
-if (dir2[1]=="biancheng" )  
+if (dir2[1]=="zhongyuan/chuzhou" || dir2[1]=="zhongyuan" )
 {
-	output="边城";	
+	output="中原关中";
 }
 
-if (dir2[1]=="quicksand" )  
+if (dir2[1]=="xinan/after_qingcheng" || dir2[1]=="xinan/cunzi" || dir2[1]=="xinan")
 {
-	output="大沙漠";	
+	output="西南四川";
 }
 
-if (dir2[1]=="tieflag/qianfo" || dir2[1]=="tieflag" || dir2[1]=="tieflag/palace" || dir2[1]=="tieflag/bat" || dir2[1]=="tieflag/chuenyu")  
+if (dir2[1]=="loulan" )
 {
-	output="东海区域";	
+	output="楼兰";
 }
 
-if (dir2[1]=="taiping" )  
+if (dir2[1]=="biancheng" )
 {
-	output="太平镇";	
+	output="边城";
 }
 
-if (dir2[1]=="eren/eren2" || dir2[1]=="eren" )  
+if (dir2[1]=="quicksand" )
 {
-	output="恶人谷";	
+	output="大沙漠";
+}
+
+if (dir2[1]=="tieflag/qianfo" || dir2[1]=="tieflag" || dir2[1]=="tieflag/palace" || dir2[1]=="tieflag/bat" || dir2[1]=="tieflag/chuenyu")
+{
+	output="东海区域";
+}
+
+if (dir2[1]=="taiping" )
+{
+	output="太平镇";
+}
+
+if (dir2[1]=="eren/eren2" || dir2[1]=="eren" )
+{
+	output="恶人谷";
 }
 return output;
 }
@@ -1196,4 +1196,3 @@ HELP
 	);
 	return 1;
 }
-

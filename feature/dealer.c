@@ -5,11 +5,11 @@
 
 #include <dbase.h>
 
-static mapping armor = ([]);
-static mapping book = ([]);
-static mapping misc = ([]);
-static mapping weapon = ([]);
-static mapping all = ([]);
+nosave mapping armor = ([]);
+nosave mapping book = ([]);
+nosave mapping misc = ([]);
+nosave mapping weapon = ([]);
+nosave mapping all = ([]);
 
 int query_goods_value(object goods, string method)
 {
@@ -31,8 +31,8 @@ string is_vendor_good(string arg)
         string *goods;
         int i;
 
-        if (arrayp(goods = query("vendor_goods"))) 
-                for (i = 0; i < sizeof(goods); i++) 
+        if (arrayp(goods = query("vendor_goods")))
+                for (i = 0; i < sizeof(goods); i++)
                         if (goods[i]->id(arg)) return goods[i];
         return "";
 }
@@ -51,7 +51,7 @@ int do_value(string arg)
         value = query_goods_value(ob, "value");
         if (value < 30)
                 write(ob->name() + "一文不值！\n");
-        else 
+        else
                 write(ob->name() + "值" + MONEY_D->price_str(value) + "。\n");
         return 1;
 }
@@ -94,7 +94,7 @@ int do_sell(string arg)
         if (query_temp("busy"))
                 return notify_fail("哟，抱歉啊，我这儿正忙着呢……您请稍候。\n");
 
-        if (is_vendor_good(arg) != "") 
+        if (is_vendor_good(arg) != "")
                 return notify_fail("我卖给你好不好？\n");
 
 
@@ -108,14 +108,14 @@ int do_sell(string arg)
          if (value < 200 || ob->query_amount()
          || ob->query("yaocao")
          || ob->query("food_supply")) {
-                        message_vision("$N卖掉了一" + ob->query("unit") + 
+                        message_vision("$N卖掉了一" + ob->query("unit") +
                                 ob->name() + "给$n。\n", me, this_object());
                         message_vision("$N把$n随手一扔，说道：这么个不值钱的玩意也拿来当。\n",
                                 this_object(), ob);
                         destruct(ob);
                 } else {
                         if (ob->move(this_object())) {
-                                message_vision("$N卖掉了一" + ob->query("unit") + 
+                                message_vision("$N卖掉了一" + ob->query("unit") +
                                         ob->name() + "给$n。\n", me, this_object());
                                 ob->set("no_get", 1);
                                 if (ob->query("armor_type")) armor[base_name(ob)]++;
@@ -143,7 +143,7 @@ int do_list(string arg)
 
         if (arrayp(goods = query("vendor_goods"))) {
                 write("目前出售以下货物：\n");
-                
+
                 for (i = 0; i < sizeof(goods); i++)
 {
         if (me->query_temp("xmud")) write("$list");
@@ -170,11 +170,11 @@ int do_list(string arg)
 //        ptr+=book;
 //        ptr+=misc;
 //        ptr+=weapon;
-//} 
+//}
         i = sizeof(ptr);
         if (!i)
                 return notify_fail("目前没有可以卖的"+arg+"。\n");
-        
+
         goods = keys(ptr);
         inv = all_inventory();
         while (i--) {
@@ -258,7 +258,7 @@ int do_buy(string arg)
         }
 
         if( (int)me->query_encumbrance() + ob->weight()
-                > (int)me->query_max_encumbrance() ) 
+                > (int)me->query_max_encumbrance() )
         return notify_fail( me->name() + ":你已经拿不动了啊!\n");
 
         switch (MONEY_D->player_pay(me, query_goods_value(ob, "buy") *  val_factor / 5)) {

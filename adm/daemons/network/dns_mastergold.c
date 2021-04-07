@@ -27,7 +27,7 @@
 #include <net/macros.h>
 
 #define DEBUG "debug"
-#undef DEBUG 
+#undef DEBUG
 
 // services we always query if we don't know about
 #define STD_SERVICE ({ "mail", "finger", "rwho_q", "tell", "gwizmsg" })
@@ -63,7 +63,7 @@ private mapping seq_entries;
 // Used for debugging
 #ifdef DEBUG
 #  define debug(x) if(monitor) message("diagnostic", (x), monitor)
-static object monitor = 0;
+nosave object monitor = 0;
 #else
 #  define debug(x)
 #endif
@@ -279,7 +279,7 @@ void send_shutdown()
 string start_message()
 {
 	return sprintf( "||MUDNAME:%s||NAME:%s||VERSION:%s||DRIVER:%s||MUDLIB:%s"
-		"||HOST:%s||PORT:%d||PORTUDP:%d||TIME:%s||ENCODING:%s||USERS:%d||TCP:%s", 
+		"||HOST:%s||PORT:%d||PORTUDP:%d||TIME:%s||ENCODING:%s||USERS:%d||TCP:%s",
 		CHINESE_MUD_NAME,Mud_name(),MUDLIB_VERSION, __VERSION__, MUDLIB_NAME,
 		query_host_name(),mud_port(), my_port, ctime(time()), MUDLIB_ENCODING,
 		sizeof(users()), TCP_SERVICE_LEVEL);
@@ -299,7 +299,7 @@ void init_database()
 {
 	int i;
 	string message, *list;
- 
+
 	// if we have received any muds then we stop starting up.
 	if( MUDLIST_A->query_db_flag() ) {
     	// start call outs - note we do the sequence clean up
@@ -345,7 +345,7 @@ void refresh_database()
 	call_out("refresh_database", REFRESH_INTERVAL);
 	list = values( LISTNODES );
 	i = sizeof( list );
-  
+
 	while( i-- ) {
 		sscanf( list[i], "%s %d", bootsrv[0], bootsrv[1] );
 		MUDLIST_Q->send_mudlist_q(bootsrv[0], bootsrv[1]);
@@ -393,7 +393,7 @@ void set_mud_info(string name, mapping junk)
 	if( !(ACCESS_CHECK(previous_object()))
 	&&	file_name(previous_object())[0..strlen(AUX_PATH) - 1] != AUX_PATH)
 		return;
-  
+
 	name = htonn( name );
 	while( name[strlen(name)-1] == '.' ) name = name[ 0..strlen(name)-2 ];
 

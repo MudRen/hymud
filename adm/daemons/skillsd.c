@@ -45,7 +45,7 @@ protected void manage_skill();
 protected void load_skill();
 public string query_save_file() { return DATA_DIR "skillsd"; }
 
-static mapping family_name = ([
+nosave mapping family_name = ([
         "shaolin"  : "…Ÿ¡÷",
         "wudang"   : "Œ‰µ±",
         "gaibang"  : "ÿ§∞Ô",

@@ -5,7 +5,7 @@ inherit ITEM;
 #include "/quest/givegift.c"
 //int do_shouzhang();
 int consider_lv(object ob,int a);
-static int i = random(11)+5;
+nosave int i = random(11)+5;
 void create()
 {
         set_name("武僧堂令牌", ({ "ling pai"}));
@@ -53,7 +53,7 @@ return notify_fail("这不是你的武僧堂令牌!!\n");
         }
 
         if ((me->query("jing") < 50))
-        {  
+        {
           tell_object(me,"你的精力不能集中！\n");
           return 1;
         }
@@ -71,14 +71,14 @@ me->add_temp("wsjob",1);
 if (me->query_temp("wsjob") >i)
 {
 message_vision(HIW"\n$n对$N说够了,今天就练到这里吧，我也累了。\n"NOR,me,ob);
-message_vision(HIG"$N任务完成，把令牌交给了$n。\n"NOR,me,ob); 
+message_vision(HIG"$N任务完成，把令牌交给了$n。\n"NOR,me,ob);
 me->start_busy(5);
-call_out("destroying", 0, me);                       
+call_out("destroying", 0, me);
 }
         return 1;
 }
 void destroying(object me)
-{   
+{
 int exp,pot;
 if (!me) return;
 exp=70+random(20);

@@ -11,10 +11,10 @@
 #define MinY 10
 inherit F_CLEAN_UP;
 
-static int X,Y;
-static mixed m;
-static string *rfile;
-static mapping *data;
+nosave int X,Y;
+nosave mixed m;
+nosave string *rfile;
+nosave mapping *data;
 int draw_room(int,int,object);
 void set_room(int,int,object);
 void set_x_y(int,int,int);

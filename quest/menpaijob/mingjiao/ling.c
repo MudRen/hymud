@@ -5,7 +5,7 @@ inherit ITEM;
 //int do_shouzhang();
 int consider_lv(object ob,int a);
 #include "/quest/givegift.c"
-static int i = random(13)+8;
+nosave int i = random(13)+8;
 void create()
 {
         set_name("五行旗", ({ "wuxing qi"}));
@@ -54,7 +54,7 @@ return notify_fail("这不是你的令旗!!\n");
         }
 
         if ((me->query("jing") < 50))
-        {  
+        {
           tell_object(me,"你的精力不能集中！\n");
           return 1;
         }
@@ -74,7 +74,7 @@ if( !environment(me)->query("no_fight"))
 {
 if (random(60)==1 && me->query("combat_exp") > 1000000)
 {
-obj=new(__DIR__"menggu"); 
+obj=new(__DIR__"menggu");
 obj->move(environment(me));
 obj->do_copy(me,maxpot,2);
 obj->set("title",HIC"元兵探子"NOR);
@@ -89,16 +89,16 @@ obj->kill_ob(me);
 if (me->query_temp("mjjob2") >i)
 {
 message_vision(HIW"\n$n对$N说好了,今天的活终于做好了，休息去吧。\n"NOR,me,ob);
-message_vision(HIG"$N任务完成，把令旗交给了$n。\n"NOR,me,ob); 
+message_vision(HIG"$N任务完成，把令旗交给了$n。\n"NOR,me,ob);
         me->set_temp("mjjob2",0);
         me->delete_temp("mjjob2");
 me->start_busy(5);
-call_out("destroying", 0, me);                       
+call_out("destroying", 0, me);
 }
         return 1;
 }
 void destroying(object me)
-{   
+{
 int exp,pot;
 if (!me) return;
 exp=90+random(10);

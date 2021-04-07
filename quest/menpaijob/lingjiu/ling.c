@@ -4,7 +4,7 @@ inherit ITEM;
 #include <ansi.h>
 //int do_shouzhang();
 int consider_lv(object ob,int a);
-static int i = random(9)+3;
+nosave int i = random(9)+3;
 void create()
 {
         set_name("ÁéðÕ¹¬ÁîÅÆ", ({ "lj lingpai"}));
@@ -54,18 +54,18 @@ return notify_fail("ÈË¼ÒÕý»è×ÅÄØ£¡\n");
           return 1;
         }
         if (ob->query("combat_exp")*2/3 > me->query("combat_exp"))
-        {  
+        {
           tell_object(me,"ÄÇ¸öÈËÎä¹¦¿´À´±ÈÄã¸ßµÄ¶à£¬ÏòËûÒª²»Ì«ºÃ°É£¡\n");
           return 1;
         }
         if (ob->query("startroom") != base_name(environment(ob)))
-        {  
+        {
           tell_object(me,"ÄÇ¸öÈËËµ£º¶«Î÷²»ÔÚÕâÀï£¬µÈ»á£¬¸úËû»ØÈ¥ÔÙ¸øÄã£¡\n");
           return 1;
         }
 
         if ((me->query("jing") < 50))
-        {  
+        {
           tell_object(me,"ÄãµÄ¾«Á¦²»ÄÜ¼¯ÖÐ£¡\n");
           return 1;
         }
@@ -82,7 +82,7 @@ message_vision(HIG"\n$nÒ»¿´ÊÇÁéðÕ¹¬µÄ$NÂíÉÏËµµÀ£º¹±Æ·ÒÑ¾­×¼±¸ºÃÁË¡£²¢¸øÁË$NÒ»¸ö´
                         me->start_busy(6);
 
 message_vision(HIW"$N¿´ÁË¿´¶Ô$nËµ,¶«Î÷»¹²»´í¡£\n"NOR,me,ob);
-message_vision(HIG"$N°ÑÁîÅÆ¸øÁË$n¡£\n$NËµµÀ£ºÉúËÀ·û½âÒ©¾ÍÓÃÕâ¸öÈ¥Áì°É\n"NOR,me,ob); 
+message_vision(HIG"$N°ÑÁîÅÆ¸øÁË$n¡£\n$NËµµÀ£ºÉúËÀ·û½âÒ©¾ÍÓÃÕâ¸öÈ¥Áì°É\n"NOR,me,ob);
           obn=new(__DIR__"gongpin");
           obn->set("ljby",me->query("name"));
           obn->move(me);

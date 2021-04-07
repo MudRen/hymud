@@ -9,8 +9,8 @@
 //#define TIME_TICK1 (time()*60-900000000)
 //#define TIME_TICK ((time()-900000000)*24)
 //#define TIME_TICK1 ((time()-900000000)*24)
-static int current_day_phase, current_month;
-static string ppl;
+nosave int current_day_phase, current_month;
+nosave string ppl;
 mapping *day_phase;
 string  zuji(string str);
 string *month_desc = ({
@@ -183,7 +183,7 @@ void create()
 			case 0:
 			   day_phase = read_table("/adm/etc/nature/winter_rain");
 			   break;
-			case 1:		
+			case 1:
 			   day_phase = read_table("/adm/etc/nature/winter_sun");
 			   break;
 			case 2:
@@ -198,14 +198,14 @@ void create()
 			case 0:
 			   day_phase = read_table("/adm/etc/nature/winter_rain");
 			   break;
-			case 1:		
+			case 1:
 			   day_phase = read_table("/adm/etc/nature/winter_sun");
 			   break;
 			case 2:
 			   day_phase = read_table("/adm/etc/nature/winter_wind");
 			   break;
 		     }
-		        
+
 		     break;
 		default:
 		     day_phase = read_table("/adm/etc/nature/day_phase");
@@ -247,7 +247,7 @@ void init_day_phase()
 
 
 	local = localtime(TIME_TICK1);
-	t = local[2] * 60 + local[1];      
+	t = local[2] * 60 + local[1];
 
 
 	for( i=0; i < sizeof(day_phase); i++)
@@ -264,7 +264,7 @@ void init_day_phase()
 	call_out("init_day_phase", 180);
 
 
-	remove_call_out("update_day_phase");	
+	remove_call_out("update_day_phase");
 
 
 
@@ -365,7 +365,7 @@ void test_robot()
 	}
 	if (j < 0) return;
 	ppl = ob->query("id");
-        if (!ob->is_fighting() 
+        if (!ob->is_fighting()
         && interactive(ob) && living(ob)
         || ob->query("combat_exp")> 1000000 )
         ob->set_temp("testrobot",1);
@@ -387,7 +387,7 @@ void event_morning()
 	object room;
         if (random(12) == 1)
         {
-		if(objectp(room=load_object("/d/city/guangchang")) && 
+		if(objectp(room=load_object("/d/city/guangchang")) &&
 		objectp(badguy = new("/quest/weiguo/japan/japan4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/japan/japan2");
@@ -398,7 +398,7 @@ void event_morning()
 	}
         if (random(12) == 2)
         {
-		if(objectp(room=load_object("/d/city2/di_anmen")) && 
+		if(objectp(room=load_object("/d/city2/di_anmen")) &&
 		objectp(badguy = new("/quest/weiguo/japan/japan4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/japan/japan2");
@@ -409,7 +409,7 @@ void event_morning()
 	}
         if (random(12) == 3)
         {
-		if(objectp(room=load_object("/d/city3/guangchang")) && 
+		if(objectp(room=load_object("/d/city3/guangchang")) &&
 		objectp(badguy = new("/quest/weiguo/japan/japan4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/japan/japan2");
@@ -420,7 +420,7 @@ void event_morning()
 	}
         if (random(12) == 4)
         {
-		if(objectp(room=load_object("/d/quanzhen/zhongxin")) && 
+		if(objectp(room=load_object("/d/quanzhen/zhongxin")) &&
 		objectp(badguy = new("/quest/weiguo/jinbing/jin4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/jinbing/jin2");
@@ -431,7 +431,7 @@ void event_morning()
 	}
         if (random(12) == 5)
         {
-		if(objectp(room=load_object("/d/dali/taihejiekou")) && 
+		if(objectp(room=load_object("/d/dali/taihejiekou")) &&
 		objectp(badguy = new("/quest/weiguo/jinbing/jin4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/jinbing/jin2");
@@ -442,7 +442,7 @@ message("channel:chat", HIB"¡¾³¯Í¢¼±±¨¡¿"GRN + "ÔÚ´óÀí³ÇÖĞ·¢ÏÖ½ğ¹ú¼éÏ¸£¡\n"NOR,u
 	}
         if (random(12) == 6)
         {
-		if(objectp(room=load_object("/d/foshan/street3")) && 
+		if(objectp(room=load_object("/d/foshan/street3")) &&
 		objectp(badguy = new("/quest/weiguo/jinbing/jin4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/jinbing/jin2");
@@ -453,7 +453,7 @@ message("channel:chat", HIB"¡¾³¯Í¢¼±±¨¡¿"GRN + "ÔÚ·ğÉ½ÕòÖĞ·¢ÏÖ½ğ¹ú¼éÏ¸£¡\n"NOR,u
 	}
         if (random(12) == 7)
         {
-		if(objectp(room=load_object("/d/fuzhou/dongjiekou")) && 
+		if(objectp(room=load_object("/d/fuzhou/dongjiekou")) &&
 		objectp(badguy = new("/quest/weiguo/menggu/mengu4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/menggu/mengu2");
@@ -464,7 +464,7 @@ message("channel:chat", HIB"¡¾³¯Í¢¼±±¨¡¿"GRN + "ÔÚ·ğÉ½ÕòÖĞ·¢ÏÖ½ğ¹ú¼éÏ¸£¡\n"NOR,u
 	}
         if (random(12) == 8)
         {
-		if(objectp(room=load_object("/d/hangzhou/road13")) && 
+		if(objectp(room=load_object("/d/hangzhou/road13")) &&
 		objectp(badguy = new("/quest/weiguo/menggu/mengu4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/menggu/mengu2");
@@ -475,7 +475,7 @@ message("channel:chat", HIB"¡¾³¯Í¢¼±±¨¡¿"GRN + "ÔÚ·ğÉ½ÕòÖĞ·¢ÏÖ½ğ¹ú¼éÏ¸£¡\n"NOR,u
 	}
         if (random(12) == 9)
         {
-		if(objectp(room=load_object("/d/lingzhou/center")) && 
+		if(objectp(room=load_object("/d/lingzhou/center")) &&
 		objectp(badguy = new("/quest/weiguo/menggu/mengu4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/menggu/mengu2");
@@ -486,7 +486,7 @@ message("channel:chat", HIB"¡¾³¯Í¢¼±±¨¡¿"GRN + "ÔÚ·ğÉ½ÕòÖĞ·¢ÏÖ½ğ¹ú¼éÏ¸£¡\n"NOR,u
 	}
         if (random(12) == 10)
         {
-		if(objectp(room=load_object("/d/quanzhou/zhongxin")) && 
+		if(objectp(room=load_object("/d/quanzhou/zhongxin")) &&
 		objectp(badguy = new("/quest/weiguo/xixiabing/xixia4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/xixiabing/xixia2");
@@ -497,7 +497,7 @@ message("channel:chat", HIB"¡¾³¯Í¢¼±±¨¡¿"GRN + "ÔÚ·ğÉ½ÕòÖĞ·¢ÏÖ½ğ¹ú¼éÏ¸£¡\n"NOR,u
 	}
         if (random(12) == 11)
         {
-		if(objectp(room=load_object("/d/suzhou/baodaiqiao")) && 
+		if(objectp(room=load_object("/d/suzhou/baodaiqiao")) &&
 		objectp(badguy = new("/quest/weiguo/xixiabing/xixia4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/xixiabing/xixia2");
@@ -508,7 +508,7 @@ message("channel:chat", HIB"¡¾³¯Í¢¼±±¨¡¿"GRN + "ÔÚ·ğÉ½ÕòÖĞ·¢ÏÖ½ğ¹ú¼éÏ¸£¡\n"NOR,u
 	}
         if (random(12) == 12)
         {
-		if(objectp(room=load_object("/d/xiangyang/guangchang")) && 
+		if(objectp(room=load_object("/d/xiangyang/guangchang")) &&
 		objectp(badguy = new("/quest/weiguo/xixiabing/xixia4")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/xixiabing/xixia2");
@@ -519,7 +519,7 @@ message("channel:chat", HIB"¡¾³¯Í¢¼±±¨¡¿"GRN + "ÔÚ·ğÉ½ÕòÖĞ·¢ÏÖ½ğ¹ú¼éÏ¸£¡\n"NOR,u
 	}
         if (random(16) == 1)
         {
-		if(objectp(room=load_object("/d/huanghe/yongdeng")) && 
+		if(objectp(room=load_object("/d/huanghe/yongdeng")) &&
 		objectp(badguy = new("/quest/weiguo/xixiabing/xixia3")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/xixiabing/xixia2");
@@ -538,7 +538,7 @@ message("channel:chat", HIB"¡¾³¯Í¢¼±±¨¡¿"GRN + "ÔÚ·ğÉ½ÕòÖĞ·¢ÏÖ½ğ¹ú¼éÏ¸£¡\n"NOR,u
 	}
         if (random(16) == 2)
         {
-		if(objectp(room=load_object("/d/quanzhou/zhongxin")) && 
+		if(objectp(room=load_object("/d/quanzhou/zhongxin")) &&
 		objectp(badguy = new("/quest/weiguo/japan/japan3")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/japan/japan2");
@@ -557,7 +557,7 @@ message("channel:chat", HIB"¡¾³¯Í¢¼±±¨¡¿"GRN + "ÔÚ·ğÉ½ÕòÖĞ·¢ÏÖ½ğ¹ú¼éÏ¸£¡\n"NOR,u
 	}
         if (random(16) == 4)
         {
-		if(objectp(room=load_object("/d/xiangyang/eastgate1")) && 
+		if(objectp(room=load_object("/d/xiangyang/eastgate1")) &&
 		objectp(badguy = new("/quest/weiguo/menggu/mengu3")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/menggu/mengu2");
@@ -576,7 +576,7 @@ message("channel:chat", HIB"¡¾³¯Í¢¼±±¨¡¿"GRN + "ÔÚ·ğÉ½ÕòÖĞ·¢ÏÖ½ğ¹ú¼éÏ¸£¡\n"NOR,u
 	}
         if (random(16) == 7)
         {
-		if(objectp(room=load_object("/d/city2/di_anmen.")) && 
+		if(objectp(room=load_object("/d/city2/di_anmen.")) &&
 		objectp(badguy = new("/quest/weiguo/jinbing/jin3")))
 		badguy->move(room);
                 badguy = new("/quest/weiguo/jinbing/jin2");
@@ -601,84 +601,84 @@ void event_night()
 	object room;
         if (random(12) == 1)
         {
-		if(objectp(room=load_object("/d/city/guangchang")) && 
+		if(objectp(room=load_object("/d/city/guangchang")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "ÑïÖİ³ÇÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
 	}
         if (random(12) == 2)
         {
-		if(objectp(room=load_object("/d/city2/di_anmen")) && 
+		if(objectp(room=load_object("/d/city2/di_anmen")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "±±¾©³ÇÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
 	}
         if (random(12) == 3)
         {
-		if(objectp(room=load_object("/d/city3/guangchang")) && 
+		if(objectp(room=load_object("/d/city3/guangchang")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "³É¶¼³ÇÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
 	}
         if (random(12) == 4)
         {
-		if(objectp(room=load_object("/d/quanzhen/zhongxin")) && 
+		if(objectp(room=load_object("/d/quanzhen/zhongxin")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "Îä¹¦ÕòÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
 	}
         if (random(12) == 5)
         {
-		if(objectp(room=load_object("/d/dali/taihejiekou")) && 
+		if(objectp(room=load_object("/d/dali/taihejiekou")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "´óÀí³ÇÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
 	}
         if (random(12) == 6)
         {
-		if(objectp(room=load_object("/d/foshan/street3")) && 
+		if(objectp(room=load_object("/d/foshan/street3")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "·ğÉ½³ÇÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
 	}
         if (random(12) == 7)
         {
-		if(objectp(room=load_object("/d/fuzhou/dongjiekou")) && 
+		if(objectp(room=load_object("/d/fuzhou/dongjiekou")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "¸£Öİ³ÇÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
 	}
         if (random(12) == 8)
         {
-		if(objectp(room=load_object("/d/hangzhou/road13")) && 
+		if(objectp(room=load_object("/d/hangzhou/road13")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "º¼Öİ³ÇÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
 	}
         if (random(12) == 9)
         {
-		if(objectp(room=load_object("/d/lingzhou/center")) && 
+		if(objectp(room=load_object("/d/lingzhou/center")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "ÁéÖİ³ÇÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
 	}
         if (random(12) == 10)
         {
-		if(objectp(room=load_object("/d/quanzhou/zhongxin")) && 
+		if(objectp(room=load_object("/d/quanzhou/zhongxin")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "ÈªÖİ³ÇÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
 	}
         if (random(12) == 11)
         {
-		if(objectp(room=load_object("/d/suzhou/baodaiqiao")) && 
+		if(objectp(room=load_object("/d/suzhou/baodaiqiao")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "ËÕÖİ³ÇÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
 	}
         if (random(12) == 12)
         {
-		if(objectp(room=load_object("/d/xiangyang/guangchang")) && 
+		if(objectp(room=load_object("/d/xiangyang/guangchang")) &&
 		objectp(badguy = new("/quest/feizei/feizei")))
 		badguy->move(room);
   message("channel:chat", HIW"¡¾¹Ù¸®Í¨¸æ¡¿"HIR + "ÏåÑô³ÇÖĞ½ñÒ¹ÓĞ·ÉÔôºáĞĞ£¬Á¼Ãñ°ÙĞÕÇë±ÕÃÅ²»³ö£¬ÇĞÄª×ÔÎó£¡\n"NOR,users() );
@@ -691,112 +691,112 @@ void event_afternoon()
 	object *ob_list;
 	int i;
 	ob_list = children("/quest/weiguo/japan/japan1");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
 	ob_list = children("/quest/weiguo/japan/japan2");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
 	ob_list = children("/quest/weiguo/japan/japan3");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
 	ob_list = children("/quest/weiguo/japan/japan4");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬¶«Î÷Ò²µ½ÊÖÁË£¬ÎÒÉÁ£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
 	ob_list = children("/quest/weiguo/jinbing/jin1");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
 	ob_list = children("/quest/weiguo/jinbing/jin2");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
      	ob_list = children("/quest/weiguo/jinbing/jin3");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
      	ob_list = children("/quest/weiguo/jinbing/jin4");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬¶«Î÷Ò²µ½ÊÖÁË£¬ÎÒÉÁ£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
      	ob_list = children("/quest/weiguo/menggu/mengu1");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
      	ob_list = children("/quest/weiguo/menggu/mengu2");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
      	ob_list = children("/quest/weiguo/menggu/mengu3");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
      	ob_list = children("/quest/weiguo/menggu/mengu4");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬¶«Î÷Ò²µ½ÊÖÁË£¬ÎÒÉÁ£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
      	ob_list = children("/quest/weiguo/xixiabing/xixia1");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
      	ob_list = children("/quest/weiguo/xixiabing/xixia2");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
      	ob_list = children("/quest/weiguo/xixiabing/xixia3");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬³·±ø£¡\n",ob_list[i]);
 			destruct(ob_list[i]);
                 }
      	ob_list = children("/quest/weiguo/xixiabing/xixia4");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 		message_vision("$NËµµÀ£ºÌìÒªºÚÁË£¬¶«Î÷Ò²µ½ÊÖÁË£¬ÎÒÉÁ£¡\n",ob_list[i]);
@@ -809,7 +809,7 @@ void event_dawn()
 	object *ob_list;
 	int i;
 	ob_list = children("/quest/feizei/feizei");
-                for(i=0; i<sizeof(ob_list); i++) 
+                for(i=0; i<sizeof(ob_list); i++)
 		if(environment(ob_list[i]))
 		{
 			message_vision("$NĞ¦µÀ£ºÌìÁÁÁË£¬¶«Î÷Ò²µ½ÊÖÁË£¬ÎÒÉÁ£¡\n",ob_list[i]);
@@ -1078,7 +1078,7 @@ if (random(16)==1)tag="2000000";
                         while (env && env->is_character())
                                 env = environment(env);
                         if (env) break;
-                        
+
                 }
 //                if (i >= 3) return;
 
@@ -1114,7 +1114,7 @@ rd=random(6);
              {
                    num=num-1;
              }
-        } 
+        }
         else
         {
              if ((num<sizeof(levels)-1)&&(random(100)>95))
@@ -1166,7 +1166,7 @@ if (local)
 dir2=explode(base_name(room2),"/");
 fname=base_name(room2);
 zuji(dir2[1]);
-room=zuji(dir2[1])+local;		
+room=zuji(dir2[1])+local;
 ob->set_temp("hdjoblb","½­ºş");
 ob->set_temp("hdjoben",local);
 ob->set_temp("hdjobtg",target["where"]+".c");
@@ -1179,11 +1179,11 @@ CHANNEL_D->do_channel( this_object(), "rumor", ob->query("name")+"ÌıËµÓĞÅúºÚµÀÈË
 
 if (rd==1)
 {
-quest = QUESTW_D(tag)->query_quest();	
+quest = QUESTW_D(tag)->query_quest();
         timep = quest["time"];
         if (!quest["time"]) timep=600;
         timep = timep+360;
-        
+
 if (quest["quest"])
 {
 ob->set_temp("hdjoblb","Ñ°Îï");
@@ -1194,7 +1194,7 @@ CHANNEL_D->do_channel( this_object(), "rumor", "ÌıËµ:"+ob->name()+"ÏëÒªÕÒµ½"+que
 }
 if (rd==2)
 {
-seteuid(geteuid(this_object()));	
+seteuid(geteuid(this_object()));
 file = read_file("/clone/medicine/dynamic_location");
 	if (ob->query("combat_exp",1)<=2000000)
 	file = read_file("/clone/medicine/dynamic_location1");
@@ -1209,13 +1209,13 @@ else if (ob->query("combat_exp",1)>8000000)
 if (!file)
 	file = read_file("/clone/medicine/dynamic_location");
 
-roomlines = explode(file,"\n");		
+roomlines = explode(file,"\n");
 location = roomlines[random(sizeof(roomlines))];
 room2=load_object(location);
 if (!room2)
 {
 	file = read_file("/clone/medicine/dynamic_location");
-	roomlines = explode(file,"\n");		
+	roomlines = explode(file,"\n");
 location = roomlines[random(sizeof(roomlines))];
 room2=load_object(location);
 }
@@ -1241,7 +1241,7 @@ CHANNEL_D->do_channel( this_object(), "rumor", "ÌıËµ:"+ob->name()+"ÏëÒªµÃµ½"+roo
 
 if (rd==3)
 {
-seteuid(geteuid(this_object()));	
+seteuid(geteuid(this_object()));
 file = read_file("/clone/medicine/dynamic_location");
 	if (ob->query("combat_exp",1)<=2000000)
 	file = read_file("/clone/medicine/dynamic_location1");
@@ -1256,13 +1256,13 @@ else if (ob->query("combat_exp",1)>8000000)
 if (!file)
 	file = read_file("/clone/medicine/dynamic_location");
 
-roomlines = explode(file,"\n");		
+roomlines = explode(file,"\n");
 location = roomlines[random(sizeof(roomlines))];
 room2=load_object(location);
 if (!room2)
 {
 	file = read_file("/clone/medicine/dynamic_location");
-	roomlines = explode(file,"\n");		
+	roomlines = explode(file,"\n");
 location = roomlines[random(sizeof(roomlines))];
 room2=load_object(location);
 }
@@ -1314,7 +1314,7 @@ CHANNEL_D->do_channel( this_object(), "rumor", "ÌıËµ:ÓĞÈËĞüÉÍÌôÕ½ÔÚ"+envn+"¸½½üµ
 if (sl==1)
 {
 quest = QUESTS_D(tag)->query_quest();
-if (random(2) == 0 ) quest = QUESTH_D(tag)->query_quest();	
+if (random(2) == 0 ) quest = QUESTH_D(tag)->query_quest();
 if (quest["quest"])
 {
    ob_list = users();
@@ -1347,20 +1347,20 @@ CHANNEL_D->do_channel( this_object(), "rumor", "ÌıËµ"+quest["quest_city"]+"µÄ"+q
 if (random(8)==6)
 {
 
-seteuid(geteuid(this_object()));	
-file = read_file("/clone/medicine/map1");	
+seteuid(geteuid(this_object()));
+file = read_file("/clone/medicine/map1");
 if (random(2)==0) file = read_file("/clone/medicine/map4");
 
 if (!file)
 	file = read_file("/clone/medicine/map1");
 
-roomlines = explode(file,"\n");		
+roomlines = explode(file,"\n");
 location = roomlines[random(sizeof(roomlines))];
 room2=load_object(location);
 if (!room2)
 {
 	file = read_file("/clone/medicine/map1");
-	roomlines = explode(file,"\n");		
+	roomlines = explode(file,"\n");
 location = roomlines[random(sizeof(roomlines))];
 room2=load_object(location);
 }
@@ -1376,8 +1376,8 @@ ob->set_temp("hdjobtg",local);
 ob->set_temp("hdjobsc","ĞüÉÍ:ÓĞ¸ö¶ñÔô³öÏÖÔÚ"+room);
 CHANNEL_D->do_channel( this_object(), "rumor", ob->name()+"ÌıËµÓĞ¸öĞüÉÍ×·É±µÄ¶ñÔô³öÏÖÔÚ"+room+"¸½½ü¡£\n");
 
-}	
-}	
+}
+}
 
         }
 }
@@ -1385,564 +1385,564 @@ CHANNEL_D->do_channel( this_object(), "rumor", ob->name()+"ÌıËµÓĞ¸öĞüÉÍ×·É±µÄ¶ñÔ
 
 
 string  zuji(string str)
-{   
+{
 string output;
-      	if (str=="baituo")  
+      	if (str=="baituo")
 
 	output="°×ÍÕÉ½µÄ";
 
-if (str=="binghuodao")  
+if (str=="binghuodao")
 
 	output="±ù»ğµºµÄ";
 
-if (str=="city")  
+if (str=="city")
 
 	output="ÑïÖİµÄ";
 
-if (str=="city2" || str=="beijing"  || str=="huanggon"  || str=="huanggong" || str=="beihai")  
+if (str=="city2" || str=="beijing"  || str=="huanggon"  || str=="huanggong" || str=="beihai")
 
 	output="±±¾©³ÇµÄ";
 
-if (str=="city4" || str=="changan")   
+if (str=="city4" || str=="changan")
 
 	output="³¤°²³ÇµÄ";
 
-if (str=="dali")  
+if (str=="dali")
 
 	output="´óÀíµÄ";
 
-if (str=="emei")  
+if (str=="emei")
 
 	output="¶ğÃ¼É½µÄ";
 
-if (str=="foshan")  
+if (str=="foshan")
 
 	output="·ğÉ½µÄ";
 
-if (str=="gaibang")  
+if (str=="gaibang")
 
 	output="Ø¤°ïµÄ";
 
-if (str=="gaochang")  
+if (str=="gaochang")
 
 	output="¸ß²ıÃÔ¹¬µÄ";
 
-if (str=="guanwai")  
+if (str=="guanwai")
 
 	output="¹ØÍâµÄ";
 
-if (str=="guiyun")  
+if (str=="guiyun")
 
 	output="¹éÔÆ×¯µÄ";
 
-if (str=="gumu")  
+if (str=="gumu")
 
 	output="¹ÅÄ¹ÅÉµÄ";
 
-if (str=="hangzhou")  
+if (str=="hangzhou")
 
 	output="º¼ÖİµÄ";
 
-if (str=="heimuya")  
+if (str=="heimuya")
 
 	output="ºÚÄ¾ÑÂµÄ";
 
-if (str=="hengshan")  
+if (str=="hengshan")
 
 	output="ºãÉ½µÄ";
 
-if (str=="henshan")  
+if (str=="henshan")
 
 	output="ºâÉ½µÄ";
 
-if (str=="huanghe")  
+if (str=="huanghe")
 
 	output="»ÆºÓ¾ÅÇúµÄ";
 
-if (str=="huashan")  
+if (str=="huashan")
 
 	output="»ªÉ½µÄ";
 
-if (str=="jinshe")  
+if (str=="jinshe")
 
 	output="½ğÉßÉ½¶´µÄ";
 
-if (str=="lingjiu")  
+if (str=="lingjiu")
 
 	output="ÁéğÕ¹¬µÄ";
 
-if (str=="lingzhou")  
+if (str=="lingzhou")
 
 	output="ÁéÖİµÄ";
 
-if (str=="meizhuang")  
+if (str=="meizhuang")
 
 	output="Ã·×¯µÄ";
 
-if (str=="mingjiao")  
+if (str=="mingjiao")
 
 	output="Ã÷½ÌµÄ";
 
-if (str=="qingcheng")  
+if (str=="qingcheng")
 
 	output="Çà³ÇÉ½µÄ";
 
-if (str=="quanzhen")  
+if (str=="quanzhen")
 
 	output="È«ÕæÅÉµÄ";
 
-if (str=="quanzhou")  
+if (str=="quanzhou")
 
 	output="ÈªÖİµÄ";
 
-if (str=="shaolin")  
+if (str=="shaolin")
 
 	output="ÉÙÁÖËÂµÄ";
 
-if (str=="shenlong")  
+if (str=="shenlong")
 
 	output="ÉñÁúµºµÄ";
 
-if (str=="songshan")  
+if (str=="songshan")
 
 	output="áÔÉ½µÄ";
 
-if (str=="suzhou")  
+if (str=="suzhou")
 
 	output="ËÕÖİµÄ";
 
-if (str=="taishan")  
+if (str=="taishan")
 
 	output="Ì©É½µÄ";
 
-if (str=="taohua")  
+if (str=="taohua")
 
 	output="ÌÒ»¨µºµÄ";
 
-if (str=="tianlongsi")  
+if (str=="tianlongsi")
 
 	output="ÌìÁúËÂµÄ";
 
-if (str=="wanjiegu")  
+if (str=="wanjiegu")
 
 	output="Íò½Ù¹ÈµÄ";
 
-if (str=="wudang")  
+if (str=="wudang")
 
 	output="Îäµ±É½µÄ";
 
-if (str=="xiakedao")  
+if (str=="xiakedao")
 
 	output="ÏÀ¿ÍµºµÄ";
 
-if (str=="xiangyang")  
+if (str=="xiangyang")
 
 	output="ÏåÑô³ÇµÄ";
 
-if (str=="xiaoyao")  
+if (str=="xiaoyao")
 
 	output="åĞÒ£ÁÖµÄ";
 
-if (str=="xingxiu")  
+if (str=="xingxiu")
 
 	output="ĞÇËŞº£µÄ";
 
-if (str=="xueshan")  
+if (str=="xueshan")
 
 	output="Ñ©É½ËÂµÄ";
 
-if (str=="xuedao")  
+if (str=="xuedao")
 
 	output="´óÑ©É½µÄ";
 
-if (str=="mr")  
+if (str=="mr")
 
 	output="Ä½ÈİÊÀ¼ÒµÄ";
 
-if (str=="kunlun")  
+if (str=="kunlun")
 
 	output="À¥ÂØÉ½µÄ";
 
-if (str=="tiezhang")  
+if (str=="tiezhang")
 
 	output="ÌúÕÆÃÅµÄ";
 
-if (str=="huizhu")  
+if (str=="huizhu")
 
 	output="»Ø×å²¿ÂäµÄ";
 
-if (str=="yinju")  
+if (str=="yinju")
 
 	output="Ò»µÆ´óÊ¦¾ÓµÄ";
 
-if (str=="menggu")  
+if (str=="menggu")
 
 	output="ÃÉ¹Å²İÔ­µÄ";
 
-if (str=="qianjin")  
+if (str=="qianjin")
 
 	output="±±¾©Ç§½ğÂ¥µÄ";
 
-if (str=="lingshedao")  
+if (str=="lingshedao")
 
 	output="ÁéÉßµºµÄ";
 
-if (str=="ruzhou")  
+if (str=="ruzhou")
 
 	output="ÈêÖİ³ÇµÄ";
 
-if (str=="kunming")  
+if (str=="kunming")
 
 	output="À¥Ã÷µÄ";
 
-if (str=="jingzhou")  
+if (str=="jingzhou")
 
 	output="¾£ÖİµÄ";
 
-if (str=="yanjing")  
+if (str=="yanjing")
 
 	output="Ê¢¾©µÄ";
 
-if (str=="lanzhou" || str=="lanzhouchen")  
+if (str=="lanzhou" || str=="lanzhouchen")
 
 	output="À¼ÖİµÄ";
 
-if (str=="jyguan")  
+if (str=="jyguan")
 
 	output="À¼ÖİÒÔ±±¼ÎÓø¹ØµÄ";
 
-if (str=="changcheng")  
+if (str=="changcheng")
 
 	output="±±¾©ÒÔ±±³¤³ÇµÄ";
 
-if (str=="fairyland")  
+if (str=="fairyland")
 
 	output="À¥ÂØµÄºìÃ·É½×¯";
 
-if (str=="sdxl")  
+if (str=="sdxl")
 
 	output="½£Ä§¶À¹ÂÇó°ÜÄ¹";
 
-if (str=="jqg")  
+if (str=="jqg")
 
 	output="¾øÇé¹È";
 
-if (str=="nio")  
+if (str=="nio")
 
 	output="Å£¼Ò´åµÄ";
 
-if (str=="feihu")  
+if (str=="feihu")
 
 	output="´³Íõ±¦²ØµÄ";
 
-if (str=="wuguan")  
+if (str=="wuguan")
 
 	output="ÏåÑôÎä¹İµÄ";
 
-if (str=="village")  
+if (str=="village")
 
 	output="»ªÉ½´åµÄ";
 
-if (str=="taohuacun")  
+if (str=="taohuacun")
 
 	output="ÌÒ»¨´åµÄ";
 
-if (str=="pingan")  
+if (str=="pingan")
 
 	output="Æ½°²³ÇµÄ";
 
-if (str=="lingxiao")  
+if (str=="lingxiao")
 
 	output="ÁèÏö³ÇµÄ";
 
-if (str=="wudujiao")  
+if (str=="wudujiao")
 
 	output="Îå¶¾½ÌµÄ";
 
-if (str=="hj")  
+if (str=="hj")
 
 	output="ÌìÉ½¡£²İÔ­µÄ";
-if (str=="dali/yuxu")  
+if (str=="dali/yuxu")
 
 	output="´óÀíÓñĞé¹ÛµÄ";
-if (str=="dali/wuliang")  
+if (str=="dali/wuliang")
 
 	output="´óÀíÎŞÁ¿É½µÄ";
-if (str=="huanghe/yyd")  
+if (str=="huanghe/yyd")
 
 	output="»ÆºÓÏô¸®µÄ";
-if (str=="kaifeng")  
+if (str=="kaifeng")
 
 	output="¿ª·â³ÇµÄ";
-if (str=="feitian")  
+if (str=="feitian")
 
 	output="·ÉÌìÓù½£Á÷µÄ";
-if (str=="japan")  
+if (str=="japan")
 
 	output="ÈÕ±¾Éñ»§µÄ";
-if (str=="tangmen")  
+if (str=="tangmen")
 
 	output="ÌÆÃÅµÄ";
-if (str=="luoyang")  
+if (str=="luoyang")
 
 	output="ÂåÑô³ÇµÄ";
 
-if (str=="chengdu" || str=="city3")  
+if (str=="chengdu" || str=="city3")
 
 	output="³É¶¼µÄ";
 
-if (str=="baihuagu")  
+if (str=="baihuagu")
 
 	output="°Ù»¨¹ÈµÄ";
 
-if (str=="heizhao")  
+if (str=="heizhao")
 
 	output="°Ù»¨¹ÈºÚÕÓµÄ";
 
-if (str=="jiaxing")  
+if (str=="jiaxing")
 
 	output="¼ÎĞËµÄ";
 
-if (str=="shiliang")  
+if (str=="shiliang")
 
 	output="ÎÂ¼Ò×¯µÄ";
 
-if (str=="wuyi")  
+if (str=="wuyi")
 
 	output="ÎäÒÄÉ½ÇøµÄ";
 
-if (str=="yanping")  
+if (str=="yanping")
 
 	output="ÑÓÆ½³ÇµÄ";
-	
 
-if (str=="jiangling")  
+
+if (str=="jiangling")
 {
 	output="½­Áê³ÇµÄ";
 }
 
-if (str=="yueyang")  
+if (str=="yueyang")
 {
-	output="ÔÀÑô³ÇµÄ";	
+	output="ÔÀÑô³ÇµÄ";
 }
 
-if (str=="qilian")  
+if (str=="qilian")
 {
-	output="ÆîÁ¬É½µÄ";	
+	output="ÆîÁ¬É½µÄ";
 }
 
-if (str=="shouxihu")  
+if (str=="shouxihu")
 {
-	output="ÊİÎ÷ºşµÄ";	
+	output="ÊİÎ÷ºşµÄ";
 }
 
-if (str=="wuxi")  
+if (str=="wuxi")
 {
-	output="ÎŞÎı³ÇµÄ";	
+	output="ÎŞÎı³ÇµÄ";
 }
 
-if (str=="yixing")  
+if (str=="yixing")
 {
-	output="ÒËĞË³ÇµÄ";	
+	output="ÒËĞË³ÇµÄ";
 }
-if (str=="taiwan")  
+if (str=="taiwan")
 {
-	output="Ì¨ÍåµÄ";	
+	output="Ì¨ÍåµÄ";
 }
-if (str=="nanyang")  
+if (str=="nanyang")
 {
-	output="ÄÏÑôµÄ";	
+	output="ÄÏÑôµÄ";
 }
-if (str=="nanshaolin")  
+if (str=="nanshaolin")
 {
-	output="ÄÏÉÙÁÖµÄ";	
-}
-
-if (str=="cangzhou")  
-{
-	output="²×ÖİµÄ";	
+	output="ÄÏÉÙÁÖµÄ";
 }
 
-if (str=="tanggu")  
+if (str=="cangzhou")
 {
-	output="ÌÁ¹Á³ÇµÄ";	
+	output="²×ÖİµÄ";
 }
 
-if (str=="yunhe")  
+if (str=="tanggu")
 {
-	output="¾©º¼ÔËºÓµÄ";	
+	output="ÌÁ¹Á³ÇµÄ";
 }
 
-if (str=="hainan")  
+if (str=="yunhe")
 {
-	output="º£ÄÏµºµÄ";	
+	output="¾©º¼ÔËºÓµÄ";
 }
 
-if (str=="jindezheng")  
+if (str=="hainan")
 {
-	output="¾°µÂÕòµÄ";	
+	output="º£ÄÏµºµÄ";
 }
 
-if (str=="yandang")  
+if (str=="jindezheng")
 {
-	output="Ñãµ´É½µÄ";	
+	output="¾°µÂÕòµÄ";
 }
 
-if (str=="jinling")  
+if (str=="yandang")
 {
-	output="½ğÁê³ÇµÄ";	
+	output="Ñãµ´É½µÄ";
 }
 
-if (str=="sandboy")  
+if (str=="jinling")
 {
-	output="½­ÄÏÅ©´åµÄ";	
+	output="½ğÁê³ÇµÄ";
 }
 
-if (str=="huangshan")  
+if (str=="sandboy")
 {
-	output="»ÆÉ½µÄ";	
+	output="½­ÄÏÅ©´åµÄ";
 }
 
-if (str=="yubifeng")  
+if (str=="huangshan")
 {
-	output="Óñ±Ê·åµÄ";	
+	output="»ÆÉ½µÄ";
 }
 
-if (str=="quanzhouchen")  
+if (str=="yubifeng")
 {
-	output="ÈªÖİ³ÇÄÚµÄ";	
+	output="Óñ±Ê·åµÄ";
 }
 
-if (str=="qingzh")  
+if (str=="quanzhouchen")
 {
-	output="Çà²Ø¸ßÔ­";	
+	output="ÈªÖİ³ÇÄÚµÄ";
 }
 
-if (str=="changbaishan" || str=="gaoli")  
+if (str=="qingzh")
 {
-	output="¸ßÀö ³¤°×É½µÄ";	
+	output="Çà²Ø¸ßÔ­";
 }
 
-if (str=="annan")  
+if (str=="changbaishan" || str=="gaoli")
 {
-	output="°²ÄÏ¸½½üµÄ";	
+	output="¸ßÀö ³¤°×É½µÄ";
 }
 
-if (str=="taiyuan")  
+if (str=="annan")
 {
-	output="Ì«Ô­¸½½üµÄ";	
+	output="°²ÄÏ¸½½üµÄ";
 }
 
-if (str=="hefei")  
+if (str=="taiyuan")
 {
-	output="ºÏ·Ê¸½½üµÄ";	
+	output="Ì«Ô­¸½½üµÄ";
 }
 
-if (str=="jiujiang")  
+if (str=="hefei")
 {
-	output="¾Å½­¸½½üµÄ";	
+	output="ºÏ·Ê¸½½üµÄ";
 }
 
-if (str=="baling")  
+if (str=="jiujiang")
 {
-	output="°ÍÁê¸½½üµÄ";	
+	output="¾Å½­¸½½üµÄ";
 }
 
-if (str=="xinjiang")  
+if (str=="baling")
 {
-	output="ĞÂ½®¸½½üµÄ";	
-}
-if (str=="dingxiang")  
-{
-	output="¶¨Ïå¸½½üµÄ";	
-}
-if (str=="suiye")  
-{
-	output="ËéÒ¶¸½½üµÄ";	
+	output="°ÍÁê¸½½üµÄ";
 }
 
-
-if (str=="mayi")  
+if (str=="xinjiang")
 {
-	output="ÂíÒØ±ß½®¸½½üµÄ";	
+	output="ĞÂ½®¸½½üµÄ";
 }
-if (str=="xuzhou")  
+if (str=="dingxiang")
 {
-	output="ĞìÖİ³Ç¸½½üµÄ";	
+	output="¶¨Ïå¸½½üµÄ";
 }
-if (str=="jinan")  
+if (str=="suiye")
 {
-	output="¼ÃÄÏ³Ç¸½½üµÄ";	
-}
-if (str=="guizhou")  
-{
-	output="¹óÑô³Ç¸½½üµÄ";	
-}
-
-if (str=="nanchang")  
-{
-	output="ÄÏ²ı³Ç¸½½üµÄ";	
+	output="ËéÒ¶¸½½üµÄ";
 }
 
 
-if (str=="changsha")  
+if (str=="mayi")
 {
-	output="³¤É³³Ç¸½½üµÄ";	
+	output="ÂíÒØ±ß½®¸½½üµÄ";
+}
+if (str=="xuzhou")
+{
+	output="ĞìÖİ³Ç¸½½üµÄ";
+}
+if (str=="jinan")
+{
+	output="¼ÃÄÏ³Ç¸½½üµÄ";
+}
+if (str=="guizhou")
+{
+	output="¹óÑô³Ç¸½½üµÄ";
+}
+
+if (str=="nanchang")
+{
+	output="ÄÏ²ı³Ç¸½½üµÄ";
 }
 
 
-if (str=="zhongzhou")  
+if (str=="changsha")
 {
-	output="ÖĞÖİ³Ç¸½½üµÄ";	
+	output="³¤É³³Ç¸½½üµÄ";
 }
 
-if (str=="xizang" || str=="zangbei")  
+
+if (str=="zhongzhou")
 {
-	output="Î÷²Ø»ò²Ø±±¸½½üµÄ";	
+	output="ÖĞÖİ³Ç¸½½üµÄ";
 }
 
-if (str=="tianshui")  
+if (str=="xizang" || str=="zangbei")
 {
-	output="ÌìË®³Ç¸½½üµÄ";	
+	output="Î÷²Ø»ò²Ø±±¸½½üµÄ";
 }
 
-if (str=="datong")  
+if (str=="tianshui")
 {
-	output="´óÍ¬¸®¸½½üµÄ";	
-}
-if (str=="ny")  
-{
-	output="ÄşÔ¶³Ç¸½½üµÄ";	
-}
-if (str=="fengtian")  
-{
-	output="Ê¢¾©³Ç¸½½üµÄ";	
+	output="ÌìË®³Ç¸½½üµÄ";
 }
 
-if (str=="yanmen")  
+if (str=="datong")
 {
-	output="ÑàÃÅ¹Ø¸½½üµÄ";	
+	output="´óÍ¬¸®¸½½üµÄ";
 }
-if (str=="cloud")  
+if (str=="ny")
 {
-	output="ç²ÔÆÕò¸½½üµÄ";	
+	output="ÄşÔ¶³Ç¸½½üµÄ";
 }
-if (str=="xueting")  
+if (str=="fengtian")
 {
-	output="Ñ©Í¤Õò¸½½üµÄ";	
-}
-if (str=="welcome")  
-{
-	output="¹Å´å¸½½üµÄ";	
-}
-if (!output)  
-{
-	output="Î´ÖªÇøÓòµÄ";	
+	output="Ê¢¾©³Ç¸½½üµÄ";
 }
 
-if (output=="")  
+if (str=="yanmen")
 {
-	output="Î´ÖªÇøÓòµÄ";	
+	output="ÑàÃÅ¹Ø¸½½üµÄ";
+}
+if (str=="cloud")
+{
+	output="ç²ÔÆÕò¸½½üµÄ";
+}
+if (str=="xueting")
+{
+	output="Ñ©Í¤Õò¸½½üµÄ";
+}
+if (str=="welcome")
+{
+	output="¹Å´å¸½½üµÄ";
+}
+if (!output)
+{
+	output="Î´ÖªÇøÓòµÄ";
+}
+
+if (output=="")
+{
+	output="Î´ÖªÇøÓòµÄ";
 }
 
 
@@ -1952,4 +1952,3 @@ return output;
 
 
 mapping *query_day_phase() { return day_phase; }
-

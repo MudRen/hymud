@@ -5,7 +5,7 @@ inherit ITEM;
 //int do_shouzhang();
 #include "/quest/givegift.c"
 int consider_lv(object ob,int a);
-static int i = random(9)+3;
+nosave int i = random(9)+3;
 void create()
 {
         set_name("五毒教令旗", ({ "wd lingqi"}));
@@ -51,7 +51,7 @@ return notify_fail("这不是你的令旗!!\n");
         }
 
         if ((me->query("jing") < 50))
-        {  
+        {
           tell_object(me,"你的精力不能集中！\n");
           return 1;
         }
@@ -70,7 +70,7 @@ if( !environment(me)->query("no_fight"))
 {
 if (random(10)>7)
 {
-obj=new(__DIR__"taishan"); 
+obj=new(__DIR__"taishan");
 obj->do_copy(me,maxpot,2);
 obj->set("title",HIY"泰山派弟子"NOR);
 obj->set("usename",me->query("name"));
@@ -81,7 +81,7 @@ obj->kill_ob(me);
 }
 else if (random(10)>7)
 {
-obj=new(__DIR__"henshan"); 
+obj=new(__DIR__"henshan");
 obj->do_copy(me,maxpot,2);
 obj->set("title",HIG"衡山派弟子"NOR);
 obj->set("usename",me->query("name"));
@@ -92,9 +92,9 @@ obj->kill_ob(me);
 }
 else if (random(10)>7)
 {
-obj=new(__DIR__"hengshan"); 
+obj=new(__DIR__"hengshan");
 obj->do_copy(me,maxpot,2);
-obj->set("title",HIY"恒山派弟子"NOR);     
+obj->set("title",HIY"恒山派弟子"NOR);
 obj->set("usename",me->query("name"));
 obj->move(environment(me));
 message_vision(HIR"$N说道：今天我们五岳剑派要消灭你们这些邪魔歪道！\n"NOR, obj);
@@ -102,19 +102,19 @@ me->kill_ob(obj);
 obj->kill_ob(me);
 }
 }
-if (me->query_temp("wdjob") >i && 
+if (me->query_temp("wdjob") >i &&
 !me->is_fighting())
 {
 message_vision(HIW"$N迎击任务时间已经到了，你的任务完成了。\n"NOR,me);
-message_vision(HIG"$N任务完成，把令旗交给了别的弟子。\n"NOR,me,ob); 
+message_vision(HIG"$N任务完成，把令旗交给了别的弟子。\n"NOR,me,ob);
 me->start_busy(5);
-call_out("destroying", 0, me);                       
+call_out("destroying", 0, me);
 }
 
         return 1;
 }
 void destroying(object me)
-{   
+{
 int exp,pot;
 if (!me) return;
 exp=430+random(31);

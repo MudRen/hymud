@@ -8,7 +8,7 @@
 
 inherit NPC;
 
-static mapping liewu = ([ "Ò°É½¼¦":__DIR__"obj/shanji",
+nosave mapping liewu = ([ "Ò°É½¼¦":__DIR__"obj/shanji",
 "â¯×Ó":__DIR__"obj/zhangzi",
 "÷çÂ¹":__DIR__"obj/milu",
 "É½»¢":__DIR__"obj/shanhu", ]);
@@ -53,4 +53,3 @@ if (random(16)==0)
 carry_object(__DIR__"obj/shanhu");
 
 }
-

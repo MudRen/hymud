@@ -6,9 +6,9 @@
 #define MAX_ALIASES 40
 #define HISTORY_BUFFER_SIZE 10
 mapping alias;
-static string *history, last_input;
-static int last_cmd, repeat_cnt = 0;
-static int last_cmd_time,cmd_time=0,kill_time=0;
+nosave string *history, last_input;
+nosave int last_cmd, repeat_cnt = 0;
+nosave int last_cmd_time,cmd_time=0,kill_time=0;
 string process_input(string str)
 {
     string *args, command, argstr,verb,arg,file,cmd;

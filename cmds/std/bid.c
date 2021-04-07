@@ -3,10 +3,10 @@
 // By Shure@mudbuilder.net 2001-8-17
 /*
 key  string ob_id      物品ID
-v[0] object obj        拍卖物品     
-v[1] int    ob_price   竞标价格               
-v[2] object ob_auction 竞标者                 
-v[3] object ob_onwer   物品所有者             
+v[0] object obj        拍卖物品
+v[1] int    ob_price   竞标价格
+v[2] object ob_auction 竞标者
+v[3] object ob_onwer   物品所有者
 v[4] string ob_desc    物品所有者对该物品的介绍
 v[5] string auction_id 竞标者ID
 v[6] string onwer_id   物主ID
@@ -22,11 +22,11 @@ inherit F_DBASE;
 
 #define PRICE_DIFFERENCE 100
 
-static mapping auction = ([]);
+nosave mapping auction = ([]);
 
 // 状态变化的控制中心
-void auction_chat(string msg);  
-void auction_state_check(int times, int s_times, int last_price, string obj_id); 
+void auction_chat(string msg);
+void auction_state_check(int times, int s_times, int last_price, string obj_id);
 // 静止的状态切换
 void auction_end(string ob_name, int ob_price, mixed ob_auction, object ob_onwer, object ob, string ob_id);
 void auction_cancel(string ob_id, object discredit_1, object discredit_2);
@@ -56,9 +56,9 @@ void create()
 	set("channel_id","");
 }
 
-void auction_chat(string msg) 
-{	
-	msg = replace_string(msg,NOR,HIY);	
+void auction_chat(string msg)
+{
+	msg = replace_string(msg,NOR,HIY);
 	CHANNEL_D->do_channel(this_object(),"auction",msg);
 }
 
@@ -68,10 +68,10 @@ void auction_state_check(int times, int s_times, int last_price, string obj_id)
 	object ob, ob_auction, ob_onwer, new_auction, new_onwer, nul;
 	mixed *values, *v;
 	string *k, ob_name, ob_id, str;
-	
+
 	// 重新定位此物品，避免因为其他物品被清除导致索引号变化
 	k = keys(auction);
-	i = member_array(obj_id,k); 
+	i = member_array(obj_id,k);
 	v = values(auction)[i];
 	ob_id      = k[i];
 	ob         = v[0];
@@ -79,7 +79,7 @@ void auction_state_check(int times, int s_times, int last_price, string obj_id)
 	ob_auction = v[2];
 	ob_onwer   = v[3];
 	ob_name    = v[7];
-	
+
 	if(!objectp(ob_auction) && !stringp(ob_auction))
 	{
 		flag1++;
@@ -99,7 +99,7 @@ void auction_state_check(int times, int s_times, int last_price, string obj_id)
 		}
 	}
 
-	if(flag2 && !flag1) 
+	if(flag2 && !flag1)
 	{
 		str="由于卖方缺席，取消"+ob_name+"的拍卖";
 		auction_chat(str);
@@ -128,7 +128,7 @@ void auction_state_check(int times, int s_times, int last_price, string obj_id)
 			if(s_times<4)
 			{
 				str = "第"+CHINESE_D->chinese_number(s_times)+"次喊价:拍卖"+ob_name+"，现价"+MONEY_D->price_str(ob_price)+"!!";
-				auction_chat(str);   
+				auction_chat(str);
 				call_out("auction_state_check", 10, times, s_times, ob_price, ob_id);
 			}
 			else
@@ -146,7 +146,7 @@ void auction_state_check(int times, int s_times, int last_price, string obj_id)
 					auction_chat(str);
 					auction_cancel(ob_id, nul, nul);
 					return;
-				}	
+				}
 				auction_end(ob_name, ob_price, ob_auction, ob_onwer, ob, ob_id);
 			}
 		}
@@ -183,11 +183,11 @@ void auction_end(string ob_name, int ob_price, mixed ob_auction, object ob_onwer
 
 	if(!objectp(ob_onwer))	return;  // 虽然不太可能发生，但还是判断下保险
 	onwer_id = ob_onwer->query_temp("auction/"+ob_id);
-	
+
 	if(stringp(ob_auction))
 	{
 		str=onwer_id+ " 以底价 "+MONEY_D->price_str(ob_price)+" 拍卖 "+
-		ob_name+"，三次喊价后无人投标，本次拍卖无效！\n";		
+		ob_name+"，三次喊价后无人投标，本次拍卖无效！\n";
 		auction_cancel(ob_id, ob_onwer, nul);
 		ob_onwer->set("auction_fail",ob_onwer->query("mud_age"));
 	}
@@ -195,11 +195,11 @@ void auction_end(string ob_name, int ob_price, mixed ob_auction, object ob_onwer
 	{
 		str=ob_auction->query("name")+"("+ob_auction->query("id")+")"+ " 出价 "+MONEY_D->price_str(ob_price)+" 竞标 "+
 		ob_name+"成功，本次拍卖成交！\n";
-			
+
 		// 买卖双方金钱物品的交换，买方需另交成交价10%的手续费（卖方之前已经交过底价10%的保证金）
-		inv = all_inventory(ob_auction); 
-		en_inv = all_inventory(environment(ob_auction)); 
-		if(!player_pay(ob_auction, (int)(ob_price*10/9))) 
+		inv = all_inventory(ob_auction);
+		en_inv = all_inventory(environment(ob_auction));
+		if(!player_pay(ob_auction, (int)(ob_price*10/9)))
 		{
 			str="由于买方无力支付竞价，本次拍卖无效。\n";
 			ob_auction->delete_temp("auctioning");
@@ -213,15 +213,15 @@ void auction_end(string ob_name, int ob_price, mixed ob_auction, object ob_onwer
 					if(en_inv && sizeof(en_inv) < 49)
 					{
 						tell_object(ob_auction, "你手头已经拿不下了,东西落到了你的脚边..\n");
-						ob->move(environment(ob_auction)); 
+						ob->move(environment(ob_auction));
 					}
 					else
 					{
 						tell_object(ob_auction, "此次拍卖所得由于你无力保管而收归国有！\n");
 					 	destruct(ob);
 					}
-				}	
-			if(!MONEY_D->pay_player(ob_onwer, ob_price)) 
+				}
+			if(!MONEY_D->pay_player(ob_onwer, ob_price))
 			{
 				tell_object(ob_onwer,ob_name+"拍卖成功，所得款已经转至你的钱庄帐户。\n");
 				ob_onwer->add("balance",ob_price);
@@ -250,7 +250,7 @@ int main(object me,string arg)
 	mixed *ob_value;
 	string str, unit, *tuned_ch, *ob_key;
 	object ob;
-	
+
 	ob_key = keys(auction);
 	ob_value = values(auction);
 	if(!arg)
@@ -264,8 +264,8 @@ int main(object me,string arg)
 			me->set("channels", tuned_ch + ({ auction }) );
 		tell_object(me,"\n你的拍卖频道(auction)现在处于开通状态\n");
 		return 1;
-	}	
-		
+	}
+
 	if(arg == "-l")
 	{
 	    	if(!sizeof(auction))
@@ -307,7 +307,7 @@ int main(object me,string arg)
 			"\n物主介绍："+v[4]+
 			"\n物主："+v[6]+"\n\n";
 		}
-       		me->start_more(str);		
+       		me->start_more(str);
 		return 1;
 	}
 	if(sscanf(arg,"%s for %d %s",str,num,unit) == 3)
@@ -317,7 +317,7 @@ int main(object me,string arg)
 		{
 			tell_object(me,"你还没有成年，能对自己的拍卖行为负责吗？\n");
 			return 1;
-		}			
+		}
 		if(me->query("combat_exp") < 10000)
 		{
 			tell_object(me,"你虽已成年，但是涉世经验太少，无法对自己的拍卖行为负责。\n");
@@ -330,17 +330,17 @@ int main(object me,string arg)
 		}
 		if(me->query("discredit") && !me->query_temp("auctioning"))
 		{
-			if(me->query("mud_age") - me->query("discredit") < 3600)	
+			if(me->query("mud_age") - me->query("discredit") < 3600)
 			{
 				tell_object(me,"你由于在上次拍卖过程中信誉值降低，暂时无权参与。\n");
 				return 1;
 			}
-			else me->delete("discredit");			
+			else me->delete("discredit");
 		}
 		if(me->query("mud_age") - me->query("auction_fail") < 300)
 		{
 			tell_object(me,"你上次拍卖的物品无人问津，这回还是先花点时间调查市场吧。\n");
-			return 1;		
+			return 1;
 		}
 		if(sizeof(auction)>5) // 决定同时间内有多少拍卖进程可以并存
 		{
@@ -351,7 +351,7 @@ int main(object me,string arg)
 		{
 			tell_object(me,"你身上没有 "+HIG+str+NOR+" 这件物品。\n");
 			return 1;
-		}		
+		}
 		if(member_array(ob->query("id"),ob_key)!= -1)
 		{
 			tell_object(me,"你晚了一步，这类物品已经有人拍卖了。\n");
@@ -366,14 +366,14 @@ int main(object me,string arg)
 		// 克扣拍卖手续费10%
 		guaranty = (int)(ob->query("value")/10);
 		if (guaranty < 10) guaranty = 10;
-		if(!player_pay(me, guaranty)) 
+		if(!player_pay(me, guaranty))
 		{
 			tell_object(me,"你全部的身家财产尚不足以交纳拍卖保证金！(如果使用银票，请事先兑换)\n");
 			return 1;
 		}
 		unit = lower_case(unit);
 		if(!(num = player_demand(num, unit, me))) return 1;
-		
+
 		write("你所要拍卖的物品："+ob->query("name")+"， 底价："+MONEY_D->price_str(num)+"\n\n");
 		write("请输入你对该物品的介绍（控制在50个字符内）\n直接按回车(enter)可以忽略此项。\n");
 		input_to("get_ob_desc", me, ob->query("id"), num);
@@ -382,11 +382,11 @@ int main(object me,string arg)
 	if(sscanf(arg,"%d add %d %s", index,num,unit) == 3)
 	{
 		object obj, ob_onwer;
-		mixed *v; 
-		int ob_price; 
+		mixed *v;
+		int ob_price;
 		if(me->query("age") < 18)
 		{
-			tell_object(me,"你还没有成年，能对自己的拍卖行为负责吗？\n");			
+			tell_object(me,"你还没有成年，能对自己的拍卖行为负责吗？\n");
 			return 1;
 		}
 		if(me->query("combat_exp") < 10000)
@@ -401,12 +401,12 @@ int main(object me,string arg)
 		}
 		if(me->query("discredit") && !me->query_temp("auctioning"))
 		{
-			if(me->query("mud_age") - me->query("discredit") < 3600)	
+			if(me->query("mud_age") - me->query("discredit") < 3600)
 			{
 				tell_object(me,"你由于在上次拍卖过程中信誉值降低，暂时无权参与。\n");
 				return 1;
 			}
-			else me->delete("discredit");			
+			else me->delete("discredit");
 		}
 		if(index < 1 || index > sizeof(auction))
 		{
@@ -416,7 +416,7 @@ int main(object me,string arg)
 		v = ob_value[index-1];
 		obj = v[0];
 		ob_price = v[1];
-		
+
 		if(objectp(obj) && v[3] == me)
 		{
 			tell_object(me,"那是你自己的拍卖物品，想暗地托价不成？\n");
@@ -459,7 +459,7 @@ void get_ob_desc(string desc, object me, string str, int num)
                 return ;
 	}
 	write("作为物主，您是否愿意在拍卖过程中透露自己姓名？(y/n)\n");
-	input_to("choise_secret", me, str, desc, num);	
+	input_to("choise_secret", me, str, desc, num);
         return;
 }
 
@@ -472,13 +472,13 @@ void choise_secret(string yn, object me, string ob_id, string desc, int num)
 
 	if (yn[0] != 'y' && yn[0] != 'Y')
 		me->set_temp("auction/"+ob_id, "某人");
-        else 
+        else
         	me->set_temp("auction/"+ob_id, me->query("name")+"("+me->query("id")+")");
 	if(!objectp(ob = present(ob_id, me)))
 	{
 		tell_object(me,"你身上已经没有这件东西了，不能参加拍卖。\n");
 		return;
-	}        	
+	}
 	if(sizeof(auction) && member_array(ob_id,keys(auction))!= -1)
 	{
 		tell_object(me,"你晚了一步，这类物品已经被人抢先拍卖了。\n");
@@ -491,10 +491,10 @@ void choise_secret(string yn, object me, string ob_id, string desc, int num)
 	me->set("discredit",me->query("mud_age"));
 	me->set_temp("auctioning",1);
 	me->start_busy(10);
-	
+
         values = ({ob, num, "", me , desc, "", onwer_id, ob_name, ob->long()});
 	auction[ob_id] = values;
-	
+
 	str = onwer_id+"现在开始拍卖"+ob_name+"，"+"底价："+MONEY_D->price_str(num)+"。\n";
 	auction_chat(str);
 	call_out("auction_state_check", 10, 0, 0, num,ob_id);
@@ -563,19 +563,19 @@ int player_pay(object who, int amount)
 	else
 		cc = 0;
 	total = cc + sc * 100 + gc * 10000;
-	
+
 	if ( total < amount )
 	{
 		if((amount-total) > who->query("balance"))
 			return 0;
 		if(objectp(c_ob)) destruct(c_ob);
 		if(objectp(s_ob)) destruct(s_ob);
-		if(objectp(g_ob)) destruct(g_ob);		
-		who->add("balance",-(amount-total)); 
+		if(objectp(g_ob)) destruct(g_ob);
+		who->add("balance",-(amount-total));
 			tell_object(who,"你身上的零钱不够，所需费用已直接从钱庄帐户上扣除。\n\n");
 		return 1;
 	}
-	else 
+	else
 	{
 		left = total - amount;
 		gc = left / 10000;
@@ -605,41 +605,37 @@ int player_pay(object who, int amount)
 }
 
 int help()
-{	
+{
     write(@HELP命令格式：
-    
+
     开启拍卖频道：auction
     关闭拍卖频道：tune auction
     查看目前处于竞拍状态的物品清单：auction -l
     查看目前处于竞拍状态的物品介绍：auction -m
     拍卖物品：auction <物品ID> for <底价值> <货币单位>
-    竞拍物品：auction <物品序列号> add <加价值> <货币单位> 
-    
+    竞拍物品：auction <物品序列号> add <加价值> <货币单位>
+
     说明文档：
     1. 拍卖过程中银票无效，请先去钱庄兑换成硬通货，如黄金、白银、铜钱。
-    
+
     2. 当有人拍卖物品时，拍卖进程正式开始，此时玩家可以以至少1两白银（或100文铜钱）
        的最低差价值参加竞拍，如果一段时间内无人投标，将进行喊价，如果三次喊价后仍然
        无人出价，则拍卖终止。如果一直有人投标，到了规定时间，此次拍卖活动仍会被终止。
-       
+
     3. 拍卖活动终止后，最后出价者为胜，货款从买者手边及钱庄提取，物品直接转移到买者
        身上，如果不堪负重则放在买者所在房间之中，如果房间也无法装下，物品作没收处理，
        切记！物主所得款额直接转至其钱庄帐户。整个拍卖活动加收10%的手续费。倘若拍卖
        过程中始终无人投标，拍卖过程宣布失败，手续费恕不退还物主。
-       
+
     4. 拍卖过程中，如果因为买卖双方的离开游戏或者物品离开了物主本人，导致拍卖进程中
        断，当作违反拍卖规则处理，责任方信誉度会降低，惩罚是一小时内不得参加任何与拍
        卖有关的活动。倘若拍卖物品三次喊价之后因为无人竞标而取消，卖家信誉度也会降低，
        五分钟内不得再拍卖其他物品。
-    
+
        Shure@mudbuilder.net
-       2001.8.       
-    		
+       2001.8.
+
 HELP
     );
     return 1;
 }
-
- 
-
-  

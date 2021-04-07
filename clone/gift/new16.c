@@ -2,8 +2,8 @@
 
 #include <ansi.h>
 
-static string char_id;
-static string char_name;
+nosave string char_id;
+nosave string char_name;
 
 int give_gift();
 object select_character();
@@ -52,7 +52,7 @@ mixed query_story_message(int step)
 
 int give_gift()
 {
-         
+
         int i;
         object env,ob;
         object *players;
@@ -69,7 +69,7 @@ int give_gift()
                         if (ob->is_fighting()) continue;
                         if (!environment(ob)) continue;
                         if (ob->query_temp("netdead")) continue;
-                                
+
                 }
         if(!ob) return 1;
         gob = new(__DIR__"obj/xuantie");

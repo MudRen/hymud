@@ -78,8 +78,8 @@ class coordinate *newpath = ({}), *badpath = ({}), *roadpath = ({}),
         enter,/* 入口坐标 */
         leave;/* 出口坐标 */
 
-static string *valid_dirs = ({ "south","north","west","east" });
-static mapping reverse_dir = ([
+nosave string *valid_dirs = ({ "south","north","west","east" });
+nosave mapping reverse_dir = ([
 "north" : "south",
 "south" : "north",
 "west"  : "east",
@@ -87,55 +87,55 @@ static mapping reverse_dir = ([
 ]);
 
 // 全迷宫出口阵列.
-static mixed *all;
+nosave mixed *all;
 // 迷宫地图阵列
-static mixed line, line2;
+nosave mixed line, line2;
 
 /***************** 迷宫的一些预设特性：*****************/
-static int l;                           // 迷宫的单边长
-static string *inherit_rooms = ({});      // 迷宫允许继承的档案名称
-static string *valid_rooms = ({});        // 迷宫可使用的房间文件名 (****)
-static string entry_dir;                // 迷宫入口方向
-static string link_entry_dir;           // 迷宫入口与区域的连接方向
-static string link_entry_room;          // 迷宫入口所连接区域档案的文件名
-private int link_entry_room_x;          // 迷宫入口的x坐标
-private int link_entry_room_y;          // 迷宫入口的y坐标
-private int link_entry_room_z;          // 迷宫入口的z坐标
-static string link_exit_dir;            // 迷宫出口与区域的连接方向
-static string link_exit_room;           // 迷宫出口所连接区域档案的文件名
-static string entry_short;              // 迷宫入口的短描述
-static string entry_desc;               // 迷宫入口的长描述
-static string exit_short;               // 迷宫出口的短描述
-static string exit_desc;                // 迷宫出口的长描述
-static string center_room;              // 迷宫中心位置房间
-static string *maze_room_desc = ({});     // 迷宫房间的长描述
-static string maze_room_short;          // 迷宫房间的短描述
-static int is_outdoors = 0;             // 迷宫房间是否为户外
-static mixed maze_npcs;                 // 迷宫中的怪物
-static mixed entry_npcs;                // 迷宫入口的怪物
-static mixed exit_npcs;                 // 迷宫出口的怪物
-static string *unique_rooms = ({});       // 迷宫唯一的房间
-static string *special_rooms = ({});      // 迷宫特殊的房间
-private int refresh_delay = 0;          // 迷宫重建时间, default is 0 means no recreation
-static int is_nodeath = 0;              // 迷宫不死房间
-static int random_rate = 0;             // 迷宫怪物出现几率
-static int remove_time = 0;             // 迷宫销毁时间
-static int box_num = 0;                 // 迷宫宝箱的数量
-static int trap_num = 0;                // 迷宫陷阱的数量
-static int lonely_create = 0;           // 迷宫创建新模式(Lonely)
+nosave int l;                         // 迷宫的单边长
+nosave string *inherit_rooms = ({});  // 迷宫允许继承的档案名称
+nosave string *valid_rooms = ({});    // 迷宫可使用的房间文件名 (****)
+nosave string entry_dir;              // 迷宫入口方向
+nosave string link_entry_dir;         // 迷宫入口与区域的连接方向
+nosave string link_entry_room;        // 迷宫入口所连接区域档案的文件名
+nosave int link_entry_room_x;         // 迷宫入口的x坐标
+nosave int link_entry_room_y;         // 迷宫入口的y坐标
+nosave int link_entry_room_z;         // 迷宫入口的z坐标
+nosave string link_exit_dir;          // 迷宫出口与区域的连接方向
+nosave string link_exit_room;         // 迷宫出口所连接区域档案的文件名
+nosave string entry_short;            // 迷宫入口的短描述
+nosave string entry_desc;             // 迷宫入口的长描述
+nosave string exit_short;             // 迷宫出口的短描述
+nosave string exit_desc;              // 迷宫出口的长描述
+nosave string center_room;            // 迷宫中心位置房间
+nosave string *maze_room_desc = ({}); // 迷宫房间的长描述
+nosave string maze_room_short;        // 迷宫房间的短描述
+nosave int is_outdoors = 0;           // 迷宫房间是否为户外
+nosave mixed maze_npcs;               // 迷宫中的怪物
+nosave mixed entry_npcs;              // 迷宫入口的怪物
+nosave mixed exit_npcs;               // 迷宫出口的怪物
+nosave string *unique_rooms = ({});   // 迷宫唯一的房间
+nosave string *special_rooms = ({});  // 迷宫特殊的房间
+nosave int refresh_delay = 0;         // 迷宫重建时间, default is 0 means no recreation
+nosave int is_nodeath = 0;            // 迷宫不死房间
+nosave int random_rate = 0;           // 迷宫怪物出现几率
+nosave int remove_time = 0;           // 迷宫销毁时间
+nosave int box_num = 0;               // 迷宫宝箱的数量
+nosave int trap_num = 0;              // 迷宫陷阱的数量
+nosave int lonely_create = 0;         // 迷宫创建新模式(Lonely)
 /******************* ---- END ---- *********************/
 
-static int handle_id;                   // 排程
-static int return_dir = 0;              // 迷宫入口方向
-static int map_status = MAP_COMM;       // 迷宫的地图状态
-static int display_coordinate = 1;      // 是否显示玩家所在的位置
-static object maze_boss;                // 迷宫里的BOSS
+nosave int handle_id;                   // 排程
+nosave int return_dir = 0;              // 迷宫入口方向
+nosave int map_status = MAP_COMM;       // 迷宫的地图状态
+nosave int display_coordinate = 1;      // 是否显示玩家所在的位置
+nosave object maze_boss;                // 迷宫里的BOSS
 
 // 建立标记.
-static int maze_built = 0;
+nosave int maze_built = 0;
 
 // 迷宫房间来源转换开关
-static int switch_flag = 0;
+nosave int switch_flag = 0;
 
 // 重置全域变量.
 protected void refresh_vars();

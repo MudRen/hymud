@@ -60,7 +60,7 @@ mapping family_fame = ([
 ]);
 
 // 门派ID对应的门派名字
-static mapping family_name = ([
+nosave mapping family_name = ([
         "shaolin"  : "少林派",
         "wudang"   : "武当派",
         "gaibang"  : "丐帮",

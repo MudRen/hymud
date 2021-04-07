@@ -4,7 +4,7 @@
 #include <room.h>
 inherit ROOM;
 
-varargs static void
+varargs protected void
 create_food(string nmstr, string* idlist, string longstr)
 {
         object obj;
@@ -18,7 +18,7 @@ create_food(string nmstr, string* idlist, string longstr)
         obj->move(this_object());
 }
 
-varargs static void
+varargs protected void
 create_water(string nmstr, string* idlist, string cup, string longstr)
 {
         object obj;
@@ -33,7 +33,7 @@ create_water(string nmstr, string* idlist, string cup, string longstr)
         obj->move(this_object());
 }
 
-varargs static void
+varargs protected void
 create_wine(string nmstr, string* idlist, string cup, string longstr)
 {
         object obj;
@@ -79,7 +79,7 @@ TEXT
         set("no_dazuo",1);set("no_kill",1);set("no_fight",1);
          set("no_steal",1);
          set("pingan",1);
-         set("no_beg",1); 	
+         set("no_beg",1);
         set("no_clean_up", 0);
         setup();
         set("no_user", 1);
@@ -260,5 +260,5 @@ int do_quit(string arg)
         write(this_player()->query("name")+"£¬Ì«ºÚĞÄÁË°É£¡\n");
         return 1;
 	}
-  
+
 }

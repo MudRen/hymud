@@ -17,11 +17,11 @@
 
 inherit F_DBASE;
 
-static int last_update_time;
-static int handle_id;
-static mapping events = allocate_mapping(0);
+nosave int last_update_time;
+nosave int handle_id;
+nosave mapping events = allocate_mapping(0);
 
-int clean_up() { return 1; } 
+int clean_up() { return 1; }
 
 void remove(string euid)
 {
@@ -77,7 +77,7 @@ int mapping_eqv(mapping map1, mapping map2)
                 {
                         return 0;
                 }
-                
+
                 // Value check
                 if( mapp(map1[m_keys1[i]]) && mapp(map2[m_keys2[i]]) )
                 {
@@ -183,7 +183,7 @@ void heart_beat()
 
         foreach(int id, mixed event in events)
         {
-                if( undefinedp(events[id]) ) continue; 
+                if( undefinedp(events[id]) ) continue;
                 if( !event[EVENT_OBJECT] )
                 {       // 删除已遗失物件或函式指标的事件
                         map_delete(events, id);
@@ -215,5 +215,5 @@ void create()
 void start_events()
 {
         if (! query_heart_beat())
-                set_heart_beat(1); 
+                set_heart_beat(1);
 }

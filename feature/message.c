@@ -7,7 +7,7 @@
 //#define MAX_STRING_SIZE                 8000
 #define MAX_MSG_BUFFER 900
 
-static string *msg_buffer = ({});
+nosave string *msg_buffer = ({});
 
 void receive_message(string msgclass, string msg)
 {
@@ -19,7 +19,7 @@ void receive_message(string msgclass, string msg)
 	if(!msg || (len=strlen(msg))<1) return;
 	//added by mon 11/13/97 trying to prevent crash.
 
-	if(len>10000) 
+	if(len>10000)
 	  msg=msg[0..10000]+"\n\nгогого\n";
 	  //added by mon 11/13/97 trying to prevent crash.
 
@@ -34,7 +34,7 @@ void receive_message(string msgclass, string msg)
                 this_object()->relay_message(msgclass, msg);
                 return;
         }
-        
+
 	if( sscanf(msgclass, "%s:%s", subclass, msgclass)==2 ) {
 		switch(subclass) {
 			case "channel":
@@ -61,7 +61,7 @@ void receive_message(string msgclass, string msg)
 
     //if (query_temp("big5")) msg = "/adm/daemons/gb_b5d"->gb_b5(msg);
 //        if (query_temp("big5"))
-//                msg = LANGUAGE_D->GB2Big5(msg); 
+//                msg = LANGUAGE_D->GB2Big5(msg);
 
     if( in_input(me) || in_edit(me) ) {
 		if( sizeof(msg_buffer) < MAX_MSG_BUFFER )
@@ -137,13 +137,13 @@ void receive_snoop(string msg)
 ob=this_object();
         if (objectp(ob = query_snooping(this_object())))
         {
-                if (ob->query_temp("big5") && 
+                if (ob->query_temp("big5") &&
                     ! this_object()->query_temp("big5"))
-                        msg = LANGUAGE_D->Big52GB(msg); 
+                        msg = LANGUAGE_D->Big52GB(msg);
                 else
-                if (! ob->query_temp("big5") && 
-                    this_object()->query_temp("big5")) 
-                        msg = LANGUAGE_D->GB2Big5(msg); 
-        }    
+                if (! ob->query_temp("big5") &&
+                    this_object()->query_temp("big5"))
+                        msg = LANGUAGE_D->GB2Big5(msg);
+        }
 	receive("%" + msg);
 }

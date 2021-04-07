@@ -5,7 +5,7 @@ inherit ITEM;
 //int do_shouzhang();
 #include "/quest/givegift.c"
 int consider_lv(object ob,int a);
-static int i = random(9)+3;
+nosave int i = random(9)+3;
 void create()
 {
         set_name("维新文书", ({ "ft lingpai"}));
@@ -51,7 +51,7 @@ return notify_fail("这不是你的维新文书!!\n");
         }
 
         if ((me->query("jing") < 50))
-        {  
+        {
           tell_object(me,"你的精力不能集中！\n");
           return 1;
         }
@@ -69,7 +69,7 @@ me->add_temp("ftjob",1);
 if( !environment(me)->query("no_fight")
 && random(3)==2)
 {
-obj=new(__DIR__"shiren"); 
+obj=new(__DIR__"shiren");
 obj->do_copy(me,maxpot,2);
 obj->set("usename",me->query("name"));
 obj->move(environment(me));
@@ -78,19 +78,19 @@ me->start_busy(2);
 me->kill_ob(obj);
 obj->kill_ob(me);
 }
-if (me->query_temp("ftjob") >i && 
+if (me->query_temp("ftjob") >i &&
 !me->is_fighting())
 {
 message_vision(HIY"$N守卫时间已经到了，你的任务完成了。\n"NOR,me);
-message_vision(HIG"$N任务完成，把文书交给了别的弟子。\n"NOR,me,ob); 
+message_vision(HIG"$N任务完成，把文书交给了别的弟子。\n"NOR,me,ob);
 me->start_busy(5);
-call_out("destroying", 0, me);                       
+call_out("destroying", 0, me);
 }
 
         return 1;
 }
 void destroying(object me)
-{   
+{
 int exp,pot;
 if (!me) return;
 exp=430+random(31);

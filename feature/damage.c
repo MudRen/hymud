@@ -7,7 +7,7 @@
 #include <move.h>
 
 int ghost = 0;
-static mapping hatred_list;
+nosave mapping hatred_list;
 int add_hatred(object who, int amount);
 object query_max_damage_from();
 int is_ghost() { return ghost; }
@@ -27,7 +27,7 @@ varargs int receive_damage(string type, int damage, object who)
 
 	if( objectp(who)  && who!=this_object() ) set_temp("last_damage_from", who);
 	if( !objectp(who) && objectp(query("last_damage_from"))  && query("last_damage_from")!=this_object() ) who=query("last_damage_from");
-	
+
 	val = (int)query(type) - damage;
 
 	if( val >= 0 ) set(type, val);
@@ -41,8 +41,8 @@ if(this_object()->query_temp("xmud")) 			 tell_object( this_object(), "$xp#\n");
 
  if( objectp(who) && damage>100 ) {
 
-        
-                   
+
+
                 // 仇恨系统
                 if( !userp(this_object()) ) {
 if (this_object()->query_hatred(who) < 500000000)
@@ -162,7 +162,7 @@ void unconcious()
 	int n;
 	object *inv,*ob,env;
 	mapping exits;
-	string str,*dirs,*cdirs,strrk; 
+	string str,*dirs,*cdirs,strrk;
 	mixed *objs;
 
         int j, k, l;
@@ -177,7 +177,7 @@ void unconcious()
 
 	if( !living(this_object()) ) return;
 	if( wizardp(this_object()) && query("env/immortal") ) return;
-	
+
 	//特殊房间改动晕倒 idea
 	if (environment() && environment()->query("alternative_unc")) {
 		environment()->alternative_unc(this_object());
@@ -198,7 +198,7 @@ if (this_object()->query_temp("xmud") && userp(this_object())  )
                                         "无" + "$tqi" +
                                         "0" + "$tmqi" +
                                         "0"+ "$tjing"+"0"+ "$tmjing"+"0"+"$#\n");
-	
+
         if (userp(this_object())&& environment(this_object())->query("bwdhpk"))
         {
                 message_vision(HIR "比武之地，只分胜负，不分生死。$N被打败了但却偷得一命。\n" NOR, this_object());
@@ -285,7 +285,7 @@ message("channel:chat", HIC"【屠人战况】"HIR + " "+this_object()->query("name")+
 
 if( objectp(killer = query_temp("last_damage_from")) )
 {
-if (userp(killer) && killer->query_temp("xmud")) 
+if (userp(killer) && killer->query_temp("xmud"))
 {
 if( objectp(env = environment(killer)) )
 {
@@ -303,23 +303,23 @@ strrk="";
 	 if( inv[i]->query_temp("sleepbag") ) strrk += HIR " <睡在睡袋中>" NOR;
    if(inv[i]->query("disable_type") && !living(inv[i]) )  strrk += HIR + inv[i]->query("disable_type") + NOR;
 	 if( interactive(inv[i])	&&	query_idle( inv[i] ) > 120 ) strrk += HIM " <发呆中>" NOR;
-   if (inv[i]->is_fighting())  strrk = HIR " <战斗中> " NOR + strrk;			
+   if (inv[i]->is_fighting())  strrk = HIR " <战斗中> " NOR + strrk;
 if (inv[i]->query("rider"))
 			str +="$rw#"+inv[i]->name()+"("+inv[i]->query("id")+")" + "<"+inv[i]->query("rider") +strrk+">\n";
-		else	
+		else
 			str +="$rw#"+inv[i]->name()+"("+inv[i]->query("id")+")"+strrk+"\n";
 		}
 		else{
 		if (inv[i]->query("rider"))
 			str +="$cw#"+ inv[i]->name()+"("+inv[i]->query("id")+")" + "<"+inv[i]->query("rider") +strrk+">\n";
-		else	
+		else
 			str +="$cw#"+ inv[i]->name()+"("+inv[i]->query("id")+")"+strrk+"\n";
 		}
 		}
 	str+="$#\n.\n";
 	tell_object(killer,str);
-	
-}	
+
+}
 
 }
 }
@@ -334,7 +334,7 @@ void revive(int quiet)
 	object env,obj;
 	me = this_object();
 	remove_call_out("revive");
-	
+
 	if (environment())
 	{
 		env = environment();
@@ -354,7 +354,7 @@ void revive(int quiet)
 		COMBAT_D->announce(this_object(), "revive");
 		set_temp("block_msg/all", 0);
 		set("hunmi",0);
-		
+
 		message("system", HIY "\n慢慢地你终于又有了知觉....\n\n" NOR,
 			this_object());
 	} else
@@ -369,7 +369,7 @@ void die()
 	int n;
 	object *inv,*ob,env;
 	mapping exits;
-	string str,*dirs,*cdirs,strrk; 
+	string str,*dirs,*cdirs,strrk;
 	mixed *objs;
 
         int j, k, l;
@@ -422,11 +422,11 @@ message_vision(HIW "$N本来死定了，但一阵白光包围了$N，$N消失在了白光中! \n" NOR,
 		this_object()->set("qi", this_object()->query("max_qi")+100);
 		this_object()->set("eff_qi", this_object()->query("max_qi")+100);
 	this_object()->delete("guardwd");
-        this_object()->delete_temp("in_guard"); 
+        this_object()->delete_temp("in_guard");
                 this_object()->delete_temp("shouwei");
                 this_object()->delete_temp("xhjob_start");
                 this_object()->delete("guardry");
-this_object()->delete_temp("in_guard"); 
+this_object()->delete_temp("in_guard");
 	this_object()->clear_condition();
                 this_object()->apply_condition("nokill",60);
                 this_object()->apply_condition("yzhu_busy",75);
@@ -451,11 +451,11 @@ message_vision(HIW "$N本来死定了，但一阵白光包围了$N，$N消失在了白光中! \n" NOR,
 		this_object()->set("qi", this_object()->query("max_qi")+100);
 		this_object()->set("eff_qi", this_object()->query("max_qi")+100);
 	this_object()->delete("guardwd");
-        this_object()->delete_temp("in_guard"); 
+        this_object()->delete_temp("in_guard");
                 this_object()->delete_temp("shouwei");
                 this_object()->delete_temp("xhjob_start");
                 this_object()->delete("guardry");
-this_object()->delete_temp("in_guard"); 
+this_object()->delete_temp("in_guard");
 this_object()->delete_temp("hdjoblb");
 this_object()->delete_temp("hdjobtg");
 this_object()->delete_temp("hdjobsc");
@@ -499,8 +499,8 @@ return;
                 this_object()->set("jing",100);
                 this_object()->set("eff_qi",this_object()->query("max_qi")/2);
                 this_object()->set("qi",100);
-                
-                
+
+
                 return;
         }
 
@@ -543,7 +543,7 @@ if (userp(this_object())&&  this_object()->query("zhuanbest") && environment(thi
                 message_vision(HIR "一阵光芒过后。$N消失了。\n" NOR, this_object());
                 this_object()->remove_all_killer();
                 this_object()->unconcious();
-		this_object()->set("jing", 150);	
+		this_object()->set("jing", 150);
 		this_object()->set("eff_jing", 150);
 		this_object()->set("qi", 150);
 		this_object()->set("eff_qi", 150);
@@ -567,7 +567,7 @@ if (userp(this_object())&&  this_object()->query("zhuanbest") && environment(thi
 		return;
 	}
 	}
-	
+
       if(userp(this_object())
         && !this_object()->query_condition("killer")
         &&  present("tishen wawa", this_object())
@@ -603,10 +603,10 @@ return;
                 this_object()->move("d/city/wudao4");
                 return;
         }
-        
 
 
-        
+
+
 	// Clear all the conditions by death.
 this_object()->remove_all_enemy();
 this_object()->remove_all_killer();
@@ -626,7 +626,7 @@ if (!this_object()->query_condition("killer"))
 {
 	this_object()->clear_condition();
 }
-    //call clear not here , in combatd.c 
+    //call clear not here , in combatd.c
         this_object()->set("killbyname","死因不明");
 	COMBAT_D->announce(this_object(), "dead");
 	if( objectp(killer = query_temp("last_damage_from")) &&
@@ -651,7 +651,7 @@ if (!this_object()->query_condition("killer"))
 	this_object()->start_busy(2);
 }
         }
-		
+
 
 	if( objectp(corpse = CHAR_D->make_corpse(this_object(), killer)) )
 	{
@@ -666,7 +666,7 @@ if (!this_object()->query_condition("killer"))
 
 if( objectp(killer = query_temp("last_damage_from")) )
 {
-if (userp(killer) && killer->query_temp("xmud")) 
+if (userp(killer) && killer->query_temp("xmud"))
 {
 if( objectp(env = environment(killer)) )
 {
@@ -688,20 +688,20 @@ strrk="";
    if (inv[i]->is_fighting())  strrk = HIR " <战斗中> " NOR + strrk;
 if (inv[i]->query("rider"))
 			str +="$rw#"+inv[i]->name()+"("+inv[i]->query("id")+")" + "<"+inv[i]->query("rider") +strrk+">\n";
-		else	
+		else
 			str +="$rw#"+inv[i]->name()+"("+inv[i]->query("id")+")"+strrk+"\n";
 		}
 		else{
 		if (inv[i]->query("rider"))
 			str +="$cw#"+ inv[i]->name()+"("+inv[i]->query("id")+")" + "<"+inv[i]->query("rider") +strrk+">\n";
-		else	
+		else
 			str +="$cw#"+ inv[i]->name()+"("+inv[i]->query("id")+")"+strrk+"\n";
 		}
 		}
 	str+="$#\n";
 	tell_object(killer,str);
-	
-}	
+
+}
 
 }
 }
@@ -737,7 +737,7 @@ int heal_up()
 	int update_flag, i;
 	mapping my;
 	object ob=this_object();
-     
+
 	//	object where = environment(me);
 
 //	if( this_object()->is_fighting() ) return -1;
@@ -746,11 +746,11 @@ int heal_up()
 
 	my = query_entire_dbase();
 
-	if( my["water"] > 0 ) 
+	if( my["water"] > 0 )
 	{
-	 my["water"] -= 1;update_flag++; 
+	 my["water"] -= 1;update_flag++;
 	}
-	if( my["food"] > 0 ) 
+	if( my["food"] > 0 )
 	{
 	my["food"] -= 1;
 	if ( my["food"] == ob->max_food_capacity()*0.3 )
@@ -762,14 +762,14 @@ int heal_up()
 		}
 	if ( my["food"] == ob->max_food_capacity()*0.1 )
 		{
-			if (((int)ob->query("age")<20 && this_object()->query("combat_exp") < 2500000) || ob->query_temp("xmud")) 
+			if (((int)ob->query("age")<20 && this_object()->query("combat_exp") < 2500000) || ob->query_temp("xmud"))
 			{
 			tell_object(ob,HIR "你又饿又冷，浑身发抖，看样子快不行了......\n"NOR);
 			tell_object(ob,HIY "还好路边有位好心的大婶，给了你一碗隔夜的面条，你狼吞虎咽的吞了下去。\n"NOR);
 			ob->set("food",ob->max_food_capacity());ob->set("water",ob->max_water_capacity());
 			}
 		}
-	update_flag++; 
+	update_flag++;
 	}
 
 if (userp(this_object())&& environment(this_object())->query("chatroom") )
@@ -781,9 +781,9 @@ if (userp(this_object())&& environment(this_object())->query("chatroom") )
 	{	if (!ob->query_temp("foods"))
 		{tell_object(ob,HIR "\n你饿得直冒金星，实在是顶不住了。\n"NOR);
 		ob->set_temp("foods",10);}
-	
+
 		if ((int)ob->query_temp("foods") > 1) ob->add_temp("foods",-1);
-		else {tell_object(ob,HIR "\n你饿得快要死了。。。。\n"NOR);  
+		else {tell_object(ob,HIR "\n你饿得快要死了。。。。\n"NOR);
                         if (userp(this_object())&& environment(this_object())->query("pingan") && (int)this_object()->query("age") <= 17)
 		        {tell_object(ob,HIY "还好这儿是平安城，永远不会有饿死的人，平安之光照得你精神饱满。\n"NOR);
 			ob->set("food",ob->max_food_capacity());ob->set("water",ob->max_water_capacity());
@@ -793,7 +793,7 @@ if (userp(this_object())&& environment(this_object())->query("chatroom") )
 					"哇，还有汉堡包耶！，你哗啦两下就吃光了，看来你真是饿坏了！\n"NOR);
 			ob->set("food",ob->max_food_capacity());ob->set("water",ob->max_water_capacity());
 			}else
-			if ((int)ob->query("age")<15) 
+			if ((int)ob->query("age")<15)
 			{
 			tell_object(ob,HIR "你又饿又冷，浑身发抖，看样子快不行了......\n"NOR);
 			tell_object(ob,HIY "还好路边有位好心的大婶，给了你一碗隔夜的面条，你狼吞虎咽的吞了下去。\n"NOR);
@@ -804,11 +804,11 @@ if (userp(this_object())&& environment(this_object())->query("chatroom") )
 			ob->set_temp("foods",10);
 			}
 		}
-		update_flag++; 
+		update_flag++;
 	}
 */
 	if( my["water"] < 1 && userp(this_object()) ) return update_flag;
-    
+
 	i = my["con"] / 3 + my["max_jingli"] / 10;
 	if (ob->is_fighting()) i /= 3;
 	my["jing"] += i;
@@ -859,33 +859,33 @@ mapping query_hatred_list()
         return hatred_list;
 }
 
-object query_max_hatred() 
+object query_max_hatred()
 {
         object *list;
         int i,num,max,flag;
-        
+
         max = 0;
-        if( mapp(hatred_list) ) 
+        if( mapp(hatred_list) )
         {
                 list = keys(hatred_list);
-                if( i = sizeof(hatred_list) ) 
+                if( i = sizeof(hatred_list) )
                 {
-                        while (i--) 
+                        while (i--)
                         {
-                                if( !objectp(list[i]) ) 
+                                if( !objectp(list[i]) )
                                 {
                                         list[i] = 0;
                                         continue;
                                 }
-                                
+
                                 if( hatred_list[list[i]] < 0 )
                                         hatred_list[list[i]] = 0;
-                                        
+
                                 if( !this_object()->is_fighting(list[i])
                                         || environment() != environment(list[i]))
                                         continue;
-                                        
-                                if( hatred_list[list[i]] > max ) 
+
+                                if( hatred_list[list[i]] > max )
                                 {
                                         max = hatred_list[list[i]];
                                         num = i;
@@ -944,7 +944,7 @@ mapping query_combine_damage_list()
         b = allocate(n);
         list = allocate_mapping(n);
 
-        for( i=0;i<n;i++ ) 
+        for( i=0;i<n;i++ )
         {
                 if( !objectp(a[i]) ) continue;
                 if( b[i] ) continue; // 队伍中成员统计过
@@ -952,13 +952,13 @@ mapping query_combine_damage_list()
                 list[a[i]] = hatred_list[a[i]];
 
                 team = a[i]->query_team();
-                if( !team || !sizeof(team) )  
+                if( !team || !sizeof(team) )
                         continue;
 
-                for( j=i+1;j<n;j++ ) 
+                for( j=i+1;j<n;j++ )
                 {
                         if( !objectp(a[j]) ) continue;
-                        if( a[i]->is_team_member(a[j]) ) 
+                        if( a[i]->is_team_member(a[j]) )
                         {
                                 list[a[i]] += hatred_list[a[j]];
                                 b[j] = 1;
@@ -988,7 +988,7 @@ object query_max_damage_from()
 
         for( i=0;i<sizeof(list);i++ )
         {
-                if( !a[i] || !objectp(a[i])) 
+                if( !a[i] || !objectp(a[i]))
                         continue;
                 if( list[a[i]]> max )
                 {
@@ -998,4 +998,3 @@ object query_max_damage_from()
         }
         return a[n];
 }
-

@@ -2,7 +2,7 @@
 
 #include <ansi.h>
 
-static mapping essence = ([
+nosave mapping essence = ([
 "weapon":({
 ([
 	"name":                     HIW"岫玉",
@@ -13,7 +13,7 @@ static mapping essence = ([
 	"level":                    1,
 	"value":                    ({50000,30000}),
 	"damage":                   ({1,30}),
-	"status":                   ({0,2}),	
+	"status":                   ({0,2}),
 ]),
 ([
 	"name":                     YEL"独玉",
@@ -21,10 +21,10 @@ static mapping essence = ([
 	"long":                     "这是一块“独山玉”，看上去隐晶质，质地细腻，坚硬致密。\n",
 	"weight":                   2500,
 	"unit":                     "块",
-	"level":                    2,	
+	"level":                    2,
 	"damage":                   ({10,30}),
 	"status":                   ({1,2}),
-	"value":                    ({80000,40000}),		
+	"value":                    ({80000,40000}),
 ]),
 ([
 	"name":                     HIY"南玉",
@@ -33,9 +33,9 @@ static mapping essence = ([
 	"weight":                   2500,
 	"unit":                     "块",
 	"value":                    ({120000,50000}),
-	"level":                    4,	
+	"level":                    4,
 	"damage":                   ({20,30}),
-	"status":                   ({2,2}),		
+	"status":                   ({2,2}),
 ]),
 ([
 	"name":                     HIB"密玉",
@@ -44,9 +44,9 @@ static mapping essence = ([
 	"weight":                   2500,
 	"unit":                     "块",
 	"value":                    ({170000,60000}),
-	"level":                    6,	
+	"level":                    6,
 	"damage":                   ({30,40}),
-	"status":                   ({2,3}),		
+	"status":                   ({2,3}),
 ]),
 ([
 	"name":                     GRN"风雷玉",
@@ -55,9 +55,9 @@ static mapping essence = ([
 	"weight":                   2500,
 	"unit":                     "块",
 	"value":                    ({200300,70000}),
-	"level":                    8,	
+	"level":                    8,
 	"damage":                   ({40,80}),
-	"status":                   ({3,3}),	
+	"status":                   ({3,3}),
 ]),
 ([
 	"name":                     HIY"龙鳞玉",
@@ -66,13 +66,13 @@ static mapping essence = ([
 	"weight":                   2500,
 	"unit":                     "块",
 	"value":                    ({400300,90000}),
-	"level":                    10,	
+	"level":                    10,
 	"damage":                   ({50,80}),
-	"status":                   ({4,2}),	
+	"status":                   ({4,2}),
 ]),
 }),
 "armor":({
-([	
+([
 	"name":                     HIW"癍玉",
 	"id":                       ({"banyu","jade","yu"}),
 	"long":                     "有细微斑点，出产在华南温泉的小块碎玉。\n",
@@ -89,10 +89,10 @@ static mapping essence = ([
 	"long":                     "通体流丽，光彩凝和，是来自高丽国的玉石。\n",
 	"weight":                   2500,
 	"unit":                     "块",
-	"level":                    2,	
+	"level":                    2,
 	"armor":                   ({5,15}),
 	"status":                   ({1,2}),
-	"value":                    ({80000,40000}),		
+	"value":                    ({80000,40000}),
 ]),
 ([
 	"name":                     HIY"脂玉",
@@ -101,9 +101,9 @@ static mapping essence = ([
 	"weight":                   2500,
 	"unit":                     "块",
 	"value":                    ({120000,50000}),
-	"level":                    4,	
+	"level":                    4,
 	"armor":                   ({10,20}),
-	"status":                   ({2,2}),		
+	"status":                   ({2,2}),
 ]),
 ([
 	"name":                     HIB"香凝玉",
@@ -112,9 +112,9 @@ static mapping essence = ([
 	"weight":                   2500,
 	"unit":                     "块",
 	"value":                    ({170000,60000}),
-	"level":                    6,	
+	"level":                    6,
 	"armor":                   ({20,30}),
-	"status":                   ({2,3}),		
+	"status":                   ({2,3}),
 ]),
 ([
 	"name":                     GRN"绿玉髓",
@@ -123,9 +123,9 @@ static mapping essence = ([
 	"weight":                   2500,
 	"unit":                     "块",
 	"value":                    ({200300,70000}),
-	"level":                    8,	
+	"level":                    8,
 	"armor":                   ({35,40}),
-	"status":                   ({3,3}),	
+	"status":                   ({3,3}),
 ]),
 ([
 	"name":                     GRN"凤瓴玉",
@@ -134,7 +134,7 @@ static mapping essence = ([
 	"weight":                   2500,
 	"unit":                     "块",
 	"value":                    ({400300,90000}),
-	"level":                    10,	
+	"level":                    10,
 	"armor":                   ({45,40}),
 	"status":                   ({4,2}),
 ]),
@@ -150,7 +150,7 @@ int do_combine(string arg)
 {
 	int i,j,k;
 	object *inv, gem, me = this_player(),newgem;
- 
+
 	if (!arg || arg == "")
 		return notify_fail("你想合并什么材料？\n");
 	if (arg != query("id")) return 0;
@@ -174,7 +174,7 @@ j=query("level");
 j=j+1;
 if (query("ayushi")==1)
 	{
-j=j+6;		
+j=j+6;
 }
 j=j+1;
 k=3;
@@ -192,7 +192,7 @@ message_vision(HIG"在$N的内力下 " + name() + HIG"品质得到了提升变成"+newgem->que
 else
 {
 				message_vision(RED"$N大叫一声不好! " + name() + RED"突然裂开了，失去了光泽！\n", me);
-	
+
 }
 				destruct(gem);
 				destruct(inv[i]);

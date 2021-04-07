@@ -32,9 +32,9 @@ mapping *TYPE1 = ({
         (["TYPE1":"WHIP","TYPE2":"whip","TYPE3":"鞭","TYPE4":"根"]),
         (["TYPE1":"CLUB","TYPE2":"club","TYPE3":"棍","TYPE4":"根"]),
         (["TYPE1":"STAFF","TYPE2":"staff","TYPE3":"杖","TYPE4":"根"]),
-        (["TYPE1":"THROWING","TYPE2":"throwing","TYPE3":"暗器","TYPE4":"支"]),        	        	        	
-        (["TYPE1":"DAGGER","TYPE2":"dagger","TYPE3":"匕首","TYPE4":"把"]),        	        	        	        	
-        (["TYPE1":"AXE","TYPE2":"axe","TYPE3":"斧","TYPE4":"柄"]), 	
+        (["TYPE1":"THROWING","TYPE2":"throwing","TYPE3":"暗器","TYPE4":"支"]),
+        (["TYPE1":"DAGGER","TYPE2":"dagger","TYPE3":"匕首","TYPE4":"把"]),
+        (["TYPE1":"AXE","TYPE2":"axe","TYPE3":"斧","TYPE4":"柄"]),
 });
 
 mapping *TYPE2 = ({
@@ -46,9 +46,9 @@ mapping *TYPE2 = ({
         (["TYPE1":"NECK","TYPE2":"neck","TYPE3":"项链","TYPE4":"串"]),
         (["TYPE1":"SURCOAT","TYPE2":"surcoat","TYPE3":"肚带","TYPE4":"条"]),
         (["TYPE1":"SHIELD","TYPE2":"shield","TYPE3":"盾","TYPE4":"面"]),
-        (["TYPE1":"WAIST","TYPE2":"waist","TYPE3":"腰带","TYPE4":"条"]),        	        	        	
-        (["TYPE1":"WRISTS","TYPE2":"wrists","TYPE3":"护腕","TYPE4":"双"]),        	        	        	        	
-        	
+        (["TYPE1":"WAIST","TYPE2":"waist","TYPE3":"腰带","TYPE4":"条"]),
+        (["TYPE1":"WRISTS","TYPE2":"wrists","TYPE3":"护腕","TYPE4":"双"]),
+
 });
 
 
@@ -64,11 +64,11 @@ mapping *TYPE3 = ({
         (["TYPE1":WHT"天"NOR,"TYPE2":"wtypeI"]),
         (["TYPE1":BBLK"地"NOR,"TYPE2":"wtypeJ"]),
         (["TYPE1":HIC"人"NOR,"TYPE2":"wtypeK"]),
-        (["TYPE1":HIR"魔"NOR,"TYPE2":"wtypeL"]),        	        	        	        	        	        	        	        	        	        	        	    	        	        	        	
-        	
+        (["TYPE1":HIR"魔"NOR,"TYPE2":"wtypeL"]),
+
 });
 
-static mapping	Special_Class =	([
+nosave mapping	Special_Class =	([
 RED"干将" : ([	"id": "ganjiang",
 		"long2"	: RED"干将威力无比，能开天辟地，荡妖除魔！\n"NOR,
 		"weapon_prop":         ([ "damage":70 ]),//180
@@ -134,25 +134,25 @@ RED"龙泉" : ([	"id": "longquan",
 		]),
 ]);
 
-static mapping	Super_Class = ([
-	HIM"轩辕" : ([	"id":	"xuanyuan",	
+nosave mapping	Super_Class = ([
+	HIM"轩辕" : ([	"id":	"xuanyuan",
 			"long2": HIM"昔日黄帝持此物立于指南车上，驱迷雾，扫阴霾，率应龙旱魃，御百兽而战蚩尤！\n"NOR,
 		]),
 	HIR"神通" : ([	"id":	"shentong",
 			"long2":	HIR"天兵神通，走势要平善，气要随行，两眼顾尖，气沉两足稳，
 身法需自然，身行如飞燕，身落如停风，收如花絮，刺如钢钉！\n"NOR,
 		]),
-	HIG"无极" : ([	"id":	"wuji",		
+	HIG"无极" : ([	"id":	"wuji",
 			"long2": HIG"此物已达出神入化，登峰造极，神乎其神之境界！俗说万物归宗，便是这“无极”！\n"NOR,
 		]),
-	HIW"八卦" : ([	"id":	"bagua",	
+	HIW"八卦" : ([	"id":	"bagua",
 			"long2": HIW"八卦有“休”“生”“伤”“杜”“死”“景”“惊”“开”之别，创自诸葛武候，集天下万变于一身！\n"NOR,
 		]),
-	HIB"乔依乌斯" :	([	"id":	"joeywus",	
+	HIB"乔依乌斯" :	([	"id":	"joeywus",
 			"long2": HIB"在西方查理曼统治的时代，最简朴的剑也能值三头母牛的价钱。而查理大帝自己的那把传奇式
 的神兵“乔依乌斯”据说是半人半神的“韦兰铁匠”所造，乃当世界神兵！\n"NOR,
 		]),
-	HIW"太白" : ([	"id":	"taibai",	
+	HIW"太白" : ([	"id":	"taibai",
 			"long2": HIW"
 		赵客缦胡缨  吴钩霜雪明		银鞍照白马  飒沓如流星
 		十步杀一人  千里不留行		事了拂衣去  深藏身与名
@@ -161,35 +161,35 @@ static mapping	Super_Class = ([
 		救赵挥金槌  邯郸先震惊		千秋二壮士  喧赫大梁城
 		纵死侠骨香  不惭世上英		谁能书阁下  白首太玄经\n"NOR,
 		]),
-	HIY"乾坤" : ([	"id":	"qiankun",	
+	HIY"乾坤" : ([	"id":	"qiankun",
 			"long2": HIY"此物左右两边分别以黑白两种奇铁溶铸而成，一黑一白，切合乾坤，包含阴阳之气，好一柄宝物！\n"NOR,
 		]),
-	HIY"太极" : ([	"id":	"taiji",	
+	HIY"太极" : ([	"id":	"taiji",
 			"long2": HIY"太极者，无极而生，阴阳之母也。动之则分，静之则合。无过不及，随曲就伸。
 人刚我柔谓之走，我顺人背谓之粘。动急则急应，动缓则缓随。虽变化万端，而
 理为一贯！\n"NOR,
 		]),
-	HIC"天地" : ([	"id":	"tiandi",	
+	HIC"天地" : ([	"id":	"tiandi",
 			"long2": HIC"天地之初，女娲补天所留下的天地间至尊之物之一经千秋万载所制，功能开天劈地！\n"NOR,
 		]),
-	HIM"风云" : ([	"id":	"fengyun",	
+	HIM"风云" : ([	"id":	"fengyun",
 			"long2": HIM"所谓风云际会，天地变色！仗此行千里，老魔小丑，岂堪一击！\n"NOR,
 		]),
-	HIG"浩气" : ([	"id":	"haoqi",	
+	HIG"浩气" : ([	"id":	"haoqi",
 			"long2": HIG"天地浩气之神兵，扫魔除妖，为国为民，侠之大者！\n"NOR,
 		]),
-	HIR"炼狱" : ([	"id":	"lianyu",	
+	HIR"炼狱" : ([	"id":	"lianyu",
 			"long2": HIR"三十三天下有地，地下有城，城名鬼城，大小妖魔，人神畜生都在此轮回往返，谓之“炼狱”！\n"NOR,
 		]),
-	HIC"三清" : ([	"id":	"sanqing",	
+	HIC"三清" : ([	"id":	"sanqing",
 			"long2": HIC"大道无名，聚气成形，功参造化，一是三清！这便是“老子一罡化三清。”\n"NOR,
 		]),
-	HIC"昆仑" : ([	"id":	"kunlun",	
+	HIC"昆仑" : ([	"id":	"kunlun",
 			"long2": HIC"	笑江湖浪迹十年游，空负少年头。
-	对铜陀巷泊，吟情渺渺，心事悠悠！ 
-	酒令诗残梦断，南国正清愁。 
-	把剑凄然望，无处招归舟。 
- 
+	对铜陀巷泊，吟情渺渺，心事悠悠！
+	酒令诗残梦断，南国正清愁。
+	把剑凄然望，无处招归舟。
+
 	明月天涯路远，问谁留楚佩，弄影中洲？
 	数英雄儿女，俯仰古今愁。
 	难消受灯昏罗帐，伥昙花一现恨难休！
@@ -198,13 +198,13 @@ static mapping	Super_Class = ([
 ]);
 
 
-static mapping	Great_Class = ([
+nosave mapping	Great_Class = ([
 	CYN"帝王":	"diwang",	CYN"王者":	"wangzhe",
-	CYN"天后":	"tianhou",	CYN"霸王":	"bawang",   
-	CYN"天圣":	"tiansheng",	CYN"神王":	"shenwang",   
-	CYN"妖后":	"yaohou",	BLU"公侯":	"gonghou", 
-	BLU"魔王":	"mowang",	BLU"七星":	"qixing", 
-	BLU"恶鬼":	"egui",		GRN"玉龙":	"yulong", 
+	CYN"天后":	"tianhou",	CYN"霸王":	"bawang",
+	CYN"天圣":	"tiansheng",	CYN"神王":	"shenwang",
+	CYN"妖后":	"yaohou",	BLU"公侯":	"gonghou",
+	BLU"魔王":	"mowang",	BLU"七星":	"qixing",
+	BLU"恶鬼":	"egui",		GRN"玉龙":	"yulong",
 	GRN"玉凤":	"yufeng",	GRN"松鹤":	"songhe",
 	GRN"天龙":	"tianlong",	GRN"地龙":	"dilong",
 	GRN"天凤":	"tianfeng",	GRN"地凤":	"difeng",
@@ -239,22 +239,22 @@ static mapping	Great_Class = ([
 	HIR"火龙":	"huolong",	HIC"冰龙":	"binglong",
 	HIB"黑龙":	"heilong",	HIR"炎龙":	"yanlong",
 	HIC"青龙":	"qinglong",	HIR"朱雀":	"zhuque",
-	HIW"白虎":	"baihu",	HIB"玄武":	"xuanwu",	
+	HIW"白虎":	"baihu",	HIB"玄武":	"xuanwu",
 	GRN"玄机":	"xuanji",	HIG"九天":	"jiutian",
 	HIG"九幽":	"jiuyou",	MAG"九龙":	"jiulong",
 	MAG"五龙":	"wulong",	MAG"三龙":	"sanlong",
 	WHT"生死":	"shengsi",
 ]);
 
-static string *G_3_class = ({
+nosave string *G_3_class = ({
 	"春雨",	"夏雨",	"秋雨",	"冬雨",	"春兰",	"夏荷",	"秋菊",	"冬梅",
 	"玉泉",	"羽泉",	"风泉",	"虎泉",	"怒涛",	"江河",	"漩流",	"清水",
-	"青锋",	"双锋",	"锐气",	"必胜",	"吴钩",	"桃花",	"无敌",	"双手",	
+	"青锋",	"双锋",	"锐气",	"必胜",	"吴钩",	"桃花",	"无敌",	"双手",
 	"吉祥",	"天女",	"花纹",	"暗光",	"松纹",	"蟠钢",	"龟文",	"盘古",
 	"缦理",	"流水",	"芙蓉",	"深渊",	"高山",	"大川",	"流波",	"冰释",
-	"鱼鳞",	"兽皮",	"开山",	"倒海",	"复体",	"锯齿",	"沧海",	"天门",	
-	"地门",	"雁翎",	"飞燕",	"燕尾",	"慑魂",	"夺魂",	"弦月",	"连衡",	
-	"鬼号",	"厉鬼",	"鬼头",	"鬼王",	"牛头",	"拘魂",	"魂魄",	"寒光",	
+	"鱼鳞",	"兽皮",	"开山",	"倒海",	"复体",	"锯齿",	"沧海",	"天门",
+	"地门",	"雁翎",	"飞燕",	"燕尾",	"慑魂",	"夺魂",	"弦月",	"连衡",
+	"鬼号",	"厉鬼",	"鬼头",	"鬼王",	"牛头",	"拘魂",	"魂魄",	"寒光",
 	"阴蛇",	"照海",	"地狱",	"龙头",	"猛虎",	"曙光",	"泼水",	"暗光",
 	"晦光",	"明光",	"天光",	"神光",	"鬼气",	"仙品",	"天水",	"地水",
 	"天锋",	"地锋",	"天雨",	"神雨",	"鬼雨",	"地雨",	"仙雨",	"魔雨",
@@ -271,7 +271,7 @@ static string *G_3_class = ({
 });
 
 
-static string *G_4_class = ({
+nosave string *G_4_class = ({
 	"松柏",	"须弥",	"秀骨",	"清相",	"洛神",	"璎络",	"圣母",	"文昌",
 	"武圣",	"南天",	"北天",	"西天",	"东天",	"飞雪",	"飘雪",	"落雪",
 	"白雪",	"梦雪",	"雪花",	"烟雨",	"霞蔚",	"赤霞",	"潇湘",	"瀚海",
@@ -291,7 +291,7 @@ static string *G_4_class = ({
 	"聚泉",
 });
 
-static string *G_5_class = ({
+nosave string *G_5_class = ({
 	"巨",	"大",	"小",	"怪",	"阖",	"阔",	"宾",	"叠",
 	"钢",	"铁",	"竹",	"柔",	"韧",	"铁",	"铜",	"巧",
 
@@ -310,13 +310,13 @@ mapping *BOOK1 = ({
         (["TYPE1":"手法","TYPE2":"hand"]),
         (["TYPE1":"腿法","TYPE2":"leg"]),
         (["TYPE1":"招架","TYPE2":"parry"]),
-        (["TYPE1":"杖法","TYPE2":"staff"]),        	        	        	        	        	        	        	        	        	        	        	    	        	        	        	
+        (["TYPE1":"杖法","TYPE2":"staff"]),
         (["TYPE1":"掌法","TYPE2":"strike"]),
         (["TYPE1":"剑法","TYPE2":"sword"]),
         (["TYPE1":"暗器","TYPE2":"throwing"]),
         (["TYPE1":"拳脚","TYPE2":"unarmed"]),
-        (["TYPE1":"鞭法","TYPE2":"whip"]),  
-        	
+        (["TYPE1":"鞭法","TYPE2":"whip"]),
+
 });
 
 
@@ -324,25 +324,25 @@ mapping *BOOK1 = ({
 string s_good(int i)
 {
 	switch(i){
-		case 10..60:	return "无比";	
-		case 9:		return "无比";	
-		case 8:		return "极其";	
-		case 7:		return "绝对";	
-		case 6:		return "极为";	
-		case 5:		return "相当";	
-		case 4:		return "十分";	
-		case 3:		return "非常";	
-		case 2:		return "比较";	
-		case 1:		return "还算";	
-		case -1:	return "不怎么";	
-		case -2:	return "很不";	
-		case -3:	return "极不";	
-		default:	return "一般";	
+		case 10..60:	return "无比";
+		case 9:		return "无比";
+		case 8:		return "极其";
+		case 7:		return "绝对";
+		case 6:		return "极为";
+		case 5:		return "相当";
+		case 4:		return "十分";
+		case 3:		return "非常";
+		case 2:		return "比较";
+		case 1:		return "还算";
+		case -1:	return "不怎么";
+		case -2:	return "很不";
+		case -3:	return "极不";
+		default:	return "一般";
 	}
 }
 
 
-static mapping MDESC_WEAPON = ([
+nosave mapping MDESC_WEAPON = ([
 	"hantie":         HIC"万年寒冰铁"NOR,
 	"xuantie":	  WHT"玄铁"NOR,
 	"shentie":        RED"万年神铁"NOR,
@@ -356,7 +356,7 @@ static mapping MDESC_WEAPON = ([
 	"default":        "精钢",
 ]);
 
-static mapping MDESC_ARMOR = ([
+nosave mapping MDESC_ARMOR = ([
 	"longcansi":      HIY"龙茧蚕丝"NOR,
 	"tiancansi":      WHT"天蚕丝"NOR,
 	"bingcansi":      HIW"冰蚕丝"NOR,
@@ -370,7 +370,7 @@ static mapping MDESC_ARMOR = ([
 	"default":        "布料",
 ]);
 
-static mapping MDESC_WYU = ([
+nosave mapping MDESC_WYU = ([
 	"youyu":          HIW"岫玉"NOR,
 	"duyu":           YEL"独玉"NOR,
 	"nanyu":          HIY"南玉"NOR,
@@ -380,7 +380,7 @@ static mapping MDESC_WYU = ([
 	"default":        HIW"岫玉"NOR,
 ]);
 
-static mapping MDESC_AYU = ([
+nosave mapping MDESC_AYU = ([
 	"banyu":          HIW"癍玉"NOR,
 	"liuyu":           YEL"琉玉"NOR,
 	"zhiyu":          HIY"脂玉"NOR,
@@ -393,9 +393,9 @@ static mapping MDESC_AYU = ([
 string s_power(int i)
 {
 	if( i >= 1500 )	return HIR"毁天灭地"NOR;
-	if( i >= 1280 )	return HIR"开元创世"NOR;	
-	if( i >= 1000 )	return HIR"天下无双"NOR;	
-	if( i >= 920 )	return HIM"绝世罕见"NOR;	
+	if( i >= 1280 )	return HIR"开元创世"NOR;
+	if( i >= 1000 )	return HIR"天下无双"NOR;
+	if( i >= 920 )	return HIM"绝世罕见"NOR;
 	if( i >= 800 )	return HIY"举世无匹"NOR;
 	if( i >= 780 )	return HIG"开天劈地"NOR;
 	if( i >= 660 )	return HIB"倚天屠龙"NOR;
@@ -406,7 +406,7 @@ string s_power(int i)
 	if( i >= 160 )	return GRN"水准以上"NOR;
 	if( i >= 120 )	return BLU"不错"NOR;
 	if( i >	60 )	return CYN"不小"NOR;
-	if( i >= 1 )	return CYN"一般"NOR;	
+	if( i >= 1 )	return CYN"一般"NOR;
 	if( i <= 0 )	return "极差";
 	if( i <= -20 )	return "低劣";
 	return "一般";
@@ -416,9 +416,9 @@ string s_power(int i)
 string s_powera(int i)
 {
 	if( i >= 500 )	return HIR"毁天灭地"NOR;
-	if( i >= 480 )	return HIR"开元创世"NOR;	
-	if( i >= 400 )	return HIR"天下无双"NOR;	
-	if( i >= 380 )	return HIM"绝世罕见"NOR;	
+	if( i >= 480 )	return HIR"开元创世"NOR;
+	if( i >= 400 )	return HIR"天下无双"NOR;
+	if( i >= 380 )	return HIM"绝世罕见"NOR;
 	if( i >= 350 )	return HIY"举世无匹"NOR;
 	if( i >= 300 )	return HIG"开天劈地"NOR;
 	if( i >= 280 )	return HIB"倚天屠龙"NOR;
@@ -429,7 +429,7 @@ string s_powera(int i)
 	if( i >= 100 )	return GRN"水准以上"NOR;
 	if( i >= 80 )	return BLU"不错"NOR;
 	if( i >	50 )	return CYN"不小"NOR;
-	if( i >= 1 )	return CYN"一般"NOR;	
+	if( i >= 1 )	return CYN"一般"NOR;
 	if( i <= 0 )	return "极差";
 	if( i <= -20 )	return "低劣";
 	return "一般";
@@ -452,9 +452,9 @@ string w_power(int i)
 	if( i >= 16 )	return HIY"灭世"NOR;
   if( i >= 15 )	return HIR"毁天"NOR;
 	if( i >= 14 )	return HIR"创世"NOR;
-	if( i >= 13 )	return HIR"开元"NOR;	
-	if( i >= 12 )	return HIR"无双"NOR;	
-	if( i >= 11 )	return HIM"绝世"NOR;	
+	if( i >= 13 )	return HIR"开元"NOR;
+	if( i >= 12 )	return HIR"无双"NOR;
+	if( i >= 11 )	return HIM"绝世"NOR;
 	if( i >= 10 )	return HIY"天圣"NOR;
 	if( i >= 9 )	return HIG"魔王"NOR;
 	if( i >= 8 )	return HIB"举世"NOR;
@@ -474,9 +474,9 @@ string w_power2(int i)
 	if( i >= 200 )	return HIY"灭世"NOR;
   if( i >= 180 )	return HIR"毁天"NOR;
 	if( i >= 160 )	return HIR"创世"NOR;
-	if( i >= 130 )	return HIR"开元"NOR;	
-	if( i >= 120 )	return HIR"无双"NOR;	
-	if( i >= 110 )	return HIM"绝世"NOR;	
+	if( i >= 130 )	return HIR"开元"NOR;
+	if( i >= 120 )	return HIR"无双"NOR;
+	if( i >= 110 )	return HIM"绝世"NOR;
 	if( i >= 100 )	return HIY"天圣"NOR;
 	if( i >= 90 )	return HIG"魔王"NOR;
 	if( i >= 80 )	return HIB"举世"NOR;
@@ -496,13 +496,13 @@ string w_power2(int i)
 string s_good2(int i)
 {
 	switch(i){
-    case 6:		return MAG"毁天灭地"NOR;	
-		case 5:		return HIC"无双无对"NOR;	
-		case 4:		return WHT"绝世无双"NOR;	
-		case 3:		return HIB"举世罕见"NOR;	
-		case 2:		return RED"完美精致"NOR;	
-		case 1:		return GRN"精致细美"NOR;	
-		default:	return YEL"一般粗劣"NOR;	
+    case 6:		return MAG"毁天灭地"NOR;
+		case 5:		return HIC"无双无对"NOR;
+		case 4:		return WHT"绝世无双"NOR;
+		case 3:		return HIB"举世罕见"NOR;
+		case 2:		return RED"完美精致"NOR;
+		case 1:		return GRN"精致细美"NOR;
+		default:	return YEL"一般粗劣"NOR;
 	}
 }
 
@@ -559,7 +559,7 @@ int weaponmake(int sl,int ty,int lv,int zl,string path)
   int basegifttext,basesztest,basefhtest;
   int yushi,color;
   me=this_player();
-	
+
 
   color=random(13);
 
@@ -604,17 +604,17 @@ yushi=lv/2+2;
 		case 1:	material="qingtong"; break;
 		case 2:	material="shengtie"; break;
 case 3:	material="ruantie"; break;
-case 4:	material="lushi"; break;				
+case 4:	material="lushi"; break;
 case 5:	material="liuhuashi"; break;
-case 6:	material="ruanying"; break;				
-case 7:	 material="jintie"; break;	
-case 8:	material="shentie";	 break;	
-case 9:	material="xuantie";	 break;	
-case 10:	material="hantie";	 break;	
+case 6:	material="ruanying"; break;
+case 7:	 material="jintie"; break;
+case 8:	material="shentie";	 break;
+case 9:	material="xuantie";	 break;
+case 10:	material="hantie";	 break;
 		default: material="qingtong";	break;
 	}
-	
-		
+
+
 
 
 
@@ -637,7 +637,7 @@ if (lev==6)
     weaponlong = Special_Class[weaponname]["long2"];
 		weaponname	= keys(Special_Class)[i] + "之" + type["TYPE3"]+NOR;
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=6+random(25);
 //价值
@@ -667,7 +667,7 @@ if (lev==5)
 		weaponname	= keys(Super_Class)[i] + "之" + type["TYPE3"]+NOR;
 
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=5+random(25);
 //价值
@@ -687,7 +687,7 @@ skilllevtext=60*lev;
 //出现的机率
 is=5;
 
-}		
+}
 else
 if (lev==4)
 {
@@ -697,7 +697,7 @@ if (lev==4)
     weaponlong = keys(Great_Class)[i] + "之" + type["TYPE3"]+NOR;
 		weaponname	= keys(Great_Class)[i] + "之" + type["TYPE3"]+NOR;
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=4+random(22);
 //价值
@@ -716,7 +716,7 @@ basefhtest=4;
 skilllevtext=80*lev;
 //出现的机率
 is=6;
-}		
+}
 else
 if (lev==3)
 {
@@ -726,7 +726,7 @@ if (lev==3)
     weaponlong = G_3_class[i] + "之" + type["TYPE3"]+NOR;
 		weaponname	= order[color] +G_3_class[i] + "之" + type["TYPE3"]+NOR;
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=3+random(20);
 //价值
@@ -746,7 +746,7 @@ skilllevtext=80*lev;
 //出现的机率
 is=7;
 
-}		
+}
 else
 if (lev==2)
 {
@@ -756,7 +756,7 @@ if (lev==2)
     weaponlong = G_4_class[i] + "之" + type["TYPE3"]+NOR;
 		weaponname	= order[color] +G_4_class[i] + "之" + type["TYPE3"]+NOR;
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=2+random(15);
 //价值
@@ -786,7 +786,7 @@ if (lev==1)
     weaponlong = G_5_class[i] + "之" + type["TYPE3"]+NOR;
 		weaponname	= order[color] +G_5_class[i] + "之" + type["TYPE3"]+NOR;
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=1+random(10);
 //价值
@@ -856,7 +856,7 @@ strn +="天灵:"+w_power2(gifttext)+" ";
 }
 else
 {
-  my_file= replace_string(my_file,"inttext","0");		
+  my_file= replace_string(my_file,"inttext","0");
 }
 
 if (random(is)==0)
@@ -906,117 +906,117 @@ my_file= replace_string(my_file,"dextext",	"0");
 if (random(is)==0)
 {
 gifttext=basegifttext+random(lev+8);
-  my_file= replace_string(my_file,"context",	gifttext+"");      
+  my_file= replace_string(my_file,"context",	gifttext+"");
 strn +="天玄:"+w_power2(gifttext)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"context",	"0");      
+my_file= replace_string(my_file,"context",	"0");
 }
 
 if (random(is)==0)
 {
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"armortext",	sztest+"");  
+my_file= replace_string(my_file,"armortext",	sztest+"");
 strn +="巧制:"+w_power2(sztest)+" "+"\n";
 }
 else
 {
-my_file= replace_string(my_file,"armortext",	"0");      
+my_file= replace_string(my_file,"armortext",	"0");
 }
 
 if (random(is)==0)
 {
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"defensetext",	sztest+""); 
+my_file= replace_string(my_file,"defensetext",	sztest+"");
 strn +="体灵:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"defensetext",	"0");      
+my_file= replace_string(my_file,"defensetext",	"0");
 }
 
 if (random(is)==0)
 {
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"dodgetext",	sztest+"");  
+my_file= replace_string(my_file,"dodgetext",	sztest+"");
 strn +="白石:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"dodgetext",	"0");      
+my_file= replace_string(my_file,"dodgetext",	"0");
 }
 
 if (random(is)==0)
 {
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"parrytest",	sztest+"");  
+my_file= replace_string(my_file,"parrytest",	sztest+"");
 strn +="紫石:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"parrytest",	"0");      
+my_file= replace_string(my_file,"parrytest",	"0");
 }
 
 if (random(is)==0)
 {
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"attacktest",	sztest+"");  
+my_file= replace_string(my_file,"attacktest",	sztest+"");
 strn +="闪电:"+w_power2(sztest)+" "+"\n";
 }
 else
 {
-my_file= replace_string(my_file,"attacktest",	"0");      
+my_file= replace_string(my_file,"attacktest",	"0");
 }
 
 if (random(is)==0)
-{ 
+{
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"neilitext",	sztest+"");  
+my_file= replace_string(my_file,"neilitext",	sztest+"");
 strn +="周天:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"neilitext",	"0");      
+my_file= replace_string(my_file,"neilitext",	"0");
 }
 
 if (random(is)==0)
-{ 
+{
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"qitext",	sztest+"");  
+my_file= replace_string(my_file,"qitext",	sztest+"");
 strn +="长生:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"qitext",	"0");      
+my_file= replace_string(my_file,"qitext",	"0");
 }
 
 if (random(is)==0)
-{ 
+{
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"jingtext",	sztest+"");  
-my_file= replace_string(my_file,"jinglitext",	sztest+"");  
+my_file= replace_string(my_file,"jingtext",	sztest+"");
+my_file= replace_string(my_file,"jinglitext",	sztest+"");
 strn +="不老:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"jingtext",	"0");   
-my_file= replace_string(my_file,"jinglitext",	"0");      
+my_file= replace_string(my_file,"jingtext",	"0");
+my_file= replace_string(my_file,"jinglitext",	"0");
 }
 
 if (random(is)==0)
 {
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"damagetext",	sztest+"");  
+my_file= replace_string(my_file,"damagetext",	sztest+"");
 strn +="威力:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"damagetext",	"0");      
+my_file= replace_string(my_file,"damagetext",	"0");
 }
 
-my_file= replace_string(my_file,"skillnametext",	BOOK1[i]["TYPE2"]);  
-my_file= replace_string(my_file,"skilllevtext",	skilllevtext+""); 
+my_file= replace_string(my_file,"skillnametext",	BOOK1[i]["TYPE2"]);
+my_file= replace_string(my_file,"skilllevtext",	skilllevtext+"");
 
 
 strnf="";
@@ -1143,7 +1143,7 @@ my_file= replace_string(my_file,"wtypeKtext",	"0");
 if (random(is)==0 )
 {
 fhtest=basefhtest+random(5+lev);
-my_file= replace_string(my_file,"wtypeLtext",	fhtest+"");  
+my_file= replace_string(my_file,"wtypeLtext",	fhtest+"");
 strnf +=TYPE3[11]["TYPE1"]+":"+ w_power(fhtest) +	" ";
 }
 else
@@ -1159,13 +1159,13 @@ my_file= replace_string(my_file,"wtypeLtext",	"0");
 		case "hantie":	str += HIC"万年寒冰铁"NOR; break;
 		case "xuantie":	str += WHT"玄铁"NOR; break;
 case "shentie":	str += RED"万年神铁"NOR; break;
-case "jintie":	str += HIY"金铁"NOR; break;				
+case "jintie":	str += HIY"金铁"NOR; break;
 case "ruanying":	str += HIW"软银"NOR; break;
-case "liuhuashi":	str += RED"流花石"NOR; break;				
-case "lushi":	str += HIG"绿石"NOR; break;	
-case "ruantie":	str += YEL"软铁"NOR; break;	
-case "shengtie":	str += YEL"生铁"NOR; break;	
-case "qingtong":	str += GRN"青铜"NOR; break;				
+case "liuhuashi":	str += RED"流花石"NOR; break;
+case "lushi":	str += HIG"绿石"NOR; break;
+case "ruantie":	str += YEL"软铁"NOR; break;
+case "shengtie":	str += YEL"生铁"NOR; break;
+case "qingtong":	str += GRN"青铜"NOR; break;
 		default: str +=	"精钢";	break;
 	}
 	w = weighttext;
@@ -1173,7 +1173,7 @@ case "qingtong":	str += GRN"青铜"NOR; break;
 
 	//mm = w_mp;
   //weili;
-	
+
 	str += "综合评价"	+ s_good2(lev)+" 看起来"	+ ( s_good(rigidity)+"锋利，" ) + "具有"+ s_power(weilitext) + "的威力！";
 if (strnf!="")
 {
@@ -1186,13 +1186,13 @@ if (strnf!="")
 
 
 
-		
+
 
   my_file= replace_string(my_file,"WEAPONTYPE",type["TYPE1"]);
   my_file= replace_string(my_file,"TYPEDM",type["TYPE2"]);
 
   my_file= replace_string(my_file,"WEAPON_SWORD",weaponname+"★");
-  
+
   my_file= replace_string(my_file,"WEAPON_ID",weaponid);
 	my_file= replace_string(my_file,"IDTYPE",type["TYPE2"]);
 	my_file= replace_string(my_file,"LONG_TITLE",str);
@@ -1202,10 +1202,10 @@ if (strnf!="")
 // now we need to write out this file!
 // do NOT change this one!
 	//write_file("/p/residence/weapon/"+name+".o",my_file,1);
-	
+
 // change this one to write_file2
 //rm("/p/residence/weapon/"+name+".c");
-	
+
 name="W"+type["TYPE2"]+sl;
         write_file("/p/item/"+path+"/"+name+".c",my_file,1);
 //write("武器打造成功！！\n");
@@ -1283,13 +1283,13 @@ yushi=lv/2+2;
 		case 1:	material="qingtong"; break;
 		case 2:	material="shengtie"; break;
 case 3:	material="ruantie"; break;
-case 4:	material="lushi"; break;				
+case 4:	material="lushi"; break;
 case 5:	material="liuhuashi"; break;
-case 6:	material="ruanying"; break;				
-case 7:	 material="jintie"; break;	
-case 8:	material="shentie";	 break;	
-case 9:	material="xuantie";	 break;	
-case 10:	material="hantie";	 break;	
+case 6:	material="ruanying"; break;
+case 7:	 material="jintie"; break;
+case 8:	material="shentie";	 break;
+case 9:	material="xuantie";	 break;
+case 10:	material="hantie";	 break;
 		default: material="qingtong";	break;
 	}
 
@@ -1297,14 +1297,14 @@ case 10:	material="hantie";	 break;
 		case 1:	material2="mianhua"; break;
 		case 2:	material2="yama"; break;
 case 3:	material2="dama"; break;
-case 4:	material2="zhuma"; break;				
+case 4:	material2="zhuma"; break;
 case 5:	material2="cansi"; break;
-case 6:	material2="mumianhua"; break;				
-case 7:	 material2="yucansi"; break;	
-case 8:	material2="bingcansi";	 break;	
-case 9:	material2="tiancansi";	 break;	
-case 10:	material2="longcansi";	 break;	
-		
+case 6:	material2="mumianhua"; break;
+case 7:	 material2="yucansi"; break;
+case 8:	material2="bingcansi";	 break;
+case 9:	material2="tiancansi";	 break;
+case 10:	material2="longcansi";	 break;
+
 		default: material="mianhua";	break;
 	}
 
@@ -1325,21 +1325,21 @@ material=me->query_temp("item/kuangshi");
 		case "hantie":	weighttext=2000+random(5000); break;
 		case "xuantie":	weighttext=1800+random(5000); break;
 case "shentie":	weighttext=1500+random(5000); break;
-case "jintie":	weighttext=1300+random(6000); break;				
+case "jintie":	weighttext=1300+random(6000); break;
 case "ruanying":	weighttext=1200+random(6000); break;
-case "liuhuashi":	weighttext=1000+random(5000);; break;				
-case "lushi":	weighttext=950+random(4000); break;	
-case "ruantie":	weighttext=900+random(3000); break;	
-case "shengtie":	weighttext=800+random(2000); break;	
-case "qingtong":	weighttext=700+random(1000); break;				
+case "liuhuashi":	weighttext=1000+random(5000);; break;
+case "lushi":	weighttext=950+random(4000); break;
+case "ruantie":	weighttext=900+random(3000); break;
+case "shengtie":	weighttext=800+random(2000); break;
+case "qingtong":	weighttext=700+random(1000); break;
 		default: weighttext=600+random(1000);	break;
 	}
 
 if (type["TYPE2"]!="cloth" && type["TYPE2"]!="shield" ) weighttext=weighttext/2+1;
-	
+
 //副材料威力成
 	switch(material2){
-		case "longcansi": weilijc=160;break;		
+		case "longcansi": weilijc=160;break;
 		case "tiancansi": weilijc=120; break;
 		case "bingcansi": weilijc=100; break;
 		case "yucansi":   weilijc=90; break;
@@ -1363,7 +1363,7 @@ if (lev==6)
     weaponlong = Special_Class[weaponname]["long2"];
 		weaponname	= keys(Special_Class)[i] + "之" + type["TYPE3"]+NOR;
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=6+random(18);
 //价值
@@ -1392,7 +1392,7 @@ if (lev==5)
     weaponlong = Super_Class[weaponname]["long2"];
 		weaponname	= keys(Super_Class)[i] + "之" + type["TYPE3"]+NOR;
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=5+random(18);
 //价值
@@ -1412,7 +1412,7 @@ skilllevtext=60*lev;
 //出现的机率
 is=6;
 
-}		
+}
 else
 if (lev==4)
 {
@@ -1422,7 +1422,7 @@ if (lev==4)
     weaponlong = keys(Great_Class)[i] + "之" + type["TYPE3"]+NOR;
 		weaponname	= keys(Great_Class)[i] + "之" + type["TYPE3"]+NOR;
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=4+random(18);
 //价值
@@ -1441,7 +1441,7 @@ basefhtest=4;
 skilllevtext=80*lev;
 //出现的机率
 is=7;
-}		
+}
 else
 if (lev==3)
 {
@@ -1451,7 +1451,7 @@ if (lev==3)
     weaponlong = G_3_class[i] + "之" + type["TYPE3"]+NOR;
 		weaponname	= order[color] +G_3_class[i] + "之" + type["TYPE3"]+NOR;
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=3+random(18);
 //价值
@@ -1471,7 +1471,7 @@ skilllevtext=80*lev;
 //出现的机率
 is=8;
 
-}		
+}
 else
 if (lev==2)
 {
@@ -1481,7 +1481,7 @@ if (lev==2)
     weaponlong = G_4_class[i] + "之" + type["TYPE3"]+NOR;
 		weaponname	= order[color] +G_4_class[i] + "之" + type["TYPE3"]+NOR;
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=2+random(12);
 //价值
@@ -1511,7 +1511,7 @@ if (lev==1)
     weaponlong = G_5_class[i] + "之" + type["TYPE3"]+NOR;
 		weaponname	= order[color] +G_5_class[i] + "之" + type["TYPE3"]+NOR;
 //可以学习的种类
-i=random(sizeof(BOOK1));		
+i=random(sizeof(BOOK1));
 //硬度
 rigidity=1+random(6);
 //价值
@@ -1585,7 +1585,7 @@ strn +="天灵:"+w_power2(gifttext)+" ";
 }
 else
 {
-  my_file= replace_string(my_file,"inttext","0");		
+  my_file= replace_string(my_file,"inttext","0");
 }
 
 if (random(is)==0)
@@ -1635,12 +1635,12 @@ my_file= replace_string(my_file,"dextext",	"0");
 if (random(is)==0)
 {
 gifttext=basegifttext+random(lev+6);
-  my_file= replace_string(my_file,"context",	gifttext+"");      
+  my_file= replace_string(my_file,"context",	gifttext+"");
 strn +="天玄:"+w_power2(gifttext)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"context",	"0");      
+my_file= replace_string(my_file,"context",	"0");
 }
 //write(lev+" ");
 //write(weilitext+" ");
@@ -1653,112 +1653,112 @@ if (type["TYPE2"]!="cloth") weilitext=weilitext/3+1;
 //{
 if (type["TYPE2"]=="cloth" || type["TYPE2"]=="shield") weilitext=weilitext+180;
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"armortext",	weilitext+"");  
+my_file= replace_string(my_file,"armortext",	weilitext+"");
 strn +="巧制:"+w_power2(sztest)+" "+"\n";
 //}
 //else
 //{
-//my_file= replace_string(my_file,"armortext",	"0");      
+//my_file= replace_string(my_file,"armortext",	"0");
 //}
 
 if (random(is)==0)
 {
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"defensetext",	sztest+""); 
+my_file= replace_string(my_file,"defensetext",	sztest+"");
 strn +="体灵:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"defensetext",	"0");      
+my_file= replace_string(my_file,"defensetext",	"0");
 }
 
 if (random(is)==0)
 {
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"dodgetext",	sztest+"");  
+my_file= replace_string(my_file,"dodgetext",	sztest+"");
 strn +="白石:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"dodgetext",	"0");      
+my_file= replace_string(my_file,"dodgetext",	"0");
 }
 
 if (random(is)==0)
 {
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"parrytest",	sztest+"");  
+my_file= replace_string(my_file,"parrytest",	sztest+"");
 strn +="紫石:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"parrytest",	"0");      
+my_file= replace_string(my_file,"parrytest",	"0");
 }
 
 if (random(is)==0)
 {
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"attacktest",	sztest+"");  
+my_file= replace_string(my_file,"attacktest",	sztest+"");
 strn +="闪电:"+w_power2(sztest)+" "+"\n";
 }
 else
 {
-my_file= replace_string(my_file,"attacktest",	"0");      
+my_file= replace_string(my_file,"attacktest",	"0");
 }
 
 if (random(is)==0)
-{ 
+{
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"neilitext",	sztest+"");  
+my_file= replace_string(my_file,"neilitext",	sztest+"");
 strn +="周天:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"neilitext",	"0");      
+my_file= replace_string(my_file,"neilitext",	"0");
 }
 
 if (random(is)==0)
-{ 
+{
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"qitext",	sztest+"");  
+my_file= replace_string(my_file,"qitext",	sztest+"");
 strn +="长生:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"qitext",	"0");      
+my_file= replace_string(my_file,"qitext",	"0");
 }
 
 if (random(is)==0)
-{ 
+{
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"jingtext",	sztest+"");  
-my_file= replace_string(my_file,"jinglitext",	sztest+"");  
+my_file= replace_string(my_file,"jingtext",	sztest+"");
+my_file= replace_string(my_file,"jinglitext",	sztest+"");
 strn +="不老:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"jingtext",	"0");   
-my_file= replace_string(my_file,"jinglitext",	"0");      
+my_file= replace_string(my_file,"jingtext",	"0");
+my_file= replace_string(my_file,"jinglitext",	"0");
 }
 
 if (type["TYPE2"]=="hands")
 {
 sztest=basesztest*2+(lev*20)+100;
-my_file= replace_string(my_file,"damagetext",	sztest+"");  
+my_file= replace_string(my_file,"damagetext",	sztest+"");
 strn +="威力:"+w_power2(basesztest+(lev*5))+" ";
 }
 else if (random(is)==0)
 {
 sztest=basesztest+random(lev*10);
-my_file= replace_string(my_file,"damagetext",	sztest+"");  
+my_file= replace_string(my_file,"damagetext",	sztest+"");
 strn +="威力:"+w_power2(sztest)+" ";
 }
 else
 {
-my_file= replace_string(my_file,"damagetext",	"0");      
+my_file= replace_string(my_file,"damagetext",	"0");
 }
 
-my_file= replace_string(my_file,"skillnametext",	BOOK1[i]["TYPE2"]);  
-my_file= replace_string(my_file,"skilllevtext",	skilllevtext+""); 
+my_file= replace_string(my_file,"skillnametext",	BOOK1[i]["TYPE2"]);
+my_file= replace_string(my_file,"skilllevtext",	skilllevtext+"");
 
 
 strnf="";
@@ -1885,7 +1885,7 @@ my_file= replace_string(my_file,"wtypeKtext",	"0");
 if (random(is)==0 )
 {
 fhtest=basefhtest+random(5+lev);
-my_file= replace_string(my_file,"wtypeLtext",	fhtest+"");  
+my_file= replace_string(my_file,"wtypeLtext",	fhtest+"");
 strnf +=TYPE3[11]["TYPE1"]+":"+ w_power(fhtest) +	" ";
 }
 else
@@ -1901,19 +1901,19 @@ my_file= replace_string(my_file,"wtypeLtext",	"0");
 		case "hantie":	str += HIC"万年寒冰铁"NOR; break;
 		case "xuantie":	str += WHT"玄铁"NOR; break;
 case "shentie":	str += RED"万年神铁"NOR; break;
-case "jintie":	str += HIY"金铁"NOR; break;				
+case "jintie":	str += HIY"金铁"NOR; break;
 case "ruanying":	str += HIW"软银"NOR; break;
-case "liuhuashi":	str += RED"流花石"NOR; break;				
-case "lushi":	str += HIG"绿石"NOR; break;	
-case "ruantie":	str += YEL"软铁"NOR; break;	
-case "shengtie":	str += YEL"生铁"NOR; break;	
-case "qingtong":	str += GRN"青铜"NOR; break;				
+case "liuhuashi":	str += RED"流花石"NOR; break;
+case "lushi":	str += HIG"绿石"NOR; break;
+case "ruantie":	str += YEL"软铁"NOR; break;
+case "shengtie":	str += YEL"生铁"NOR; break;
+case "qingtong":	str += GRN"青铜"NOR; break;
 		default: str +=	"精钢";	break;
 	}
-	
+
 	str += "加上";
 	switch(material2){
-		case "longcansi": str += HIY"龙茧蚕丝"NOR;break;		
+		case "longcansi": str += HIY"龙茧蚕丝"NOR;break;
 		case "tiancansi": str += WHT"天蚕丝"NOR; break;
 		case "bingcansi": str += HIW"冰蚕丝"NOR; break;
 		case "yucansi":   str += GRN"玉蚕丝"NOR; break;
@@ -1925,13 +1925,13 @@ case "qingtong":	str += GRN"青铜"NOR; break;
 		case "mianhua":   str += HIW"棉花"NOR; break;
 		default: str +=	"布料";	break;
 	}
-	
+
 	w = weighttext;
 	str +=	"制成，重"+sprintf("%s", chinese_number(w/500)+"斤"+chinese_number((w%500)/50)+"两"+chinese_number((w%50)/5)+"钱")+"的"+weaponname+"。\n";
 
 	//mm = w_mp;
   //weili;
-	
+
 	str += "综合评价"	+ s_good2(lev)+" 看起来"	+ ( s_good(rigidity)+"坚固，" ) + "具有"+ s_power(weilitext) + "的防护力！";
 if (strnf!="")
 {
@@ -1945,7 +1945,7 @@ if (strnf!="")
 
 
 
-		
+
 
   my_file= replace_string(my_file,"WEAPONTYPE",type["TYPE1"]);
   my_file= replace_string(my_file,"TYPEDM",type["TYPE2"]);

@@ -4,7 +4,7 @@
 #include <weapon.h>
 #include <ansi.h>
 inherit HAMMER;
-static int amount;
+nosave int amount;
 
 void create()
 {
@@ -30,5 +30,3 @@ void create()
 //	set_amount(5);
 	setup();
 }
-
-

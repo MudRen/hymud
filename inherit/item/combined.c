@@ -10,7 +10,7 @@ inherit F_DBASE;
 inherit F_MOVE;
 inherit F_NAME;
 
-static int amount;
+nosave int amount;
 
 void setup()
 {
@@ -18,13 +18,13 @@ void setup()
 
 int query_amount() { return amount; }
 
-void destruct_me() { 
+void destruct_me() {
 			destruct(this_object()); }
 
 void set_amount(int v)
 {
 	if( v < 0 ) error("combine:set_amount less than 1.\n");
-	if( v==0 ) 
+	if( v==0 )
 	{
                    // 为了防止玩家在钱庄利用延时复制金钱！
                    //将物件移走并destruct

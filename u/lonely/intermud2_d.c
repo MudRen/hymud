@@ -37,12 +37,12 @@ inherit F_DBASE;
 
 #define NCH_CHANNEL(x) CHANNEL_D->channel_broadcast("nch", "I2D 精灵："+(string)x)
 
-static string my_address;
-static string localhost = "59.37.59.254";      // mud的ip地址
-static int udp_port = 1897;       // mud的udp端口
+nosave string my_address;
+nosave string localhost = "59.37.59.254";      // mud的ip地址
+nosave int udp_port = 1897;       // mud的udp端口
 
 mapping mudlist=([]);
-static mapping incoming_mudlist=([]);
+nosave mapping incoming_mudlist=([]);
 string save_path = "/data/network/";
 
 int udp_socket,refresh_limit=time(),debug;
@@ -89,7 +89,7 @@ protected void set_incoming_mudlist(string name,mapping info);
 protected void resolve_callback(string addr, string resolved, int key);
 
 //-------------------------------------------------------------------------------------------
-static mapping service_handler = ([
+nosave mapping service_handler = ([
     "mudlist_q" :       (: receive_mudlist_request :),
     "mudlist_a" :       (: receive_mudlist_answer :),
     "ping_q" :          (: receive_ping_request :),
@@ -109,11 +109,11 @@ static mapping service_handler = ([
     "rwho_q" :          (: receive_rwho_request :),
 
 ]);
-static mapping ping_buffer=([]);
-static mapping affirmation_buffer=([]);
-static mapping rwho_buffer=([]);
-static mapping gtell_buffer=([]);
-static mapping msg_buffer=([]);
+nosave mapping ping_buffer=([]);
+nosave mapping affirmation_buffer=([]);
+nosave mapping rwho_buffer=([]);
+nosave mapping gtell_buffer=([]);
+nosave mapping msg_buffer=([]);
 //-------------------------------------------------------------------------------------------
 
 #define GTELL_B         1
@@ -224,7 +224,7 @@ void update_info()
 
         // 定时 MUDLIST_UPDATE_INTERVAL 秒更新一次资讯
         //call_out((: update_info :),MUDLIST_UPDATE_INTERVAL);
-        SCHEDULE_D->set_event(MUDLIST_UPDATE_INTERVAL, 1, this_object(), "update_info"); 
+        SCHEDULE_D->set_event(MUDLIST_UPDATE_INTERVAL, 1, this_object(), "update_info");
 }
 
 // 一开始从这被呼叫 , 这没问题吧 :Q
@@ -358,11 +358,11 @@ void send_udp(string targ, mixed port, string service, mapping info)
         /*
         if( !undefinedp(mudlist[mudname]) && ( (mudlist[mudname]["STATUS"]& GB_CODE) || ( !undefinedp(mudlist[mudname]["ENCODING"]) && lower_case(mudlist[mudname]["ENCODING"])=="gb") ))
                 //if( (mudlist[mudname]["STATUS"]& GB_CODE) || ( !undefinedp(mudlist[mudname]["ENCODING"]) && lower_case(mudlist[mudname]["ENCODING"])=="gb") )
-                msg = (string)LANGUAGE_D->toGB(msg); 
+                msg = (string)LANGUAGE_D->toGB(msg);
         */
         if( !undefinedp(mudlist[mudname]) && ( /*!(mudlist[mudname]["STATUS"]& GB_CODE) ||*/ ( !undefinedp(mudlist[mudname]["ENCODING"]) && lower_case(mudlist[mudname]["ENCODING"])=="big5") ))
                 msg = (string)LANGUAGE_D->toBig5(msg);  // 转换成big5码发出信息
-                
+
         // 送出讯息.
         socket_write(socket, "@@@" + msg + "@@@", targ + " " + port);
         // debug msg
@@ -779,14 +779,14 @@ void receive_ping_request(mapping info)
 void receive_ping_answer(mapping info)
 {
         int status;
-        
+
         string mudname=get_mud_name(info);
         // 有要求对方回 ping 吗?
         if( !test_buffer(mudname,PING_B) )
         {
                 //if( !sscanf(info["PORTUDP"],"%*d") ) return;
                 NCH_CHANNEL("收到不明 Ping Answer From: "+info["HOSTADDRESS"]+":"+info["PORTUDP"]+" [ "+info["NAME"]+" ] ");
-                                
+
                 if(get_info_level(mudname)<1)
                         receive_ping_request(info); // 发送ping
 
@@ -991,7 +991,7 @@ void receive_gchannel_msg(mapping info)
 
         mudname = get_mud_name(info);
         status = fetch_data(get_mud_name(info))["STATUS"];
-        
+
         // 系统自动识别gb/big5码站点
         if( !(status & ENCODE_CONFIRM) && strlen(msg) > 20 )
         {
@@ -1020,7 +1020,7 @@ void receive_gchannel_msg(mapping info)
         if( status & ANTI_AD ) info["CHANNEL"]="ad";
         if( info["CHANNEL"]!="ad" )
         compare_last_msg(mudname,info["MSG"],id);
-                               
+
         // 交付给 CHANNEL_D 处理
         // 作为其他非NTlib的mud，可直接用CHANNEL_D->do_channel(this_object(), info["CHANNEL"], msg, info["EMOTE"]);替换以下的内容
         CHANNEL_D->do_channel(this_object(), info["CHANNEL"], msg, info["EMOTE"]);
@@ -1106,7 +1106,7 @@ void receive_gwiz_msg(mapping info)
         //id = info["WIZNAME"] + "@" + info["NAME"];
         // 有无中文 name ?
         if( info["CNAME"] ) id = info["CNAME"] + "(" + id + ")";
-        
+
         // 是否为 Emote ?
         if( !undefinedp(info["EMOTE"]) )
                 set("channel_id", id);
@@ -1139,7 +1139,7 @@ void receive_gwiz_msg(mapping info)
                 // id = (string)LANGUAGE_D->toGB(id);
                 msg = (string)LANGUAGE_D->toGB(msg);
         }
-        
+
         // 作为其他非NTlib的mud，可直接用CHANNEL_D->do_channel(this_object(), info["CHANNEL"], msg, info["EMOTE"]);替换以下的内容
         CHANNEL_D->do_channel(this_object(), info["CHANNEL"], msg, info["EMOTE"]);
 /*
@@ -1561,4 +1561,3 @@ string query_name()
 {
         return "INTERMUD2 系统(INTERMUD2_D)";
 }
-

@@ -1,6 +1,6 @@
 
 /* <SecCrypt CPL V3R05> */
- 
+
 // command.c
 
 #include <command.h>
@@ -9,7 +9,7 @@
 
 // Let command path be static, thus we can make sure no one can get command
 // path directly from restore_object().
-static string *path;
+nosave string *path;
 
 // Leave this to allow other objects can search your commands such as
 // help, which...
@@ -27,8 +27,8 @@ string find_command(string verb)
          "¸ö":me->query_temp("unit"))
               +me->name()+"£¡\n");
      }
-        } 
-   
+        }
+
    return (string)COMMAND_D->find_command(verb, path);
 }
 
@@ -57,13 +57,13 @@ nomask int command_hook(string arg)
    if (!this_object()) return 0;
    if (!verb) return 0;
 
-   if( !arg 
+   if( !arg
    &&   (environment() && stringp(environment()->query("exits/" + verb)))
    &&   stringp(file = find_command("go"))
    &&   call_other(file, "main", this_object(), verb))
      ;
-   
-   else if( stringp(file = find_command(verb))  
+
+   else if( stringp(file = find_command(verb))
    &&  call_other(file, "main", this_object(), arg))
      ;
 
@@ -156,5 +156,3 @@ nomask void disable_player(string type)
                             // marked living again. block command in alias.c
                             // instead of here.
 }
-
-

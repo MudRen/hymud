@@ -19,548 +19,548 @@ inherit F_DBASE;
 
 
 string  zuji(string str)
-{   
+{
 string output;
-      	if (str=="baituo")  
+      	if (str=="baituo")
 
 	output="白驼山";
 
-if (str=="binghuodao")  
+if (str=="binghuodao")
 
 	output="冰火岛";
 
-if (str=="city")  
+if (str=="city")
 
 	output="扬州";
 
-if (str=="city2" || str=="beijing"  || str=="huanggon"  || str=="huanggong" || str=="beihai")  
+if (str=="city2" || str=="beijing"  || str=="huanggon"  || str=="huanggong" || str=="beihai")
 
 	output="北京城";
 
-if (str=="city4" || str=="changan")   
+if (str=="city4" || str=="changan")
 
 	output="长安城";
 
-if (str=="dali")  
+if (str=="dali")
 
 	output="大理";
 
-if (str=="emei")  
+if (str=="emei")
 
 	output="娥眉山";
 
-if (str=="foshan")  
+if (str=="foshan")
 
 	output="佛山";
 
-if (str=="gaibang")  
+if (str=="gaibang")
 
 	output="丐帮";
 
-if (str=="gaochang")  
+if (str=="gaochang")
 
 	output="高昌迷宫";
 
-if (str=="guanwai")  
+if (str=="guanwai")
 
 	output="关外";
 
-if (str=="guiyun")  
+if (str=="guiyun")
 
 	output="归云庄";
 
-if (str=="gumu")  
+if (str=="gumu")
 
 	output="古墓派";
 
-if (str=="hangzhou")  
+if (str=="hangzhou")
 
 	output="杭州";
 
-if (str=="heimuya")  
+if (str=="heimuya")
 
 	output="黑木崖";
 
-if (str=="hengshan")  
+if (str=="hengshan")
 
 	output="恒山";
 
-if (str=="henshan")  
+if (str=="henshan")
 
 	output="衡山";
 
-if (str=="huanghe")  
+if (str=="huanghe")
 
 	output="黄河九曲";
 
-if (str=="huashan")  
+if (str=="huashan")
 
 	output="华山";
 
-if (str=="jinshe")  
+if (str=="jinshe")
 
 	output="金蛇山洞";
 
-if (str=="lingjiu")  
+if (str=="lingjiu")
 
 	output="灵鹫宫";
 
-if (str=="lingzhou")  
+if (str=="lingzhou")
 
 	output="灵州";
 
-if (str=="meizhuang")  
+if (str=="meizhuang")
 
 	output="梅庄";
 
-if (str=="mingjiao")  
+if (str=="mingjiao")
 
 	output="明教";
 
-if (str=="qingcheng")  
+if (str=="qingcheng")
 
 	output="青城山";
 
-if (str=="quanzhen")  
+if (str=="quanzhen")
 
 	output="全真派";
 
-if (str=="quanzhou")  
+if (str=="quanzhou")
 
 	output="泉州";
 
-if (str=="shaolin")  
+if (str=="shaolin")
 
 	output="少林寺";
 
-if (str=="shenlong")  
+if (str=="shenlong")
 
 	output="神龙岛";
 
-if (str=="songshan")  
+if (str=="songshan")
 
 	output="嵩山";
 
-if (str=="suzhou")  
+if (str=="suzhou")
 
 	output="苏州";
 
-if (str=="taishan")  
+if (str=="taishan")
 
 	output="泰山";
 
-if (str=="taohua")  
+if (str=="taohua")
 
 	output="桃花岛";
 
-if (str=="tianlongsi")  
+if (str=="tianlongsi")
 
 	output="天龙寺";
 
-if (str=="wanjiegu")  
+if (str=="wanjiegu")
 
 	output="万劫谷";
 
-if (str=="wudang")  
+if (str=="wudang")
 
 	output="武当山";
 
-if (str=="xiakedao")  
+if (str=="xiakedao")
 
 	output="侠客岛";
 
-if (str=="xiangyang")  
+if (str=="xiangyang")
 
 	output="襄阳城";
 
-if (str=="xiaoyao")  
+if (str=="xiaoyao")
 
 	output="逍遥林";
 
-if (str=="xingxiu")  
+if (str=="xingxiu")
 
 	output="星宿海";
 
-if (str=="xueshan")  
+if (str=="xueshan")
 
 	output="雪山寺";
 
-if (str=="xuedao")  
+if (str=="xuedao")
 
 	output="大雪山";
 
-if (str=="mr")  
+if (str=="mr")
 
 	output="慕容世家";
 
-if (str=="kunlun")  
+if (str=="kunlun")
 
 	output="昆仑山";
 
-if (str=="tiezhang")  
+if (str=="tiezhang")
 
 	output="铁掌门";
 
-if (str=="huizhu")  
+if (str=="huizhu")
 
 	output="回族部落";
 
-if (str=="yinju")  
+if (str=="yinju")
 
 	output="一灯大师居";
 
-if (str=="menggu")  
+if (str=="menggu")
 
 	output="蒙古草原";
 
-if (str=="qianjin")  
+if (str=="qianjin")
 
 	output="北京千金楼";
 
-if (str=="lingshedao")  
+if (str=="lingshedao")
 
 	output="灵蛇岛";
 
-if (str=="ruzhou")  
+if (str=="ruzhou")
 
 	output="汝州城";
 
-if (str=="kunming")  
+if (str=="kunming")
 
 	output="昆明";
 
-if (str=="jingzhou")  
+if (str=="jingzhou")
 
 	output="荆州";
 
-if (str=="yanjing")  
+if (str=="yanjing")
 
 	output="燕京";
 
-if (str=="lanzhou" || str=="lanzhouchen")  
+if (str=="lanzhou" || str=="lanzhouchen")
 
 	output="兰州";
 
-if (str=="jyguan")  
+if (str=="jyguan")
 
 	output="兰州以北嘉峪关";
 
-if (str=="changcheng")  
+if (str=="changcheng")
 
 	output="北京以北长城";
 
-if (str=="fairyland")  
+if (str=="fairyland")
 
 	output="昆仑的红梅山庄";
 
-if (str=="sdxl")  
+if (str=="sdxl")
 
 	output="剑魔独孤求败墓";
 
-if (str=="jqg")  
+if (str=="jqg")
 
 	output="绝情谷";
 
-if (str=="nio")  
+if (str=="nio")
 
 	output="牛家村";
 
-if (str=="feihu")  
+if (str=="feihu")
 
 	output="闯王宝藏";
 
-if (str=="wuguan")  
+if (str=="wuguan")
 
 	output="襄阳武馆";
 
-if (str=="village")  
+if (str=="village")
 
 	output="华山村";
 
-if (str=="taohuacun")  
+if (str=="taohuacun")
 
 	output="桃花村";
 
-if (str=="pingan")  
+if (str=="pingan")
 
 	output="平安城";
 
-if (str=="lingxiao")  
+if (str=="lingxiao")
 
 	output="凌霄城";
 
-if (str=="wudujiao")  
+if (str=="wudujiao")
 
 	output="五毒教";
 
-if (str=="hj")  
+if (str=="hj")
 
 	output="天山。草原";
-if (str=="dali/yuxu")  
+if (str=="dali/yuxu")
 
 	output="大理玉虚观";
-if (str=="dali/wuliang")  
+if (str=="dali/wuliang")
 
 	output="大理无量山";
-if (str=="huanghe/yyd")  
+if (str=="huanghe/yyd")
 
 	output="黄河萧府";
-if (str=="kaifeng")  
+if (str=="kaifeng")
 
 	output="开封城";
-if (str=="feitian")  
+if (str=="feitian")
 
 	output="飞天御剑流";
-if (str=="japan")  
+if (str=="japan")
 
 	output="日本神户";
-if (str=="tangmen")  
+if (str=="tangmen")
 
 	output="唐门";
-if (str=="luoyang")  
+if (str=="luoyang")
 
 	output="洛阳城";
 
-if (str=="chengdu" || str=="city3")  
+if (str=="chengdu" || str=="city3")
 
 	output="成都";
 
-if (str=="baihuagu")  
+if (str=="baihuagu")
 
 	output="百花谷";
 
-if (str=="heizhao")  
+if (str=="heizhao")
 
 	output="百花谷。黑沼";
 
-if (str=="jiaxing")  
+if (str=="jiaxing")
 
 	output="嘉兴";
 
-if (str=="shiliang")  
+if (str=="shiliang")
 
 	output="温家庄";
 
-if (str=="wuyi")  
+if (str=="wuyi")
 
 	output="武夷山区";
 
-if (str=="yanping")  
+if (str=="yanping")
 
 	output="延平城";
-	
 
-if (str=="jiangling")  
+
+if (str=="jiangling")
 {
 	output="江陵城";
 }
 
-if (str=="yueyang")  
+if (str=="yueyang")
 {
-	output="岳阳城";	
+	output="岳阳城";
 }
 
-if (str=="qilian")  
+if (str=="qilian")
 {
-	output="祁连山";	
+	output="祁连山";
 }
 
-if (str=="shouxihu")  
+if (str=="shouxihu")
 {
-	output="瘦西湖";	
+	output="瘦西湖";
 }
 
-if (str=="wuxi")  
+if (str=="wuxi")
 {
-	output="无锡城";	
+	output="无锡城";
 }
 
-if (str=="yixing")  
+if (str=="yixing")
 {
-	output="宜兴城";	
+	output="宜兴城";
 }
-if (str=="taiwan")  
+if (str=="taiwan")
 {
-	output="台湾地区";	
+	output="台湾地区";
 }
-if (str=="nanyang")  
+if (str=="nanyang")
 {
-	output="南阳地区";	
+	output="南阳地区";
 }
-if (str=="nanshaolin")  
+if (str=="nanshaolin")
 {
-	output="南少林地区";	
-}
-
-if (str=="cangzhou")  
-{
-	output="沧州地区";	
+	output="南少林地区";
 }
 
-if (str=="tanggu")  
+if (str=="cangzhou")
 {
-	output="塘沽城地区";	
+	output="沧州地区";
 }
 
-if (str=="yunhe")  
+if (str=="tanggu")
 {
-	output="京杭大运河";	
+	output="塘沽城地区";
 }
 
-if (str=="hainan")  
+if (str=="yunhe")
 {
-	output="海南岛";	
+	output="京杭大运河";
 }
 
-if (str=="jindezheng")  
+if (str=="hainan")
 {
-	output="景德镇";	
+	output="海南岛";
 }
 
-if (str=="yandang")  
+if (str=="jindezheng")
 {
-	output="雁荡山";	
+	output="景德镇";
 }
 
-if (str=="jinling")  
+if (str=="yandang")
 {
-	output="金陵城";	
+	output="雁荡山";
 }
 
-if (str=="sandboy")  
+if (str=="jinling")
 {
-	output="江南农村";	
+	output="金陵城";
 }
 
-if (str=="huangshan")  
+if (str=="sandboy")
 {
-	output="黄山";	
+	output="江南农村";
 }
 
-if (str=="yubifeng")  
+if (str=="huangshan")
 {
-	output="玉笔峰";	
+	output="黄山";
 }
 
-if (str=="quanzhouchen")  
+if (str=="yubifeng")
 {
-	output="泉州城内";	
+	output="玉笔峰";
 }
 
-if (str=="qingzh")  
+if (str=="quanzhouchen")
 {
-	output="青藏高原";	
+	output="泉州城内";
 }
 
-if (str=="changbaishan" || str=="gaoli")  
+if (str=="qingzh")
 {
-	output="高丽 长白山";	
+	output="青藏高原";
 }
 
-if (str=="annan")  
+if (str=="changbaishan" || str=="gaoli")
 {
-	output="安南附近";	
+	output="高丽 长白山";
 }
 
-if (str=="taiyuan")  
+if (str=="annan")
 {
-	output="太原附近";	
+	output="安南附近";
 }
 
-if (str=="hefei")  
+if (str=="taiyuan")
 {
-	output="合肥附近";	
+	output="太原附近";
 }
 
-if (str=="jiujiang")  
+if (str=="hefei")
 {
-	output="九江附近";	
+	output="合肥附近";
 }
 
-if (str=="baling")  
+if (str=="jiujiang")
 {
-	output="巴陵附近";	
+	output="九江附近";
 }
 
-if (str=="xinjiang")  
+if (str=="baling")
 {
-	output="新疆附近";	
-}
-if (str=="dingxiang")  
-{
-	output="定襄附近";	
-}
-if (str=="suiye")  
-{
-	output="碎叶附近";	
+	output="巴陵附近";
 }
 
-
-if (str=="mayi")  
+if (str=="xinjiang")
 {
-	output="马邑边疆附近";	
+	output="新疆附近";
 }
-if (str=="xuzhou")  
+if (str=="dingxiang")
 {
-	output="徐州城附近";	
+	output="定襄附近";
 }
-if (str=="jinan")  
+if (str=="suiye")
 {
-	output="济南城附近";	
-}
-if (str=="guizhou")  
-{
-	output="贵阳城附近";	
-}
-
-if (str=="nanchang")  
-{
-	output="南昌城附近";	
+	output="碎叶附近";
 }
 
 
-if (str=="changsha")  
+if (str=="mayi")
 {
-	output="长沙城附近";	
+	output="马邑边疆附近";
+}
+if (str=="xuzhou")
+{
+	output="徐州城附近";
+}
+if (str=="jinan")
+{
+	output="济南城附近";
+}
+if (str=="guizhou")
+{
+	output="贵阳城附近";
+}
+
+if (str=="nanchang")
+{
+	output="南昌城附近";
 }
 
 
-if (str=="zhongzhou")  
+if (str=="changsha")
 {
-	output="中州城附近";	
+	output="长沙城附近";
 }
 
-if (str=="xizang" || str=="zangbei")  
+
+if (str=="zhongzhou")
 {
-	output="西藏或藏北附近";	
+	output="中州城附近";
+}
+
+if (str=="xizang" || str=="zangbei")
+{
+	output="西藏或藏北附近";
 }
 
 return output;
 }
 
-object get_object(string name) 
-{ 
-            object ob; 
-            
-            if (ob = find_object(name)) 
-                    return ob; 
-                     
-           sscanf(name, "%s#%*s", name);  
-            return load_object(name); 
-} 
+object get_object(string name)
+{
+            object ob;
+
+            if (ob = find_object(name))
+                    return ob;
+
+           sscanf(name, "%s#%*s", name);
+            return load_object(name);
+}
 
 
 
 
 int gametime;
-static int realtime;
-static int tick;
-static mapping event = allocate_mapping(0);
-static int *real_time = allocate(6);
-static int *game_time = allocate(6);
+nosave int realtime;
+nosave int tick;
+nosave mapping event = allocate_mapping(0);
+nosave int *real_time = allocate(6);
+nosave int *game_time = allocate(6);
 
 
-static  mapping *migongl = ({
+nosave  mapping *migongl = ({
 (["ename":"vrm00","cname":"原始森林","where": "/d/kunming/nanmen","rk": "/p/migong/boss/vrm_0000/entry"  ]),
 (["ename":"vrm01","cname":"海底迷宫","where": "/d/xiakedao/haitan","rk": "/p/migong/boss/vrm_00011/entry"  ]),
 (["ename":"vrm02","cname":"天之尽头","where": "/d/guanwai/tianchi1","rk": "/p/migong/boss/vrm_00021/entry"  ]),
@@ -568,7 +568,7 @@ static  mapping *migongl = ({
 (["ename":"vrm04","cname":"忘忧之园","where": "/d/taiwan/riyuetan","rk": "/p/migong/boss/vrm_00041/entry"  ]),
 (["ename":"vrm05","cname":"火龙之窟","where": "/d/qingcheng/path1","rk": "/p/migong/boss/vrm_00051/entry"  ]),
 (["ename":"vrm06","cname":"迷雾森林","where": "/d/hengshan/daziling","rk": "/p/migong/boss/vrm_00061/entry"  ]),
-(["ename":"vrm07","cname":"百花之谷","where": "/d/xiangyang/caodi5","rk": "/p/migong/boss/vrm_00071/entry"  ]),						
+(["ename":"vrm07","cname":"百花之谷","where": "/d/xiangyang/caodi5","rk": "/p/migong/boss/vrm_00071/entry"  ]),
 (["ename":"vrm08","cname":"回音山谷","where": "/d/emei/yunufeng","rk": "/p/migong/boss/vrm_00081/entry"  ]),
 (["ename":"vrm09","cname":"九天雷云","where": "/d/songshan/fengchantai","rk": "/p/migong/boss/vrm_00091/entry"  ]),
 (["ename":"vrm10","cname":"无底溶洞","where": "/d/dali/yuxiashan","rk": "/p/migong/boss/vrm_00101/entry"  ]),
@@ -576,14 +576,14 @@ static  mapping *migongl = ({
 (["ename":"vrm12","cname":"杀人之庄","where": "/d/beijing/tian_anm","rk": "/p/migong/boss/vrm_0012/entry"  ]),
 (["ename":"vrm13","cname":"红云城堡","where": "/d/huashan/chaoyang","rk": "/p/migong/boss/vrm_0013/entry"  ]),
 (["ename":"vrm14","cname":"红龙之壁","where": "/d/henshan/wangritai","rk": "/p/migong/boss/vrm_0014/entry"  ]),
-(["ename":"vrm15","cname":"玩偶山庄","where": "/d/suzhou/canlangting","rk": "/p/migong/boss/vrm_0015/entry"  ]),				
+(["ename":"vrm15","cname":"玩偶山庄","where": "/d/suzhou/canlangting","rk": "/p/migong/boss/vrm_0015/entry"  ]),
 (["ename":"vrm16","cname":"炎之都市","where": "/d/xingxiu/shashan","rk": "/p/migong/boss/vrm16/maze/entry"  ]),
 (["ename":"vrm17","cname":"水没都市","where": "/d/japan/zhanbu","rk": "/p/migong/boss/vrm17/maze/entry"  ]),
 (["ename":"vrm18","cname":"不归迷宫","where": "/d/huanghe/hetao","rk": "/p/migong/boss/vrm18/maze/entry"  ]),
-(["ename":"vrm19","cname":"飞船遗迹","where": "/d/xizang/shanyao","rk": "/p/migong/boss/vrm19/maze/entry"  ]),	
-(["ename":"vrm20","cname":"王家灵墓","where": "/d/xinjiang/huoyan","rk": "/p/migong/boss/vrm20/maze/entry"  ]),	
-(["ename":"vrm21","cname":"虚神洞窟","where": "/d/zangbei/hellvalley3","rk": "/p/migong/boss/vrm21/maze/entry"  ]),	
-(["ename":"vrm22","cname":"众神宫殿","where": "/d/huanggong/taihedian","rk": "/p/migong/boss/vrm22/maze/entry"  ]),	
+(["ename":"vrm19","cname":"飞船遗迹","where": "/d/xizang/shanyao","rk": "/p/migong/boss/vrm19/maze/entry"  ]),
+(["ename":"vrm20","cname":"王家灵墓","where": "/d/xinjiang/huoyan","rk": "/p/migong/boss/vrm20/maze/entry"  ]),
+(["ename":"vrm21","cname":"虚神洞窟","where": "/d/zangbei/hellvalley3","rk": "/p/migong/boss/vrm21/maze/entry"  ]),
+(["ename":"vrm22","cname":"众神宫殿","where": "/d/huanggong/taihedian","rk": "/p/migong/boss/vrm22/maze/entry"  ]),
 });
 
 
@@ -677,8 +677,8 @@ i=20+random(3);
 }
 
 arg=migongl[i]["ename"];
-                filename = migongl[i]["where"]; 
-                room = get_object(filename);          
+                filename = migongl[i]["where"];
+                room = get_object(filename);
                 maze_door = new(MAZE_DOOR1);
                 maze_door->set("maze_entry", migongl[i]["rk"] );
                 maze_door->set("maze_name", migongl[i]["cname"] );
@@ -686,37 +686,37 @@ arg=migongl[i]["ename"];
 
 dir2=explode(base_name(room),"/");
 rooms=zuji(dir2[1]);
-log_file("log", ctime(time())+" 生成迷宫：" + arg +"\n", 1);        
-        
+log_file("log", ctime(time())+" 生成迷宫：" + arg +"\n", 1);
+
         message("vision", HIG "【" HIR "江湖传言" HIG "】" HIW +
-                room->query("short") + HIW "(" + rooms + 
+                room->query("short") + HIW "(" + rooms +
                 ")一带出现了" + migongl[i]["cname"] + HIW "。\n" NOR, users());
-        
+
         SCHEDULE_D->set_event(3080, 0, this_object(), "close_vrm_entry", i,arg, room, maze_door);
 }
 
 void close_vrm_entry(int i,string arg, object room, object maze_door)
 {
         string rooms;
-string *dir2; 
+string *dir2;
         if ( !room || !maze_door ) return;
-        
+
         destruct(maze_door);
     dir2=explode(base_name(room),"/");
 rooms=zuji(dir2[1]);
         message("vision", HIG"【" HIR"江湖传言" HIG"】" HIW +
-                room->query("short") + HIW "(" + rooms+ ")一带出现的" + 
+                room->query("short") + HIW "(" + rooms+ ")一带出现的" +
                 migongl[i]["cname"] + HIW "消失了。\n" NOR, users());
 }
 
 // 游戏时间的工作排程
-static mixed  game_crontab = ({
+nosave mixed  game_crontab = ({
 //"min hour wday mday mon year" : ({ function })
 "0 0 * 0 0 *"           , (: game_new_year :),                  "每年发一次红包",
 });
 
 // 真实时间的工作排程
-static mixed  real_crontab = ({
+nosave mixed  real_crontab = ({
 "* * * * * *"           , (: SCHEDULE_D->start_events() :),     "每分钟检测排程心跳情况",
 "10 */1 * * * *"         , (: create_vrm_entry("vrm04") :),  "每 1 个小时刷新一次",
 "25 */2 * * * *"         , (: create_vrm_entry("vrm00") :),  "每 2 个小时刷新一次",
@@ -1009,7 +1009,7 @@ void process_realtime()
                 localtime[LT_MDAY]-1,
                 localtime[LT_MON],
                 localtime[LT_YEAR] });
-        
+
         // 每秒执行函式
         process_per_second();
 
@@ -1067,7 +1067,3 @@ string query_name()
 {
         return "时间系统(TIME_D)";
 }
-
-
-
-

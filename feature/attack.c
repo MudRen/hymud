@@ -10,8 +10,8 @@
 #define MAX_OPPONENT	4
 int hate(object me,object ob);
 void meet(string str,object ob);
-static object *enemy = ({});
-static string *killer = ({});
+nosave object *enemy = ({});
+nosave string *killer = ({});
 
 // prototypes
 
@@ -42,27 +42,27 @@ void fight_ob(object ob)
 	if(env && env->query("no_fight")) return;
 	set_heart_beat(1);
 
-	if( member_array(ob, enemy)==-1 ) 
+	if( member_array(ob, enemy)==-1 )
 		enemy += ({ ob });
 }
 
 // This function starts killing between this_object() and ob
 void kill_ob(object ob)
-{       
+{
         object *inv;
                 string uid, mid;
         object me=this_object();
         object env=environment();
-        int i; 
-        
+        int i;
+
         if(env && env->query("no_fight")) return;
         if (!me ) return;
         if (!ob ) return;
-        if( me->query_temp("guarding/living")==ob->query("id"))   
+        if( me->query_temp("guarding/living")==ob->query("id"))
              {
               tell_object(ob, HIR "不能杀你要保护的人！\n" NOR);
               return;
-             } 
+             }
 	if( member_array(ob->query("id"), killer)==-1 )
 		killer += ({ ob->query("id") });
 
@@ -78,16 +78,16 @@ void kill_ob(object ob)
         }
 
 	tell_object(ob, HIR "看起来" + this_object()->name() + "想杀死你！\n" NOR);
-        inv = all_inventory(environment(me));  
+        inv = all_inventory(environment(me));
         for(i=0;i<sizeof(inv);i++)
-           { 
+           {
             if( !living(inv[i]) ) continue;
             else if(inv[i]!=me && inv[i]->query_temp("guarding/living")==ob->query("id") )
-                { 
+                {
                   tell_object(inv[i], HIR ""+ob->query("name")+"受到攻击，你挺身而出，加入战团！\n" NOR);
               inv[i]->kill_ob(me);
-                }  
-           }  
+                }
+           }
 	fight_ob(ob);
 }
 
@@ -112,11 +112,11 @@ object select_opponent()
         object *enemy_selected, *enemy_weak, prefered, *enemy;
         object target;
         string target_name;
-	
+
 	if( !this_object() ) return 0;
-	
+
 	enemy = this_object()->query_enemy();
-	
+
 	if( !sizeof(enemy) ) return 0;
 
 	//which = random(MAX_OPPONENT);
@@ -125,7 +125,7 @@ object select_opponent()
 
 
 
-        if( !userp(this_object()) ) 
+        if( !userp(this_object()) )
         {
                 // 第一步先选出快死的 --〉make sure you die :D
                 // 第二个选择是冒犯你最多的-->max_hatred guy
@@ -140,7 +140,7 @@ object select_opponent()
                         return prefered;
         } else {
                 enemy_selected = enemy;
-                if( stringp(target_name = query("env/target")) ) 
+                if( stringp(target_name = query("env/target")) )
                 {
                         if( objectp(target = present(target_name, environment())) )
                         if( member_array(target, enemy) != -1 )
@@ -150,8 +150,8 @@ object select_opponent()
 
         //which = random(MAX_OPPONENT);
         //return which < sizeof(enemy_selected) ? enemy_selected[which] : enemy_selected[0];
-        
-        return enemy_selected[random(sizeof(enemy_selected))];	
+
+        return enemy_selected[random(sizeof(enemy_selected))];
 }
 
 // Stop fighting ob.
@@ -215,11 +215,11 @@ void reset_action()
 
         me = this_object();
 	prepare = query_skill_prepare();
-	
+
 	if( ob = query_temp("weapon") ) type = ob->query("skill_type");
 	else if ( sizeof(prepare) == 0)	type = "unarmed";
 	else if ( sizeof(prepare) == 1)	type = (keys(prepare))[0];
-	else if ( sizeof(prepare) == 2)	
+	else if ( sizeof(prepare) == 2)
 		type = (keys(prepare))[query_temp("action_flag")];
 
 
@@ -263,26 +263,26 @@ void init()
 	// most of these conditions are checked again in COMBAT_D's auto_fight()
 	// function, these check reduces lots of possible failure in the call_out
 	// launched by auto_fight() and saves some overhead.
-	
-	
+
+
 	if(	is_fighting()
 	||	!living(this_object())
-	||	!(ob = this_player()) 
+	||	!(ob = this_player())
 	||	environment(ob)!=environment()
 	||	!living(ob)
 	||	ob->query("linkdead")
         ||      (!userp(ob) && !userp(this_object() ) ) )
-		return;   
-        
+		return;
+
         if(!undefinedp(this_object()->query("friends/"+ob->query("id"))))
-                return; 
-        
+                return;
+
         if(!undefinedp(this_object()->query("marry/lover"))
              && this_object()->query("marry/lover") == ob->query("id") )
                 return;
- 
+
         if(random(ob->query("kar")+ob->query("per"))> 30)
-                return; 
+                return;
 
 	// Now start check the auto fight cases.
 	if( userp(ob) && is_killing(ob->query("id")) ) {
@@ -295,18 +295,18 @@ void init()
 	} else if( userp(ob) && (string)query("attitude")=="aggressive" ) {
 		COMBAT_D->auto_fight(this_object(), ob, "aggressive");
 		return;
-	}               
+	}
      /*   else if(hate(this_object(),ob)>200)
                {
                 COMBAT_D->auto_fight(this_object(), ob, "aggressive");
-		return; 
-               }   
+		return;
+               }
         return;*/
-}   
+}
 
 void meet(string str,object ob)
-{ 
-  if( environment(this_object()) == environment(ob) ) 
+{
+  if( environment(this_object()) == environment(ob) )
   command(str);
 }
 
@@ -314,20 +314,20 @@ void meet(string str,object ob)
 /*int hate(object me,object ob)
 {
         string str,pai,pai2,temp;
-        int i,j,degree,score1,score2,mp_num; 
+        int i,j,degree,score1,score2,mp_num;
         if( !(pai = me->query("family/family_name")))
-              return 1;   
+              return 1;
         if( !(pai2 = ob->query("family/family_name")))
-             return 1;  
+             return 1;
         if(userp(me))score1=me->query("score");
         else score1 = me->query("combat_exp")/200+1;
         score2 = ob->query("score");
         if(score2 <= 0)score2=1;
         if( pai == pai2 )
             {if(score2>500)
-             call_out("meet",0,"hi "+ob->query("id"),ob); 
-             return 1; 
-            }                              
+             call_out("meet",0,"hi "+ob->query("id"),ob);
+             return 1;
+            }
         str = read_file("/hate/mp_mun",1,1);
         sscanf(str,"%d",mp_num);
         for(i=0;i<mp_num-1;i++)
@@ -338,25 +338,25 @@ void meet(string str,object ob)
         sscanf(str,"%s %d",temp,degree);
         if(temp == pai2)
                 break;
-        }          
+        }
         if(degree>600 && score2>200 )
-           {call_out("meet",0,"hi "+ob->query("id"),ob); 
-            return 1; 
+           {call_out("meet",0,"hi "+ob->query("id"),ob);
+            return 1;
             }
        if(degree>-200)return 1;
         if(wizardp(ob)||wizardp(me)) return 1;
-        degree = -(((score1/10)*(score2/10))/10)*degree/100; 
+        degree = -(((score1/10)*(score2/10))/10)*degree/100;
         if(degree<=0)degree = 1;
         if(degree > 100)
           {
              if(me->query("combat_exp")>50*ob->query("combat_exp"))
-               {call_out("meet",0,"say 虽然你派与我有仇，但念你年幼无知，放你一条生路。",ob); 
+               {call_out("meet",0,"say 虽然你派与我有仇，但念你年幼无知，放你一条生路。",ob);
                 return 1;
-               }     
+               }
 
              if(ob->query("combat_exp")>50*me->query("combat_exp"))
-                return 1;   
-             call_out("meet",0,"say 我与你派势不两立，今日不能放过你了!",ob);  
-          }   
+                return 1;
+             call_out("meet",0,"say 我与你派势不两立，今日不能放过你了!",ob);
+          }
 	return degree;
 }*/

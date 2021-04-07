@@ -9,9 +9,9 @@
 #include <dbase.h>
 #include <origin.h>
 
-// Let command path be static, thus we can make sure no one can get command
+// Let command path be nosave, thus we can make sure no one can get command
 // path directly from restore_object().
-static string *path;
+nosave string *path;
 
 // Leave this to allow other objects can search your commands such as
 // help, which...
@@ -112,7 +112,7 @@ int force_me(string cmd)
         return ret;
 }
 
-static int enabled = 0;
+nosave int enabled = 0;
 
 nomask void enable_player()
 {

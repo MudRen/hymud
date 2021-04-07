@@ -10,12 +10,12 @@ inherit F_AUTOLOAD;
 inherit F_SAVE;
 string age_string(int time);
 string finger_player(string arg);
-static int last_age_set;
+nosave int last_age_set;
 
 void create()
 {
 	::create();
-	set_name("使用者物件", ({ "user object", "user", "object" }) );	
+	set_name("使用者物件", ({ "user object", "user", "object" }) );
 }
 
 string age_string(int time)
@@ -23,7 +23,7 @@ string age_string(int time)
 	int month, day, hour, min, sec;
 	sec = time % 60;time /= 60;min = time % 60;time /= 60;
 	hour = time % 24;time /= 24;day = time % 30;month = time / 30;
-	return (month?month + "m":"") + (day?day + "d":"") + 
+	return (month?month + "m":"") + (day?day + "d":"") +
 	(hour?hour + "h":"") + min + "m";
 }
 
@@ -39,7 +39,7 @@ void reset()
 		add("potential", 1);
 	if( (int)query("thief") > 0 )
 		add("thief", -1 );
-	
+
 }
 
 // This is used by F_SAVE to determine the filename to save our data.
@@ -100,7 +100,7 @@ int do_action1(string arg)
 		else	seteuid( geteuid(this_player(1)) );
 		if( sscanf(arg, "%s->%s(%s)", objname, func, param)!=3 )
 			return 0 ;
-	} else	return 0 ; 
+	} else	return 0 ;
 	obj = present(objname, environment(me));
 	if(!obj) obj = present(objname, me);
 	if(!obj) obj = find_player(objname);
@@ -116,7 +116,7 @@ int do_action1(string arg)
 	args = ({ func }) + args;
 	result = call_other(obj, args);
 	for(i=1; i<sizeof(args); i++)	args[i] = sprintf("%O",args[i]);
-	printf("%O->%s(%s) = %O\n", obj, func, 
+	printf("%O->%s(%s) = %O\n", obj, func,
 		implode(args[1..sizeof(args)-1], ", "), result);
 	return 1;
 }
@@ -153,7 +153,7 @@ string finger_player(string arg)
 		if( wizardp(ob[i]) ) wiz_cnt++;
 		msg = sprintf("%s%-14s%-14s%-14s%-7s%s\n",
 			msg, ob[i]->query("name"), ob[i]->query("id"),
-			age_string( (int)ob[i]->query("mud_age")), 
+			age_string( (int)ob[i]->query("mud_age")),
 			query_idle(ob[i]) + "s", query_ip_name(ob[i]));
 	}
 	msg +=	"—————————————————————————————————————\n";
@@ -172,7 +172,7 @@ private void user_dump(int type)
                        if ((this_object()->query("id") != "ding") &&
                        (this_object()->query("id") != "rover"))
                          {
-			tell_object( this_object(), "对不起，您已经发呆超过 " 
+			tell_object( this_object(), "对不起，您已经发呆超过 "
 				+ IDLE_TIMEOUT/60 + " 分钟了，请下次再来。\n");
 			tell_room( environment(), "一阵风吹来，将发呆中的" + query("name")
 				+ "化为一堆飞灰，消失了。\n", ({this_object()}));
@@ -214,4 +214,3 @@ void reconnect()
 	remove_call_out("user_dump");
 	tell_object(this_object(), "重新连线完毕。\n");
 }
-

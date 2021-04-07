@@ -4,7 +4,7 @@
 #include <room.h>
 inherit ROOM;
 
-varargs static void
+varargs protected void
 create_food(string nmstr, string* idlist, string longstr)
 {
         object obj;
@@ -18,7 +18,7 @@ create_food(string nmstr, string* idlist, string longstr)
         obj->move(this_object());
 }
 
-varargs static void
+varargs protected void
 create_water(string nmstr, string* idlist, string cup, string longstr)
 {
         object obj;
@@ -33,7 +33,7 @@ create_water(string nmstr, string* idlist, string cup, string longstr)
         obj->move(this_object());
 }
 
-varargs static void
+varargs protected void
 create_wine(string nmstr, string* idlist, string cup, string longstr)
 {
         object obj;
@@ -79,7 +79,7 @@ TEXT
         set("no_fight",1);
          set("no_steal",1);
          set("pingan",1);
-         set("no_beg",1); 	
+         set("no_beg",1);
 	set("no_clean_up", 0);
         setup();
         set("no_user", 1);
@@ -252,4 +252,3 @@ int valid_leave(object me, string dir)
                 return 1;
         return notify_fail(RED + "先用 order end 结束宴会后才能离开。\n" + NOR);
 }
-

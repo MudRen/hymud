@@ -4,7 +4,7 @@ inherit ITEM;
 #include <ansi.h>
 //int do_shouzhang();
 int consider_lv(object ob,int a);
-static int i = random(9)+3;
+nosave int i = random(9)+3;
 #include "/quest/givegift.c"
 void create()
 {
@@ -51,7 +51,7 @@ return notify_fail("这不是你的凌霄灭敌令!!\n");
         }
 
         if ((me->query("jing") < 50))
-        {  
+        {
           tell_object(me,"你的精力不能集中！\n");
           return 1;
         }
@@ -70,7 +70,7 @@ if( !environment(me)->query("no_fight"))
 {
 if (random(10)>7)
 {
-obj=new(__DIR__"shaolin"); 
+obj=new(__DIR__"shaolin");
 obj->do_copy(me,maxpot,2);
 obj->set("title",HIW"少林派弟子"NOR);
 obj->set("usename",me->query("name"));
@@ -81,7 +81,7 @@ obj->kill_ob(me);
 }
 else if (random(10)>7)
 {
-obj=new(__DIR__"emei"); 
+obj=new(__DIR__"emei");
 obj->do_copy(me,maxpot,2);
 obj->set("title",HIG"峨嵋派弟子"NOR);
 obj->set("usename",me->query("name"));
@@ -92,9 +92,9 @@ obj->kill_ob(me);
 }
 else if (random(10)>7)
 {
-obj=new(__DIR__"wudang"); 
+obj=new(__DIR__"wudang");
 obj->do_copy(me,maxpot,2);
-obj->set("title",HIY"武当派弟子"NOR);     
+obj->set("title",HIY"武当派弟子"NOR);
 obj->set("usename",me->query("name"));
 obj->move(environment(me));
 message_vision(HIY"$N狂笑道：今天我要见识见识你们凌霄城有什么厉害?\n"NOR, obj);
@@ -102,19 +102,19 @@ me->kill_ob(obj);
 obj->kill_ob(me);
 }
 }
-if (me->query_temp("lxjob") >i && 
+if (me->query_temp("lxjob") >i &&
 !me->is_fighting())
 {
 message_vision(HIW"$N护卫时间已经到了，你的任务完成了。\n"NOR,me);
-message_vision(HIG"$N任务完成，把令牌交给了别的弟子。\n"NOR,me,ob); 
+message_vision(HIG"$N任务完成，把令牌交给了别的弟子。\n"NOR,me,ob);
 me->start_busy(5);
-call_out("destroying", 0, me);                       
+call_out("destroying", 0, me);
 }
 
         return 1;
 }
 void destroying(object me)
-{   
+{
 int exp,pot;
 if (!me) return;
 exp=430+random(31);

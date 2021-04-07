@@ -4,7 +4,7 @@ inherit ITEM;
 #include <ansi.h>
 //int do_shouzhang();
 int consider_lv(object ob,int a);
-static int i = random(13)+8;
+nosave int i = random(13)+8;
 void create()
 {
         set_name("传单", ({ "chuan dan"}));
@@ -57,7 +57,7 @@ if (me->query_temp("ryjob2/done") >= 1)
         }
 
         if ((me->query("jing") < 30))
-        {  
+        {
           tell_object(me,"你的精力不能集中！\n");
           return 1;
         }
@@ -83,7 +83,7 @@ if( !environment(me)->query("no_fight"))
 {
 if (random(50)==1 && me->query("combat_exp") > 1000000)
 {
-obj=new(__DIR__"menggu"); 
+obj=new(__DIR__"menggu");
 obj->move(environment(me));
 obj->do_copy(me,maxpot,2);
 obj->set("title",HIM"五岳剑派护法"NOR);
@@ -96,22 +96,22 @@ obj->kill_ob(me);
 }
 }
 
-if ((int)me->query_temp("ryjob") >i && 
+if ((int)me->query_temp("ryjob") >i &&
 !me->is_fighting())
 {
 message_vision(HIM"$N的游说工作好像做的很好,附近的门派人物好像对自己的门派有所失望。\n"NOR,me);
-message_vision(HIC"$N任务完成，把所有的传单发给了众人。\n"NOR,me,ob); 
+message_vision(HIC"$N任务完成，把所有的传单发给了众人。\n"NOR,me,ob);
 me->set_temp("ryjob2/done",1);
 me->set_temp("ryjob",0);
 me->delete_temp("ryjob");
 me->start_busy(3);
-call_out("destroying", 0, me);                       
+call_out("destroying", 0, me);
 }
 
         return 1;
 }
 void destroying(object me)
-{   
+{
 if (!me) return;
         me->delete_temp("ryjob");
         destruct(this_object());

@@ -7,10 +7,10 @@
 #define MinY 20
 inherit F_CLEAN_UP;
 
-static int X,Y;
-static mixed m;
-static string *rfile;
-static mapping *data;
+nosave int X,Y;
+nosave mixed m;
+nosave string *rfile;
+nosave mapping *data;
 int draw_room(int,int,object);
 void set_room(int,int,object);
 void set_x_y(int,int,int);
@@ -53,9 +53,9 @@ mapping dir;
     me->add("jing",-50);
 
 
-    if (me->is_fighting()) 
+    if (me->is_fighting())
         return notify_fail("你正打的热闹着呢!\n");
-    if (me->is_busy()) 
+    if (me->is_busy())
         return notify_fail("你正热闹着呢!\n");
     if (me->query("neili")<800)
 	return notify_fail("你的内力不足!\n");
@@ -85,7 +85,7 @@ fname=file_name(environment(me));
 		fname=replace_string(fname, "/d/migong/lev", "");
 		fname=replace_string(fname, "/dong/", "");
 		fname=replace_string(fname, "dong", "");
-	
+
     tmp="即时地图  v2.0\n所在房间："+fname+"""\n";
     m=allocate(2*X+1);
     data=allocate((2*X+1)*(2*Y+1));
@@ -170,8 +170,8 @@ else    me->add("neili",-100);
         write(text[k] + "\n");
 me->start_busy(3);
     return 1;
-}	
-else 
+}
+else
 {
         message_vision(HIG "$N这里不能使用!\n" NOR, me);
 	return 1;

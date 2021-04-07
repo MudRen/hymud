@@ -13,7 +13,7 @@ inherit F_CLEAN_UP;
 #define HEADER_END 16
 #define SPE_PRA_LINES 178
 
-// static string *valid_types = ({
+// nosave string *valid_types = ({
  string *valid_types = ({
 	"unarmed",
 	"sword",
@@ -58,31 +58,31 @@ inherit F_CLEAN_UP;
 string *banned_name=({
           "  ",});
 
-//static string *spe_skill_lvl=({
+//nosave string *spe_skill_lvl=({
  string *spe_skill_lvl=({
             "0","12","20","30","40","50","60","80","100",});
-//static string *spe_skill_force=({
+//nosave string *spe_skill_force=({
  string *spe_skill_force=({
                 "50","80","100","130","150","180","200","220",
                    });
-//static string *spe_skill_unarmeddodge=({
+//nosave string *spe_skill_unarmeddodge=({
 string *spe_skill_unarmeddodge=({
              "10","-10","-20","-30","-50","-60","-80","-90","-100",
                    });
-//static string *spe_skill_unarmedparry=({
+//nosave string *spe_skill_unarmedparry=({
  string *spe_skill_unarmedparry=({
             "10","-10","-20","-30","-40","-50","-60","-70","-80",
                    });
-//static string *spe_skill_weapondodge=({
+//nosave string *spe_skill_weapondodge=({
  string *spe_skill_weapondodge=({
              "20","10","10","5","-5","-5","-10","-10","-10",
                    });
-//static string *spe_skill_weaponparry=({
+//nosave string *spe_skill_weaponparry=({
  string *spe_skill_weaponparry=({
             "20","20","10","10","5","5","5","5","5",
                    });
 
-//static mapping spe_skill = ([
+//nosave mapping spe_skill = ([
  mapping spe_skill = ([
    "action" : ({" "}),
      "force" : ({"10"}),
@@ -95,13 +95,13 @@ string *spe_skill_unarmeddodge=({
     "skill_en_name" : ({" "}),
     "skill_ch_name" : ({" "}),
    ]);
-//static int spe_skillnum;;
+//nosave int spe_skillnum;;
  int spe_skillnum;
 //it store the true name of replaced
-//static string spe_skill_name;
+//nosave string spe_skill_name;
  string spe_skill_name;
 //it store the basic skill name
-//static string spe_skill_basename;
+//nosave string spe_skill_basename;
  string spe_skill_basename;
 
 int check_legal_id(string id);
@@ -157,7 +157,7 @@ if(check_legal_basename(skill_base_name)==0)
     return notify_fail("你输入的基本技能不存在。\n");
 
 if(check_legal_id(skill_en_name)==0)
-               return 1;             
+               return 1;
 
 spe_skill["skill_en_name"]=skill_en_name+"-"+skill_base_name+".c";
 spe_skill_name=skill_en_name+"-"+skill_base_name;
@@ -167,7 +167,7 @@ spe_skill_name=skill_en_name+"-"+skill_base_name;
 //write(spe_skill["skill_en_name"]+"\n");
 
 if(check_legal_name(skill_ch_name)==0)
-               return 1;             
+               return 1;
 
 spe_skill["skill_ch_name"]=skill_ch_name;
 
@@ -175,11 +175,11 @@ spe_skill["skill_ch_name"]=skill_ch_name;
 
 //so player can change the Chinese skill name when he begin to create
 //only 1 招
-if( skill_num!=1 
+if( skill_num!=1
     && get_header_skillchname(spe_skill["skill_en_name"])!=skill_ch_name)
     return notify_fail("你输入的中文武功名称和所选的英文武功代号有矛盾。\n");
 
-if( skill_num!=1 
+if( skill_num!=1
     && get_header_skillbasename(spe_skill["skill_en_name"])!=skill_base_name)
     return notify_fail("你输入的基本技能名和所选的英文武功代号有矛盾。\n");
 
@@ -221,8 +221,8 @@ if(skill_num>= 50)
 
 if((int)me->query_skill(spe_skill_name)!=0
      && (int)me->query_skill(spe_skill_name) < (skill_num-1)*8)
-       return notify_fail("你已经有的招式还不够熟练，现提高它们，然后在想新招吧。n");
-    
+       return notify_fail("你已经有的招式还不够熟练，现提高它们，然后在想新招吧。?\n");
+
 //write("!!!to see skill num is:"+skill_num+"\n");
 
 skill_num_result=(check_skillnum_exist(me,spe_skill["skill_en_name"],skill_num));
@@ -237,7 +237,7 @@ else if(skill_num_result==1) {
       write("你现在开始创建"+skill_ch_name+"("+spe_skill_name+")"+"的第一招.\n");
       write("\r请给招式起个名字(不要此时断线，否则永远无法再正确创建):");
                          }
-else 
+else
         return notify_fail("你所要创建功夫的招式数有误。\n");
 
 spe_skillnum=skill_num;
@@ -263,9 +263,9 @@ list = explode(content, "\n");
 if(sizeof(list) < 8)
      return 0;
 else {
-    if(sscanf(list[7],"// %s",result)!=1) 
+    if(sscanf(list[7],"// %s",result)!=1)
                return 0;
-    else 
+    else
          return result;
   }
 return 0;
@@ -282,9 +282,9 @@ list = explode(content, "\n");
 if(sizeof(list) < 7)
  return 0;
 else {
-    if(sscanf(list[6],"// %s",result)!=1) 
+    if(sscanf(list[6],"// %s",result)!=1)
                return 0;
-    else 
+    else
          return result;
 
   }
@@ -372,7 +372,7 @@ void get_zhaoshi_ch_action(string yn, object ob)
 if(check_action_name(yn)==0)
 {
  input_to( (: get_zhaoshi_ch_action :), ob );
-               return;             
+               return;
 }
 if(CHINESE_D->check_length(yn) > 160)
 {
@@ -501,7 +501,7 @@ spe_skill["parry"]=20+spe_skillnum*20;
 
 spe_skill["lvl"]=spe_skillnum-1;
 
-   
+
 //here replace 你 and 小鱼儿 to ....
 if(CHINESE_D->check_length(spe_skill["action"]) > 160)
 {
@@ -517,18 +517,18 @@ if(CHINESE_D->check_control(spe_skill["action"]))
 
  spe_skill["action"]= replace_string(spe_skill["action"], "'"," ");
  spe_skill["action"]= replace_string(spe_skill["action"], "你","$N");
-  spe_skill["action"]= replace_string(spe_skill["action"], "小鱼儿","$n");               
-  spe_skill["action"]= replace_string(spe_skill["action"], "某部位","$l");              
+  spe_skill["action"]= replace_string(spe_skill["action"], "小鱼儿","$n");
+  spe_skill["action"]= replace_string(spe_skill["action"], "某部位","$l");
 if(spe_skill_basename=="sword"
          || spe_skill_basename=="blade"
          || spe_skill_basename=="rube"
          || spe_skill_basename=="music"
          || spe_skill_basename=="piano"
          || spe_skill_basename=="whip"
-      ) 
+      )
   spe_skill["action"]= replace_string(spe_skill["action"], "武器","$w");
-  
- 
+
+
 action="\n([\n"
              +SHUANGYIN_HAO
            +"action"+SHUANGYIN_HAO
@@ -548,7 +548,7 @@ action="\n([\n"
  "lvl"+SHUANGYIN_HAO+" : "+spe_skill["lvl"]+",\n"+
  SHUANGYIN_HAO+
  "skill_name"+SHUANGYIN_HAO+" : "+SHUANGYIN_HAO+spe_skill["skill_name"]+
-   SHUANGYIN_HAO 
+   SHUANGYIN_HAO
    +"\n]),"
    +"\n });"
    +"\n// ZHAOSHI :"+spe_skillnum;
@@ -560,12 +560,12 @@ if((int)file!=0)
 
 ////////////////////////////////////////////////////////////////////
  //here replace the string SKILL_CH_NAME and SKILL_EN_NAME
-if(spe_skill_basename=="unarmed" 
+if(spe_skill_basename=="unarmed"
          || spe_skill_basename=="strike"
          || spe_skill_basename=="finger"
        )
     header2=read_file(SKILL_MODEL_UNARMED);
-else if(spe_skill_basename=="sword" 
+else if(spe_skill_basename=="sword"
          || spe_skill_basename=="blade"
          || spe_skill_basename=="spear"
          || spe_skill_basename=="hammer"
@@ -575,18 +575,18 @@ else if(spe_skill_basename=="sword"
          || spe_skill_basename=="whip"
           )
     header2=read_file(SKILL_MODEL_WEAPON);
-else 
+else
     header2=read_file(SKILL_MODEL_DEFAULT);
 
 list2 = explode(header2, "\n");
 for(i=0;i < sizeof(list2);i++) {
 //this is not the arg!!!
 //spe_skill_name!=skill_en_name...
-         list2[i]= replace_string(list2[i], "SKILL_EN_NAME", 
+         list2[i]= replace_string(list2[i], "SKILL_EN_NAME",
               SHUANGYIN_HAO+spe_skill_name+SHUANGYIN_HAO );
-         list2[i]= replace_string(list2[i], "SKILL_CH_NAME", 
+         list2[i]= replace_string(list2[i], "SKILL_CH_NAME",
                 SHUANGYIN_HAO+spe_skill["skill_ch_name"]+SHUANGYIN_HAO );
-         list2[i]= replace_string(list2[i], "SKILL_BASE_NAME", 
+         list2[i]= replace_string(list2[i], "SKILL_BASE_NAME",
               SHUANGYIN_HAO+spe_skill_basename+SHUANGYIN_HAO );
                }
 //result contain the practice and exert information
@@ -645,8 +645,8 @@ for(i=0;i < sizeof(list2);i++) {
               write_file(SKILL_D(spe_skill["skill_en_name"]),content);
           //     write("\nadd a  action2\n");
                             }
-         
-             }    
+
+             }
    //at last wirte the practice and other exert information
         write_file(SKILL_D(spe_skill["skill_en_name"]),"\n"+result);
      }
@@ -655,7 +655,7 @@ int check_legal_basename(string name)
 {
 int i;
 
-for(i=0;i<sizeof(valid_types);i++) 
+for(i=0;i<sizeof(valid_types);i++)
      if(valid_types[i]==name)
         return 1;
 
@@ -761,10 +761,10 @@ if(total_zhaoshi_num==skill_num)
           return skill_num;
 else if(total_zhaoshi_num+1 == skill_num)
           return skill_num;
-else 
+else
  return 0;
 }
- 
+
 //return num:
 //error is 1,2,3,4,5
 // 0 is the right return num
@@ -779,7 +779,7 @@ int check_owner_skill(object me,string skill_en_name)
         //have create another skill of unarmed,so can't create this
 		if(me->query("skillmaxim/"+spe_skill_basename)!=0)
 			return 1;
-		else 
+		else
 			return 0;
 	}
 	else
@@ -859,7 +859,7 @@ selfthinking 类似于 selflearn 和 learn
 
 招式的描述不要带有对自己或对手状态的描写，不要不负责的乱写。
 巫师将检查玩家所创建的功夫，如不符合规定，将被删除。
-自制武功，需要2M以上的经验  
+自制武功，需要2M以上的经验
 
 自创绝学
 指令格式：selfpf <种类> <分类> <描述>
