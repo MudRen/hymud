@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // door_guard.c
 
 inherit NPC;
@@ -17,11 +17,11 @@ void create()
 	set("int", 24);
 
 	set("combat_exp", 60000);
-	
+
 	set("force", 600);
 	set("max_force", 600);
 	set("force_factor", 5);
-	
+
 	set_skill("blade", 50);
 	set_skill("unarmed", 40);
 	set_skill("parry", 60);

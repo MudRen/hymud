@@ -8,8 +8,8 @@
 // #define LANGUAGE_D        "/adm/daemons/languaged.c" at globals.h
 // Ported to by ken@chinesemud.net at 1998/05/18
 
-#pragma optimize
-#pragma save_binary
+// #pragma optimize
+// #pragma save_binary
 
 #include <ansi.h>
 //inherit F_CLEAN_UP;
@@ -179,7 +179,7 @@ string *Get_Point(int num,string SHZK1616)
                 line = "";
         }
         return the_point;                        // assure string
-} 
+}
 
 string Get_Point_Index(int num,string SHZK1616)
 {
@@ -202,7 +202,7 @@ string input(string str, object me)
 {
     	if (! str || ! me)
         	return str;
-        	
+
     	if (me->query_temp("big5"))
     	{
                 return toGB(str);

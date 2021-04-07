@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // ROOM:__DIR__"camp6"
 
 inherit ROOM;
@@ -11,7 +11,7 @@ void create()
 "有两把简易的凉椅，两位队长，平常小兵没有尢许是不能擅自进入这里的，向东北是副将营\n"
 "帐，但没有经过「允许」是不得进入的。\n"
 ); // eof(long)
-	
+
 	set("exits",([ /* sizeof()==1 */
         	"north" : __DIR__"camp2",
 	]) ); //eof(exits)
@@ -20,8 +20,8 @@ void create()
 		__DIR__"npc/captain" : 1,
 		__DIR__"npc/leader2" : 1,
 	]) );
-	
+
 	setup();
-	
+
 	replace_program(ROOM);
 } //EOF

@@ -1,6 +1,6 @@
 //Heart of fy3 -- Tie
-#pragma save_binary
-//#pragma optimize all
+// #pragma save_binary
+//// #pragma optimize all
 mapping *quests;
 mapping *read_table(string file);
 string *roomlines;
@@ -19,7 +19,7 @@ void create()
 	string file;
 	quests = read_table("/quest/dynamic_quest");
 	file = read_file("/quest/dynamic_location");
-	roomlines = explode(file,"\n");	
+	roomlines = explode(file,"\n");
 	//CRON_D->set_last_hard_dis();
 	init_dynamic_quest(1);
 }
@@ -87,7 +87,7 @@ varargs int spread_quest(mapping quest, int hard)
 	tar = new(quest["file_name"]);
 	tar->set("value",0);
 	tar->set("dynamic_quest",quest);
-	tar->move(cur_obj);		
+	tar->move(cur_obj);
 	}
 return 1;
 }
@@ -182,17 +182,17 @@ string locate_obj(object me,string strr)
                         if(x>0&&y<0) dir=directions[7];
                         if(x<0&&y<0) dir=directions[8];
         output = "『"+ob_list[i]->query("name")+"』似乎在"+dir+dis+"的"+alt+"。\n";*/
-	
+
 	map=values(ob->query("exits"));
     map=values(map[random(sizeof(map))]->query("exits"));//add by zzz for random locate
     output="『"+ob_list[i]->query("name")+"』似乎在"+ob->query("outdoors")+map[random(sizeof(map))]->query("short");
-	
-	
+
+
 	return output;
                 }
                 }
 	}
-	else 
+	else
 	if(wizardp(me) || me->query("class") == "official")
 	{
         tmpobj = find_player(strr);
@@ -227,7 +227,7 @@ string locate_obj(object me,string strr)
                         if(x<0&&y>0) dir=directions[6];
                         if(x>0&&y<0) dir=directions[7];
                         if(x<0&&y<0) dir=directions[8];
-        
+
 		output = "『"+tmpobj->query("name")+"』似乎在"+dir+dis+"的"+alt+"。\n";
         return output;
 	}

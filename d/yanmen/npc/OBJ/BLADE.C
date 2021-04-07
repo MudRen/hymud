@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // blade:__DIR__"obj/blade.c" µ¶Ò»°Ñ
 
 #include <weapon.h>
@@ -22,4 +22,3 @@ void create()
 	init_blade(14);
 	setup();
 }
-

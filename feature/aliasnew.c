@@ -1,6 +1,6 @@
 #include <ansi.h>
 // alias.c
-#pragma save_binary
+// #pragma save_binary
 #include <command.h>
 #define MAX_REPEAT 50
 #define MAX_ALIASES 40
@@ -33,7 +33,7 @@ string process_input(string str)
 	if(me && curr_time-last_time<5) {
 		if(cmd_cnt1==0){
 		cmd_cnt2=cmd_cnt/(curr_time-last_time+1);
-		
+
 write("你一次输入太多命令了，
 请稍后再试！\n");
 	}
@@ -51,11 +51,11 @@ write("你一次输入太多命令了，
 			cmd_cnt1=0;
 		}
 	}
- 
+
 	if( str[0]=='!' ) {
 		if( pointerp(history) && sizeof(history) ) {
 			if( sscanf(str, "!%d", i) )
-				str = (string)history[(HISTORY_BUFFER_SIZE + last_cmd - i) % 
+				str = (string)history[(HISTORY_BUFFER_SIZE + last_cmd - i) %
 HISTORY_BUFFER_SIZE];
 					else
 				str = history[last_cmd];
@@ -73,7 +73,7 @@ HISTORY_BUFFER_SIZE];
 		if( !undefinedp(alias[str]) )
 			return replace_string( alias[str], "$*", "" );
 
-		if( sscanf(str, "%s %s", cmd, argstr)==2 && 
+		if( sscanf(str, "%s %s", cmd, argstr)==2 &&
 !undefinedp(alias[cmd]) ) {
 			cmd = replace_string( alias[cmd], "$*", argstr );
 			args = explode(argstr, " ");

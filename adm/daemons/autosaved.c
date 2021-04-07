@@ -5,7 +5,7 @@
 
 // for autosave players data file.
 #include <ansi.h>
-#pragma save_binary
+// #pragma save_binary
 
 inherit F_DBASE;
 

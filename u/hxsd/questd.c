@@ -1,5 +1,5 @@
 //Heart of fy3 -- Tie
-//#pragma optimize all
+//// #pragma optimize all
 mapping *quests;
 mapping *read_table(string file);
 string *roomlines;
@@ -19,7 +19,7 @@ void create()
 	string file;
 	quests = read_table("/quest/dynamic_quest");
 	file = read_file("/quest/dynamic_location");
-	roomlines = explode(file,"\n");	
+	roomlines = explode(file,"\n");
 	//CRON_D->set_last_hard_dis();
 	init_dynamic_quest(1);
 }
@@ -57,7 +57,7 @@ int quest_reward(object me, object who,object quest_item)
         chinese_number(exp) + "点实战经验\n"+
         chinese_number(pot) + "点潜能\n" +
         chinese_number(score)+"点江湖阅历\n"NOR);}
-	else 
+	else
 	{tell_object(me,HIC"你被奖励了：\n" +
         chinese_number(exp) + "点实战经验\n"+
         chinese_number(pot) + "点潜能\n" +
@@ -111,7 +111,7 @@ varargs int spread_quest(mapping quest, int hard)
 	tar = new(quest["file_name"]);
 	tar->set("value",0);
 	tar->set("dynamic_quest",quest);
-	tar->move(cur_obj);		
+	tar->move(cur_obj);
 	}
 return 1;
 }
@@ -183,99 +183,99 @@ string locate_obj(string strr)
                 {
                 map=values(ob->query("exits"));
                 map=values(map[random(sizeof(map))]->query("exits"));//add by zzz for random locate
-       if (ob->query("outdoors")=="baituo")  
+       if (ob->query("outdoors")=="baituo")
 	output="『"+ob_list[i]->query("name")+"』似乎在白驼山的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="binghuodao")  
+else if (ob->query("outdoors")=="binghuodao")
 	output="『"+ob_list[i]->query("name")+"』似乎在冰火岛的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="city")  
+else if (ob->query("outdoors")=="city")
 	output="『"+ob_list[i]->query("name")+"』似乎在扬州的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="yangzhou")  
+else if (ob->query("outdoors")=="yangzhou")
 	output="『"+ob_list[i]->query("name")+"』似乎在扬州郊外的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="city2")  
+else if (ob->query("outdoors")=="city2")
 	output="『"+ob_list[i]->query("name")+"』似乎在京城的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="chengdu") 
+else if (ob->query("outdoors")=="chengdu")
 	output="『"+ob_list[i]->query("name")+"』似乎在成都的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="changan")  
+else if (ob->query("outdoors")=="changan")
 	output="『"+ob_list[i]->query("name")+"』似乎在长安城的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="dali")  
+else if (ob->query("outdoors")=="dali")
 	output="『"+ob_list[i]->query("name")+"』似乎在大理的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="emei")  
+else if (ob->query("outdoors")=="emei")
 	output="『"+ob_list[i]->query("name")+"』似乎在娥眉山的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="foshan")  
+else if (ob->query("outdoors")=="foshan")
 	output="『"+ob_list[i]->query("name")+"』似乎在佛山的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="gaibang")  
+else if (ob->query("outdoors")=="gaibang")
 	output="『"+ob_list[i]->query("name")+"』似乎在丐帮的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="gaochang")  
+else if (ob->query("outdoors")=="gaochang")
 	output="『"+ob_list[i]->query("name")+"』似乎在高昌的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="guanwai")  
+else if (ob->query("outdoors")=="guanwai")
 	output="『"+ob_list[i]->query("name")+"』似乎在关外的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="guiyun")  
+else if (ob->query("outdoors")=="guiyun")
 	output="『"+ob_list[i]->query("name")+"』似乎在归云庄的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="gumu")  
+else if (ob->query("outdoors")=="gumu")
 	output="『"+ob_list[i]->query("name")+"』似乎在古墓派的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="hangzhou")  
+else if (ob->query("outdoors")=="hangzhou")
 	output="『"+ob_list[i]->query("name")+"』似乎在杭州的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="heimuya")  
+else if (ob->query("outdoors")=="heimuya")
 	output="『"+ob_list[i]->query("name")+"』似乎在黑木崖的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="hengshan")  
+else if (ob->query("outdoors")=="hengshan")
 	output="『"+ob_list[i]->query("name")+"』似乎在恒山的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="henshan")  
+else if (ob->query("outdoors")=="henshan")
 	output="『"+ob_list[i]->query("name")+"』似乎在衡山的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="huanggon")  
+else if (ob->query("outdoors")=="huanggon")
 	output="『"+ob_list[i]->query("name")+"』似乎在皇宫的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="huanghe")  
+else if (ob->query("outdoors")=="huanghe")
 	output="『"+ob_list[i]->query("name")+"』似乎在黄河九曲的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="xx")  
+else if (ob->query("outdoors")=="xx")
 	output="『"+ob_list[i]->query("name")+"』似乎在华山的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="jinshe")  
+else if (ob->query("outdoors")=="jinshe")
 	output="『"+ob_list[i]->query("name")+"』似乎在金蛇山洞的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="lingjiu")  
+else if (ob->query("outdoors")=="lingjiu")
 	output="『"+ob_list[i]->query("name")+"』似乎在灵鹫宫的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="lingzhou")  
+else if (ob->query("outdoors")=="lingzhou")
 	output="『"+ob_list[i]->query("name")+"』似乎在灵洲的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="meizhuang")  
+else if (ob->query("outdoors")=="meizhuang")
 	output="『"+ob_list[i]->query("name")+"』似乎在梅庄的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="mingjiao")  
+else if (ob->query("outdoors")=="mingjiao")
 	output="『"+ob_list[i]->query("name")+"』似乎在明教的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="qingcheng")  
+else if (ob->query("outdoors")=="qingcheng")
 	output="『"+ob_list[i]->query("name")+"』似乎在青城山的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="quanzhen")  
+else if (ob->query("outdoors")=="quanzhen")
 	output="『"+ob_list[i]->query("name")+"』似乎在重阳宫的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="quanzhou")  
+else if (ob->query("outdoors")=="quanzhou")
 	output="『"+ob_list[i]->query("name")+"』似乎在泉洲的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="shaolin")  
+else if (ob->query("outdoors")=="shaolin")
 	output="『"+ob_list[i]->query("name")+"』似乎在少林寺的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="shenlong")  
+else if (ob->query("outdoors")=="shenlong")
 	output="『"+ob_list[i]->query("name")+"』似乎在神龙岛的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="songshan")  
+else if (ob->query("outdoors")=="songshan")
 	output="『"+ob_list[i]->query("name")+"』似乎在嵩山的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="suzhou")  
+else if (ob->query("outdoors")=="suzhou")
 	output="『"+ob_list[i]->query("name")+"』似乎在苏州的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="taishan")  
+else if (ob->query("outdoors")=="taishan")
 	output="『"+ob_list[i]->query("name")+"』似乎在泰山的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="taohua")  
+else if (ob->query("outdoors")=="taohua")
 	output="『"+ob_list[i]->query("name")+"』似乎在桃花岛的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="tianlongsi")  
+else if (ob->query("outdoors")=="tianlongsi")
 	output="『"+ob_list[i]->query("name")+"』似乎在天龙寺的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="wanjiegu")  
+else if (ob->query("outdoors")=="wanjiegu")
 	output="『"+ob_list[i]->query("name")+"』似乎在万劫谷的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="wudang")  
+else if (ob->query("outdoors")=="wudang")
 	output="『"+ob_list[i]->query("name")+"』似乎在武当山的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="xiakedao")  
+else if (ob->query("outdoors")=="xiakedao")
 	output="『"+ob_list[i]->query("name")+"』似乎在侠客岛的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="xiangyang")  
+else if (ob->query("outdoors")=="xiangyang")
 	output="『"+ob_list[i]->query("name")+"』似乎在襄阳城的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="xiaoyao")  
+else if (ob->query("outdoors")=="xiaoyao")
 	output="『"+ob_list[i]->query("name")+"』似乎在逍遥林的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="xingxiuhai")  
+else if (ob->query("outdoors")=="xingxiuhai")
 	output="『"+ob_list[i]->query("name")+"』似乎在星宿海的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="xueshan")  
+else if (ob->query("outdoors")=="xueshan")
 	output="『"+ob_list[i]->query("name")+"』似乎在雪山寺的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="mr")  
+else if (ob->query("outdoors")=="mr")
 	output="『"+ob_list[i]->query("name")+"』似乎在慕容世家的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="kunlun")  
+else if (ob->query("outdoors")=="kunlun")
 	output="『"+ob_list[i]->query("name")+"』似乎在昆仑山的"+map[random(sizeof(map))]->query("short")+"附近。\n";
-else if (ob->query("outdoors")=="tiezhang")  
+else if (ob->query("outdoors")=="tiezhang")
 	output="『"+ob_list[i]->query("name")+"』似乎在铁掌门的"+map[random(sizeof(map))]->query("short")+"附近。\n";
 else 	output="『"+ob_list[i]->query("name")+"』似乎在某个地方的"+map[random(sizeof(map))]->query("short")+"附近。\n";
 	return output;

@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 //seal.c
 
 inherit ITEM;
@@ -10,8 +10,6 @@ void create()
 	set("unit", "¿Å");
 	set("base_weight", 300);
 	set("value", 3000);
-	
+
 	set("no_sell", 1);
 }
-
-

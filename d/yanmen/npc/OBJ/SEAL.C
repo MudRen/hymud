@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 //seal.c
 
 #include <ansi.h>
@@ -14,5 +14,3 @@ void create()
 
 	set("no_sell", 1);
 }
-
-

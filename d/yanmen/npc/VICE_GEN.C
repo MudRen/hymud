@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // general.c
 
 inherit NPC;
@@ -28,7 +28,7 @@ void create()
 	set("max_sen", 200);
 	set("eff_sen", 200);
 	set("sen", 200);
-	
+
 	set("combat_exp", 400000);
 
         set("chat_chance_combat", 80);
@@ -36,7 +36,7 @@ void create()
                 (: exert_function, "powerup" :),
                 (: exert_function, "recover" :)
 	}) );
-	
+
 	set_skill("sword", 380);
 	set_skill("taiji-jian", 385);
 	set_skill("force", 380);
@@ -46,13 +46,13 @@ void create()
 	//set_skill("pyrobat-steps", 60);
 	set_skill("unarmed", 380);
 	//set_skill("celestrike", 85);
-	
+
 	map_skill("sword", "taiji-jian");
 	map_skill("parry", "taiji-jian");
 	map_skill("force", "taiji-shengong");
 	map_skill("unarmed", "taiji-quan");
-	
-	
+
+
 	setup();
 
 	carry_object("/clone/weapon/gangjian")->wield();
@@ -62,7 +62,7 @@ void create()
 void init()
 {
 	object ob;
-	
+
 	:: init();
         if( interactive(ob = this_player()) && !is_fighting() ) {
         	remove_call_out("greeting");

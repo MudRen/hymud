@@ -2,8 +2,8 @@
 
 #include <ansi.h>
 
-#pragma optimize
-#pragma save_binary
+// #pragma optimize
+// #pragma save_binary
 
 inherit F_SAVE;
 inherit F_DBASE;
@@ -35,8 +35,8 @@ mapping family_fame = ([
         "逍遥派"   : 1000,
         "白驼山派" : 2000,
         "关外胡家" : 1000,
-        "飞天御剑流" : 2000,        	
-        "昆仑派"   : 2000, 	
+        "飞天御剑流" : 2000,
+        "昆仑派"   : 2000,
         "南少林派" : 5000,
         "明教" : 5000,
         "云龙门" : 5000,
@@ -51,12 +51,12 @@ mapping family_fame = ([
         "恒山派" : 2000,
         "衡山派" : 2000,
         "梅庄" : 1000,
-        "日月神教" : 5000,        	
+        "日月神教" : 5000,
 "靖海派" : 2000,
 "白云庵" : 2000,
 "侠客岛" : 2000,
-"崆峒派" : 2000,	
-"雁荡派" : 2000,		
+"崆峒派" : 2000,
+"雁荡派" : 2000,
 ]);
 
 // 门派ID对应的门派名字
@@ -99,7 +99,7 @@ static mapping family_name = ([
 "baiyun"       : "白云庵",
 "xiakedao"       : "侠客岛",
 "kongdong"       : "崆峒派",
-"yandang"       : "雁荡派",				
+"yandang"       : "雁荡派",
 ]);
 
 mapping last_family_fame;

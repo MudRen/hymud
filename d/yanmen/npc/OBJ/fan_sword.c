@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // sword:__DIR__"obj/fan_sword.c" ÌúÉÈ½£Ò»°Ñ
 
 #include <weapon.h>
@@ -22,4 +22,3 @@ void create()
 	init_sword(20);
 	setup();
 }
-

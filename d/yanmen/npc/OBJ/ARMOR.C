@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // cloud_armor
 
 #include <armor.h>
@@ -20,4 +20,3 @@ void create()
 	}
 	setup();
 }
-

@@ -2,10 +2,10 @@
 // this file will be automatically included by the driver
 // for XKX mudlib, by Xiang
 
-#define SAVE_EXTENSION __SAVE_EXTENSION__ 
+#define SAVE_EXTENSION __SAVE_EXTENSION__
 #define save_binary
-#pragma optimize
-#pragma save_binary
+// #pragma optimize
+// #pragma save_binary
 
 // Important directories
 #define INC_DIR		"/include/"
@@ -150,7 +150,7 @@
 #define F_ANA			  "/feature/anamichi.c"
 // Profiling switches
 //
-// If you changed any of these defines, you'll need reboot to make it 
+// If you changed any of these defines, you'll need reboot to make it
 // in effect.
 
 #undef PROFILE_COMMANDS

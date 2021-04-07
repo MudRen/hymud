@@ -1,6 +1,6 @@
 // move.c
 
-//#pragma optimize
+//// #pragma optimize
 #include <ansi.h>
 #include <dbase.h>
 #include <room.h>
@@ -104,7 +104,7 @@ varargs int move(mixed dest, int silently)
 				dirs -= ({ 0 });
 				if (sizeof(dirs)) str += " - " + implode(dirs, "¡¢");
 			}
-			str += "\n";			
+			str += "\n";
 
 			inv = all_inventory(environment());
 			for(i=0; i<sizeof(inv); i++) {

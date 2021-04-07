@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // shiao.c
 
 inherit NPC;
@@ -19,20 +19,20 @@ void create()
 	set("int", 30);
 
 	set("combat_exp", 1300000);
-        
+
         set("inquiry", ([
         	"兵器库" : "先看看你的诚意再说罗。\n",
         ]) );
-        
-      
-	
+
+
+
 	set("neili", 22600);
 	set("max_neili", 22600);
 	set("force_factor", 5);
-        
+
         set("atman", 600);
         set("max_atman", 600);
-        
+
         set("mana", 2000);
         set("max_mana", 1200);
 	set("mana_factor", 5);
@@ -46,18 +46,18 @@ void create()
         set_skill("sword", 240);
         set_skill("parry", 235);
         set_skill("dodge", 240);
-        
+
         set_skill("taoism", 260);
         set_skill("necromancy", 270);
 
-        
+
         map_skill("magic", "taoism");
         map_skill("spells", "necromancy");
         map_skill("force", "gouyee");
-        
+
         set_temp("apply/dodge",115);
         set_temp("apply/armor",115);
-         
+
 	setup();
 
 	carry_object(__DIR__"obj/fan_sword")->wield();
@@ -72,7 +72,7 @@ int accept_object(object who,object ob)
               //  call_out( (: destruct :), 1, ob);
                 return 1;
 	}
-                                                                                                                                                                
+
 	if( !who->query_temp("军营/swear") ) {
 		if( ob->value() >= 800 ) {
             	   command("say 好极了，我就告诉你一项秘密吧。");
@@ -84,8 +84,8 @@ int accept_object(object who,object ob)
 		   command("say 钱太少了吧！没收。");
 		   return 1;
 		}
-	} else 
+	} else
 		command("say 即然你那么有心，那我就勉强收起来了。");
-	
+
 	return 1;
 }

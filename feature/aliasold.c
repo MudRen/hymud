@@ -1,6 +1,6 @@
 #include <ansi.h>
 // alias.c
-#pragma save_binary
+// #pragma save_binary
 #include <command.h>
 #define MAX_REPEAT 50
 #define MAX_ALIASES 40
@@ -49,7 +49,7 @@ string process_input(string str)
                 kill_time=0;
     }
     last_cmd_time=time();
- 
+
     if( str==last_input ) {
         repeat_cnt++;
         if( repeat_cnt > MAX_REPEAT && !wizardp(this_object())) {

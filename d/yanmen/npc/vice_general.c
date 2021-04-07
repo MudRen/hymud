@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // general.c
 
 inherit NPC;
@@ -39,14 +39,14 @@ set("qi", 18000);
                 (: perform_action, "unarmed.jielidali" :),
                 (: perform_action, "hand.leiting" :),
                 (: perform_action, "hand.mian" :),
-                (: perform_action, "strike.zheng" :),	
+                (: perform_action, "strike.zheng" :),
                 (: perform_action, "sword.lian" :),
                 (: perform_action, "sword.chan" :),
                 (: perform_action, "sword.chanup" :),
                 (: perform_action, "sword.sui" :),
                 (: perform_action, "sword.lian" :),
                 (: perform_action, "sword.zhenwu" :),
-                (: perform_action, "sword.lian" :),                
+                (: perform_action, "sword.lian" :),
         }) );
 set_skill("claw", 250);
 set_skill("strike", 380);
@@ -86,8 +86,8 @@ set("count",1);
 	set_temp("apply/defense",150);
 	set_temp("apply/armor",500);
 	set_temp("apply/damage",400);
-	
-	
+
+
 	setup();
 
 	carry_object("/clone/weapon/gangjian")->wield();
@@ -97,7 +97,7 @@ set("count",1);
 void init()
 {
 	object ob;
-	
+
 	:: init();
         if( interactive(ob = this_player()) && !is_fighting() ) {
         	remove_call_out("greeting");

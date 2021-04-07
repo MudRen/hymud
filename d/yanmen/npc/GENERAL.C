@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // general.c
 
 #include <ansi.h>
@@ -39,7 +39,7 @@ void create()
 	set("max_qi", 31200);
 	set("eff_sen", 200);
 	set("sen", 200);
-	
+
 	set("qi", 28000);
 	set("max_qi", 28000);
 	set("jing", 28000);
@@ -60,14 +60,14 @@ void create()
                 (: perform_action, "unarmed.jielidali" :),
                 (: perform_action, "hand.leiting" :),
                 (: perform_action, "hand.mian" :),
-                (: perform_action, "strike.zheng" :),	
+                (: perform_action, "strike.zheng" :),
                 (: perform_action, "sword.lian" :),
                 (: perform_action, "sword.chan" :),
                 (: perform_action, "sword.chanup" :),
                 (: perform_action, "sword.sui" :),
                 (: perform_action, "sword.lian" :),
                 (: perform_action, "sword.zhenwu" :),
-                (: perform_action, "sword.lian" :),                
+                (: perform_action, "sword.lian" :),
         }) );
 set_skill("claw", 250);
 set_skill("strike", 380);
@@ -108,8 +108,8 @@ set("count",1);
 	set_temp("apply/armor",500);
 	set_temp("apply/damage",400);
 	//map_skill("dodge", "zhongyunti");
-	
-	
+
+
 	setup();
 
 	carry_object( __DIR__"obj/broken_sword")->wield();
@@ -132,7 +132,7 @@ int accept_object(object who,object ob)
 //		call_out( (: destruct :), 1, ob);
  		return 1;
  	}
- 	
+
 	if ( (string)ob->name() == "印鉴" ) {
 		command("say 你拿给我的是什么东西啊!");
  		command("say 别想拿这种东西来骗我");
@@ -141,14 +141,14 @@ int accept_object(object who,object ob)
 		//who->move(PATH);
 		return 0;
 	}
-	
+
 	if ( !ob->value() ) {
 		command("say 谢了!!!");
 		command("grin");
 //		call_out( (: destruct :), 1, ob);
 		return 1;
 	}
-	
+
 	command("say 啊，真是谢谢你了。");
 	return 1;
 }
@@ -166,10 +166,10 @@ void die()
 if (who->query_temp("book941"))
 {
 		message_vision("$N身上掉下一张七族盟书。$n把七族盟书拿到了手上。\n",this_object(),who);
-who->set_temp("book942",1);		
+who->set_temp("book942",1);
 }
-		
-		
+
+
 	::die();
 
-}                        
+}

@@ -30,7 +30,7 @@
  * 和宝箱以及陷阱等其他功能(by Lonely)。              *
  ******************************************************/
 
-#pragma optimize
+// #pragma optimize
 
 #define CENTER          4096    // 正中心的房间
 #define TRAP            2048    // 有陷阱的房间
@@ -85,16 +85,16 @@ static mapping reverse_dir = ([
 "west"  : "east",
 "east"  : "west",
 ]);
-string base_dir(object obj) 
-{ 
-             string filename; 
-             int at; 
-     
-             filename = base_name(obj); 
-             at = strsrch(filename,"/",-1); 
-            filename = filename[0..at];         
-             return filename; 
-} 
+string base_dir(object obj)
+{
+             string filename;
+             int at;
+
+             filename = base_name(obj);
+             at = strsrch(filename,"/",-1);
+            filename = filename[0..at];
+             return filename;
+}
 // 全迷宫出口阵列.
 static mixed *all;
 // 迷宫地图阵列
@@ -567,16 +567,16 @@ varargs void init_maze(object room)
 
         // 迷宫创建完毕。
         maze_built = 1;
-        
+
         if( objectp(room) || sizeof(temp_rooms) > 0 ) {
                 if( objectp(maze_boss) )
                         maze_boss->move(load_object(file));
-                
+
                 for( i=0;i<sizeof(temp_rooms);i++ ) {
                         maze = temp_rooms[i];
                         if( sscanf(base_name(maze), fname+"/%d/%d", x, y) != 2 )
                                 return;
-                        
+
                         if( !exits = all[x][y] ) return;
 
                         if( exits&W ) maze->set("exits/west",mroom_fname(x-1,y));
@@ -1375,9 +1375,9 @@ public object trip_maze(object room)
         string fname;
 
         if( !objectp(room) ) return 0;
-        
+
         fname = base_name(this_object());
-        
+
         while( 1 ) {
                 x = random(l);
                 y = random(l);

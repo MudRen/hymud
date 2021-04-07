@@ -1,6 +1,6 @@
 // char.c
 
-//#pragma save_binary
+//// #pragma save_binary
 
 #include <action.h>
 #include <ansi.h>
@@ -91,7 +91,7 @@ void heart_beat()
 		// halt from healing
 		if (query_temp("qi_heal") && is_fighting() && !userp(this_object()))
                     this_object()->interrupt_me();
-                    
+
 		// We don't want heart beat be halt eventually, so return here.
 		return;
 	} else {

@@ -1,6 +1,6 @@
 //Heart of fy3 -- Tie
 
-//#pragma optimize all
+//// #pragma optimize all
 
 mapping *quests;
 
@@ -46,12 +46,12 @@ int random_move()
 	if( !living(me)) return 0;
 
 	if( !mapp(exits = environment()->query("exits")) ) return 0;
-        if( !environment() 
-        || !mapp(exits = environment()->query("exits")) 
+        if( !environment()
+        || !mapp(exits = environment()->query("exits"))
         || me->is_busy())
 // || me->is_fighting()
-        return 0;                 
-//        if( !mapp(exits = environment()->query("exits")) 
+        return 0;
+//        if( !mapp(exits = environment()->query("exits"))
 //        || me->is_busy()) return 0;
         dirs = keys(exits);
         if (!dirs)  return 0;
@@ -69,7 +69,7 @@ void create()
 
 	file = read_file("/quest/dynamic_location");
 
-	roomlines = explode(file,"\n");	
+	roomlines = explode(file,"\n");
 
 	//CRON_D->set_last_hard_dis();
 
@@ -104,7 +104,7 @@ int quest_reward(object me, object who,object quest_item)
 
 	color=random(5);
 
-	
+
 me->add_temp("nbjob49",1);
 	me->add("TASK",1);
     if (me->query("4zhuan")
@@ -210,7 +210,7 @@ varargs int spread_quest(mapping quest, int hard)
 
 	}
 isk=0;
-	if(!sizeof(target)) 
+	if(!sizeof(target))
 {
 		jobnpc = new("/quest/shenshu/npc/man");
 		jobnpc->move(cur_obj);
@@ -228,7 +228,7 @@ isk=1;
 	tar = new(quest["file_name"]);
 	tar->set("value",0);
 	tar->set("dynamic_quest",quest);
-	tar->move(jobnpc);	
+	tar->move(jobnpc);
 }
 }
 	if(cur_obj)
@@ -261,7 +261,7 @@ isk=1;
 
 	tar->set("dynamic_quest",quest);
 
-	tar->move(cur_obj);		
+	tar->move(cur_obj);
 cur_obj->set_temp("apply/attack", 30);
 cur_obj->set_temp("apply/defense",130);
 cur_obj->set_temp("apply/armor", 100);
@@ -380,7 +380,7 @@ string locate_obj(string strr)
         object item,room;
 
         string output,outputt,dis,alt,dir,local,tlocal,ck,playout;
-        
+
         int i;
 
         int x,y,z,x0,y0,z0;
@@ -415,7 +415,7 @@ string locate_obj(string strr)
                 ob_list = children(str);
 
                 for(i=0; i<sizeof(ob_list); i++) {
-                
+
                 ob=find_book(ob_list[i]);
 
                 this_player()->add("jing",-5);
@@ -424,7 +424,7 @@ if(ob)
  {
 ck=HIC"无"NOR;
 local=ob->query("short");
-tlocal=ob->query("short");                
+tlocal=ob->query("short");
 
 
 
@@ -433,16 +433,16 @@ if (wizardp(this_player()) && ob)
 //outputt ="1:"+ob->query("short")+"』\n";
 }
 playout ="『"+ob->query("short")+"』这里附近。\n";
-                if(sizeof(ob->query("exits"))) 
+                if(sizeof(ob->query("exits")))
                 {
 ck=chinese_number(sizeof(ob->query("exits")));
                 map=values(ob->query("exits"));
 if (map && sizeof(ob->query("exits"))>=1)
 {
                  obtwo=load_object(map[random(sizeof(map))]);
-if (ob==obtwo) obtwo=load_object(map[random(sizeof(map))]);	
-if (ob==obtwo) obtwo=load_object(map[random(sizeof(map))]);		
-if (ob==obtwo) obtwo=load_object(map[random(sizeof(map))]);		
+if (ob==obtwo) obtwo=load_object(map[random(sizeof(map))]);
+if (ob==obtwo) obtwo=load_object(map[random(sizeof(map))]);
+if (ob==obtwo) obtwo=load_object(map[random(sizeof(map))]);
 
 if (obtwo)
 {
@@ -450,9 +450,9 @@ if (wizardp(this_player())  && obtwo)
 {
 //outputt +="2:"+obtwo->query("short")+"』\n";
 }
- 
+
                  local=obtwo->query("short");
-              if(obtwo->query("exits")) 
+              if(obtwo->query("exits"))
                { //obtwoexits
                  mapt=values(obtwo->query("exits"));
 if (mapt && sizeof(obtwo->query("exits"))>=1 )
@@ -474,10 +474,10 @@ if (obthree)
 if (sizeof(obthree->query("exits"))>=1 )
 {
 mapt=values(obthree->query("exits"));
-obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
+obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
 tob=obthree;
 if (wizardp(this_player()) && obthree)
 {
@@ -493,10 +493,10 @@ if (sizeof(obthree->query("exits"))>=1 )
 //if (tob!=obthree)
 //{
 mapt=values(obthree->query("exits"));
-obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);		
+obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
 tob=obthree;
 if (wizardp(this_player()) && obthree)
 {
@@ -513,10 +513,10 @@ if (sizeof(obthree->query("exits"))>=1 )
 //if (tob!=obthree)
 //{
 mapt=values(obthree->query("exits"));
-obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
+obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
 tob=obthree;
 if (wizardp(this_player()) && obthree)
 {
@@ -533,10 +533,10 @@ if (sizeof(obthree->query("exits"))>=1 )
 //if (tob!=obthree)
 //{
 mapt=values(obthree->query("exits"));
-obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
+obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
 tob=obthree;
 if (wizardp(this_player()) && obthree)
 {
@@ -553,10 +553,10 @@ if (sizeof(obthree->query("exits"))>=1 )
 //if (tob!=obthree)
 //{
 mapt=values(obthree->query("exits"));
-obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
-if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);	
+obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
+if (tob==obthree || obtwo==obthree  || obthree==ob) obthree=load_object(mapt[random(sizeof(mapt))]);
 tob=obthree;
 if (wizardp(this_player()) && obthree)
 {
@@ -586,665 +586,665 @@ else local=ob->query("short");
 dir2=explode(base_name(ob),"/");
 //    if(sizeof(dir1)==3 && sizeof(dir2)==3 && dir1[0]=="d" && dir2[0]=="d" && dir1[1]!=dir2[1])
 //{
-      	if (dir2[1]=="baituo")  
+      	if (dir2[1]=="baituo")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIR"白驼山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="binghuodao")  
+else if (dir2[1]=="binghuodao")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIB"冰火岛的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="city")  
+else if (dir2[1]=="city")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"扬州的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="city2" || dir2[1]=="beijing"  || dir2[1]=="huanggon"  || dir2[1]=="huanggong" || dir2[1]=="beihai")  
+else if (dir2[1]=="city2" || dir2[1]=="beijing"  || dir2[1]=="huanggon"  || dir2[1]=="huanggong" || dir2[1]=="beihai")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"北京城的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="city4" || dir2[1]=="changan")   
+else if (dir2[1]=="city4" || dir2[1]=="changan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIM"长安城的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="dali")  
+else if (dir2[1]=="dali")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+RED"大理的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="emei")  
+else if (dir2[1]=="emei")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+GRN"娥眉山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="foshan")  
+else if (dir2[1]=="foshan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+YEL"佛山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="gaibang")  
+else if (dir2[1]=="gaibang")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+BLU"丐帮的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="gaochang")  
+else if (dir2[1]=="gaochang")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"高昌迷宫的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="guanwai")  
+else if (dir2[1]=="guanwai")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+CYN"关外的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="guiyun")  
+else if (dir2[1]=="guiyun")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+MAG"归云庄的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="gumu")  
+else if (dir2[1]=="gumu")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+WHT"古墓派的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="hangzhou")  
+else if (dir2[1]=="hangzhou")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"杭州的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="heimuya")  
+else if (dir2[1]=="heimuya")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"黑木崖的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="hengshan")  
+else if (dir2[1]=="hengshan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIB"恒山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="henshan")  
+else if (dir2[1]=="henshan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIW"衡山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="huanghe")  
+else if (dir2[1]=="huanghe")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"黄河九曲的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="huashan")  
+else if (dir2[1]=="huashan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"华山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="jinshe")  
+else if (dir2[1]=="jinshe")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+YEL"金蛇山洞的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="lingjiu")  
+else if (dir2[1]=="lingjiu")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"灵鹫宫的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="lingzhou")  
+else if (dir2[1]=="lingzhou")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIB"灵州的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="meizhuang")  
+else if (dir2[1]=="meizhuang")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIM"梅庄的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="mingjiao")  
+else if (dir2[1]=="mingjiao")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"明教的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="qingcheng")  
+else if (dir2[1]=="qingcheng")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"青城山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="quanzhen")  
+else if (dir2[1]=="quanzhen")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIB"全真派的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="quanzhou")  
+else if (dir2[1]=="quanzhou")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"泉州的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="shaolin")  
+else if (dir2[1]=="shaolin")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+YEL"少林寺的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="shenlong")  
+else if (dir2[1]=="shenlong")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+GRN"神龙岛的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="songshan")  
+else if (dir2[1]=="songshan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIM"嵩山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="suzhou")  
+else if (dir2[1]=="suzhou")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"苏州的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="taishan")  
+else if (dir2[1]=="taishan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+MAG"泰山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="taohua")  
+else if (dir2[1]=="taohua")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+RED"桃花岛的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="tianlongsi")  
+else if (dir2[1]=="tianlongsi")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"天龙寺的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="wanjiegu")  
+else if (dir2[1]=="wanjiegu")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIW"万劫谷的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="wudang")  
+else if (dir2[1]=="wudang")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+GRN"武当山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="xiakedao")  
+else if (dir2[1]=="xiakedao")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+BLU"侠客岛的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="xiangyang")  
+else if (dir2[1]=="xiangyang")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"襄阳城的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="xiaoyao")  
+else if (dir2[1]=="xiaoyao")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"逍遥林的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="xingxiu")  
+else if (dir2[1]=="xingxiu")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+YEL"星宿海的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="xueshan")  
+else if (dir2[1]=="xueshan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIW"雪山寺的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="xuedao")  
+else if (dir2[1]=="xuedao")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIW"大雪山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="mr")  
+else if (dir2[1]=="mr")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+BLU"慕容世家的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="kunlun")  
+else if (dir2[1]=="kunlun")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+WHT"昆仑山的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="tiezhang")  
+else if (dir2[1]=="tiezhang")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIR"铁掌门的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="huizhu")  
+else if (dir2[1]=="huizhu")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"回族部落的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="yinju")  
+else if (dir2[1]=="yinju")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"一灯大师居的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="menggu")  
+else if (dir2[1]=="menggu")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"蒙古草原的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="qianjin")  
+else if (dir2[1]=="qianjin")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIM"北京千金楼的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="lingshedao")  
+else if (dir2[1]=="lingshedao")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+BLU"灵蛇岛的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="ruzhou")  
+else if (dir2[1]=="ruzhou")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+RED"汝州城的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="kunming")  
+else if (dir2[1]=="kunming")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIB"昆明的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="jingzhou")  
+else if (dir2[1]=="jingzhou")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"荆州的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="yanjing")  
+else if (dir2[1]=="yanjing")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"燕京的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="lanzhou" || dir2[1]=="lanzhouchen")  
+else if (dir2[1]=="lanzhou" || dir2[1]=="lanzhouchen")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+YEL"兰州的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="jyguan")  
+else if (dir2[1]=="jyguan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"兰州以北嘉峪关的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="changcheng")  
+else if (dir2[1]=="changcheng")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIW"北京以北长城的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="fairyland")  
+else if (dir2[1]=="fairyland")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIW"昆仑附近的红梅山庄"NOR+local+"附近。\n";
 
-else if (dir2[1]=="sdxl")  
+else if (dir2[1]=="sdxl")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIR"剑魔独孤求败墓"NOR+local+"附近。\n";
 
-else if (dir2[1]=="jqg")  
+else if (dir2[1]=="jqg")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"绝情谷"NOR+local+"附近。\n";
 
-else if (dir2[1]=="nio")  
+else if (dir2[1]=="nio")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"牛家村的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="feihu")  
+else if (dir2[1]=="feihu")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"闯王宝藏的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="wuguan")  
+else if (dir2[1]=="wuguan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"襄阳武馆的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="village")  
+else if (dir2[1]=="village")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"华山村的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="taohuacun")  
+else if (dir2[1]=="taohuacun")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIR"桃花村的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="pingan")  
+else if (dir2[1]=="pingan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"平安城的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="lingxiao")  
+else if (dir2[1]=="lingxiao")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIW"凌霄城的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="wudujiao")  
+else if (dir2[1]=="wudujiao")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIR"五毒教的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="hj")  
+else if (dir2[1]=="hj")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"天山附近草原的"NOR+local+"附近。\n";
-else if (dir2[1]=="dali/yuxu")  
+else if (dir2[1]=="dali/yuxu")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"大理玉虚观的"NOR+local+"附近。\n";
-else if (dir2[1]=="dali/wuliang")  
+else if (dir2[1]=="dali/wuliang")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"大理无量山的"NOR+local+"附近。\n";
-else if (dir2[1]=="huanghe/yyd")  
+else if (dir2[1]=="huanghe/yyd")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"黄河萧府的"NOR+local+"附近。\n";
-else if (dir2[1]=="kaifeng")  
+else if (dir2[1]=="kaifeng")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIM"开封城的"NOR+local+"附近。\n";
-else if (dir2[1]=="feitian")  
+else if (dir2[1]=="feitian")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIR"飞天御剑流的"NOR+local+"附近。\n";
-else if (dir2[1]=="japan")  
+else if (dir2[1]=="japan")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"日本神户的"NOR+local+"附近。\n";
-else if (dir2[1]=="tangmen")  
+else if (dir2[1]=="tangmen")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"唐门的"NOR+local+"附近。\n";
-else if (dir2[1]=="luoyang")  
+else if (dir2[1]=="luoyang")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"洛阳城的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="chengdu" || dir2[1]=="city3")  
+else if (dir2[1]=="chengdu" || dir2[1]=="city3")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"成都的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="baihuagu")  
+else if (dir2[1]=="baihuagu")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"百花谷的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="heizhao")  
+else if (dir2[1]=="heizhao")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"百花谷附近黑沼的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="jiaxing")  
+else if (dir2[1]=="jiaxing")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"嘉兴的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="shiliang")  
+else if (dir2[1]=="shiliang")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"温家庄的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="wuyi")  
+else if (dir2[1]=="wuyi")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"武夷山区的"NOR+local+"附近。\n";
 
-else if (dir2[1]=="yanping")  
+else if (dir2[1]=="yanping")
 
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"延平城的"NOR+local+"附近。\n";
-	
+
 
 else 	output="『"+ob_list[i]->query("name")+"』似乎在某个地方的"+local+"附近,出口数为："+HIW""+ck+""+NOR"的地方。\n";
 
 
-if (dir2[1]=="jiangling")  
+if (dir2[1]=="jiangling")
 {
 	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"江陵城的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="yueyang")  
+if (dir2[1]=="yueyang")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"岳阳城的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"岳阳城的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="qilian")  
+if (dir2[1]=="qilian")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"祁连山的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"祁连山的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="shouxihu")  
+if (dir2[1]=="shouxihu")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"瘦西湖的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"瘦西湖的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="wuxi")  
+if (dir2[1]=="wuxi")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"无锡城的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"无锡城的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="yixing")  
+if (dir2[1]=="yixing")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"宜兴城的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"宜兴城的"NOR+local+"附近。\n";
 }
-if (dir2[1]=="taiwan")  
+if (dir2[1]=="taiwan")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"台湾地区的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"台湾地区的"NOR+local+"附近。\n";
 }
-if (dir2[1]=="nanyang")  
+if (dir2[1]=="nanyang")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"南阳地区的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"南阳地区的"NOR+local+"附近。\n";
 }
-if (dir2[1]=="nanshaolin")  
+if (dir2[1]=="nanshaolin")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"南少林地区的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="cangzhou")  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"沧州地区的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"南少林地区的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="tanggu")  
+if (dir2[1]=="cangzhou")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"塘沽城地区的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"沧州地区的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="yunhe")  
+if (dir2[1]=="tanggu")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"京杭大运河的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"塘沽城地区的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="hainan")  
+if (dir2[1]=="yunhe")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"海南岛的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"京杭大运河的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="jindezheng")  
+if (dir2[1]=="hainan")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"景德镇的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"海南岛的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="yandang")  
+if (dir2[1]=="jindezheng")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"雁荡山的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"景德镇的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="jinling")  
+if (dir2[1]=="yandang")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"金陵城的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"雁荡山的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="sandboy")  
+if (dir2[1]=="jinling")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"江南农村的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"金陵城的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="huangshan")  
+if (dir2[1]=="sandboy")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"黄山的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"江南农村的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="yubifeng")  
+if (dir2[1]=="huangshan")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"玉笔峰的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"黄山的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="quanzhouchen")  
+if (dir2[1]=="yubifeng")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"泉州城内的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"玉笔峰的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="qingzh")  
+if (dir2[1]=="quanzhouchen")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"青藏高原附近"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"泉州城内的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="changbaishan" || dir2[1]=="gaoli")  
+if (dir2[1]=="qingzh")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"高丽 长白山附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"青藏高原附近"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="annan")  
+if (dir2[1]=="changbaishan" || dir2[1]=="gaoli")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"安南 附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"高丽 长白山附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="taiyuan")  
+if (dir2[1]=="annan")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"太原 附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"安南 附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="hefei")  
+if (dir2[1]=="taiyuan")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"合肥 附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"太原 附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="jiujiang")  
+if (dir2[1]=="hefei")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"九江 附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"合肥 附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="baling")  
+if (dir2[1]=="jiujiang")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"巴陵 附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"九江 附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="xinjiang")  
+if (dir2[1]=="baling")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"新疆 附近的"NOR+local+"附近。\n";	
-}
-if (dir2[1]=="dingxiang")  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"定襄 附近的"NOR+local+"附近。\n";	
-}
-if (dir2[1]=="suiye")  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"碎叶 附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"巴陵 附近的"NOR+local+"附近。\n";
 }
 
-
-if (dir2[1]=="mayi")  
+if (dir2[1]=="xinjiang")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"马邑边疆 附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"新疆 附近的"NOR+local+"附近。\n";
 }
-if (dir2[1]=="xuzhou")  
+if (dir2[1]=="dingxiang")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"徐州城 附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"定襄 附近的"NOR+local+"附近。\n";
 }
-if (dir2[1]=="jinan")  
+if (dir2[1]=="suiye")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"济南城 附近的"NOR+local+"附近。\n";	
-}
-if (dir2[1]=="guizhou")  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"贵阳城 附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="nanchang")  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"南昌城 附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"碎叶 附近的"NOR+local+"附近。\n";
 }
 
 
-if (dir2[1]=="changsha")  
+if (dir2[1]=="mayi")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"长沙城 附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"马邑边疆 附近的"NOR+local+"附近。\n";
+}
+if (dir2[1]=="xuzhou")
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"徐州城 附近的"NOR+local+"附近。\n";
+}
+if (dir2[1]=="jinan")
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"济南城 附近的"NOR+local+"附近。\n";
+}
+if (dir2[1]=="guizhou")
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"贵阳城 附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="nanchang")
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"南昌城 附近的"NOR+local+"附近。\n";
 }
 
 
-if (dir2[1]=="zhongzhou")  
+if (dir2[1]=="changsha")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"中州城 附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="xizang" || dir2[1]=="zangbei")  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"西藏或藏北附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="cloud" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"东北绮云镇附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="xueting" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"东北雪亭镇附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="ny" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"东北宁远城附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="fengtian" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIR"东北盛京城附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="yanmen" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIB"雁门关附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="linzhi" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"西藏林芝地区附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="datong" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"大同府附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="tianshui" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"天水镇附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="heifeng" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"黑风寨附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="paiyun" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"排云寨附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"长沙城 附近的"NOR+local+"附近。\n";
 }
 
 
-if (dir2[1]=="yeyangzai" )  
+if (dir2[1]=="zhongzhou")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"野羊寨附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"中州城 附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="xizang" || dir2[1]=="zangbei")
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"西藏或藏北附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="cloud" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"东北绮云镇附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="xueting" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"东北雪亭镇附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="ny" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"东北宁远城附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="fengtian" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIR"东北盛京城附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="yanmen" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIB"雁门关附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="linzhi" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"西藏林芝地区附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="datong" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"大同府附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="tianshui" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"天水镇附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="heifeng" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"黑风寨附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="paiyun" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"排云寨附近的"NOR+local+"附近。\n";
 }
 
 
-if (dir2[1]=="jinghai" )  
+if (dir2[1]=="yeyangzai" )
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"靖海派附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="zuojiacun" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"华亭镇附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"野羊寨附近的"NOR+local+"附近。\n";
 }
 
 
-if (dir2[1]=="houjizhen" )  
+if (dir2[1]=="jinghai" )
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"侯集镇附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"靖海派附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="huayin" )  
+if (dir2[1]=="zuojiacun" )
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"铜山村附近的"NOR+local+"附近。\n";	
-}
-
-if (dir2[1]=="lumaji" )  
-{
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"鹿马集附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"华亭镇附近的"NOR+local+"附近。\n";
 }
 
 
-if (dir2[1]=="xiyu/gaochang" || dir2[1]=="xiyu/hami" || dir2[1]=="xiyu")  
+if (dir2[1]=="houjizhen" )
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"西域边疆附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"侯集镇附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="xibei/desert" || dir2[1]=="xibei/kongdong" || dir2[1]=="xibei/liangzhou" || dir2[1]=="xibei/xingqing" || dir2[1]=="xibei")  
+if (dir2[1]=="huayin" )
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+YEL"西北边疆附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"铜山村附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="zhongyuan/chuzhou" || dir2[1]=="zhongyuan" )  
+if (dir2[1]=="lumaji" )
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+GRN"中原关中附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"鹿马集附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="xinan/after_qingcheng" || dir2[1]=="xinan/cunzi" || dir2[1]=="xinan")  
+
+if (dir2[1]=="xiyu/gaochang" || dir2[1]=="xiyu/hami" || dir2[1]=="xiyu")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"西南四川附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"西域边疆附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="loulan" )  
+if (dir2[1]=="xibei/desert" || dir2[1]=="xibei/kongdong" || dir2[1]=="xibei/liangzhou" || dir2[1]=="xibei/xingqing" || dir2[1]=="xibei")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"楼兰附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+YEL"西北边疆附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="biancheng" )  
+if (dir2[1]=="zhongyuan/chuzhou" || dir2[1]=="zhongyuan" )
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"边城附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+GRN"中原关中附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="quicksand" )  
+if (dir2[1]=="xinan/after_qingcheng" || dir2[1]=="xinan/cunzi" || dir2[1]=="xinan")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"大沙漠附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"西南四川附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="tieflag/qianfo" || dir2[1]=="tieflag" || dir2[1]=="tieflag/palace" || dir2[1]=="tieflag/bat" || dir2[1]=="tieflag/chuenyu")  
+if (dir2[1]=="loulan" )
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"东海区域附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"楼兰附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[2]=="fy" || dir2[2]=="fycycle")  
+if (dir2[1]=="biancheng" )
 {
-output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"风云城附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIG"边城附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="taiping" )  
+if (dir2[1]=="quicksand" )
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"太平镇附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"大沙漠附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="eren/eren2" || dir2[1]=="eren" )  
+if (dir2[1]=="tieflag/qianfo" || dir2[1]=="tieflag" || dir2[1]=="tieflag/palace" || dir2[1]=="tieflag/bat" || dir2[1]=="tieflag/chuenyu")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"恶人谷附近的"NOR+local+"附近。\n";	
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"东海区域附近的"NOR+local+"附近。\n";
 }
 
-if (dir2[1]=="qujing"  )  
+if (dir2[2]=="fy" || dir2[2]=="fycycle")
 {
-	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"西域诸国附近的"NOR+local+"附近。\n";	
+output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"风云城附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="taiping" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"太平镇附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="eren/eren2" || dir2[1]=="eren" )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIC"恶人谷附近的"NOR+local+"附近。\n";
+}
+
+if (dir2[1]=="qujing"  )
+{
+	output="『"+ob_list[i]->query("name")+"』似乎在"+HIY"西域诸国附近的"NOR+local+"附近。\n";
 }
 
 if (wizardp(this_player()))
@@ -1362,7 +1362,7 @@ object find_book(object ob)
 
           if(ob->query("short") ) return ob;
 //        if(ob->query("exits") ) return ob;
-     
+
         else ob=environment(ob);
 
         }
@@ -1447,4 +1447,3 @@ void execute_accept_object(object me, object who, object item)
 	who->accept_object(me,item);
 
 }
-

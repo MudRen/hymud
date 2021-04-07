@@ -1,6 +1,6 @@
 // char.c
 
-#pragma save_binary
+// #pragma save_binary
 
 #include <action.h>
 #include <ansi.h>
@@ -98,7 +98,7 @@ void heart_beat()
 	if( !userp(this_object()) ) {
 		this_object()->chat();
 		// chat() may do anything -- include destruct(this_object())
-		if( !this_object() ) return;	
+		if( !this_object() ) return;
 	}
 
 	if( tick--  ) return;
@@ -110,7 +110,7 @@ void heart_beat()
 	// heal_up() must be called prior to other two to make sure it is called
 	// because the && operator is lazy :P
 	if( ((cnd_flag & CND_NO_HEAL_UP) || !heal_up())
-	&&	!is_fighting() 
+	&&	!is_fighting()
 	&&	!interactive(this_object())) {
 		if( environment() ) {
 			ob = first_inventory(environment());

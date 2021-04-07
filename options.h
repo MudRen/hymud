@@ -35,7 +35,7 @@
  如果没有定义SMALLOC，请不要使用下面这个定义。
  ****************************************************************************/
 #undef SBRK_OK
- 
+
 /****************************************************************************
  如果没有定义 BSDMALLOC or SMALLOC ，请不要使用下面这个定义
  ****************************************************************************/
@@ -338,7 +338,7 @@
 #undef REF_RESERVED_WORD
 
 /****************************************************************************
-                              扩充包是可选配件 
+                              扩充包是可选配件
  如果你定义了PACKAGE_XYZZY，那么你可以参看 packages/xyzzy.c　中的函数来确定可
  以使用哪些efuns。
  确定使用哪些扩充包，主要取决于提供的efuns是否是需要的。
@@ -516,7 +516,7 @@
 #define CFG_MAX_CALL_DEPTH		50
 
 /****************************************************************************
- 下面定义的必须选择 4, 16, 64, 256, 1024, 4096 中的一个数字 
+ 下面定义的必须选择 4, 16, 64, 256, 1024, 4096 中的一个数字
  ****************************************************************************/
 #define CFG_LIVING_HASH_SIZE		256
 
@@ -533,16 +533,16 @@
     malloc_debug(-1) efun (with an arg of -1).  This will turn all
     malloc debugging off and call malloc_singlethreaded() which the NeXT
     malloc man page claims can make NeXT system malloc 10% to 15% faster.
- 
+
   [NOTE: This #define has no affect on the driver if not using the
    NeXTSTEP OS.]
- 
+
   Warning: if you use a NeXT and define NEXT_MALLOC_DEBUG, be sure to
            protect the use of the malloc_check() and malloc_debug() efuns
            since setting certain debug levels can cause malloc() and free()
            to become _very_ slow (protect efuns by using simul_efuns and
            valid_override).
- 
+
   [NOTE: malloc_debug(6) is a good compromise between efficiency and
    completeness of malloc debugging (malloc/free will be about half as fast).]
  ****************************************************************************/

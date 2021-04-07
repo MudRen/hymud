@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 inherit ITEM;
 
 #include <ansi.h>
@@ -22,19 +22,19 @@ int do_drink(string arg)
 {
 	object ob;
 
-	if( !arg || arg != "cola") 
+	if( !arg || arg != "cola")
 		return notify_fail("你要喝甚么呢? \n");
 
 	message_vision( MAG
  	"$N喝了口可乐,舔了舔嘴边,似乎回味无穷.....\n"+HIR
- 	"$N脸上露出诡异的表情....\n" NOR,this_player()  
+ 	"$N脸上露出诡异的表情....\n" NOR,this_player()
  	); //end_message_vision
 	message_vision(WHT"这瓶可乐被$N喝完了，$N随手一丢，说也奇怪地就不见了。
 				\n"NOR,this_player() );
 
-    	
+
     	this_player()->set("water",this_player()->max_water_capacity());
 	destruct(this_object());
-	
+
 	return 1;
 }

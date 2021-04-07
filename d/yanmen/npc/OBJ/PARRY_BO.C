@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 //old_sword.c
 
 #include <ansi.h>
@@ -32,4 +32,3 @@ LONG
         set("replica_ob", __DIR__"cola");
 	}
 }
-		

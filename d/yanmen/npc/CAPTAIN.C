@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // captain.c
 
 #include <ansi.h>
@@ -37,13 +37,13 @@ void create()
 		"兵器库" : "喔！那是我们厉害的军师所设的阵法。\n",
 		"黄石隘口" : (: tell_story :),
 	]) );
-	
+
 	set("chat_chance", 8);
 	set("chat_msg", ({
 		"大队长说道：有没有问题要问我啊？\n",
 		"大队长说道：我对这里很熟的喔。\n",
 	}) );
-	
+
 	set("force", 700);
 	set("max_force", 700);
 	set("force_factor", 5);
@@ -53,7 +53,7 @@ void create()
 	set_skill("parry", 70);
 	set_skill("force", 70);
 	set_skill("unarmed", 65);
-	
+
 	setup();
 
 	carry_object( __DIR__"obj/sword")->wield();
@@ -68,7 +68,7 @@ int accept_object(object who, object ob)
         //        call_out( (: destruct :), 1, ob);
                 return 1;
         }
-                                                                                
+
 	if ( !who->query("marks/军营") ) {
 		if( ob->value() >=3000 ) {
 			say("大队长说道:我已帮你列入名册了，从今天你可自由"
@@ -81,7 +81,7 @@ int accept_object(object who, object ob)
 		}
 	} else
 		say("大队长说道:哦喔！还真有心啊，真是谢谢你了。\n");
-	
+
 	return 1;
 }
 
@@ -101,5 +101,3 @@ void make_stage(object who,int stage)
 	}
 	return;
 }
-         
-		

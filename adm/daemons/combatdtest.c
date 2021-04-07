@@ -1,6 +1,6 @@
 // combatd.c
 // modify by zzz year 2000
-#pragma optimize
+// #pragma optimize
 
 #include <ansi.h>
 #include <skill.h>
@@ -165,7 +165,7 @@ string damage_msg(int damage, string type)
 			if( damage < 320 ) return "结果重重地击中，$n「哇」地一声吐出一口鲜血！\n";
 			if( damage < 450 ) return "结果「轰」地一声，$n全身气血倒流，口中鲜血狂喷而出！\n";
 			return "结果只听见几声喀喀轻响，$n一声惨叫，像滩软泥般塌了下去！！\n";
-		case "震伤":                
+		case "震伤":
 			if( damage < 100 ) return "结果$n受到$N的劲力一震，闷哼一声。\n";
 			if( damage < 150 ) return "结果$n被$N以劲力一震，「嘿」地一声退了两步。\n";
 			if( damage < 230 ) return "结果$n被$N以劲力一震，胸口有如受到一记重锤，连退了五六步！\n";
@@ -361,31 +361,31 @@ varargs void report_status(object ob, int effective)
 // 比武现场转播 start
 //	player=users();
 // 比武现场转播 end
-	if( effective ) 
+	if( effective )
 	{//	if(!ob->query_temp("tjj_jie"))
 		message_vision( "( $N" + eff_status_msg(
-		(int)ob->query("eff_qi") * 100 / (int)ob->query("max_qi") ) 
+		(int)ob->query("eff_qi") * 100 / (int)ob->query("max_qi") )
 			+ " )\n", ob);
 // 比武现场转播 start
 //		if ((string)environment(ob)->query("short") == "擂台")
 //		for (userno=0; userno<sizeof(player); userno++)
 //		    if ((player[userno])->query_temp("view_leitai"))
 //			tell_object(player[userno], "( " + ob->name() + eff_status_msg(
-//			(int)ob->query("eff_qi") * 100 / (int)ob->query("max_qi") ) 
+//			(int)ob->query("eff_qi") * 100 / (int)ob->query("max_qi") )
 //			+ " )\n");
 // 比武现场转播 end
 	}
 	else
 	{//	if(!ob->query_temp("tjj_jie"))
 		message_vision( "( $N" + status_msg(
-			(int)ob->query("qi") * 100 / (int)ob->query("max_qi") ) 
+			(int)ob->query("qi") * 100 / (int)ob->query("max_qi") )
 			+ " )\n", ob);
 // 比武现场转播 start
 //		if ((string)environment(ob)->query("short") == "擂台")
 //		for (userno=0; userno<sizeof(player); userno++)
 //		    if ((player[userno])->query_temp("view_leitai"))
 //			tell_object(player[userno], "( " + ob->name() + status_msg(
-//			(int)ob->query("qi") * 100 / (int)ob->query("max_qi") ) 
+//			(int)ob->query("qi") * 100 / (int)ob->query("max_qi") )
 //			+ " )\n");
 // 比武现场转播 end
 	}
@@ -449,7 +449,7 @@ if (dexa > 200) dexa=200;
 stra=ob->query_str() + ob->query_temp("str")/2;
 if (stra > 200) stra=200;
 
-	switch(usage) 
+	switch(usage)
 	{
 		case SKILL_USAGE_ATTACK:
 			level += attack;
@@ -459,8 +459,8 @@ if (stra > 200) stra=200;
 			level += def;
 			if (ob->is_fighting() && skill="dodge" )
 			level = level + dodgea;
-			else 
-			
+			else
+
 			break;
 	}
 /*	if( !level ) return exp / 2;
@@ -500,7 +500,7 @@ varargs int do_attack(object me, object victim, object weapon, int attack_type, 
 	int damage, damage_bonus, defense_factor,damages,wounds,attack;
 	int wounded = 0;
 	int flag = 0;
-	
+
 	object vweapon,nweapon;
 if (victim->query_temp("weapon"))
 {
@@ -544,8 +544,8 @@ if (!victim->query_condition("killer") && environment(victim)->query("no_fight")
 		if ( weapon ) attack_skill = weapon->query("skill_type");
 	}
 	// (1) Find out what action the offenser will take.
-		me->prepare_skill("sword");	
-		me->prepare_skill("blade");	
+		me->prepare_skill("sword");
+		me->prepare_skill("blade");
 	me->reset_action();
 	action = me->query("actions");
 	if( !mapp(action) ) {
@@ -567,7 +567,7 @@ me->map_skill(attack_skill);
 	if (me->query_temp("action_flag") == 0)
 		result = "\n" + action["action"] + "！\n";
 	else
-		result = "\n" + "紧跟着"+action["action"] + "!\n"; 
+		result = "\n" + "紧跟着"+action["action"] + "!\n";
        if(stringp(attack_msg)) result = "\n" + attack_msg + "\n";
 	// (2) Prepare AP, DP for checking if hit.
         if (martial_skill = me->query_skill_mapped(attack_skill))
@@ -595,7 +595,7 @@ if (vweapon)
 {
 vweaponn=vweapon->query("skill_type");
 }
-if (mweaponn=="" || !mweaponn) 
+if (mweaponn=="" || !mweaponn)
 {
 mweaponn="none";
 }
@@ -606,7 +606,7 @@ if (vweaponn=="" || !vweaponn)
 
 
 	ap = skill_power(me, attack_skill, SKILL_USAGE_ATTACK);
-	
+
 	        if (member_array(limb, danger_limbs) != -1) /* 向危险部位发动进攻  */
                 ap -= ap / 10;                      /* 击中的可能性减小10% */
 
@@ -636,14 +636,14 @@ if (mweaponn=="whip" && (vweaponn=="club" || vweaponn=="staff" || vweaponn=="non
 		if( !dodge_skill ) dodge_skill = "dodge";
 		result += SKILL_D(dodge_skill)->query_dodge_msg(limb);
 		damage = RESULT_DODGE;
-	} 
+	}
 	else {
 	//	(4) Check if the victim can parry this attack.
 	    pp = skill_power(victim, "parry", SKILL_USAGE_DEFENSE);
-		if( victim->query_temp("weapon") ) 
+		if( victim->query_temp("weapon") )
 		{
 			if( !weapon ) pp *= 2;
-		} else 
+		} else
 		{
 			if( weapon ) pp /= 2;
 		}
@@ -651,14 +651,14 @@ if (mweaponn=="whip" && (vweaponn=="club" || vweaponn=="staff" || vweaponn=="non
 		if( victim->is_busy() ) pp /= 3;
 		if( pp < 1 ) pp = 1;
 
-		if( random(ap + pp)< pp ) 
+		if( random(ap + pp)< pp )
 		{	parry_skill = victim->query_skill_mapped("parry");
 			if( !parry_skill ) parry_skill = "parry";
 			// change to SKILL_D(parry_skill) after added parry msg to those
 			// martial arts that can parry.
 			result += SKILL_D("parry")->query_parry_msg(weapon);
 			damage = RESULT_PARRY;
-		} else 
+		} else
 		{//	(5) We hit the victim and the victim failed to parry
 			attack = 1;
 			damage = me->query_temp("apply/damage");
@@ -702,19 +702,19 @@ else if (cstra > 600) cstra =600;
 			}
 
             damage_bonus += me->query_skill(attack_skill) * damage_bonus / 1000;
-			if( weapon ) damage_bonus -= damage_bonus/3 ; 
+			if( weapon ) damage_bonus -= damage_bonus/3 ;
 			if( martial_skill = me->query_skill_mapped(attack_skill) ) {
 				foo = SKILL_D(martial_skill)->hit_ob(me, victim, damage_bonus);
 				if( stringp(foo) ) result += foo;
 				else if(intp(foo) ) damage_bonus += foo;
 			}
 			// Let weapon or monster have their special damage.
-			if( weapon ) 
+			if( weapon )
 			{
 				foo = weapon->hit_ob(me, victim, damage_bonus);
 				if( stringp(foo) ) result += foo;
 				else if(intp(foo) ) damage_bonus += foo;
-			} else 
+			} else
 			{
 
 			if ( objectp(nweapon = me->query_temp("armor/hands")) && !weapon) {
@@ -813,30 +813,30 @@ else
 				if( stringp(foo) ) result += foo;
 				else if(intp(foo) ) damage_bonus = foo;
 			}
-			
+
 			if (foo = victim->query_temp("armor/neck")) {
 				foo = foo->ob_hit(me, victim, damage_bonus);
 				if( stringp(foo) ) result += foo;
 				else if(intp(foo) ) damage_bonus = foo;
-			}			
+			}
 
 			if (foo = victim->query_temp("armor/surcoat")) {
 				foo = foo->ob_hit(me, victim, damage_bonus);
 				if( stringp(foo) ) result += foo;
 				else if(intp(foo) ) damage_bonus = foo;
-			}			
+			}
 
 			if (foo = victim->query_temp("armor/waist")) {
 				foo = foo->ob_hit(me, victim, damage_bonus);
 				if( stringp(foo) ) result += foo;
 				else if(intp(foo) ) damage_bonus = foo;
 			}
-			
+
 			if (foo = victim->query_temp("armor/wrists")) {
 				foo = foo->ob_hit(me, victim, damage_bonus);
 				if( stringp(foo) ) result += foo;
 				else if(intp(foo) ) damage_bonus = foo;
-			}			
+			}
 			if( damage_bonus > 0 )
 			damage += (4*damage_bonus + random(damage_bonus))/5;
 			if( damage < 0 ) damage = 0;
@@ -858,7 +858,7 @@ if (mweaponn=="staff" && (vweaponn=="sword" || vweaponn=="blade" || vweaponn=="a
 if (mweaponn=="none" && (vweaponn=="club" || vweaponn=="staff" || vweaponn=="axe") ) damage=damage*2;
 if (mweaponn=="throwing" && (vweaponn=="club" || vweaponn=="staff" || vweaponn=="hammer") ) damage=damage*2;
 if (mweaponn=="whip" && (vweaponn=="club" || vweaponn=="staff" || vweaponn=="none") ) damage=damage*2;
-}	
+}
 
                         // 根据攻击的部位影响伤害
                         if (! undefinedp(limb_damage[limb]))
@@ -866,7 +866,7 @@ if (mweaponn=="whip" && (vweaponn=="club" || vweaponn=="staff" || vweaponn=="non
 
 
 			damage = victim->receive_damage("qi", damage, me);
-			if( random(damage) > (int)victim->query_temp("apply/armor") && ( (me->is_killing(victim->query("id"))) 
+			if( random(damage) > (int)victim->query_temp("apply/armor") && ( (me->is_killing(victim->query("id")))
 				&& ((!weapon) && !random(4) || weapon && !random(2) )
 			    || ((!weapon) && !random(7) || weapon && !random(4) ) )  )
 			{
@@ -890,17 +890,17 @@ if (wounds <0) wounds=0;
                 if (userp(victim) && victim->query("env/combat_show"))
                         tell_object(victim, HIG "( 你受到" +
                                         me->query("name") + HIG + damages + "点伤害，" +
-                                        wounds + "点创伤。)\n" NOR);		
+                                        wounds + "点创伤。)\n" NOR);
 
 		}
-	} 
-	
+	}
+
 	result = replace_string( result, "$l", limb );
 	if( objectp(weapon) )
 		result = replace_string( result, "$w", weapon->name() );
 	else if( stringp(action["weapon"]) )
 		result = replace_string( result, "$w", action["weapon"] );
-	else if( attack_skill == "finger" ) 
+	else if( attack_skill == "finger" )
 		result = replace_string( result, "$w", "手指" );
 
 	message_combatd(result, me, victim );
@@ -964,9 +964,9 @@ if (wounds <0) wounds=0;
 	if( damage > 0 )
 		{
 			// tell_object(me, HIG "( 武器类别" +
-                        //                mweaponn + HIG + vweaponn + "\n" NOR);		
+                        //                mweaponn + HIG + vweaponn + "\n" NOR);
 
-			
+
 			tell_object(me, sprintf( GRN "AP：%d，DP：%d，PP：%d，伤害力：%d\n" NOR,
 				ap/100, dp/100, pp/100, damage));
 
@@ -980,20 +980,20 @@ if (wounds <0) wounds=0;
 				ap/100, dp/100, pp/100));
 			}
 	}
-	
+
 	if( damage > 0 ) {
 		report_status(victim, wounded);
 		if( victim->is_busy() ) victim->interrupt_me(me);
 		if( (!me->is_killing(your["id"])) && (!victim->is_killing(my["id"])) &&
-		victim->query("qi")*2 <= victim->query("max_qi")) 
+		victim->query("qi")*2 <= victim->query("max_qi"))
 		{
 			me->remove_enemy(victim);
 			victim->remove_enemy(me);
 			fight_reward(me, victim);
-			fight_penalty(me, victim);		
+			fight_penalty(me, victim);
 			if (me->query("race") == "人类") {
 			message_vision( winner_msg[random(sizeof(winner_msg))], me, victim);
-			} else message_vision( winner_animal_msg[random(sizeof(winner_animal_msg))], me, victim);			
+			} else message_vision( winner_animal_msg[random(sizeof(winner_animal_msg))], me, victim);
 /*// 比武现场转播 start
 			result = winner_msg[random(sizeof(winner_msg))];
 			result = replace_string(result,  "$P", me->name());
@@ -1025,10 +1025,10 @@ void fight(object me, object victim)
 //	player=users();
 // 比武现场转播 end
 	if( !living(me) ) return;
-	
+
 	if( !victim ) return;
 	if( !me ) return;
-	
+
         if (userp(me) && environment(me)->query("no_fight")) return;
         if( me->query_temp("combat_yield") && userp(me) && userp(victim)
                 ) return;
@@ -1064,22 +1064,22 @@ switch (random(2))
 		}
 		break;
 	}
-}	
-		
+}
+
 
 	if( victim->is_busy() || !living(victim) ) {
 		me->set_temp("guarding", 0);
 		if( !victim->is_fighting(me) ) victim->fight_ob(me);
 		do_attack(me, victim, me->query_temp("weapon"), TYPE_QUICK);
 
-		if( me->is_fighting(victim) && victim->is_fighting(me)) 
-		if( (!objectp(me->query_temp("weapon")) 
+		if( me->is_fighting(victim) && victim->is_fighting(me))
+		if( (!objectp(me->query_temp("weapon"))
 		   && sizeof(me->query_skill_prepare()) > 1)
-		||  ( objectp(me->query_temp("weapon")) 
+		||  ( objectp(me->query_temp("weapon"))
 		   &&(me->query_temp("weapon"))->query("skill_type") == "sword"
 		   && me->query_skill("pixie-jian", 1) >= 60
 		   && me->query_skill_mapped("sword") == "pixie-jian")
-                || (me->query("double_attack") && !objectp(me->query_temp("weapon"))) 
+                || (me->query("double_attack") && !objectp(me->query_temp("weapon")))
                 || me->query_temp("double_attack"))
 		{
 		if (me->query("double_attack") && sizeof(me->query_skill_prepare()) < 2)
@@ -1091,20 +1091,20 @@ switch (random(2))
 
 	// Else, see if we are brave enough to make an aggressive action.
 		} else if( me->query_temp("guarding")||
-					random( (int)me->query_dex()  ) > random( (int)victim->query_dex() )) 
+					random( (int)me->query_dex()  ) > random( (int)victim->query_dex() ))
 		{	me->set_temp("guarding", 0);
-			if( !victim->is_fighting(me) ) victim->fight_ob(me);  
+			if( !victim->is_fighting(me) ) victim->fight_ob(me);
 			do_attack(me, victim, me->query_temp("weapon"), TYPE_REGULAR);
 
 
-		if( me->is_fighting(victim) && victim->is_fighting(me)) 
-		if( (!objectp(me->query_temp("weapon")) 
+		if( me->is_fighting(victim) && victim->is_fighting(me))
+		if( (!objectp(me->query_temp("weapon"))
 		   && sizeof(me->query_skill_prepare()) > 1)
-		||  ( objectp(me->query_temp("weapon")) 
+		||  ( objectp(me->query_temp("weapon"))
 		   &&(me->query_temp("weapon"))->query("skill_type") == "sword"
 		   && me->query_skill("pixie-jian", 1) >= 60
 		   && me->query_skill_mapped("sword") == "pixie-jian")
-                || (me->query("double_attack") && !objectp(me->query_temp("weapon"))) 
+                || (me->query("double_attack") && !objectp(me->query_temp("weapon")))
                 || me->query_temp("double_attack"))
 		{
 		if (me->query("double_attack") && sizeof(me->query_skill_prepare()) < 2)
@@ -1115,7 +1115,7 @@ switch (random(2))
 	     	}
 
 	// Else, we just start guarding.
-	} else 
+	} else
 	{
 		me->set_temp("guarding", 1);
 		message_vision( guard_msg[random(sizeof(guard_msg))], me, victim);
@@ -1143,7 +1143,7 @@ void auto_fight(object me, object obj, string type)
 	// Don't let NPC autofight NPC.
 	if( !userp(me) && !userp(obj) ) return;
 	// Because most of the cases that we cannot start a fight cannot be checked
-	// before we really call the kill_ob(), so we just make sure we have no 
+	// before we really call the kill_ob(), so we just make sure we have no
 	// aggressive callout wating here.
 	if( me->query_temp("looking_for_trouble") ) return;
 	me->set_temp("looking_for_trouble", 1);
@@ -1170,7 +1170,7 @@ void start_berserk(object me, object obj)
 
 	if( !userp(me) || (int)me->query("neili") > (random(shen) + shen)/10 ) return;
 
-	if( shen > (int)me->query("score") 
+	if( shen > (int)me->query("score")
 	&&	!wizardp(obj) ) {
 		message_vision("$N对著$n喝道：" + RANK_D->query_self_rude(me)
 			+ "看你实在很不顺眼，去死吧。\n", me, obj);
@@ -1303,7 +1303,7 @@ void killer_reward(object killer, object victim)
 	env = environment(victim);
 
 	if(objectp(env))
-	if ( env->query("no_death_penalty")) 
+	if ( env->query("no_death_penalty"))
 	{
 	victim->set_temp("no_death_penalty",1);
 	return;
@@ -1341,12 +1341,12 @@ if (mapp(victim->query("killer_reward")) && userp(killer))
 //log_file("log", "开始奖励：" + base_name(environment(victim)) +"\n", 1);
 }
 
-	if( userp(killer) || userp(victim) ) 
+	if( userp(killer) || userp(victim) )
 	{
  FAMILY_D->family_kill(killer, victim);
 }
 
-	if( userp(victim)) 
+	if( userp(victim))
 	{
 /*		if (userp(killer) && killer->query_condition("killer"))
 {
@@ -1481,11 +1481,11 @@ if (killer->query("id")!=victim->query("id"))
 		sprintf("%s得到了官府的奖励!", killer->name(), killer->name()));
 }
 }
-		else 
+		else
 {
 		if ( victim->query_condition("killer"))
 {
-                victim->apply_condition("killer", 0);		
+                victim->apply_condition("killer", 0);
 
 }
 		CHANNEL_D->do_channel(this_object(), "rumor",sprintf("%s"+msg, victim->name(1)));
@@ -1521,7 +1521,7 @@ if (killer->query("id")!=victim->query("id"))
         	chinese_number(score)+"点江湖阅历。\n" NOR);
 		killer->set("quest", 0 );
 	}
-// 下面是杀人任务 
+// 下面是杀人任务
 info = read_file("/data/npc/menpai.o");
 infot = read_file("/data/npc/menpai1.o");
 
@@ -1681,11 +1681,11 @@ killer->apply_condition("menpai_kill",3);
         	chinese_number(exp) + "点实战经验，"+
         	chinese_number(pot) + "点潜能，" +
         	chinese_number(score)+"点江湖阅历。\n" NOR);
-		
+
 		if ((int)killer->query_temp("menpaikill")==1)
 		{
 		killer->add_temp("menpaijob",1);
-		killer->delete_temp("menpaikill");	
+		killer->delete_temp("menpaikill");
 		}
 		killer->set("quest", 0 );
 	}

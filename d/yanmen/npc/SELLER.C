@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // seller.c
 
 inherit NPC;
@@ -13,7 +13,7 @@ void create()
 	set("combat_exp", 50000);
 	set("attitude", "friendly");
 	setup();
-	
+
 	carry_object( __DIR__"obj/blade")->wield();
 }
 
@@ -24,7 +24,7 @@ int accept_object(object who,object ob)
 
 
 	who=this_player();
-	
+
 	if ( ob->value()==30000 ) {
 		if ( this_player()->query_temp("Get_seal") ) {
 			command("say 我已经给你了啊。");
@@ -48,9 +48,9 @@ int accept_object(object who,object ob)
         this_player()->set_temp("Get_seal", 1);
 		return 1;
 	}
-	
+
 	if ( !query_temp("check") ) {
-		if ( ((string)ob->name() == "印鉴") && 
+		if ( ((string)ob->name() == "印鉴") &&
 		     who->query_temp("将军/kick") ) {
 			command("say 好吧！即然被你发现了，只好认栽了。");
 			command("say 这个真的你就拿去吧");
@@ -63,10 +63,8 @@ int accept_object(object who,object ob)
 			command("say 你给我这个做什么？我不要，你拿回去吧。");
 			return 0;
 		}
-	} 
+	}
 	command("say 如果是钱的话，我先没收了。");
 	command("say 其他的东西我都不要，别再来烦我了。");
 	return 0;
 }
-			
-	

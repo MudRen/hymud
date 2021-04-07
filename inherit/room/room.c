@@ -1,6 +1,6 @@
 // room.c
 
-#pragma save_binary
+// #pragma save_binary
 #include <ansi.h>
 #include <dbase.h>
 #include <room.h>
@@ -54,7 +54,7 @@ void reset()
 if (query("maze2")) return;
 	//
 	// Check loaded objects to match the objects specified in "objects"
-	// while query("objects") is 
+	// while query("objects") is
 	// ([ <object filename>: <amount>, ..... ])
 	// and query_temp("objects") is
 	// ([ <object filename>: ({ob1, ob2, ...}), .... ])
@@ -78,7 +78,7 @@ if (query("maze2")) return;
 	set("no_clean_up", 0);
 	ob_list = query("objects");
 	if( !mapp(ob_list) ) return;
-	
+
 	if( !mapp(ob = query_temp("objects")) )
 		ob = allocate_mapping(sizeof(ob_list));
 	list = keys(ob_list);
@@ -91,14 +91,14 @@ if (query("maze2")) return;
 
 		switch(ob_list[list[i]]) {
                 case 1:
-                        if( !ob[list[i]] ) 
-{                        
+                        if( !ob[list[i]] )
+{
                         ob[list[i]] = make_inventory(list[i]);
 if (query("maze"))	add("maze2", 1);
-}                        
+}
                         if( environment(ob[list[i]]) != this_object()
                             && !ob[list[i]]->query("location")
-//                            &&	ob[list[i]][j]->is_character() 
+//                            &&	ob[list[i]][j]->is_character()
                             && !ob[list[i]]->return_home(this_object())) {
                                         ob[list[i]] = make_inventory(list[i]);
 if (query("maze"))	add("maze2", 1);
@@ -115,7 +115,7 @@ if (query("maze"))	add("maze2", 1);
                                 // Try to call the wandering npc come back here.
                                 if( environment(ob[list[i]][j]) != this_object()
                                     && !ob[list[i]][j]->query("location")
-//                                    &&	ob[list[i]][j]->is_character() 
+//                                    &&	ob[list[i]][j]->is_character()
                                     && !ob[list[i]][j]->return_home(this_object())) {
                                                 ob[list[i]][j] = make_inventory(list[i]);
 //					add("no_clean_up", 1);

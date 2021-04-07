@@ -1,4 +1,4 @@
-#pragma save_binary
+// #pragma save_binary
 // leader.c
 
 inherit NPC;
@@ -17,7 +17,7 @@ void create()
 	set("int", 25);
 
 	set("combat_exp", 80000);
-	
+
 	set("force", 400);
 	set("max_force", 400);
 	set("force_factor", 5);
@@ -27,10 +27,8 @@ void create()
 	set_skill("parry", 60);
 	set_skill("force", 60);
 	set_skill("unarmed", 65);
-	
+
 	setup();
 
 	carry_object( __DIR__"obj/sword")->wield();
 }
-
-		

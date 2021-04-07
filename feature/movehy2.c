@@ -1,6 +1,6 @@
 // move.c
 
-#pragma optimize
+// #pragma optimize
 
 #include <ansi.h>
 #include <dbase.h>
@@ -100,7 +100,7 @@ varargs int move(mixed dest, int silently)
 	// If we are players, try look where we are.
 	if( interactive(me)		// are we linkdead?
 		&&	living(me)			// are we still concious?
-		&&	!silently 
+		&&	!silently
         &&  userp(me) ) {
 		if( query("env/brief") || query_temp("follow"))
 		{

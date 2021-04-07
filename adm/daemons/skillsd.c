@@ -4,8 +4,8 @@
 
 #include <ansi.h>
 
-#pragma optimize
-#pragma save_binary
+// #pragma optimize
+// #pragma save_binary
 
 inherit F_SAVE;
 inherit F_DBASE;
@@ -45,29 +45,29 @@ protected void manage_skill();
 protected void load_skill();
 public string query_save_file() { return DATA_DIR "skillsd"; }
 
-static mapping family_name = ([ 
-        "shaolin"  : "少林", 
-        "wudang"   : "武当", 
-        "gaibang"  : "丐帮", 
-        "quanzhen" : "全真", 
-        "huashan"  : "华山", 
-        "duan"     : "段氏", 
-        "murong"   : "慕容", 
-        "xueshan"  : "雪山", 
-        "lingjiu"  : "灵鹫", 
-        "emei"     : "峨嵋", 
-        "taohua"   : "桃花", 
-        "shenlong" : "神龙", 
-        "gumu"     : "古墓", 
-        "xingxiu"  : "星宿", 
-        "xiaoyao"  : "逍遥", 
-        "xuedao"   : "血刀", 
-        "ouyang"   : "欧阳", 
-        "hu"       : "胡家", 
-        "mingjiao" : "明教", 
-        "tang"     : "唐门", 
-        "riyue"    : "日月", 
-]); 
+static mapping family_name = ([
+        "shaolin"  : "少林",
+        "wudang"   : "武当",
+        "gaibang"  : "丐帮",
+        "quanzhen" : "全真",
+        "huashan"  : "华山",
+        "duan"     : "段氏",
+        "murong"   : "慕容",
+        "xueshan"  : "雪山",
+        "lingjiu"  : "灵鹫",
+        "emei"     : "峨嵋",
+        "taohua"   : "桃花",
+        "shenlong" : "神龙",
+        "gumu"     : "古墓",
+        "xingxiu"  : "星宿",
+        "xiaoyao"  : "逍遥",
+        "xuedao"   : "血刀",
+        "ouyang"   : "欧阳",
+        "hu"       : "胡家",
+        "mingjiao" : "明教",
+        "tang"     : "唐门",
+        "riyue"    : "日月",
+]);
 
 void create()
 {
@@ -195,7 +195,7 @@ void manage_skill()
                                         all_skills[skill] = initial_skills[skill];
                                 continue;
                         }
-                        if( !scores || ! users || !all_record[skill][1] || 
+                        if( !scores || ! users || !all_record[skill][1] ||
                             !all_record[skill][0] )
                                 continue;
 
@@ -216,7 +216,7 @@ void manage_skill()
 
                         all_record[skill] += ({ effect });
 
-                        attack = initial_skills[skill][ATTACK] ? 
+                        attack = initial_skills[skill][ATTACK] ?
                                  initial_skills[skill][ATTACK] + effect : 0;
                         damage = initial_skills[skill][DAMAGE] ?
                                  initial_skills[skill][DAMAGE] + effect : 0;
@@ -230,14 +230,14 @@ void manage_skill()
                         rank = initial_skills[skill][RANK];
                         attribute = initial_skills[skill][ATTRIBUTE];
 
-                        //obs = filter_array(users(), (: ultrap($1) && 
+                        //obs = filter_array(users(), (: ultrap($1) &&
 //                                                       $1->query_skill($(skill), 1) > 400 &&
 //                                                       $1->query("doing") :));
                         if( sizeof(obs) )
                         {
                                 ob = obs[random(sizeof(obs))];
                                 ob->add_skill(skill, 10 + random(6));
-                                tell_object(ob, HIM "你脑中突然灵光一闪，你对" + 
+                                tell_object(ob, HIM "你脑中突然灵光一闪，你对" +
                                                 to_chinese(skill) + "有了更深的领悟！\n" NOR);
                         }
                         else
@@ -249,12 +249,12 @@ void manage_skill()
 
                         if( delta > 0 )
                                 CHANNEL_D->do_channel(this_object(), "rumor",
-                                        "江湖传言，武学大宗师" + (ob ? ob->name(1) : "无名老人") + "闭关修行研究" + 
+                                        "江湖传言，武学大宗师" + (ob ? ob->name(1) : "无名老人") + "闭关修行研究" +
                                         to_chinese(skill) + "，终于悟出其破解之术。");
                         else
                         if( delta < 0 )
                                 CHANNEL_D->do_channel(this_object(), "rumor",
-                                        "江湖传言，武学大宗师" + (ob ? ob->name(1) : "无名老人") + "闭关修行研究" + 
+                                        "江湖传言，武学大宗师" + (ob ? ob->name(1) : "无名老人") + "闭关修行研究" +
                                         to_chinese(skill) + "，终于完善其破绽之处。");
 
                         skl = ({ attack, dodge, parry, damage, force, difficult, rank, attribute });
@@ -388,7 +388,7 @@ varargs void query_skill_power(object me, string arg)
                                 skl[ATTACK], skl[DODGE], skl[PARRY], skl[DAMAGE],
                                  skl[DIFFICULT], str1, str2 );
 
-                
+
         }
         msg += "─────────────────────────────────────────\n";
         me->start_more(msg);
@@ -555,21 +555,21 @@ void upgrade_skill_power(string skill)
 {
         string *sk;
         int attack, dodge, parry, damage, diffi;
-        
+
         if( undefinedp(all_skills[skill]) )
                 return;
-                
+
         sk = all_skills[skill];
         attack = (int)sk[ATTACK];
         dodge  = (int)sk[DODGE];
         parry  = (int)sk[PARRY];
         damage = (int)sk[DAMAGE];
         diffi  = (int)sk[DIFFICULT];
-        
+
         if( attack > MAX_POINT && dodge > MAX_POINT &&
             damage > MAX_POINT && parry > MAX_POINT )
                 return;
-                
+
         switch(random(4))
         {
         case 0 :
@@ -581,33 +581,33 @@ void upgrade_skill_power(string skill)
         case 3 :
                 if( damage < MAX_POINT ) damage += 1; diffi += 1; break;
         }
-        
-        all_skills[skill] = ({ attack, dodge, parry, damage, 0, 
+
+        all_skills[skill] = ({ attack, dodge, parry, damage, 0,
                 diffi, "expert", "private" });
-      
-        save();  
+
+        save();
 }
-  
+
 void add_skill_into_skills(string sname, mapping p)
 {
         string *sk, rank, att;
-        int attack, dodge, parry, damage, force, diffi;        
-        
+        int attack, dodge, parry, damage, force, diffi;
+
         if( SKILL_D(sname)->type() != "martial" )
                 return;
-          
+
         if( undefinedp(all_skills[sname]) )
         {
                 if( !undefinedp(p["rank"]) )
                         rank = p["rank"];
                 else
-                        rank = "expert";                
+                        rank = "expert";
 
                 if( !undefinedp(p["attribute"]) )
                         att = p["attribute"];
                 else
-                        att = "private";      
-                
+                        att = "private";
+
                 if( att == "private" )
                         force = 0;
                 else
@@ -615,46 +615,46 @@ void add_skill_into_skills(string sname, mapping p)
                         force = p["force"];
                 else
                         force = 0;
-                
-                if( !undefinedp(p["difficult"]) ) 
+
+                if( !undefinedp(p["difficult"]) )
                         diffi = p["difficult"];
                 else
                         diffi = 1200;
-                                                                               
-                sk = ({ p["attack"], p["dodge"], p["parry"], p["damage"], force, 
+
+                sk = ({ p["attack"], p["dodge"], p["parry"], p["damage"], force,
                         diffi, rank, att });
 
                 all_skills[sname] = sk;
-                
+
                 save();
                 return;
-        } 
-        
+        }
+
         sk = all_skills[sname];
         attack = (int)sk[ATTACK];
         dodge  = (int)sk[DODGE];
         parry  = (int)sk[PARRY];
         damage = (int)sk[DAMAGE];
-       
-        diffi  = (int)sk[DIFFICULT];      
-                
+
+        diffi  = (int)sk[DIFFICULT];
+
         if( !undefinedp(p["attack"]) && p["attack"] > attack )
                 attack = p["attack"];
         if( !undefinedp(p["dodge"]) && p["dodge"] > dodge )
                 dodge = p["dodge"];
         if( !undefinedp(p["parry"]) && p["parry"] > parry )
-                parry = p["parry"];     
+                parry = p["parry"];
         if( !undefinedp(p["damage"]) && p["damage"] > damage )
-                damage = p["damage"]; 
+                damage = p["damage"];
         if( !undefinedp(p["force"]) && p["force"] > force )
                 force = p["force"];
         if( !undefinedp(p["difficult"]) && p["difficult"] > diffi )
                 diffi = p["difficult"];
-                              
-        all_skills[sname] = ({ attack, dodge, parry, damage, 
-                diffi, sk[RANK], sk[ATTRIBUTE] });   
-        
-        save();               
+
+        all_skills[sname] = ({ attack, dodge, parry, damage,
+                diffi, sk[RANK], sk[ATTRIBUTE] });
+
+        save();
 }
 
 void remove_skill_from_skills(object me, string sname)

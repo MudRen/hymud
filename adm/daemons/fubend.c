@@ -1,7 +1,7 @@
 // fubend.c
 
-#pragma optimize
-#pragma save_binary
+// #pragma optimize
+// #pragma save_binary
 
 #include <ansi.h>
 inherit F_DBASE;
@@ -39,20 +39,20 @@ int is_c_file(string arg)		//判断arg是否*.c文件格式
         return 0;
 }
 
-    object get_object(string name) 
-    { 
-            object ob; 
-            
-            if (ob = find_object(name)) 
-                    return ob; 
-                     
-           sscanf(name, "%s#%*s", name);  
-            return load_object(name); 
-     } 
-void tell_team(object *obs, string str) 
-     { 
-             foreach( object ob in obs ) 
-                     tell_object(ob, str); 
+    object get_object(string name)
+    {
+            object ob;
+
+            if (ob = find_object(name))
+                    return ob;
+
+           sscanf(name, "%s#%*s", name);
+            return load_object(name);
+     }
+void tell_team(object *obs, string str)
+     {
+             foreach( object ob in obs )
+                     tell_object(ob, str);
      }
 void create()
 {
@@ -554,4 +554,3 @@ public int open_fuben(object me, string fbname)
                 return 1;
         }
 }
-
