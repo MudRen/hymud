@@ -5,6 +5,8 @@
 // original from Lil
 // rewritten by Annihilator (11/07/94)
 // modified by Xiang for XKX (12/15/95)
+#include <runtime_config.h>
+
 #ifndef __SENSIBLE_MODIFIERS__
 #define nosave static
 #define protected static
@@ -65,8 +67,8 @@ mixed compile_object(string file)
 // master).
 protected void crash(string error, object command_giver, object current_object)
 {
-    object *user, link_ob;
-    int i;
+    object *user/*, link_ob*/;
+    // int i;
     efun::shout("系统核心发出一声惨叫：哇—哩—咧—\n");
     efun::shout("系统核心告诉你：要当机了，自己保重吧！\n");
         if (cp("adm/log/debug.log","adm/log/debug.dj"))
